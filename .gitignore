@@ -1,0 +1,10 @@
+*.vscode 
+*.pio
+**/dependencies/ 
+
+#folders
+# is for any jerarqui including 0 level, this is for folders
+**/aiotronic_env/
+# all 
+*aiotronic_env*
+
