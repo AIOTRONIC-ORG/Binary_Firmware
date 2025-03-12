@@ -1,0 +1,1 @@
+El bat debe ejecutarse fuera de esta carpeta y la del repositorio, pues al ejecutarse generan archivos ocultos que no se quiere que se suban al repositorio,ademas que solo sirven para la direccion de la pc en la que se ejecuta por lo que serian invalido en otras computadoras , llegando a generar problemas de ejecucion en otras pcs por testeos hechos
