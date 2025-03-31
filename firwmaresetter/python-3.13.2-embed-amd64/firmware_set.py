@@ -35,6 +35,7 @@ def select_device_model():
     
     if choice in devices:
         download_firmware(devices[choice])
+
     elif choice == "4":
         main_menu()
     else:
@@ -48,7 +49,7 @@ def download_firmware(model):
     for file in files:
         download_file(base_url + file, file)
     
-    main_menu()
+    # main_menu()
 
 def flash_esp32():
 
@@ -81,6 +82,8 @@ def flash_esp32():
     main_menu()
 
 def update_firmware_and_monitor():
+
+    select_device_model()
     # port = input("PORT (e.g., COM3): ")
     print("Buscando puertos disponibles...\n")
     ports = list_ports.comports()
@@ -111,9 +114,11 @@ def update_firmware_and_monitor():
         "0x10000", "firmware.bin"
     ]
     subprocess.run(command, check=False)
-    print("Firmware updated successfully. Now monitoring serial...")
-    subprocess.run([sys.executable, "monitor_serial.py", port], check=False)
+
+    # print("Firmware updated successfully. Now monitoring serial...")
+    # subprocess.run([sys.executable, "monitor_serial.py", port], check=False)
     main_menu()
+
 
 def print_qr():
     if not os.path.exists("mac_qr.png"):
@@ -190,6 +195,8 @@ def main_menu():
         print_qr()
     elif choice == "4":
         select_device_model()
+        main_menu()
+
     elif choice == "5":
         sys.exit()
     elif choice == "6":
