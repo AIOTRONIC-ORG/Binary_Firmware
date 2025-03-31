@@ -1,0 +1,124 @@
+
+
+--- Serial session started at 2025-03-31 08:17:16.922781 ---
+69
+1 Código RF DEC: 68304896
+1 Código RF HEX: 4124000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 68304896
+1 Código RF HEX: 4124000
+hola el dragon multiversal
+es unknown
+Vr:115.96 % 1758.00 0
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4176
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wi3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":1,"battLvl":116}A Callback has been discarted bc message is from device itself
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4080
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() task is :  3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Apaga Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":0,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4080
+3
+---------------high stack water mark at wireless() task is :  3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Is known !
+Se activo PGM 2 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 2 en electro_effects_pgm_2
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"pgm2":1,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4076
+3
+Is known !
+Se desactivo PGM 2 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() sk is :  3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Apaga PGM 2 en electro_effects_pgm_2
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4032
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Message arrived in topic: Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"pgm2":0,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+---------------high st3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: :43:33:83:40/CA01N
+Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":1,"battLvl":116}A Callback has been discarted bc message is from device itself
+Vr:115.77 % 1755.00 0

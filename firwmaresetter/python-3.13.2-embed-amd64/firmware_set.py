@@ -2,6 +2,10 @@ import os
 import subprocess
 import sys
 import urllib.request
+import serial
+import time
+from datetime import datetime
+from serial.tools import list_ports
 
 def download_file(url, filename):
     try:
@@ -72,6 +76,52 @@ def print_qr():
         subprocess.run([sys.executable, "print_qr.py"], check=False)
     main_menu()
 
+
+
+def view_serial_and_log():
+    print("Buscando puertos disponibles...\n")
+    ports = list_ports.comports()
+
+    if not ports:
+        print("No se encontraron puertos COM.")
+        main_menu()
+        return
+
+    print("Puertos disponibles:")
+    for i, port in enumerate(ports, start=1):
+        desc = port.description
+        hwid = port.hwid
+        print(f"{i}. {port.device} - {desc} [{hwid}]")
+
+    try:
+        selection = int(input("\nSelecciona el número del puerto que quieres usar: "))
+        selected_port = ports[selection - 1].device
+    except (ValueError, IndexError):
+        print("Selección inválida.")
+        main_menu()
+        return
+
+    baud = 115200
+    log_file = "serial_log.txt"
+
+    try:
+        with serial.Serial(selected_port, baud, timeout=1) as ser, open(log_file, "a", encoding="utf-8") as f:
+            print(f"Monitoreando {selected_port}... (Presiona Ctrl+C para detener)")
+            from datetime import datetime
+            f.write(f"\n\n--- Serial session started at {datetime.now()} ---\n")
+            while True:
+                line = ser.readline()
+                if line:
+                    decoded_line = line.decode(errors="ignore").rstrip()
+                    print(decoded_line)
+                    f.write(decoded_line + "\n")
+    except KeyboardInterrupt:
+        print("\nMonitoreo detenido por el usuario.")
+    except Exception as e:
+        print(f"Error: {e}")
+    main_menu()
+
+
 def main_menu():
     print("""
     ==============================================
@@ -82,6 +132,7 @@ def main_menu():
     3. Print QR Code
     4. Select Device Model
     5. Exit
+    6. Ver Monitor Serial
     """)
     choice = input("Select an option: ")
     
@@ -95,6 +146,8 @@ def main_menu():
         select_device_model()
     elif choice == "5":
         sys.exit()
+    elif choice == "6":
+        view_serial_and_log()
     else:
         print("Invalid option.")
         main_menu()
