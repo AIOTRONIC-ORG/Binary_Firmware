@@ -51,15 +51,61 @@ def download_firmware(model):
     main_menu()
 
 def flash_esp32():
-    port = input("PORT (e.g., COM3): ")
-    command = [sys.executable, "-m", "esptool", "--chip", "esp32s3", "--port", port, "erase_flash"]
+
+
+    print("Buscando puertos disponibles...\n")
+    ports = list_ports.comports()
+
+    if not ports:
+        print("No se encontraron puertos COM.")
+        main_menu()
+        return
+
+    print("Puertos disponibles:")
+    for i, port in enumerate(ports, start=1):
+        desc = port.description
+        hwid = port.hwid
+        print(f"{i}. {port.device} - {desc} [{hwid}]")
+
+    try:
+        selection = int(input("\nSelecciona el número del puerto que quieres usar: "))
+        selected_port = ports[selection - 1].device
+    except (ValueError, IndexError):
+        print("Selección inválida.")
+        main_menu()
+        return
+    
+    # port = input("PORT (e.g., COM3): ")
+    command = [sys.executable, "-m", "esptool", "--chip", "esp32s3", "--port", selected_port, "erase_flash"]
     subprocess.run(command, check=False)
     main_menu()
 
 def update_firmware_and_monitor():
-    port = input("PORT (e.g., COM3): ")
+    # port = input("PORT (e.g., COM3): ")
+    print("Buscando puertos disponibles...\n")
+    ports = list_ports.comports()
+
+    if not ports:
+        print("No se encontraron puertos COM.")
+        main_menu()
+        return
+
+    print("Puertos disponibles:")
+    for i, port in enumerate(ports, start=1):
+        desc = port.description
+        hwid = port.hwid
+        print(f"{i}. {port.device} - {desc} [{hwid}]")
+
+    try:
+        selection = int(input("\nSelecciona el número del puerto que quieres usar: "))
+        selected_port = ports[selection - 1].device
+    except (ValueError, IndexError):
+        print("Selección inválida.")
+        main_menu()
+        return
+    
     command = [
-        sys.executable, "-m", "esptool", "--chip", "esp32s3", "--port", port, "--baud", "115200",
+        sys.executable, "-m", "esptool", "--chip", "esp32s3", "--port", selected_port, "--baud", "115200",
         "--before", "default_reset", "--after", "hard_reset", "write_flash", "-z", "--flash_mode", "dio",
         "--flash_freq", "40m", "--flash_size", "detect", "0x0", "bootloader.bin", "0x8000", "partitions.bin",
         "0x10000", "firmware.bin"
@@ -101,7 +147,7 @@ def view_serial_and_log():
         main_menu()
         return
 
-    baud = 115200
+    baud = 460800
     log_file = "serial_log.txt"
 
     try:
