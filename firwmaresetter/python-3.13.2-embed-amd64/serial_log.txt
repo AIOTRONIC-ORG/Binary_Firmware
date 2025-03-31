@@ -122,3 +122,831 @@ Publish  into topic main completed
 Message arrived in topic: :43:33:83:40/CA01N
 Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":1,"battLvl":116}A Callback has been discarted bc message is from device itself
 Vr:115.77 % 1755.00 0
+
+
+--- Serial session started at 2025-03-31 08:36:59.403258 ---
+
+
+ ELECTRIC FENCE PROGRAM FOR ESP32-S3
+Initializing ...
+[  4356][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  4365][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+[  4373][E][Preferences.cpp:483] getString(): nvs_get_str len fail: deviceThing NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : recalculate the mac
+
+
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+100
+
+
+RF SENSORS :
+
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 12
+Free Entries: 618
+Namespace Count: 8
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly0
+
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+295960
+
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6252
+Mode: 0
+entre a luego de offl
+he pasado la lectura de memoria interna
+[  8553][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[  8561][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[  9220][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+hhent connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[  9227][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[  9235][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  . [ 17460][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay ac
+Timeout reached, ac
+ ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+ button 2 pressed 1 time
+Screen2_2 initialized
+Phy_Add_control activated
+ Entre por offline_add_control_mode
+2 Código RF DEC: 30507008
+2 Código RF HEX: 1D18000
+0
+
+RF offline Controller succesfully stored
+ Control Nro: 1 Code: 30507008
+ Answer to the app sended messagesef.rf_config[0] = 3
+RF OFFLINE CONTROLS :
+100
+RF1 : 30507008
+
+screen 2 worked and done, disabling
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4092
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4012
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4012
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4012
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo PGM 2 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 2 en electro_effects_pgm_2
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+21
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo pgm1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+133
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Enciende Buzzer en task RF
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+133
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Apaga Buzzer en task RF
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+de: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[119984][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[119992][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[120611][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[120619][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[120627][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current dewn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  . 69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+ .  . Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ .  .  .  . [128752][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+Before is certified conditional in wireless? this is the end of x
+Counter for wifi return has started ....
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+ ******** Starting process wifi from thMode: 0
+enhe pasado la lectura de memoria interna
+[231175][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[231183][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[231802][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i am
+0
+0
+herig was manually activated :
+credentials before smart config
+SSID storage permanent :[231810][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[231818][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .
+ .  .  .  .  .  . 69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ .  Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ .  .  .  . 69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+ . Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ . [240041][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified coditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[342464][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[342472][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[343091][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[343098][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[343106][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [351231][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+this is the end of x
+Counter for wifi r
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[453655][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[453663][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[454282][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i ig was manually activated :
+credentials before smart config
+SSID storage permanent :[454290][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[454298][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [462423][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+ne mode ...
+ ***
+f x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[564846][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[564854][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[565473][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+
+0
+here  Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+SSID storage permanent :[565481][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[565489][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [573615][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+ne mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+de: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[676038][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[676046][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[676665][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+[676672][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[676680][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [684806][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timene mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[787229][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[787237][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[787856][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i amt config was manually activated :
+SSID storage permanent :[787864][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[787872][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actualwas NOT activated
+Waiting for Wifi
+ .  .
+ .  .  .  .  .  .  .  .  .  . [796193][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[898615][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[898623][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[899242][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[899250][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[899258][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [907384][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless? f x
+Counter for wifi return has started ....
+de: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1009807][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1009815][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1010434][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+[1010442][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1010450][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1018576][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1121000][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1121008][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1121627][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[1121634][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1121642][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .
+ .  .  .  .  .  .  . [1129965][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reane mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wirelessf x
+Counter for wifi return has started ....
+ from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1232388][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1232396][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1233015][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+[1233023][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1233031][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1241157][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+B....
+ ******** Starting proceMode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1343580][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1343588][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1344207][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+0
+0ifying
+       if smart config was manually activated :
+credentials before sm
+SSID storage permanent :[1344215][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1344223][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1352349][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified cf x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ******** Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1454772][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1454780][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1455399][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[1455407][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1455415][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1463542][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a IntTimeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certifil in wireless?
+this is the end of x
+Counter for wifi return has started ....

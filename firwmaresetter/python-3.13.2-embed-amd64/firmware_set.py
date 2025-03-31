@@ -23,6 +23,7 @@ def select_device_model():
     }
     
     print("""
+    
     ==============================================
                  Select Device Model
     ==============================================
@@ -30,7 +31,9 @@ def select_device_model():
     2. Social Voz (CA01N)
     3. Toro Shock (EB01M)
     4. Exit
+
     """)
+
     choice = input("Select an option: ")
     
     if choice in devices:
