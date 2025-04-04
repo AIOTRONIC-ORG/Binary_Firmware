@@ -1,0 +1,3251 @@
+
+
+--- Serial session started at 2025-03-31 08:17:16.922781 ---
+69
+1 Código RF DEC: 68304896
+1 Código RF HEX: 4124000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 68304896
+1 Código RF HEX: 4124000
+hola el dragon multiversal
+es unknown
+Vr:115.96 % 1758.00 0
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4176
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wi3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":1,"battLvl":116}A Callback has been discarted bc message is from device itself
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4080
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() task is :  3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Apaga Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":0,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4080
+3
+---------------high stack water mark at wireless() task is :  3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Is known !
+Se activo PGM 2 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 2 en electro_effects_pgm_2
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"pgm2":1,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4076
+3
+Is known !
+Se desactivo PGM 2 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() sk is :  3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Apaga PGM 2 en electro_effects_pgm_2
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4032
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Message arrived in topic: Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"pgm2":0,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+---------------high st3484
+7
+---------------high stack water mark at ledsrgb() task is :  504
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: :43:33:83:40/CA01N
+Message Payload :  {"user":{"id":2,"src":{"type":1,"nro":0}},"zone":1,"battLvl":116}A Callback has been discarted bc message is from device itself
+Vr:115.77 % 1755.00 0
+
+
+--- Serial session started at 2025-03-31 08:36:59.403258 ---
+
+
+ ELECTRIC FENCE PROGRAM FOR ESP32-S3
+Initializing ...
+[  4356][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  4365][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+[  4373][E][Preferences.cpp:483] getString(): nvs_get_str len fail: deviceThing NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : recalculate the mac
+
+
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+100
+
+
+RF SENSORS :
+
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 12
+Free Entries: 618
+Namespace Count: 8
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly0
+
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+295960
+
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6252
+Mode: 0
+entre a luego de offl
+he pasado la lectura de memoria interna
+[  8553][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[  8561][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[  9220][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+hhent connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[  9227][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[  9235][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  . [ 17460][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay ac
+Timeout reached, ac
+ ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+ button 2 pressed 1 time
+Screen2_2 initialized
+Phy_Add_control activated
+ Entre por offline_add_control_mode
+2 Código RF DEC: 30507008
+2 Código RF HEX: 1D18000
+0
+
+RF offline Controller succesfully stored
+ Control Nro: 1 Code: 30507008
+ Answer to the app sended messagesef.rf_config[0] = 3
+RF OFFLINE CONTROLS :
+100
+RF1 : 30507008
+
+screen 2 worked and done, disabling
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4092
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4012
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4012
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  4012
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+37
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo PGM 2 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 2 en electro_effects_pgm_2
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+21
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo pgm1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+133
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Enciende Buzzer en task RF
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+133
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Apaga Buzzer en task RF
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+de: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[119984][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[119992][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[120611][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[120619][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[120627][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current dewn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  . 69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+ .  . Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ .  .  .  . [128752][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+Before is certified conditional in wireless? this is the end of x
+Counter for wifi return has started ....
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+ ******** Starting process wifi from thMode: 0
+enhe pasado la lectura de memoria interna
+[231175][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[231183][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[231802][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i am
+0
+0
+herig was manually activated :
+credentials before smart config
+SSID storage permanent :[231810][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[231818][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .
+ .  .  .  .  .  . 69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ .  Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ .  .  .  . 69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+ . Enciende Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ . [240041][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified coditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[342464][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[342472][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[343091][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[343098][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[343106][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [351231][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+this is the end of x
+Counter for wifi r
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3948
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+Apaga Zona en electro_effects_zone_1
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6076
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[453655][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[453663][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[454282][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i ig was manually activated :
+credentials before smart config
+SSID storage permanent :[454290][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[454298][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [462423][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+ne mode ...
+ ***
+f x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[564846][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[564854][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[565473][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+
+0
+here  Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+SSID storage permanent :[565481][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[565489][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [573615][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+ne mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+de: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[676038][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[676046][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[676665][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+[676672][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[676680][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [684806][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timene mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[787229][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[787237][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[787856][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i amt config was manually activated :
+SSID storage permanent :[787864][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[787872][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actualwas NOT activated
+Waiting for Wifi
+ .  .
+ .  .  .  .  .  .  .  .  .  . [796193][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[898615][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[898623][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[899242][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[899250][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[899258][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [907384][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless? f x
+Counter for wifi return has started ....
+de: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1009807][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1009815][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1010434][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+[1010442][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1010450][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1018576][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1121000][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1121008][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1121627][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[1121634][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1121642][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .
+ .  .  .  .  .  .  . [1129965][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reane mode ...
+ *** OFFLINE mode ON  ***
+Before is certified conditional in wirelessf x
+Counter for wifi return has started ....
+ from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1232388][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1232396][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1233015][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+6
+here i
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+[1233023][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1233031][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1241157][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+B....
+ ******** Starting proceMode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1343580][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1343588][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1344207][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+0
+0ifying
+       if smart config was manually activated :
+credentials before sm
+SSID storage permanent :[1344215][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1344223][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1352349][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certified cf x
+Counter for wifi return has started ....
+ ******** Starting process wifi from the beginning ******** Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[1454772][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1454780][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[1455399][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wi
+
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[1455407][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[1455415][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . [1463542][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a IntTimeout reached, activating offline mode ...
+ *** OFFLINE mode ON  ***
+Before is certifil in wireless?
+this is the end of x
+Counter for wifi return has started ....
+
+
+--- Serial session started at 2025-03-31 09:50:23.709733 ---
+
+
+--- Serial session started at 2025-03-31 09:50:30.547741 ---
+
+
+ ELECTRIC FENCE PROGRAM FOR ESP32-S3
+Initializing ...
+[  4357][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  4365][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+[  4373][E][Preferences.cpp:483] getString(): nvs_get_str len fail: deviceThing NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : recalculate the mac
+
+
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+100
+
+
+RF SENSORS :
+
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 12
+Free Entries: 618
+Namespace Count: 8
+Task wirelessfi running on core 0
+ ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+295944
+
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6252
+Mode: entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+[  8551][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[  8558][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[  9220][E][WiFiSTA.cpp:232] begin(): SSID too long or missing!
+wifi
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :[  9228][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+
+PSS storage permanent :[  9236][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+SSID Current detected :
+wn by Class
+Smart config was NOT activated
+ .  .
+ .  .  .  .  .  .  .  .  .  .  . [ 17359][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+Timeout re ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Before is certified conditional in wirethis is the end of x
+Counter for wifi return has started ....
+ button 1 pressed 1 time
+Screen2_1 initialized
+Reset Wifi Credentials ACTIVATED FROM SCREEN2
+ Reseting the WiFi credentials
+
+
+Wifi credentials erased
+Credenciales WiFi borradas del espacio 'nvs'.
+Restarting the ESP in 2 seconds
+1...2...
+Reseting has started
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420e8a32
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+
+
+ ELECTRIC FENCE PROGRAM FOR ESP32-S3
+Initializing ...
+[  4341][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  4349][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : 48:CA:43:33:83:40-CA01N
+
+
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+100
+
+
+RF SENSORS :
+
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 102
+Free Entries: 528
+Namespace Count: 14
+******************** Task wirelessfi_sc initialized correctly
+ ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on coreTask wirelessfi running on core 0
+actulizando put pgm 1 desde permanent_save_new_data_e_conf1
+WDT created for task ledsrgb
+
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+295544
+
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  6292
+Mode: entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+m
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :
+PSS storage permanent :SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart Config was manually activated
+6
+Waiting for SmartConfig.
+AIOTRONIC4
+la credencial variable PSS es :
+Ch0c0ai0@
+La credencial SSID es :
+AIOTRONIC4
+La credencial PSS es :
+Ch0c0ai0@
+Waiting for Wifi
+AIOTRONIC4
+PzS:Ch0c0ai0@
+Wifi connected succesfully 1
+Turnoff
+ ********************   Deletion of tasks has started ( making space for more wifi tasks )
+ks ef, rf and siren have been deleted
+WiFi ConAIOTRONIC4156
+MAC Address: 48:CA:43:33:83:40
+Before is certified conditional in wireless?
+After is certified conditional in wireless?
+All functionalities stopped, Waiting for first and last certification
+ ******************** Task awscertification_sc initialized correctly
+Task awscertification_sc running on coreConnecting to api Abdelaziz
+:40","model":"CA01N"}
+201
+ The token ota inioGNepofIen35wldZXVndA
+Valores del JSON reciN
+DevicePrivateKey: -----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAtrPWN6SSR4ELP8+8TkibuvrDO6PbS8L4ZfC7Ii0LVtNhsS/U
+PqiHDpriP7Ut3v3h7y1U2FJBqKy1EUFSvx8VZiaY2yvRPpH61+dlqRpuYwl4tC9R
+W3xVgOOyIuU1TDYPVXeLDDxd9+G9Zb9MgpsY0QiBmEaoYTIlceHjWWauSU/ZDHjb
+XI1D93QhFW3FaV8IgTHGa6GhLfJZpjOb92DnMi338kMQZT7k/QcgLHmv1b9EFkIm
+rU3betuDx6G5OJitDKiFBRJGXwV/j4jOoPscPWmL+S/5YIDexDivYn5SM4AxO4FO
+JTLVlbWWUQsG9yItTYeXGSqqrDG3qNamko6PaQIDAQABAoIBADq156zR0b/wk/DZ
+jKWLZ5/aXUqZCSt7Z986UKhW2UH5g3cw63+HIH9s/i+CxU7XPvdhFda9+CN//F+j
+IjgQgQvmc1Ba8E6vEnC3B1AkEjz5GjSsz/QaLE/S27ei+FGZPaw1UhWIgJnbjMVZ
+h/igZoUlup94dTtmpenGsQxVlsQvvWB+DxK7QQWBMzm9vCBzyGYFFLP29YEjfhkI
+hQ646vJ5c4H4pNzf4gQUJ2UZUoJCLmKDe+2QygsxZUgCYCGLKl6PzNOe+TyUNwQy
+6d5Sf6BrAYNF5OoAzqBT6pqeXvMuahardAD58NkUgKGMOpwikSs0C8piLOhz7Dce
+cIQZrhECgYEA414X+jjrXMSRc0XQlpHxx6t9kg8mQhNMdCaHjMrBajQU8HkYf3tf
+6LXwEDr94GKY36QEU/FUA8+wtKhLB7Zb6VHl6kF38qdj2tYCuqqDHgHRJZ9qGs81
+n0OWzPY5Q/nP4kKCP0fr58KWT1FbKrJNFLeDVr/CSM7jwrd3bHpb59MCgYEAzbXT
+GaEmEDozVenb1dW532vI+2k5qft39QDIbf+S+MtIK100yoNp0UuiX58CpYq5Rkqj
+wYJM5S+ff5tU2BFX5bItGKfwVKWGqaFukWUhUsCxasvZgsTDxtrk8tOhXx14hcHv
+tZZccmICOobASwcRISu2RbeEl5wK2VYvC8ZKQlMCgYAjzoC2LlqanHZPkhIcdFWA
+XXiEFRCwXTuwGxVDzfaR1CvsBxYdlX9wNZ7d33x15vEuXzUzRxE1HHM2sD5Is6Zb
+40LzFmZed5AZOZTqcsn9YsneQ/HA0RsfvtQz6R7xnpjniBPdBWWYdSOY0DYsTjIn
+bhMoCUD+mF50HtKW6dopcwKBgGR8o4hrjfpzU8xuFrNYWhnnvyABAOgmLS0DmuUQ
+6aybML/uIfGjTDevKLxpIpPXNjY+E8xdaE60eseNC18Y6cUMyra2otHWofePIkHo
+EuUnuAMhXTliAPjMyPZNpxCdhthgKkacEsDVW51XYevEofuALOPVh/G/ihUs4oJv
+9Kp9AoGAeonzkA3zFDrgcPmnLw9CBDogzAVCBQqdRl2XADb/09jJTtsk6u3c/VAA
+DI+qcsxTlgsJaW7DyNRGEIEcFKUDn++hpRLfYJnZF3Usf4Np570B3iDUEOkh8tZ6
+cqC+WE6C/IF7mTfu83+uUipcQ+/lX8I=
+-----END RSA PRIVATE KEY-----
+
+DeviceCertificate: -----BEGIN CERTIFICATE-----
+MIIDWjCCAkKgAwIBAgIVAPGNgARnsJvv/0moANBGL/nkg19EMA0GCSqGSIb3DQEB
+CwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29t
+IEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0yNTAzMTkxNzQ3
+MjNaFw00OTEyMzEyMzU5NTlaMB4xHDAaBgNVBAMME0FXUyBJb1QgQ2VydGlmaWNh
+dGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2s9Y3pJJHgQs/z7xO
+SJu6+sM7o9tLwvhl8LsiLQtW02GxL9Q+qIcOmuI/tS3e/eHvLVTYUkGorLURQVK/
+HxVmJpjbK9E+kfrX52WpGm5jCXi0L1FbfFWA47Ii5TVMNg9Vd4sMPF334b1lv0yC
+mxjRCIGYRqhhMiVx4eNZZq5JT9kMeNtcjUP3dCEVbcVpXwiBMcZroaEt8lmmM5v3
+YOcyLffyQxBlPuT9ByAsea/Vv0QWQiatTdt624PHobk4mK0MqIUFEkZfBX+PiM6g
++xw9aYv5L/lggN7EOK9iflIzgDE7gU4lMtWVtZZRCwb3Ii1Nh5cZKqqsMbeo1qaS
+jo9pAgMBAAGjYDBeMB8GA1UdIwQYMBaAFEJPhHfH0wjMJb2aQXIPRTYl31YoMB0G
+A1UdDgQWBBRO5XZraBD5dWB4fuyrDZjFK9m5mzAMBgNVHRMBAf8EAjAAMA4GA1Ud
+DwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAIfsib9pZUP6iDoOdIMCqgeqi
+ZT2xCAc8tOVc1HrzmR9novOPJQ6DNDsON00gHG602njKBUQ/WcZfhABYDX6jK4xX
+DwI/t909/mBrqngduazLpGNpYVkXBXNeBA1cwSsJVVkJ1qZft6Z62Fbi8ExRsDWC
+flXvY7k627b0k1QrqOiyogVF+zEjyAQpssi0dCeZHAx9GmCp6GHeJvJPmY+YAFTt
+grHCdSt2bDE6Tn/ntHTjTRSLc9FPEgF3s42efTzlZHz4daYrbmjPPgRs+bdvbref
+4OEUQE3o50F6rs4EcmEIb/CNkRpfolZ2OgB7Gqa7MuP3tAyLGY2HaxhdDFHfxA==
+-----END CERTIFICATE-----
+
+---------------high stack water mark at certificates() task is :  4752
+Apunto de eliminar el task certificates
+Device will restart  on purpose in the next seconds :
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778cc
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+
+
+ ELECTRIC FENCE PROGRAM FOR ESP32-S3
+Initializing ...
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWjCCAkKgAwIBAgIVAPGNgARnsJvv/0moANBGL/nkg19EMA0GCSqGSIb3DQEB
+CwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29t
+IEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0yNTAzMTkxNzQ3
+MjNaFw00OTEyMzEyMzU5NTlaMB4xHDAaBgNVBAMME0FXUyBJb1QgQ2VydGlmaWNh
+dGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2s9Y3pJJHgQs/z7xO
+SJu6+sM7o9tLwvhl8LsiLQtW02GxL9Q+qIcOmuI/tS3e/eHvLVTYUkGorLURQVK/
+HxVmJpjbK9E+kfrX52WpGm5jCXi0L1FbfFWA47Ii5TVMNg9Vd4sMPF334b1lv0yC
+mxjRCIGYRqhhMiVx4eNZZq5JT9kMeNtcjUP3dCEVbcVpXwiBMcZroaEt8lmmM5v3
+YOcyLffyQxBlPuT9ByAsea/Vv0QWQiatTdt624PHobk4mK0MqIUFEkZfBX+PiM6g
++xw9aYv5L/lggN7EOK9iflIzgDE7gU4lMtWVtZZRCwb3Ii1Nh5cZKqqsMbeo1qaS
+jo9pAgMBAAGjYDBeMB8GA1UdIwQYMBaAFEJPhHfH0wjMJb2aQXIPRTYl31YoMB0G
+A1UdDgQWBBRO5XZraBD5dWB4fuyrDZjFK9m5mzAMBgNVHRMBAf8EAjAAMA4GA1Ud
+DwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAIfsib9pZUP6iDoOdIMCqgeqi
+ZT2xCAc8tOVc1HrzmR9novOPJQ6DNDsON00gHG602njKBUQ/WcZfhABYDX6jK4xX
+DwI/t909/mBrqngduazLpGNpYVkXBXNeBA1cwSsJVVkJ1qZft6Z62Fbi8ExRsDWC
+flXvY7k627b0k1QrqOiyogVF+zEjyAQpssi0dCeZHAx9GmCp6GHeJvJPmY+YAFTt
+grHCdSt2bDE6Tn/ntHTjTRSLc9FPEgF3s42efTzlZHz4daYrbmjPPgRs+bdvbref
+4OEUQE3o50F6rs4EcmEIb/CNkRpfolZ2OgB7Gqa7MuP3tAyLGY2HaxhdDFHfxA==
+-----END CERTIFICATE-----
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAtrPWN6SSR4ELP8+8TkibuvrDO6PbS8L4ZfC7Ii0LVtNhsS/U
+PqiHDpriP7Ut3v3h7y1U2FJBqKy1EUFSvx8VZiaY2yvRPpH61+dlqRpuYwl4tC9R
+W3xVgOOyIuU1TDYPVXeLDDxd9+G9Zb9MgpsY0QiBmEaoYTIlceHjWWauSU/ZDHjb
+XI1D93QhFW3FaV8IgTHGa6GhLfJZpjOb92DnMi338kMQZT7k/QcgLHmv1b9EFkIm
+rU3betuDx6G5OJitDKiFBRJGXwV/j4jOoPscPWmL+S/5YIDexDivYn5SM4AxO4FO
+JTLVlbWWUQsG9yItTYeXGSqqrDG3qNamko6PaQIDAQABAoIBADq156zR0b/wk/DZ
+jKWLZ5/aXUqZCSt7Z986UKhW2UH5g3cw63+HIH9s/i+CxU7XPvdhFda9+CN//F+j
+IjgQgQvmc1Ba8E6vEnC3B1AkEjz5GjSsz/QaLE/S27ei+FGZPaw1UhWIgJnbjMVZ
+h/igZoUlup94dTtmpenGsQxVlsQvvWB+DxK7QQWBMzm9vCBzyGYFFLP29YEjfhkI
+hQ646vJ5c4H4pNzf4gQUJ2UZUoJCLmKDe+2QygsxZUgCYCGLKl6PzNOe+TyUNwQy
+6d5Sf6BrAYNF5OoAzqBT6pqeXvMuahardAD58NkUgKGMOpwikSs0C8piLOhz7Dce
+cIQZrhECgYEA414X+jjrXMSRc0XQlpHxx6t9kg8mQhNMdCaHjMrBajQU8HkYf3tf
+6LXwEDr94GKY36QEU/FUA8+wtKhLB7Zb6VHl6kF38qdj2tYCuqqDHgHRJZ9qGs81
+n0OWzPY5Q/nP4kKCP0fr58KWT1FbKrJNFLeDVr/CSM7jwrd3bHpb59MCgYEAzbXT
+GaEmEDozVenb1dW532vI+2k5qft39QDIbf+S+MtIK100yoNp0UuiX58CpYq5Rkqj
+wYJM5S+ff5tU2BFX5bItGKfwVKWGqaFukWUhUsCxasvZgsTDxtrk8tOhXx14hcHv
+tZZccmICOobASwcRISu2RbeEl5wK2VYvC8ZKQlMCgYAjzoC2LlqanHZPkhIcdFWA
+XXiEFRCwXTuwGxVDzfaR1CvsBxYdlX9wNZ7d33x15vEuXzUzRxE1HHM2sD5Is6Zb
+40LzFmZed5AZOZTqcsn9YsneQ/HA0RsfvtQz6R7xnpjniBPdBWWYdSOY0DYsTjIn
+bhMoCUD+mF50HtKW6dopcwKBgGR8o4hrjfpzU8xuFrNYWhnnvyABAOgmLS0DmuUQ
+6aybML/uIfGjTDevKLxpIpPXNjY+E8xdaE60eseNC18Y6cUMyra2otHWofePIkHo
+EuUnuAMhXTliAPjMyPZNpxCdhthgKkacEsDVW51XYevEofuALOPVh/G/ihUs4oJv
+9Kp9AoGAeonzkA3zFDrgcPmnLw9CBDogzAVCBQqdRl2XADb/09jJTtsk6u3c/VAA
+DI+qcsxTlgsJaW7DyNRGEIEcFKUDn++hpRLfYJnZF3Usf4Np570B3iDUEOkh8tZ6
+cqC+WE6C/I1d42IAyDXcKtxBShNzrtF7mTfu83+uUipcQ+/lX8I=
+-----END RSA PRIVATE KEY-----
+
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 48:CA:43:33:83:40-CA01N
+
+
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+100
+
+
+RF SENSORS :
+
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 251
+Free Entries: 379
+Namespace Count: 15
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core actulizando put pgm 1 desde permanent_save_new_data_e_conf0
+
+ ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+295212
+
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+6
+here i amere i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Passwoivated
+ . urnoff
+ ********************   Deletion of tasks has started ( making space for more wifi tasks )
+Tasks ef, rf and siren have been deleted
+WiFi ConA
+MAC Address: 48:CA:43:33:83:40
+
+this is the end of x
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+TOPIC_SUBSCRIBE_DEFINITIVE IS :
+48:C48:CA:43:33:83:40/CA01N_conf
+############################El valor de variable connected to amazon es : 1
+scribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying to main loop for crett finished : 1
+alexafirsttime : 0
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+haha
+JSON docconf : 164
+ ******************ctly
+Task alexa running on core
+Publish CONF into topic c0
+
+@@@@@@@ @@@@@@@@ HeartBeat to AIO server !!!!! @@@@@@@@ @@@@@@
+JSON doctro : 112
+Welcome to Alexa Device Program :48:CA:43:33:83:40_cerco
+
+48:CA:43:33:83:40_alarma
+48:CA:43:33:83:40_pgm
+Alexa creation confirmation from task alexa
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"use":{"id":0,"src":{"type":0,"nro":0}},"rf_conf:{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"tp_zone":0},"othr_cof":{"tp_buzzer":1},"mode":100}
+-----------------------
+
+Publish  into topic main completed
+publish user buzzer key zone pgm1 message completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":0,"pgm2":0,"battLvl":0}
+-----------------------
+A Callbself
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of pgm2: 0
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+164048
+
+ ******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+ ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Vr:19.99 % 303.00 Battery Caution- Multiplo de 2 published :
+20%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 55
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:19.79 % 300.00 0
+Vr:19.72 % 299.00 0
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+Vr:19.85 % 301.00 0
+ button 2 pressed 1 time
+Screen2_2 initialized
+Phy_Add_control activated
+ Entre por offline_add_control_mode
+2 Código RF DEC: 30507008
+2 Código RF HEX: 1D18000
+0
+
+RF offline Controller succesfully stored
+ Control Nro: 1 Code: 30507008
+ Answer to the app sended messagesef.rf_config[0] = 3
+RF OFFLINE CONTROLS :
+100
+RF1 : 30507008
+
+screen 2 worked and done, disabling
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156208
+
+Sending offline (physical controls added) to the app
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+-----------------------
+Vr:19.79 % 300.00 0
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156432
+
+Sending offline (physical controls added) to the app
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+--------
+Vr:19.99 % 303.00 0
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+48:CA:4Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+---Sending offline (physical controls added) to the app
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156432
+
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+-----------------------
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+Sending offline (physical controls added) to the app
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+153312
+
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+-----------------------
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+Vr:19.79 % 300.00 0
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+48:CA:43:33:83:40/CA01N_conf
+Message Pa"user":{"id":1,"src":{"type":2,"nro":0}},"rf_conf":{"action":2,"code":0,"position":1},"all_conf":{"t_alarm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156432
+
+Delete control enabled
+RF Controller deleted
+USER: 1 Control Nro: 1
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+Message arrived in topic: 48:CA:43:33:83:40/CA0
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf:{"t_alrm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156432
+
+Sending offline (physical controls added) to the app
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+-----------------------
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":15,"d_fence":1,"n_arcs":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156292
+
+Sending offline (physical controls added) to the app
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+-----------------------
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":15,"d_fence":1,"n_ars":2,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+Sending offline (physical controls added) to the app
+controls :{
+{position: 0 , code : 30507008 }
+};
+haha
+JSON docconf : 69
+
+Publish CONF into topic conf completed
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+153312
+
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":30507008}]}}
+-----------------------
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":15,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+156432
+
+Vr:20.51 % 311.00 Battery Caution- Multiplo de 2 published :
+21%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 55
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":21}
+-----------------------
+s been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+37
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+Vr:19.85 % 301.00 Battery Caution- Multiplo de 2 published :
+20%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 55
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:19.79 % 300.00 0
+Vr:19.92 % 302.00 0
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 127991808
+1 Código RF HEX: 7A10000
+hola el dragon multiversal
+es unknown
+Vr:19.79 % 300.00 0
+Vr:19.85 % 301.00 0
+Vr:19.79 % 300.00 0
+Vr:19.85 % 301.00 0
+Vr:19.85 % 301.00 0
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+Vr:19.79 % 300.00 0
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3280
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() task is :  4384
+7
+---------------high stack water mark at ledsrgb() task is :  496
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 64
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":1,"src":{"type":1,"nro":0}},"zone":1,"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3280
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+84
+7
+---------------high stack water mark at ledsrgb() task is :  496
+Apaga Zona en electro_effects_zone_1
+JSON doctro : 64
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":1,"src":{"type":1,"nro":0}},"zone":0,"battLvl":20}
+A Callback has been discarted bc message is from device itself
+Vr:19.72 % 299.00 0
+Vr:19.79 % 300.00 0
+Vr:19.72 % 299.00 0
+Vr:19.99 % 303.00 0
+Vr:19.85 % 301.00 0
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3280
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() task is :  4384
+7
+---------------high stack water mark at ledsrgb() task is :  496
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 64
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":1,"src":{"type":1,"nro":0}},"zone":1,"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:19.79 % 300.00 0
+[687421][E][WiFiUdp.cpp:185] endPacket(): could not send data: 12
+[687433][E][WiFiUdp.cpp:185] endPacket(): could not send data: 12
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+21
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+Vr:19.92 % 302.00 0
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+133
+1 Código RF DEC: 245477376
+1 Código RF HEX: EA1B000
+hola el dragon multiversal
+es unknown
+Vr:115.37 % 1749.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.24 % 1747.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.24 % 1747.00 0
+Vr:115.30 % 1748.00 0
+Vr:115.24 % 1747.00 0
+Vr:115.24 % 1747.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.44 % 1750.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.50 % 1751.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.50 % 1751.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.37 % 1749.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.57 % 1752.00 0
+Vr:115.50 % 1751.00 0
+Vr:115.63 % 1753.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CAMessage Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.63 % 1753.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.57 % 1752.00 0
+Vr:115.57 % 1752.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.57 % 1752.00 0
+Vr:115.63 % 1753.00 0
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3280
+3
+Is known !
+Se desactivo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+task is :  4384
+7
+---------------high stack water mark at ledsrgb() task is :  496
+Apaga Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":1,"src":{"type":1,"nro":0}},"zone":0,"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+---------------high stack water mark at rf() task is :  3280
+3
+Is known !
+Se activo ZONA 1 en task rf
+ Se detectaron cambios en electro_anyvar_changed()
+---------------high stack water mark at wireless() task is :  4384
+7
+---------------high stack water mark at ledsrgb() task is :  496
+Enciende Zona en electro_effects_zone_1
+JSON doctro : 65
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+48:CA:43:3Message Payload :  {"user":{"id":1,"src":{"type"1,"nro":0}},"zone":1,"battLvl":116}
+A Callback has been discarted bc message is from device itself
+ button 2 pressed 1 time
+Screen2_2 initialized
+Delete online controls, activated
+Delete offline controls, activated
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+100
+
+Delete all sensors, activated
+
+RF SENSORS :
+
+
+
+screen 2 worked and done, disabling
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+Vr:115.57 % 1752.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.63 % 1753.00 0
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+69
+1 Código RF DEC: 30507008
+1 Código RF HEX: 1D18000
+hola el dragon multiversal
+es unknown
+Vr:115.70 % 1754.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.96 % 1758.00 0
+Vr:115.37 % 1749.00 0
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":15,"tp_zone":0,"pgms":[{"id":1,"t":15,"tp":3},{"id":2,"t":15,"tp":3}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+3
+3
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+154016
+
+Vr:115.83 % 1756.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.96 % 1758.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+[2387055][E][WiFiUdp.cpp:185] endPacket(): could not send data: 12
+Vr:115.70 % 1754.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.70 % 1754.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.63 % 1753.00 0
+Vr:116.29 % 1763.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.70 % 1754.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.57 % 1752.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.77 % 1755.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.83 % 1756.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.63 % 1753.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.63 % 1753.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:116.23 % 1762.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}--
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+essage arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 0
+Vr:115.77 % 1755.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:116.03 % 1759.00 0
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Me"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.83 % 1756.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.70 % 1754.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.83 % 1756.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:116.29 % 1763.00 0
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+[4562197][E][ssl_client.cpp:37] _handle_error(): [send_ssl_data():382]: (-27648) SSL - Internal error (eg, unexpected failure in lower-level module)
+[4562214][E][ssl_client.cpp:37] _handle_error(): [send_ssl_data():382]: (-69) UNKNOWN ERROR CODE (0045)
+
+Publish  into topic main completed
+Activating connect mqt.connected(): 0
+Before attempting reconnection - isamazonConnected: 1
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Debugging the client.state: -3
+Mode: 1
+ entre a la funcion wifi dentro del task wifi
+entre a luego de offline mode verification en wifi()
+3
+here i here i am
+Before is certified conditional in wireless?
+this is the end of x
+Counter for wifi return has started ....
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+ ******** Starting process wifi from the beginning ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado 6
+here i a
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+ .  .
+Vr:115.77 % 1755.00 0
+✅ Internet disponible.
+SSID:AIOTRONIC4
+PzS:
+Wifi connected succesfully 1
+Turnoff
+ ********************   Deletion of tasks has started ( making space for more wifi tasks )
+Alexa creation confirmation from task alexa
+Task Alexa Created in main loop()
+
+WiFi ConAIOTRONIC4
+IP Address: 192.168.18.156
+M48:CA:43:33:83:40
+
+Tasks Wifi have been deleted in order to enter offline mode
+ *** wifi ConnecBefore is certified condithis is the end of x
+Certconnect to Aws MQ :
+TOPIC_SUBSCRIBE_DEFINITIVE IS :
+48
+48:CA:43:33:83:40/CA01N_conf
+ ******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :48:CA:43:33:
+
+48:CA:43:33:83:40_pgm
+Alexa crea✅ Internet disponible.
+################azon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying to main loop for creating Alexa
+mqtt 1
+alexafinished2 : 0
+haha
+JSON docconf : 165
+
+Publish CONF into topic conf completed
+@@@@@@@ @@@@@@@@ HeartBeat to AIO server !!!!! @@@@@@@@ @@@@@@
+JSON doctro : 114
+
+Publish  into topic main completed
+publish user buzzer key zone pgm1 message completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"case":0},"zone":1,"pgm1":0,"pgm2":0,"battLvl":116}
+-----------------------
+A Callback has been discage is from device itself
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+160376
+
+ ******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+ ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.77 % 1755.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.96 % 1758.00 0
+Vr:115.77 % 1755.00 0
+Vr:116.49 % 1766.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":16}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:116.29 % 1763.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+[5231211][E][ssl_client.cpp:37] _handle_error(): [send_ssl_data():382]: (-27648) SSL - Internal error (eg, unexpected failure in lower-level module)
+Publish  into topic main completed
+
+Actit.connected(): 0
+Beforonnected: 1
+✅ Internet disponible.
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+########El valor de variable connected to amazo
+scribed to MQTT topics correctly
+############################El valor de variable heartbeat es
+haha
+JSON docconf : 165
+
+Publish CONF into topic conf completed
+@@@@@@@ @@@@@@@@ HeartBeat to AIO server !!!!! @@@@@@@@ @@@@@@
+JSON doctro : 114
+
+Publish  into topic main completed
+publish user buzzer key zone pgm1 message completed
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+147860
+
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":15,"tp_zone":0},"other_conf":{"tp_buzzer":1},"mode":100}
+-----------------------
+lf
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0,"battLvl":117}
+--------
+A Callback has been discarted bc message is from device itself
+Vr:116.42 % 1765.00 0
+Vr:115.77 % 1755.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Pa"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+--------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:115.90 % 1757.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+sage arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.96 % 1758.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.83 % 1756.00 0
+Vr:116.49 % 1766.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+[5501736][E][ssl_client.cpp:37] _handle_error(): [send_ssl_data():382]: (-27648) SSL - Internal error (eg, unexpected failure in lower-level module)
+[5501753][E][ssl_client.cpp:37] _handle_error(): [send_ssl_data():382]: (-78) UNKNOWN ERROR CODE (004E)
+
+Publish  into topic main completed
+A disconnection from MQTT was detected !
+Activating connect mqtt
+Before attempting reconnection - client.connected(): 0
+✅ Internet disponible.
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT bscribed to MQTT topics correctly
+############################El valor d
+haha
+JSON docconf : 165
+
+Publish CONF into topic conf completed
+@@@@@@@ @@@@@@@@ HeartBeat to AIO server !!!!! @@@@@@@@ @@@@@@
+JSON doctro : 114
+
+Publish  into topic main completed
+publish user buzzer key zone pgm1 message completed
+48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":15,"tp_zone":0},"other_conf":{"tp_buzzer":1},"mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+150224
+
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Pa"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0,"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:116.03 % 1759.00 0
+Vr:116.42 % 1765.00 0
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.90 % 1757.00 0
+Vr:116.36 % 1764.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+[5656255][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-76) UNKNOWN ERROR CODE (004C)
+[5656266][E][ssl_client.cpp:37] _handle_error(): [send_ssl_data():382]: (-78) UNKNOWN ERROR CODE (004E)
+
+Publish  into topic main completed
+onnect mqtt
+Before attempting reconnection - client.connected(): 0
+Before attempting reconnection - isamazonConnected: 1
+✅ Internet disponible.
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+Suscribed to MQTT topics correctly
+entre antes de heartbeat
+##########0
+haha
+JSON docconf : 165
+
+Publish CONF into topic conf completed
+@@@@@@@ @@@@@@@@ HeartBeat to AIO server !!!!! @@@@@@@@ @@@@@@
+JSON doctro : 114
+Message arrived in topic: 48:CA:43:33:83:40/CA01N_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0"code":0"position":0},"all_conf":{"t_alarm":15,"tp_zone":0},"other_conf":{"tp_buzzer":1},"mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+
+Publish  into topic main completed
+publish user buzzer key zone pgm1 message completed
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 15
+Delay of fence: 1
+Number of arcs: 2
+Type of zone1: 0
+Type of pgm1: 3
+Time of pgm1: 15
+Type of pgm2: 3
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+150280
+
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0,"battLvl":117}
+--------
+A Callback has been discarted bc message is from device itself
+Vr:115.90 % 1757.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 0
+Vr:115.83 % 1756.00 0
+Vr:115.83 % 1756.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.77 % 1755.00 Battery Caution- Multiplo de 2 published :
+116%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":116}
+-----------------------
+A Cal
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:115.90 % 1757.00 0
+Vr:116.03 % 1759.00 Battery Caution- Multiplo de 2 published :
+117%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+
+Publish  into topic main completed
+Message arrived in topic: 48:CA:43:33:83:40/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":117}
+A Callback has been discarted bc message is from device itself
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
