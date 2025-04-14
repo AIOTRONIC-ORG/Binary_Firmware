@@ -1,0 +1,324 @@
+
+
+--- Serial session started at 2025-04-07 08:10:23.299435 ---
+
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+publishs from EMEREGENCY inform to app done
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"tp_zone":0},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+Message Payload :  {"mode": 99 }
+-----------------------
+Message arrived in topic: 48:CA:43:33:53:F8/CA0
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":3},"zone":0,"pgm1":1,"pgm2":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+JSON docconf : 12
+
+Publish electroconf_publishMessage_retained_heartbeat
+haha
+JSON docconf : 154
+
+Publish from electroconf_publishMessage
+JSON doctro : 100
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+M"mode":100}
+-----------------------
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,position":0},"all_conf":{"t_alarm":10,"tp_zone":0},"other_conf":{"tp_buzzer":1}}
+A Callback has been discarted bc message is from device itself
+
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Vr:110.00 % 4095.00 Battery Caution- Multiplo de 5 published :
+110%
+1
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":3},"zone":0,"pgm1":1,"pgm2":1} Se detectaron cambios en electr--------------
+Publish due to flag_send_periodic time cycle from electro cpp
+A Callback has been discarted bc message is from device itself
+JSON doctro : 56
+
+Publish from electro_publishMessage
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N
+Message Payload :  null
+-------------------
+ A publish has been made !!
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Vr:110.00 % 4095.00 0
+Vr:110.00 % 4095.00 0
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+Message Payload :  {"mode":2}
+-----------------------
+[204525][E][WiFiClient.cpp:275] connect(): socket error on fd 50, errno: 113, "Software caused connection abort"
+ssing was detected faster than .connected
+[204536][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-76) UNKNOWN ERROR CODE (004C)
+A disconnection from
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+ActivaESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420297df
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+
+
+ ELECTRIC FENCE PROGRAM FOR ESP32-S3
+Initializing ...
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWjCCAkKgAwIBAgIVAIv90uW8osO+eNg/9bnfRaixJZ1mMA0GCSqGSIb3DQEB
+CwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29t
+IEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0yNTAzMzExNTI4
+MDlaFw00OTEyMzEyMzU5NTlaMB4xHDAaBgNVBAMME0FXUyBJb1QgQ2VydGlmaWNh
+dGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDMzTcFW4i8WWjazY9v
+ABd2ltDGnGa2oj/kXI7pWVBVccIzyySgjPrQmyt6nyzXX+k+Vfaa/xrsknPZNlie
+fv6SdU/WgDhpdg2FfU9pSK6R56cYbZfXKTOKTGXcFvEz+dj4j5usZmYW/c9otDm4
+HRu1AT6ZUChE/10hL0qS42/Mo9/hJbF/Tpw+dP37LbwaOiyjMgZrcGLlKg0qy+GD
+uEaDkhmo/Q3+dix2a6+Cg5zOuAq11Ffoyulx/jrSD/MnTc18tT7nUglQwaTUg+5j
+G64M/3y2FjwO2W6USzaFlC9D3xmJ8f3JP3eY0oicA5YUnhPh1IXql+Po2ETZ+w5k
+EdY9AgMBAAGjYDBeMB8GA1UdIwQYMBaAFFBIHbsJuuLJllR+4H5ZExYW1ayoMB0G
+A1UdDgQWBBSRgonYH3dhHbstsn2TYJ5ZAiSN9DAMBgNVHRMBAf8EAjAAMA4GA1Ud
+DwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAFA5/WbAXJ8VNl+sEto4rx9p4
+4P2K4KEKgTDU4MIS0+HVxIWHDoUhD0a1OGrGQ6+3LzAtX+BqQag0fYWvmaLec8dz
+KtC7iQAlVKebN9uanEaHOtr+hMJvgT0Ruko0vHH8MhhL38RUf7/rg/qB9L7KAH3Q
+qIrBfEEgjisVYtvA3CV/5PBFK9mNEmpaXl1xgdMM+89M5YAiaQb1O6hROQxNnkRX
+yMT8eQU8DgCMkVu+b7HFNuEDbLHMau+1+5KmV4ks7t5mqTzMOnNHDEmB+w+n/qWP
+2HMIfw7IkAE9HjsFy10LV9ClSzdkyTTBTohtsYNluFsmGfV1D+h0FDgUwiy72A==
+-----END CERTIFICATE-----
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAzM03BVuIvFlo2s2PbwAXdpbQxpxmtqI/5FyO6VlQVXHCM8sk
+oIz60Jsrep8s11/pPlX2mv8a7JJz2TZYnn7+knVP1oA4aXYNhX1PaUiukeenGG2X
+1ykzikxl3BbxM/nY+I+brGZmFv3PaLQ5uB0btQE+mVAoRP9dIS9KkuNvzKPf4SWx
+f06cPnT9+y28GjosozIGa3Bi5SoNKsvhg7hGg5IZqP0N/nYsdmuvgoOczrgKtdRX
+6Mrpcf460g/zJ03NfLU+51IJUMGk1IPuYxuuDP98thY8DtlulEs2hZQvQ98ZifH9
+yT93mNKInAOWFJ4T4dSF6pfj6NhE2fsOZBHWPQIDAQABAoIBADgf5Pwq4YX8Wqfb
+vXsF42g0XHKRWfSi8i96zg9U0pcX3cij2x3EhNe2LmwkQv2i4yCaHkLLtm0ulWDp
+a8/DrbAlRgPaj5sXJw12EdUgffauLTSclAf62o0D8sYl42QDDFrRwC+2wDN8yuI+
+wbKbB4TLGoSZWu/Nq4/0jdNDUNgbcuGwB5qF9A8oPugcPXxehrej7mdIn3togDkC
+2jGeATsNm2WLdWLLf62INqP6WmtCM4n6zCrgfTzf4BxcoGk1N6NOonuc5ULgShmT
+3APXKDM4QSPpMKe6EjWqsp3Omjgq0NYDpn8LDfBs0QMQjLGh02lhpe1EltQtE7F9
+BBoVhwECgYEA9kuIrNe/opLIiQ/A8DMVbP795yC5+vO/Bve44bgrv1T6F2+Ymo5G
+mpr3VKj8hOq278sUNbuiV2USnZPCPLQm9owZubnV8wFlUjPzd3LgxeaTDGu41HeY
+vcgX+8W6gyIq/MwBsnr5THA9efIN2CTP4IVnZ4mdVNL9+hviYgAdbtkCgYEA1N8f
+OS+/HdwTVycEuGUXP7l9W667U7O6OWDBw2iuWs8NXm40hByWnmLPombMVUYBWbBG
+t3ny+WZ52qVR+lRId30BJ0xIMMS7z1nHsKR32x3dYaKXftcSQJg++H13fb0OaSGJ
+t0FAn8NIhZmhlyKSCMgdFCGn0/MEfECm55XgjAUCgYBUTFAQUJvPqgunFdREokdg
+EfqXRBVDtm+Yk+scnquihhQ/Nzv1EmNKAWZL/LbJS4inlEtrhLgwz3BKrMsbedGo
+KxWXAusejEjAlPVs2c3jDmMgKjKNzg1iT30d+HQ489XgxnaCPyLarcPs3BMu+pKH
+10EoJ+rIoJq7IxYd0spAKQKBgCmaEXgTpL4pLH5z2bBP0WNa1Oz+EQ4iqdpc1oFi
+C/EjVfGGiCzpiWYa2YlbncNskwb8NFXXN20WYeohNQw/PIpdm8QaXGFrkWjMmwIi
+omnoREO4ivL3BVIqbuQRYTDpqc9SBqAR2JdgiuPRSotG7lNZCJXOngYGEHJYEEZi
+PCghAoGAdWYjjW7R+Sij4fkP0f/+N6M6r/03RXs5ob0jMkz96QQVUTqb8tEE9bqx
+gG4Lo0lQITfMLDRiMZ5BGPD965Qs+t2IirX0X7a6aklu+kQ1iIxJXK1WqgNNvQHa
+SjGem8gpMAMdF8vN5MjY8pftdYRRtGPs9vUvAGEa/2yQrPuFnM0=
+-----END RSA PRIVATE KEY-----
+
+Certifications OTA Registered
+tHLb915bbF99OjZykzTM90xrA
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 48:CA:43:33:53:F8-CA01N
+
+
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 3
+Key status: 0
+Zone status: 0
+Pgm1 status: 1
+Pgm2 status: 1
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 15
+Type of pgm2: 0
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+RF ONLINE CONTROLS :
+
+RF OFFLINE CONTROLS :
+RF1 : 30507008
+
+
+RF SENSORS :
+
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 262
+Free Entries: 368
+Namespace Count: 15
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+0WDT created for task ledsrgb
+
+actulizando put pgm 1 desde permanent_save_new_data_e_conf
+actulizando put pgm 2 desde permanent_save_new_data_e_conf
+
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 15
+Type of pgm2: 0
+Time of pgm2: 15
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+
+La memoria heap disponible en el dispositivo actualmente es de :
+294872
+
+ Se detectaron cambios en electro_anyvar_changed()
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+Enciende PGM 2 en electro_effects_pgm_2
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+Mode: 0
+he pasado la lectura de memoria interna
+wifi first try 4 seconds
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentialAIOTRONIC4
+PSS storage permanent :Ch0c0ai0@SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waitifi
+ .  .  .  .  .  .
+ .  .  .  .  .  .  .  . [ 17268][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for clients3.google.com
+❌ No hay acceso a Internet.
+Timeout reached, activating offline mode ...
+ ******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+ *** OFFLINE mode ON  ***
+Before is certified conf x
+Counter for wifi return has started ....
+ ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Vr:110.00 % 4095.00 Battery Caution- Multiplo de 5 published :
+110%
+1
+ Se detectaron cambios en electro_anyvar_changed()
+ Changes not published because those were made by app and not from device itself
+ Proceding to save permanent new data, update past data
+ electro main past data UPDATED _ in loop()
+---------------high stack water mark at loop() task is :  4648
+ button 1 pressed 1 time
+Screen2_1 initialized
+de: go de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+wifi first try 4 seconds
+6
+here i am
+0
+0
+here i am
+ Cant connect to Wifi, Verifying
+       if smart config was manually activated :
+credentials before smart conf
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :wn by Class
+Smart config was NOT
+Waiting for Wifi
+ .  .
+ .  .  .  .  .  .  .  .  .  . ✅ Internet disponible.
+SSID:AIOTRONIC4
+PzS:Ch0c0ai0@
+Wifi connected succesfully 1
+ ********************   Deletion of tasks has started ( making space for more wifi tasks )
+WiFi Connected to : AIOT
+MAC Address: 48:CA:43:33:53:F8
+ *** wifi Connected SUCC
+Before is certified conditionathis is the end of x
+connect to Aws MQTT
+Prueba MACC adding :
+_SUBSCRIBE_CONF_DEFINITIVE IS :
+48:CA:43:33:53:F8/CA01N_conf
+connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+tt finished : 1
+alexafirs0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_con
+Message Payload :  {"mode": 99 }
+ ******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :48:CA:43:33:53:F8_cerco
+48:CA:48:CA:43:33:53:F8_alarma
+48:CA:43:33:53:F8_pgm
+Alexa creation confirmation from task alexa
+JSON docconf : 12
+
+Publish electroconf_publishMessage_retained_heartbeat
+haha
+JSON docconf : 154
+
+Publish from electroconf_publishMessage
+JSON doctro : 100
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+Me"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"tp_zone":0},"other_conf":{"tp_buzzer":1}}
+-------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N_conf
+Message Payload :  {"mode":100}
+-----------------------
+
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 48:CA:43:33:53:F8/CA01N
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":3},"zone":0,"pgm1":1,"pgm2":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+ ******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+ ******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Vr:110.00 % 4095.00 0
+Vr:110.00 % 4095.00 0
+Vr:110.00 % 4095.00 0
+Vr:110.00 % 4095.00 0
