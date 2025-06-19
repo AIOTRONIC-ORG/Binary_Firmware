@@ -1,5 +1,30 @@
 # main.ps1
 
+function ShowMainMenu {
+    do {
+        Clear-Host
+        Write-Host "================================"
+        Write-Host "       Herramientas ESP32"
+        Write-Host "================================"
+        Write-Host "1. Flash"
+        Write-Host "2. Actualizar Firmware y Monitor Serial"
+        Write-Host "3. Imprimir Código QR"
+        Write-Host "4. Seleccionar Modelo de Dispositivo"
+        Write-Host "5. Salir"
+        $choice = Read-Host "Seleccione una opción"
+
+        switch ($choice) {
+            "1" { FlashESP32 }
+            "2" { UpdateFirmwareAndMonitor }
+            "3" { PrintQRCode }
+            "4" { SelectDeviceModel }
+            "5" { return }
+            default { Write-Host "Opción inválida"; Pause }
+        }
+    } while ($true)
+}
+
+
 function Start-ESP32Tool {
     $ErrorActionPreference = "Stop"
 
@@ -41,10 +66,11 @@ function Start-ESP32Tool {
     Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py" -OutFile "print_qr.py"
 
     SelectDeviceModel
+	ShowMainMenu
 }
 
 function SelectDeviceModel {
-    do {
+    while ($true) {
         Clear-Host
         Write-Host "=============================="
         Write-Host "   Seleccionar Modelo de Equipo"
@@ -56,18 +82,19 @@ function SelectDeviceModel {
         $choice = Read-Host "Seleccione una opción"
 
         switch ($choice) {
-            "1" { DownloadFirmware "EA01J" }
-            "2" { DownloadFirmware "CA01N" }
-            "3" { DownloadFirmware "EB01M" }
-            "4" { return }
+            "1" { DownloadFirmware "EA01J"; return }
+            "2" { DownloadFirmware "CA01N"; return }
+            "3" { DownloadFirmware "EB01M"; return }
+            "4" { return }                     # salir sin menú principal
             default { Write-Host "Opción inválida"; Pause }
         }
-    } while ($true)
+    }
 
-    ShowMainMenu
+    ShowMainMenu                              # ← ahora sí se ejecuta
 }
 
-function DownloadFirmware($device) {
+function DownloadFirmware($device) 
+{
     Write-Host "⬇️  Descargando firmware más reciente para $device..."
     $base = "https://github.com/AIOTRONIC-ORG/Binary_Firmware/raw/main/$device"
     Invoke-WebRequest "$base/bootloader.bin" -OutFile "bootloader.bin"
@@ -75,37 +102,15 @@ function DownloadFirmware($device) {
     Invoke-WebRequest "$base/firmware.bin" -OutFile "firmware.bin"
 }
 
-function ShowMainMenu {
-    do {
-        Clear-Host
-        Write-Host "================================"
-        Write-Host "       Herramientas ESP32"
-        Write-Host "================================"
-        Write-Host "1. Flash"
-        Write-Host "2. Actualizar Firmware y Monitor Serial"
-        Write-Host "3. Imprimir Código QR"
-        Write-Host "4. Seleccionar Modelo de Dispositivo"
-        Write-Host "5. Salir"
-        $choice = Read-Host "Seleccione una opción"
-
-        switch ($choice) {
-            "1" { FlashESP32 }
-            "2" { UpdateFirmwareAndMonitor }
-            "3" { PrintQRCode }
-            "4" { SelectDeviceModel }
-            "5" { return }
-            default { Write-Host "Opción inválida"; Pause }
-        }
-    } while ($true)
-}
-
-function FlashESP32 {
+function FlashESP32 
+{
     $port = Read-Host "Ingrese el puerto COM (ej. COM3)"
     & "$venvPython" -m esptool --chip esp32s3 --port $port erase_flash
     Pause
 }
 
-function UpdateFirmwareAndMonitor {
+function UpdateFirmwareAndMonitor 
+{
     $port = Read-Host "Ingrese el puerto COM (ej. COM3)"
     & "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x0 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
     if ($LASTEXITCODE -eq 0) {
@@ -117,7 +122,8 @@ function UpdateFirmwareAndMonitor {
     Pause
 }
 
-function PrintQRCode {
+function PrintQRCode 
+{
     if (-not (Test-Path "mac_qr.png")) {
         Write-Host "⚠️  No se encontró mac_qr.png. Ejecute el monitor serial primero."
     } else {
