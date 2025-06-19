@@ -10,7 +10,8 @@ function ShowMainMenu {
         Write-Host "2. Actualizar Firmware y Monitor Serial"
         Write-Host "3. Imprimir Código QR"
         Write-Host "4. Seleccionar Modelo de Dispositivo"
-        Write-Host "5. Salir"
+        Write-Host "5. Cargar Firmware LOCAL (.bin)"   # ← nueva opción
+        Write-Host "6. Salir"
         $choice = Read-Host "Seleccione una opción"
 
         switch ($choice) {
@@ -18,10 +19,55 @@ function ShowMainMenu {
             "2" { UpdateFirmwareAndMonitor }
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
-            "5" { return }
+            "5" { LoadLocalFirmware }          # ← llama a la nueva función
+            "6" { return }
             default { Write-Host "Opción inválida"; Pause }
         }
     } while ($true)
+}
+
+function LoadLocalFirmware {
+    # Cargar tres binarios locales y flashear el ESP32
+    Add-Type -AssemblyName System.Windows.Forms
+
+    $ofd             = New-Object System.Windows.Forms.OpenFileDialog
+    $ofd.Title       = "Seleccione bootloader.bin, partitions.bin y firmware.bin"
+    $ofd.Filter      = "Archivos binarios (*.bin)|*.bin"
+    $ofd.Multiselect = $true
+
+    if ($ofd.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {
+        Write-Host "⚠️  Operación cancelada."; Pause; return
+    }
+
+    if ($ofd.FileNames.Count -ne 3) {
+        Write-Host "❌ Debe seleccionar exactamente tres archivos .bin."; Pause; return
+    }
+
+    # Identificar cada archivo por su nombre (indiferente a mayúsculas/minúsculas)
+    $boot = $ofd.FileNames | Where-Object { $_ -match '(?i)bootloader\.bin$' }
+    $part = $ofd.FileNames | Where-Object { $_ -match '(?i)partitions\.bin$' }
+    $firm = $ofd.FileNames | Where-Object { $_ -match '(?i)firmware\.bin$'  }
+
+    if (-not ($boot -and $part -and $firm)) {
+        Write-Host "❌ Los archivos deben llamarse bootloader.bin, partitions.bin y firmware.bin."
+        Pause; return
+    }
+
+    $port = Read-Host "Ingrese el puerto COM (ej. COM3)"
+
+    & $venvPython -m esptool --chip esp32s3 --port $port --baud 115200 `
+        --before default_reset --after hard_reset write_flash -z `
+        --flash_mode dio --flash_freq 40m --flash_size detect `
+        0x0      "`"$boot`"" `
+        0x8000   "`"$part`"" `
+        0x10000  "`"$firm`""
+
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "✅ Firmware local cargado correctamente."
+    } else {
+        Write-Host "❌ Error al cargar firmware local."
+    }
+    Pause
 }
 
 

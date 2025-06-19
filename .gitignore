@@ -1,0 +1,101 @@
+*aiotronic_env
+*aiotronic_env/*
+# Default ignored files
+.idea
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+venv
+
+
+*.vscode 
+# *.pio
+
+########################
+# Ignorar todo dentro de .pio
+.pio/*
+
+
+# Pero incluir estos archivos binarios específicos
+# !.pio/
+# no usar esto, no funciona, mejor un script py que duplique los binarios a otra ruta
+# que no este ignorada como .pio (pesa 500MB y por eso debe ser ignorada siempre)
+# !.pio/build/
+# !.pio/build/AIO-ELEC-esp32-s3-devkitc-1/
+# !.pio/build/AIO-ELEC-esp32-s3-devkitc-1/firmware.bin
+# !.pio/build/AIO-ELEC-esp32-s3-devkitc-1/bootloader.bin
+# !.pio/build/AIO-ELEC-esp32-s3-devkitc-1/partitions.bin
+########################
+
+**/dependencies/ 
+
+#folders
+# is for any jerarqui including 0 level, this is for folders
+**/untracked/
+# all 
+*untracked*
+
+# **/generacion.raw
+# debug/**/logs/
+
+# El patrón **/*-backups/ ignora cualquier directorio cuyo nombre termine con -backups, independientemente de dónde se encuentre en la estructura del proyecto. 
+# -backups es generado automaticamente por kicad al abrir un .kicad_pro
+**/*-backups/
+*-backups/
+
+**/Libraries/
+*Libraries*
+**/Lib/
+*Lib*
+
+**/imagen_unida
+*imagen_unida*
+**/imagen_unida/
+
+D:/Proyectos/AIOTRONIC/PCB+Programming/EA01J/03tu/pcb/EA01J_03tu/Libraries
+D:/Proyectos/AIOTRONIC\PCB+Programming/EA01J/03tu/pcb/EA01J_03tu/Lib
+
+# all folders tha end in -backups
+# 01C3/pcb/pcb/01C3/*-backups/
+# 02S3/pcb/pcb/02S3/*-backups/
+
+# 01C3/pcb/pcb/EA01J-01C3/01C3-backups/
+# 01C3/pcb/pcb/Kicad-esp32c3/EL01C-backups/
+# 01C3/pcb/pcb/Kicad-esp32c3agl/EL01CA-backups/
+# 01C3/pcb/pcb/Kicad-rp2040/EL01R-backups/
+# 01C3/pcb/pcb/Kicad-atmega328P/EL01AT328-backups/
+# 01C3/pcb/pcb/EL01C-L-2023-12-29_ESP32-C3/EL01C_L-backups/
+
+# 02S3/pcb/pcb/02S3/EA01J_02S3_PCBBoardDesign-backups/
+# 02S3/pcb/pcb/Kicad-esp32c3agl/EL01CA-backups/
+# 02S3/pcb/pcb/Kicad-rp2040/EL01R-backups/
+# 02S3/pcb/pcb/Kicad-atmega328P/EL01AT328-backups/
+# 02S3/pcb/pcb/EL01C-L-2023-12-29_ESP32-C3/EL01C_L-backups/
+
+#cualquier archivo en el arbol total que contenga estos nombre NO DEBE SER IGNORADO
+#es clave para el guardado de librerias anadidas, shortcuts puestos, direcciones.
+!*fp-lib-table*
+!*sym-lib-table*
+# Wont be ignored even if sons subdirectories are in this .gitignore
+!pcb/Kicad-esp12f/EL01F-backups/fp-lib-table
+!pcb/Kicad-esp12f/EL01F-backups/sym-lib-table
+
+#in any jerarquy
+*.raw
+*.kicad_prl
+*.lck
+# 01C3/pcb/pcb/Simulation/generacion.raw
+
+
+# 01C3/code/firmware/arduino_PIO/ESP32_C3_V4/dependencies
+# 01C3/code/firmware/arduino_PIO/ESP32_C3_V5_probes/dependencies
+# 01C3/code/firmware/arduino_PIO/ESP32_C3_V6_probes/dependencies
+
+# 02S3/pcb/pcb/Simulation/generacion.raw
+# 02S3/code/firmware/arduino_PIO/ESP32_C3_V4/dependencies
+# 02S3/code/firmware/arduino_PIO/ESP32_C3_V5_probes/dependencies
+# 02S3/code/firmware/arduino_PIO/ESP32_C3_V6_probes/dependencies
