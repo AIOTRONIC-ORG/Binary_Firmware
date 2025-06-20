@@ -11,7 +11,8 @@ function ShowMainMenu {
         Write-Host "3. Imprimir Código QR"
         Write-Host "4. Seleccionar Modelo de Dispositivo"
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # ← nueva opción
-        Write-Host "6. Salir"
+		Write-Host "6. Serial monitor "   # ← nueva opción
+        Write-Host "7. Salir"
         $choice = Read-Host "Seleccione una opción"
 
         switch ($choice) {
@@ -20,10 +21,58 @@ function ShowMainMenu {
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
             "5" { LoadLocalFirmware }          # ← llama a la nueva función
-            "6" { return }
+			"6" { SerialMonitor }
+            "7" { return }
             default { Write-Host "Opción inválida"; Pause }
         }
     } while ($true)
+}
+
+function SerialMonitor {
+    $port = SelectCOMPort
+    if (-not $port) { return }
+
+    Write-Host "\n▶️  Iniciando monitor serial en $port...\n"
+    & $script:venvPython "monitor_serial.py" $port
+
+    Pause
+}
+
+function SelectCOMPort {
+    try {
+        # Enumeración rápida vía Win32_PnPEntity filtrada por “(COM”.
+        $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
+                 Sort-Object Caption
+    } catch { $ports = @() }
+
+    # Fallback minimalista si WMI tarda demasiado
+    if (-not $ports) {
+        $ports = [System.IO.Ports.SerialPort]::GetPortNames() |
+                 ForEach-Object { @{ DeviceID = $_ ; Caption = $_ } }
+    }
+
+    if (-not $ports) {
+        Write-Host "⚠️  No hay puertos COM."; Pause; return $null
+    }
+	
+    Write-Host "`nPuertos COM disponibles:"
+    for ($i = 0; $i -lt $ports.Count; $i++) {
+        $p   = $ports[$i]
+        $m   = [regex]::Match($p.Caption, '\(COM\d+\)')   # → “(COM13)”
+        if (-not $m.Success) { continue }                # ignora sin COM
+        $com = $m.Value.Trim('()')                       # → “COM13”
+        $usb = if ($p.Caption -match '(USB|usb)') { '🔌' } else { '' }
+        Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $p.Caption, $usb)
+        $ports[$i] | Add-Member -NotePropertyName ComPort -NotePropertyValue $com -Force
+    }
+
+    $sel = Read-Host "Seleccione un puerto por índice"
+    $idx = 0
+    if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
+        Write-Host "❌ Índice inválido."; Pause; return $null
+    }
+    return $ports[$idx-1].ComPort      # ← ahora devuelve “COM13”
+
 }
 
 function LoadLocalFirmware {
@@ -81,6 +130,7 @@ function Start-ESP32Tool {
     $venvScripts = Join-Path $venvPath "Scripts"
     $venvPython = Join-Path $venvScripts "python.exe"
     $venvPip = Join-Path $venvScripts "pip.exe"
+	$script:venvPython = $venvPython 
 
     $tools = @("esptool", "pyserial", "qrcode[pil]", "Pillow", "pywin32")
 
