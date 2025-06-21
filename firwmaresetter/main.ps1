@@ -28,6 +28,37 @@ function ShowMainMenu {
     } while ($true)
 }
 
+function Install-EmbeddedPython {
+    param(
+        [string]$Version = "3.11.4",
+        [string]$BaseDir = (Join-Path $PSScriptRoot "embedded_py")
+    )
+
+    $zipName   = "python-$Version-embed-amd64.zip"
+    $zipUrl    = "https://www.python.org/ftp/python/$Version/$zipName"
+    $pythonDir = Join-Path $BaseDir "py$Version"
+    $pythonExe = Join-Path $pythonDir "python.exe"
+
+    if (-not (Test-Path $pythonExe)) {
+        Write-Host "⬇️  Descargando Python $Version (embeddable)..."
+        New-Item -ItemType Directory -Force -Path $BaseDir | Out-Null
+        Invoke-WebRequest $zipUrl -OutFile $zipName
+        Expand-Archive $zipName -DestinationPath $pythonDir
+        Remove-Item $zipName
+
+        # 1) Activa ‘import site’
+        (Get-Content "$pythonDir\python311._pth") |
+			ForEach-Object { $_ -replace '^#\s*import\s+site', 'import site' } |
+			Set-Content "$pythonDir\python311._pth"
+
+        # 2) Añade pip
+        & $pythonExe -m ensurepip -U
+        & $pythonExe -m pip install --upgrade pip
+    }
+    return $pythonExe         # ruta absoluta al intérprete portable
+}
+
+
 function SerialMonitor {
     $port = SelectCOMPort
     if (-not $port) { return }
@@ -123,47 +154,31 @@ function LoadLocalFirmware {
 function Start-ESP32Tool {
     $ErrorActionPreference = "Stop"
 
-    $pythonVersion = "3.11.4"
-    $pythonInstaller = "python-$pythonVersion-amd64.exe"
-    $venvName = "aiotronic_env"
-    $venvPath = Join-Path $PSScriptRoot $venvName
-    $venvScripts = Join-Path $venvPath "Scripts"
-    $venvPython = Join-Path $venvScripts "python.exe"
-    $venvPip = Join-Path $venvScripts "pip.exe"
-	$script:venvPython = $venvPython 
-
-    $tools = @("esptool", "pyserial", "qrcode[pil]", "Pillow", "pywin32")
-
-    if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
-        Write-Host "🔧 Python no está instalado. Instalando Python $pythonVersion..."
-        Invoke-WebRequest -Uri "https://www.python.org/ftp/python/$pythonVersion/$pythonInstaller" -OutFile $pythonInstaller
-        Start-Process -Wait -FilePath ".\$pythonInstaller" -ArgumentList "/quiet InstallAllUsers=1 PrependPath=1 Include_test=0"
-        Remove-Item $pythonInstaller
-    } else {
-        Write-Host "✅ Python ya está instalado."
-    }
+    # Siempre usa TU copia embebida ↴
+    $embeddedPy = Install-EmbeddedPython "3.11.4"
+    $venvPath   = Join-Path $PSScriptRoot "aiotronic_env"
 
     if (-not (Test-Path $venvPath)) {
-        Write-Host "🛠️  Creando entorno virtual..."
-        python -m venv $venvPath
-        if (-not $?) {
-            Write-Error "❌ Error creando el entorno virtual."
-            return
-        }
-        attrib +h $venvPath
+        Write-Host "🛠️  Creando entorno virtual aislado..."
+        & $embeddedPy -m venv $venvPath
+        attrib +h $venvPath     # ocúltalo para no ensuciar la carpeta
     }
 
-    & "$venvScripts\activate.ps1"
+    $venvPython  = Join-Path $venvPath "Scripts\python.exe"
+    $venvPip     = Join-Path $venvPath "Scripts\pip.exe"
+    $script:venvPython = $venvPython   # ← resto del script lo usará
 
     & $venvPython -m pip install --upgrade pip
-    & $venvPip install $tools
+    & $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
 
+    # Descarga/actualiza utilidades auxiliares
     Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
-    Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py" -OutFile "print_qr.py"
+    Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py"      -OutFile "print_qr.py"
 
     SelectDeviceModel
-	ShowMainMenu
+    ShowMainMenu
 }
+
 
 function SelectDeviceModel {
     while ($true) {
