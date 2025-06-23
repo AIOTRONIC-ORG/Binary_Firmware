@@ -8,7 +8,7 @@ function ShowMainMenu {
         Write-Host "       Herramientas ESP32"
         Write-Host "================================"
         Write-Host "1. Flash"
-        Write-Host "2. Actualizar Firmware y Monitor Serial"
+        Write-Host "2. Actualizar Firmware desde SERVIDOR y Monitor Serial"
         Write-Host "3. Imprimir Codigo QR"
         Write-Host "4. Seleccionar Modelo de Dispositivo"
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
@@ -18,7 +18,7 @@ function ShowMainMenu {
 
         switch ($choice) {
             "1" { FlashESP32 }
-            "2" { UpdateFirmwareAndMonitor }
+            "2" { SelectDeviceModel; UpdateFirmwareAndMonitor }
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
             "5" { LoadLocalFirmware }          # llama a la nueva funcion
@@ -67,6 +67,11 @@ function Install-EmbeddedPython {
 
 
 function SerialMonitor {
+	
+	param(
+        [string]$port
+    )
+	
     $port = SelectCOMPort
     if (-not $port) { return }
 
@@ -140,7 +145,7 @@ function LoadLocalFirmware {
         Pause; return
     }
 
-    $port = Read-Host "Ingrese el puerto COM (ej. COM3)"
+    $port = SelectCOMPort
 
     & $venvPython -m esptool --chip esp32s3 --port $port --baud 115200 `
         --before default_reset --after hard_reset write_flash -z `
@@ -194,7 +199,7 @@ function Start-ESP32Tool {
     Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
     Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py"      -OutFile "print_qr.py"
 
-    SelectDeviceModel
+    
     ShowMainMenu
 }
 
@@ -241,7 +246,8 @@ function FlashESP32
 
 function UpdateFirmwareAndMonitor 
 {
-    $port = Read-Host "Ingrese el puerto COM (ej. COM3)"
+
+    $port = SelectCOMPort
     & "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x0 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✅ Firmware actualizado exitosamente. Esperando conexión y MAC..."
@@ -250,6 +256,7 @@ function UpdateFirmwareAndMonitor
         Write-Host "❌ Error actualizando firmware."
     }
     Pause
+	SerialMonitor($port)
 }
 
 function PrintQRCode 
