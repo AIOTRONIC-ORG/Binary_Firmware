@@ -239,7 +239,7 @@ function DownloadFirmware($device)
 
 function FlashESP32 
 {
-    $port = Read-Host "Ingrese el puerto COM (ej. COM3)"
+    $port = SelectCOMPort
     & "$venvPython" -m esptool --chip esp32s3 --port $port erase_flash
     Pause
 }
