@@ -1,4 +1,5 @@
 # main.ps1
+#no tildes en este codigo para maxima compatiblidad con all powershell versions
 
 function ShowMainMenu {
     do {
@@ -8,12 +9,12 @@ function ShowMainMenu {
         Write-Host "================================"
         Write-Host "1. Flash"
         Write-Host "2. Actualizar Firmware y Monitor Serial"
-        Write-Host "3. Imprimir Código QR"
+        Write-Host "3. Imprimir Codigo QR"
         Write-Host "4. Seleccionar Modelo de Dispositivo"
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # ← nueva opción
 		Write-Host "6. Serial monitor "   # ← nueva opción
         Write-Host "7. Salir"
-        $choice = Read-Host "Seleccione una opción"
+        $choice = Read-Host "Seleccione una opcion"
 
         switch ($choice) {
             "1" { FlashESP32 }
@@ -23,7 +24,7 @@ function ShowMainMenu {
             "5" { LoadLocalFirmware }          # ← llama a la nueva función
 			"6" { SerialMonitor }
             "7" { return }
-            default { Write-Host "Opción inválida"; Pause }
+            default { Write-Host "Opcion invalida"; Pause }
         }
     } while ($true)
 }
@@ -52,8 +53,14 @@ function Install-EmbeddedPython {
 			Set-Content "$pythonDir\python311._pth"
 
         # 2) Añade pip
-        & $pythonExe -m ensurepip -U
-        & $pythonExe -m pip install --upgrade pip
+        #& $pythonExe -m ensurepip -U
+        #& $pythonExe -m pip install --upgrade pip
+		# 2) Añade pip (el embeddable no incluye ensurepip)
+		$gp = Join-Path $pythonDir 'get-pip.py'
+		Invoke-WebRequest 'https://bootstrap.pypa.io/get-pip.py' -OutFile $gp
+		& $pythonExe $gp -q        # instala pip en el propio Python embebido
+		Remove-Item $gp
+
     }
     return $pythonExe         # ruta absoluta al intérprete portable
 }
@@ -71,7 +78,7 @@ function SerialMonitor {
 
 function SelectCOMPort {
     try {
-        # Enumeración rápida vía Win32_PnPEntity filtrada por “(COM”.
+        # Enumeración rapida via Win32_PnPEntity filtrada por “(COM”.
         $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
                  Sort-Object Caption
     } catch { $ports = @() }
@@ -100,7 +107,7 @@ function SelectCOMPort {
     $sel = Read-Host "Seleccione un puerto por índice"
     $idx = 0
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
-        Write-Host "❌ Índice inválido."; Pause; return $null
+        Write-Host " xxx Indice invalido."; Pause; return $null
     }
     return $ports[$idx-1].ComPort      # ← ahora devuelve “COM13”
 
@@ -116,11 +123,11 @@ function LoadLocalFirmware {
     $ofd.Multiselect = $true
 
     if ($ofd.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {
-        Write-Host "⚠️  Operación cancelada."; Pause; return
+        Write-Host "⚠️  Operacion cancelada."; Pause; return
     }
 
     if ($ofd.FileNames.Count -ne 3) {
-        Write-Host "❌ Debe seleccionar exactamente tres archivos .bin."; Pause; return
+        Write-Host " xxx Debe seleccionar exactamente tres archivos .bin."; Pause; return
     }
 
     # Identificar cada archivo por su nombre (indiferente a mayúsculas/minúsculas)
@@ -156,20 +163,32 @@ function Start-ESP32Tool {
 
     # Siempre usa TU copia embebida ↴
     $embeddedPy = Install-EmbeddedPython "3.11.4"
-    $venvPath   = Join-Path $PSScriptRoot "aiotronic_env"
+	
+	
+    #$venvPath   = Join-Path $PSScriptRoot "aiotronic_env"
 
-    if (-not (Test-Path $venvPath)) {
-        Write-Host "🛠️  Creando entorno virtual aislado..."
-        & $embeddedPy -m venv $venvPath
-        attrib +h $venvPath     # ocúltalo para no ensuciar la carpeta
-    }
+    #if (-not (Test-Path $venvPath)) {
+     #   Write-Host "🛠️  Creando entorno virtual aislado..."
+      #  & $embeddedPy -m venv $venvPath
+       # attrib +h $venvPath     # ocúltalo para no ensuciar la carpeta
+    #}
 
-    $venvPython  = Join-Path $venvPath "Scripts\python.exe"
-    $venvPip     = Join-Path $venvPath "Scripts\pip.exe"
+    #$venvPython  = Join-Path $venvPath "Scripts\python.exe"
+    #$venvPip     = Join-Path $venvPath "Scripts\pip.exe"
+	
+	$script:venvPython = Install-EmbeddedPython "3.11.4"   # usamos el Python embebido tal cual
+
+	
+	
     $script:venvPython = $venvPython   # ← resto del script lo usará
 
-    & $venvPython -m pip install --upgrade pip
-    & $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
+    #& $venvPython -m pip install --upgrade pip
+    #& $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
+	
+	& $script:venvPython -m pip install --upgrade pip
+	& $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
+
+
 
     # Descarga/actualiza utilidades auxiliares
     Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
@@ -197,7 +216,7 @@ function SelectDeviceModel {
             "2" { DownloadFirmware "CA01N"; return }
             "3" { DownloadFirmware "EB01M"; return }
             "4" { return }                     # salir sin menú principal
-            default { Write-Host "Opción inválida"; Pause }
+            default { Write-Host "Opcion invalida"; Pause }
         }
     }
 
@@ -236,7 +255,7 @@ function UpdateFirmwareAndMonitor
 function PrintQRCode 
 {
     if (-not (Test-Path "mac_qr.png")) {
-        Write-Host "⚠️  No se encontró mac_qr.png. Ejecute el monitor serial primero."
+        Write-Host "⚠️  No se encontro mac_qr.png. Ejecute el monitor serial primero."
     } else {
         & "$venvPython" print_qr.py
     }
