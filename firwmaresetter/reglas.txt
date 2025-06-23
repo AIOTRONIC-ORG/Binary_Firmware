@@ -1,1 +1,19 @@
-El bat debe ejecutarse fuera de esta carpeta y la del repositorio, pues al ejecutarse generan archivos ocultos que no se quiere que se suban al repositorio,ademas que solo sirven para la direccion de la pc en la que se ejecuta por lo que serian invalido en otras computadoras , llegando a generar problemas de ejecucion en otras pcs por testeos hechos
+2) antes de hacer un push se debe hacer un
+Set-Content main.ps1 -Encoding UTF8BOM -Value (Get-Content main.ps1 -Raw)
+para habilitar compatabilida con todas las versiones de powershell
+en otras computadoras, y tambien se debe manualmente asegurar que 
+no haya ninguna tilde en el codigo (incompatbilidad con versiones clasicas de powershell),
+ojo : en powershell 7 estos problemas no ocurren sin embargo no todos los
+usuarios tienen esta versión.
+
+1) el .git ignore debe contener tanto a la carpeta embedded_py(version moderna)
+y a aiotronic_env(version antigua) de lo contrario ocurren errores fatales
+en compilacion del archivo main.ps1
+
+antiguo : 
+El bat debe ejecutarse fuera de esta carpeta y la del repositorio, pues
+ al ejecutarse generan archivos ocultos que no se quiere que se suban al
+  repositorio,ademas que solo sirven para la direccion de la pc en
+   la que se ejecuta por lo que serian invalido en otras computadoras ,
+    llegando a generar
+    problemas de ejecucion en otras pcs por testeos hechos
