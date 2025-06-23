@@ -1,6 +1,10 @@
 ﻿# main.ps1
 #no tildes en este codigo para maxima compatiblidad con all powershell versions
 
+# -- al principio de main.ps1 --
+$script:SelectedDevice = $null   # guarda el modelo elegido
+
+
 function ShowMainMenu {
     do {
         Clear-Host
@@ -217,9 +221,10 @@ function SelectDeviceModel {
         $choice = Read-Host "Seleccione una opción"
 
         switch ($choice) {
-            "1" { DownloadFirmware "EA01J"; return }
-            "2" { DownloadFirmware "CA01N"; return }
-            "3" { DownloadFirmware "EB01M"; return }
+            "1" { $script:SelectedDevice = "EA01J"; DownloadFirmware $script:SelectedDevice; return }
+			"2" { $script:SelectedDevice = "CA01N"; DownloadFirmware $script:SelectedDevice; return }
+			"3" { $script:SelectedDevice = "EB01M"; DownloadFirmware $script:SelectedDevice; return }
+
             "4" { return }                     # salir sin menú principal
             default { Write-Host "Opcion invalida"; Pause }
         }
@@ -230,11 +235,16 @@ function SelectDeviceModel {
 
 function DownloadFirmware($device) 
 {
-    Write-Host "⬇️  Descargando firmware más reciente para $device..."
+    Write-Host " Descargando firmware más reciente para $device..."
     $base = "https://github.com/AIOTRONIC-ORG/Binary_Firmware/raw/main/$device"
-    Invoke-WebRequest "$base/bootloader.bin" -OutFile "bootloader.bin"
-    Invoke-WebRequest "$base/partitions.bin" -OutFile "partitions.bin"
-    Invoke-WebRequest "$base/firmware.bin" -OutFile "firmware.bin"
+	
+	$dest = Join-Path "./binariesServidor" $device
+	New-Item -ItemType Directory -Force -Path $dest | Out-Null
+
+    Invoke-WebRequest "$base/bootloader.bin" -OutFile "$dest/bootloader.bin"
+    Invoke-WebRequest "$base/partitions.bin" -OutFile "$dest/partitions.bin"
+    Invoke-WebRequest "$base/firmware.bin" -OutFile "$dest/firmware.bin"
+	 Write-Host " Descargado en $dest"
 }
 
 function FlashESP32 
@@ -246,9 +256,29 @@ function FlashESP32
 
 function UpdateFirmwareAndMonitor 
 {
+	
+	if (-not $script:SelectedDevice) {
+	Write-Host "⚠️  Primero seleccione un modelo de dispositivo (opción 4 del menú)."
+	Pause; return
+    }
 
+    $baseDir = Join-Path "./binariesServidor" $script:SelectedDevice
+    $boot = Join-Path $baseDir "bootloader.bin"
+    $part = Join-Path $baseDir "partitions.bin"
+    $firm = Join-Path $baseDir "firmware.bin"
+	
     $port = SelectCOMPort
-    & "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x0 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
+    
+	#& "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x0 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
+	
+	& "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 `
+	--before default_reset --after hard_reset write_flash -z `
+	--flash_mode dio --flash_freq 40m --flash_size detect `
+	0x0      $boot `
+	0x8000   $part `
+	0x10000  $firm
+
+
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✅ Firmware actualizado exitosamente. Esperando conexión y MAC..."
         & "$venvPython" monitor_serial.py $port
