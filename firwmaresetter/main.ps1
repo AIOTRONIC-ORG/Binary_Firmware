@@ -1,4 +1,4 @@
-# main.ps1
+﻿# main.ps1
 #no tildes en este codigo para maxima compatiblidad con all powershell versions
 
 function ShowMainMenu {
@@ -11,8 +11,8 @@ function ShowMainMenu {
         Write-Host "2. Actualizar Firmware y Monitor Serial"
         Write-Host "3. Imprimir Codigo QR"
         Write-Host "4. Seleccionar Modelo de Dispositivo"
-        Write-Host "5. Cargar Firmware LOCAL (.bin)"   # ← nueva opción
-		Write-Host "6. Serial monitor "   # ← nueva opción
+        Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
+		Write-Host "6. Serial monitor "   #  nueva opcion
         Write-Host "7. Salir"
         $choice = Read-Host "Seleccione una opcion"
 
@@ -21,7 +21,7 @@ function ShowMainMenu {
             "2" { UpdateFirmwareAndMonitor }
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
-            "5" { LoadLocalFirmware }          # ← llama a la nueva función
+            "5" { LoadLocalFirmware }          # llama a la nueva funcion
 			"6" { SerialMonitor }
             "7" { return }
             default { Write-Host "Opcion invalida"; Pause }
@@ -41,7 +41,7 @@ function Install-EmbeddedPython {
     $pythonExe = Join-Path $pythonDir "python.exe"
 
     if (-not (Test-Path $pythonExe)) {
-        Write-Host "⬇️  Descargando Python $Version (embeddable)..."
+        Write-Host " Descargando Python $Version (embeddable)..."
         New-Item -ItemType Directory -Force -Path $BaseDir | Out-Null
         Invoke-WebRequest $zipUrl -OutFile $zipName
         Expand-Archive $zipName -DestinationPath $pythonDir
@@ -264,3 +264,5 @@ function PrintQRCode
 
 # Ejecutar herramienta
 Start-ESP32Tool
+
+
