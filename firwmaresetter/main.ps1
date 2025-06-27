@@ -85,18 +85,48 @@ function SerialMonitor {
     Pause
 }
 
+function Get-Esp32Mac {
+    param(
+        [string]$Com,
+        [string]$Py = $script:venvPython
+    )
+    try {
+        $out = & $Py -m esptool --chip auto --port $Com --baud 115200 `
+                read_mac 2>$null | Select-String -Pattern 'MAC:\s*([0-9A-F:]{17})'
+        if ($out) { return $out.Matches[0].Groups[1].Value }
+    } catch { }
+    return ''
+}
+
+
 function SelectCOMPort {
     try {
         # Enumeración rapida via Win32_PnPEntity filtrada por “(COM”.
         $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
                  Sort-Object Caption
     } catch { $ports = @() }
+	
+	if (-not $ports) {
+	$ports = [System.IO.Ports.SerialPort]::GetPortNames() |
+			 ForEach-Object { @{ DeviceID = $_ ; Caption = $_ } }
+	}
 
+	
+	$jobs = @()
+	foreach ($p in $ports) {
+	$m = [regex]::Match($p.Caption,'\(COM\d+\)')
+	if (-not $m.Success) { continue }
+	$com = $m.Value.Trim('()')
+	$jobs += Start-Job -Name $com -ArgumentList $com -ScriptBlock {
+		param($c)
+		& $using:script:venvPython -m esptool --chip auto --port $c --baud 115200 `
+			read_mac 2>$null |
+		Select-String 'MAC:' |
+		ForEach-Object { $_.Line -replace '.*MAC:\s*','' }
+	}
+	}
+	
     # Fallback minimalista si WMI tarda demasiado
-    if (-not $ports) {
-        $ports = [System.IO.Ports.SerialPort]::GetPortNames() |
-                 ForEach-Object { @{ DeviceID = $_ ; Caption = $_ } }
-    }
 
     if (-not $ports) {
         Write-Host "⚠️  No hay puertos COM."; Pause; return $null
@@ -112,6 +142,28 @@ function SelectCOMPort {
         Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $p.Caption, $usb)
         $ports[$i] | Add-Member -NotePropertyName ComPort -NotePropertyValue $com -Force
     }
+	
+	if ($jobs) { Wait-Job $jobs | Out-Null }
+	
+	#Wait-Job $jobs | Out-Null
+	$macs = @{}
+	foreach ($j in $jobs) {
+	$macs[$j.Name] = (Receive-Job $j | Select-Object -First 1)
+	Remove-Job $j
+	}
+
+	Write-Host "`nPuertos con MAC:"
+	for ($i = 0; $i -lt $ports.Count; $i++) {
+	$p   = $ports[$i]
+	$m   = [regex]::Match($p.Caption,'\(COM\d+\)')
+	if (-not $m.Success) { continue }
+	$com = $m.Value.Trim('()')
+	$usb = if ($p.Caption -match '(USB|usb)') { '🔌' } else { '' }
+	$mac = $macs[$com]
+	$macText = if ($mac) { "MAC $mac" } else { "sin MAC" }
+	Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $macText, $usb)
+	}
+
 
     $sel = Read-Host "Seleccione un puerto por índice"
     $idx = 0
