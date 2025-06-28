@@ -100,79 +100,111 @@ function Get-Esp32Mac {
 
 
 function SelectCOMPort {
+
+    <#
+    Versión depurada:
+
+    • Une la salida de *esptool* en una sola cadena antes de aplicar -match
+      (con un array el autovariable **$Matches** no se rellenaba y la MAC
+      quedaba vacía).
+    • Mantiene la trazabilidad:  ✅ muestra la MAC encontrada, ✗ muestra el
+      último mensaje de error.
+    • Con -Verbose imprime la salida completa de *esptool*.
+    #>
+
+    param(
+        [switch]$Verbose
+    )
+
+    # 1) Enumerar puertos
     try {
-        # Enumeración rapida via Win32_PnPEntity filtrada por “(COM”.
         $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
                  Sort-Object Caption
     } catch { $ports = @() }
-	
-	if (-not $ports) {
-	$ports = [System.IO.Ports.SerialPort]::GetPortNames() |
-			 ForEach-Object { @{ DeviceID = $_ ; Caption = $_ } }
-	}
-
-	
-	$jobs = @()
-	foreach ($p in $ports) {
-	$m = [regex]::Match($p.Caption,'\(COM\d+\)')
-	if (-not $m.Success) { continue }
-	$com = $m.Value.Trim('()')
-	$jobs += Start-Job -Name $com -ArgumentList $com -ScriptBlock {
-		param($c)
-		& $using:script:venvPython -m esptool --chip auto --port $c --baud 115200 `
-			read_mac 2>$null |
-		Select-String 'MAC:' |
-		ForEach-Object { $_.Line -replace '.*MAC:\s*','' }
-	}
-	}
-	
-    # Fallback minimalista si WMI tarda demasiado
 
     if (-not $ports) {
-        Write-Host "⚠️  No hay puertos COM."; Pause; return $null
+        $ports = [System.IO.Ports.SerialPort]::GetPortNames() |
+                 ForEach-Object { @{ DeviceID = $_ ; Caption = $_ } }
     }
-	
+    if (-not $ports) { Write-Host "⚠️  No se encontraron puertos COM."; Pause; return $null }
+
+    # 2) Filtrar puertos válidos
+    $comRegex        = '\(COM\d+\)'
+    $comPortsToCheck = @()
+    foreach ($p in $ports) {
+        if ($p.Caption -match 'Bluetooth') { continue }        # opcional
+        $m = [regex]::Match($p.Caption, $comRegex)
+        if ($m.Success) { $comPortsToCheck += $m.Value.Trim('()') }
+    }
+
+    # 3) Leer MACs con esptool
+    $macs  = @{}   # COM → MAC
+    $fails = @{}   # COM → motivo
+
+    if ($comPortsToCheck) {
+        Write-Host "`n🔍 Leyendo MACs de puertos: $($comPortsToCheck -join ', ')..."
+        foreach ($com in $comPortsToCheck) {
+
+            Write-Host ("↳ Probing {0,-5}…" -f $com) -NoNewline
+
+            $out = & $script:venvPython -m esptool `
+                     --chip auto --port $com --baud 115200 `
+                     --before default_reset --after no_reset `
+                     --connect-attempts 5 read_mac 2>&1
+
+            if ($Verbose) { $out | ForEach-Object { Write-Host "    $_" } }
+
+            $outStr = $out -join "`n"          # ← clave: unir líneas
+            if ($outStr -match 'MAC:\s*([0-9A-Fa-f:]{2}(?::[0-9A-Fa-f]{2}){5})') {
+                $macs[$com] = $Matches[1]
+                Write-Host "  ✅ $($macs[$com])"
+            } else {
+                $last = ($out | Select-Object -Last 1).Trim()
+                $fails[$com] = if ($last) { $last } else { "Sin respuesta" }
+                Write-Host "  ✗ ($last)"
+            }
+        }
+    }
+
+    # 4) Mostrar tablas
     Write-Host "`nPuertos COM disponibles:"
     for ($i = 0; $i -lt $ports.Count; $i++) {
         $p   = $ports[$i]
-        $m   = [regex]::Match($p.Caption, '\(COM\d+\)')   # → “(COM13)”
-        if (-not $m.Success) { continue }                # ignora sin COM
-        $com = $m.Value.Trim('()')                       # → “COM13”
+        $m   = [regex]::Match($p.Caption, $comRegex)
+        if (-not $m.Success) { continue }
+        $com = $m.Value.Trim('()')
         $usb = if ($p.Caption -match '(USB|usb)') { '🔌' } else { '' }
         Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $p.Caption, $usb)
         $ports[$i] | Add-Member -NotePropertyName ComPort -NotePropertyValue $com -Force
     }
-	
-	if ($jobs) { Wait-Job $jobs | Out-Null }
-	
-	#Wait-Job $jobs | Out-Null
-	$macs = @{}
-	foreach ($j in $jobs) {
-	$macs[$j.Name] = (Receive-Job $j | Select-Object -First 1)
-	Remove-Job $j
-	}
 
-	Write-Host "`nPuertos con MAC:"
-	for ($i = 0; $i -lt $ports.Count; $i++) {
-	$p   = $ports[$i]
-	$m   = [regex]::Match($p.Caption,'\(COM\d+\)')
-	if (-not $m.Success) { continue }
-	$com = $m.Value.Trim('()')
-	$usb = if ($p.Caption -match '(USB|usb)') { '🔌' } else { '' }
-	$mac = $macs[$com]
-	$macText = if ($mac) { "MAC $mac" } else { "sin MAC" }
-	Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $macText, $usb)
-	}
+    Write-Host "`nPuertos con MAC / error:"
+    for ($i = 0; $i -lt $ports.Count; $i++) {
+        $p   = $ports[$i]
+        $m   = [regex]::Match($p.Caption, $comRegex)
+        if (-not $m.Success) { continue }
+        $com = $m.Value.Trim('()')
+        $usb = if ($p.Caption -match '(USB|usb)') { '🔌' } else { '' }
 
+        if ($macs.ContainsKey($com)) {
+            $info = "MAC $($macs[$com]) ✅"
+        } elseif ($fails.ContainsKey($com)) {
+            $info = "error: $($fails[$com])"
+        } else {
+            $info = "sin intento"
+        }
+        Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $info, $usb)
+    }
 
-    $sel = Read-Host "Seleccione un puerto por índice"
+    # 5) Selección del usuario
+    $sel = Read-Host "`nSeleccione un puerto por índice"
     $idx = 0
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
-        Write-Host " xxx Indice invalido."; Pause; return $null
+        Write-Host "❌ Índice inválido."; Pause; return $null
     }
-    return $ports[$idx-1].ComPort      # ← ahora devuelve “COM13”
-
+    return $ports[$idx-1].ComPort
 }
+
 
 function LoadLocalFirmware {
     # Cargar tres binarios locales y flashear el ESP32
