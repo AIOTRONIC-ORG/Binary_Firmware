@@ -18,6 +18,8 @@ function ShowMainMenu {
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
 		Write-Host "6. Serial monitor "   #  nueva opcion
         Write-Host "7. Salir"
+		Write-Host "8. Resetear a modo fabrica (eliminar Python embebido)"
+
         $choice = Read-Host "Seleccione una opcion"
 
         switch ($choice) {
@@ -28,10 +30,32 @@ function ShowMainMenu {
             "5" { LoadLocalFirmware }          # llama a la nueva funcion
 			"6" { SerialMonitor }
             "7" { return }
+			"8" { ResetEmbeddedPython }
             default { Write-Host "Opcion invalida"; Pause }
         }
     } while ($true)
 }
+
+function ResetEmbeddedPython {
+    $embedDir = Join-Path $PSScriptRoot "embedded_py"
+    if (Test-Path $embedDir) {
+        try {
+            Remove-Item -Path $embedDir -Recurse -Force
+            Write-Host "Python embebido eliminado correctamente."
+        } catch {
+            Write-Host "Error eliminando la carpeta embebida: $($_.Exception.Message)"
+            Pause
+            return
+        }
+    } else {
+        Write-Host "No hay instalacion embebida para eliminar."
+    }
+    Write-Host "La terminal se cerrara ahora para completar el reseteo..."
+    Start-Sleep -Seconds 2
+    Stop-Process -Id $PID
+}
+
+
 
 function Install-EmbeddedPython {
     param(
@@ -255,40 +279,40 @@ function LoadLocalFirmware {
 function Start-ESP32Tool {
     $ErrorActionPreference = "Stop"
 
-    # Siempre usa TU copia embebida ↴
-    $embeddedPy = Install-EmbeddedPython "3.11.4"
-	
-	
-    #$venvPath   = Join-Path $PSScriptRoot "aiotronic_env"
+    try {
+        # Si ya existe el interprete embebido, usarlo directamente
+        $embeddedPy = Install-EmbeddedPython "3.11.4"
+        $script:venvPython = $embeddedPy
 
-    #if (-not (Test-Path $venvPath)) {
-     #   Write-Host "🛠️  Creando entorno virtual aislado..."
-      #  & $embeddedPy -m venv $venvPath
-       # attrib +h $venvPath     # ocúltalo para no ensuciar la carpeta
-    #}
+        # Verificar si esptool ya esta instalado
+        $test = & $script:venvPython -m esptool --help 2>$null
+        if (-not $?) {
+            Write-Host "Instalando librerias requeridas..."
+            & $script:venvPython -m pip install --upgrade pip
+            & $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
+        }
 
-    #$venvPython  = Join-Path $venvPath "Scripts\python.exe"
-    #$venvPip     = Join-Path $venvPath "Scripts\pip.exe"
-	
-	$script:venvPython = Install-EmbeddedPython "3.11.4"   # usamos el Python embebido tal cual
+        # Descargar scripts si no existen
+        if (-not (Test-Path "monitor_serial.py")) {
+            Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
+        }
+        if (-not (Test-Path "print_qr.py")) {
+            Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py" -OutFile "print_qr.py"
+        }
 
-	
-	
-    $script:venvPython = $venvPython   # ← resto del script lo usará
+    } catch {
+        Write-Host "No se pudo completar la configuracion en linea (posible falta de internet)."
+        if (-not (Test-Path $script:venvPython)) {
+            Write-Host "Python embebido no encontrado. No se puede continuar."; Pause; return
+        }
+        if (-not (Test-Path "monitor_serial.py")) {
+            Write-Host "monitor_serial.py no encontrado. No se puede continuar."; Pause; return
+        }
+        if (-not (Test-Path "print_qr.py")) {
+            Write-Host "print_qr.py no encontrado. No se puede continuar."; Pause; return
+        }
+    }
 
-    #& $venvPython -m pip install --upgrade pip
-    #& $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
-	
-	& $script:venvPython -m pip install --upgrade pip
-	& $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
-
-
-
-    # Descarga/actualiza utilidades auxiliares
-    Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
-    Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py"      -OutFile "print_qr.py"
-
-    
     ShowMainMenu
 }
 
