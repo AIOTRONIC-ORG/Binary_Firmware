@@ -282,9 +282,9 @@ function Start-ESP32Tool {
         $embeddedPy = Install-EmbeddedPython "3.11.4"
         $script:venvPython = $embeddedPy
 
-        # Verificar si esptool esta instalado correctamente
-        & $script:venvPython -c "import esptool" 2>$null
-        if (-not $?) {
+        # Verificar si esptool esta instalado
+        $esptoolOK = & $script:venvPython -c "import esptool" 2>&1
+        if ($LASTEXITCODE -ne 0) {
             Write-Host "Dependencias no encontradas. Instalando (requiere internet)..."
             & $script:venvPython -m pip install --upgrade pip
             & $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
@@ -299,20 +299,21 @@ function Start-ESP32Tool {
         }
 
     } catch {
-        Write-Host "Error configurando entorno. Posible falta de internet."
+        Write-Host "Error configurando entorno. Verifique su conexion o reinstale desde modo fabrica."
         if (-not (Test-Path $script:venvPython)) {
-            Write-Host "Python embebido no encontrado. No se puede continuar."; Pause; return
+            Write-Host "Python embebido no encontrado."; Pause; return
         }
         if (-not (Test-Path "monitor_serial.py")) {
-            Write-Host "monitor_serial.py no encontrado. No se puede continuar."; Pause; return
+            Write-Host "monitor_serial.py no encontrado."; Pause; return
         }
         if (-not (Test-Path "print_qr.py")) {
-            Write-Host "print_qr.py no encontrado. No se puede continuar."; Pause; return
+            Write-Host "print_qr.py no encontrado."; Pause; return
         }
     }
 
     ShowMainMenu
 }
+
 
 
 function SelectDeviceModel {
