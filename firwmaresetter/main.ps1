@@ -283,12 +283,12 @@ function Start-ESP32Tool {
         $script:venvPython = $embeddedPy
 
         # Verificar si esptool esta instalado
-        $esptoolOK = & $script:venvPython -c "import esptool" 2>&1
-        if ($LASTEXITCODE -ne 0) {
-            Write-Host "Dependencias no encontradas. Instalando (requiere internet)..."
-            & $script:venvPython -m pip install --upgrade pip
-            & $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
-        }
+       $check = & $script:venvPython -c "import esptool" 2>&1
+	if ($check -match "ModuleNotFoundError") {
+		Write-Host "Dependencias no encontradas. Instalando (requiere internet)..."
+		& $script:venvPython -m pip install --upgrade pip --no-warn-script-location
+		& $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32 --no-warn-script-location
+	}
 
         # Descargar scripts si no existen
         if (-not (Test-Path "monitor_serial.py")) {
@@ -298,21 +298,19 @@ function Start-ESP32Tool {
             Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py" -OutFile "print_qr.py"
         }
 
-       } catch {
-        Write-Host "Error configurando entorno. Verifique su conexion o reinstale desde modo fabrica."
-        #Write-Host "Detalles: $($_.Exception.Message)"
-		Write-Host "Detalles del error:`n$($_ | Out-String)"
-
-        if (-not (Test-Path $script:venvPython)) {
-            Write-Host "Python embebido no encontrado."; Pause; return
-        }
-        if (-not (Test-Path "monitor_serial.py")) {
-            Write-Host "monitor_serial.py no encontrado."; Pause; return
-        }
-        if (-not (Test-Path "print_qr.py")) {
-            Write-Host "print_qr.py no encontrado."; Pause; return
-        }
+    } catch {
+    Write-Host "Error configurando entorno. Verifique su conexion o reinstale desde modo fabrica."
+    Write-Host "Detalles del error:`n$($_ | Out-String)"
+    if (-not (Test-Path $script:venvPython)) {
+        Write-Host "Python embebido no encontrado."; Pause; return
     }
+    if (-not (Test-Path "monitor_serial.py")) {
+        Write-Host "monitor_serial.py no encontrado."; Pause; return
+    }
+    if (-not (Test-Path "print_qr.py")) {
+        Write-Host "print_qr.py no encontrado."; Pause; return
+    }
+}
 
 
     ShowMainMenu
