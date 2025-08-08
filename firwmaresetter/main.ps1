@@ -275,7 +275,6 @@ function LoadLocalFirmware {
     Pause
 }
 
-
 function Start-ESP32Tool {
     $ErrorActionPreference = "Stop"
 
@@ -283,10 +282,10 @@ function Start-ESP32Tool {
         $embeddedPy = Install-EmbeddedPython "3.11.4"
         $script:venvPython = $embeddedPy
 
-        # Verificar si esptool esta disponible
-        $check = & $script:venvPython -m esptool --help 2>&1
-        if ($check -match "No module named 'esptool'") {
-            Write-Host "esptool no esta instalado. Instalando dependencias..."
+        # Verificar si esptool esta instalado correctamente
+        & $script:venvPython -c "import esptool" 2>$null
+        if (-not $?) {
+            Write-Host "Dependencias no encontradas. Instalando (requiere internet)..."
             & $script:venvPython -m pip install --upgrade pip
             & $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
         }
