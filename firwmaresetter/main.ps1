@@ -98,11 +98,25 @@ function Get-Esp32Mac {
     return ''
 }
 
+
 function SelectCOMPort {
 
     param(
         [switch]$Verbose
     )
+
+    Write-Host "`nSeleccione modo para elegir puerto COM:"
+    Write-Host "1. Elegir por indice"
+    Write-Host "2. Ingresar COM manualmente (ej: COM4)"
+    $modo = Read-Host "Opcion"
+    if ($modo -eq "2") {
+        $manual = Read-Host "Ingrese el nombre del puerto COM (ej: COM4)"
+        if ($manual -match '^COM\d+$') {
+            return $manual
+        } else {
+            Write-Host "Puerto COM invalido."; Pause; return $null
+        }
+    }
 
     try {
         $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
@@ -129,11 +143,9 @@ function SelectCOMPort {
     if ($comPortsToCheck) {
         Write-Host "`nLeyendo MACs de puertos: $($comPortsToCheck -join ', ')..."
         foreach ($com in $comPortsToCheck) {
-
             Write-Host ("Probing {0,-5}…" -f $com) -NoNewline
-
             try {
-                $out = & "$script:venvPython" -m esptool `
+                $out = & $script:venvPython -m esptool `
                          --chip auto --port $com --baud 115200 `
                          --before default_reset --after no_reset `
                          --connect-attempts 5 read_mac 2>&1
@@ -193,7 +205,6 @@ function SelectCOMPort {
     }
     return $ports[$idx-1].ComPort
 }
-
 
 
 function LoadLocalFirmware {
