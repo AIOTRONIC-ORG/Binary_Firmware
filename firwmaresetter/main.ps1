@@ -280,14 +280,13 @@ function Start-ESP32Tool {
     $ErrorActionPreference = "Stop"
 
     try {
-        # Si ya existe el interprete embebido, usarlo directamente
         $embeddedPy = Install-EmbeddedPython "3.11.4"
         $script:venvPython = $embeddedPy
 
-        # Verificar si esptool ya esta instalado
-        $test = & $script:venvPython -m esptool --help 2>$null
-        if (-not $?) {
-            Write-Host "Instalando librerias requeridas..."
+        # Verificar si esptool esta disponible
+        $check = & $script:venvPython -m esptool --help 2>&1
+        if ($check -match "No module named 'esptool'") {
+            Write-Host "esptool no esta instalado. Instalando dependencias..."
             & $script:venvPython -m pip install --upgrade pip
             & $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
         }
@@ -301,7 +300,7 @@ function Start-ESP32Tool {
         }
 
     } catch {
-        Write-Host "No se pudo completar la configuracion en linea (posible falta de internet)."
+        Write-Host "Error configurando entorno. Posible falta de internet."
         if (-not (Test-Path $script:venvPython)) {
             Write-Host "Python embebido no encontrado. No se puede continuar."; Pause; return
         }
