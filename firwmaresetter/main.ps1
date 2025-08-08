@@ -300,7 +300,9 @@ function Start-ESP32Tool {
 
        } catch {
         Write-Host "Error configurando entorno. Verifique su conexion o reinstale desde modo fabrica."
-        Write-Host "Detalles: $($_.Exception.Message)"
+        #Write-Host "Detalles: $($_.Exception.Message)"
+		Write-Host "Detalles del error:`n$($_ | Out-String)"
+
         if (-not (Test-Path $script:venvPython)) {
             Write-Host "Python embebido no encontrado."; Pause; return
         }
