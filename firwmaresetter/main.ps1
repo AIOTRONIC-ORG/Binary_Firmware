@@ -7,7 +7,7 @@ $script:SelectedDevice = $null   # guarda el modelo elegido
 
 function ShowMainMenu {
     do {
-        Clear-Host
+        #Clear-Host
         Write-Host "================================"
         Write-Host "       Herramientas ESP32"
         Write-Host "================================"
@@ -298,8 +298,9 @@ function Start-ESP32Tool {
             Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py" -OutFile "print_qr.py"
         }
 
-    } catch {
+       } catch {
         Write-Host "Error configurando entorno. Verifique su conexion o reinstale desde modo fabrica."
+        Write-Host "Detalles: $($_.Exception.Message)"
         if (-not (Test-Path $script:venvPython)) {
             Write-Host "Python embebido no encontrado."; Pause; return
         }
@@ -310,6 +311,7 @@ function Start-ESP32Tool {
             Write-Host "print_qr.py no encontrado."; Pause; return
         }
     }
+
 
     ShowMainMenu
 }
