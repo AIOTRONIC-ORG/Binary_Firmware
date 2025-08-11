@@ -13,6 +13,8 @@ try { "BOOT START PS=$($PSVersionTable.PSVersion)" | Out-File -FilePath $global:
 try {
     Add-Type -AssemblyName System.Windows.Forms
     [System.Windows.Forms.MessageBox]::Show("AIO EXE started.`nLog: $global:LogPath","AIO") | Out-Null
+	Write-Host "Arrancando... Log: $global:LogPath"
+	Start-Sleep -Seconds 2
 } catch {
     # si falla WinForms, igual deja marca
     try { "MessageBox failed: $($_.Exception.Message)" | Out-File -FilePath $global:LogPath -Append } catch {}
@@ -28,6 +30,18 @@ function Write-Log([string]$msg) {
 Write-Log "==== BOOT STARTED (PID=$PID, PS=$($PSVersionTable.PSVersion)) ===="
 
 # Make Write-Host also land in the log (it uses Console.Out under the hood)
+
+#  Define AppRoot al inicio (justo después del BOOT PROBE)
+# Reparar $PSScriptRoot si está vacío (caso EXE compilado con ps2exe)
+if (-not $PSScriptRoot -or $PSScriptRoot.Trim() -eq '') {
+    if ($PSCommandPath -and $PSCommandPath.Trim() -ne '') {
+        $script:PSScriptRoot = Split-Path -Parent $PSCommandPath
+    } else {
+        $script:PSScriptRoot = [System.AppDomain]::CurrentDomain.BaseDirectory.TrimEnd('\','/')
+    }
+}
+Write-Host "PSScriptRoot reparado: $PSScriptRoot"
+
 
 
 # -- al principio de main.ps1 --
@@ -66,7 +80,16 @@ function ShowMainMenu {
 }
 
 function ResetEmbeddedPython {
-    $embedDir = Join-Path $PSScriptRoot "embedded_py"
+    # Usa el reparado y, si por algo viene vacío, cae al directorio del EXE
+    $root = if ($script:PSScriptRoot -and $script:PSScriptRoot.Trim() -ne '') {
+        $script:PSScriptRoot
+    } elseif ($PSCommandPath -and $PSCommandPath.Trim() -ne '') {
+        Split-Path -Parent $PSCommandPath
+    } else {
+        [System.AppDomain]::CurrentDomain.BaseDirectory.TrimEnd('\','/')
+    }
+
+    $embedDir = Join-Path $root "embedded_py"
     if (Test-Path $embedDir) {
         try {
             Remove-Item -Path $embedDir -Recurse -Force
@@ -80,7 +103,6 @@ function ResetEmbeddedPython {
         Write-Host "No hay instalacion embebida para eliminar."
     }
     Write-Host "La terminal se cerrara ahora para completar el reseteo..."
-    # Start-Sleep -Seconds 2
     Stop-Process -Id $PID
 }
 
@@ -88,13 +110,27 @@ function ResetEmbeddedPython {
 function Install-EmbeddedPython {
     param(
         [string]$Version = "3.11.4",
-        [string]$BaseDir = (Join-Path $PSScriptRoot "embedded_py")
+		[string]$BaseDir
+        #[string]$BaseDir = (Join-Path $PSScriptRoot "embedded_py")
     )
+
+    # === Resolver BaseDir aquí, ya con PSScriptRoot reparado ===
+    if ([string]::IsNullOrWhiteSpace($BaseDir)) {
+        $root = if ($PSScriptRoot -and $PSScriptRoot.Trim() -ne '') {
+            $PSScriptRoot
+        } elseif ($PSCommandPath -and $PSCommandPath.Trim() -ne '') {
+            Split-Path -Parent $PSCommandPath
+        } else {
+            [System.AppDomain]::CurrentDomain.BaseDirectory.TrimEnd('\','/')
+        }
+        $BaseDir = Join-Path $root 'embedded_py'
+    }
 
     $zipName   = "python-$Version-embed-amd64.zip"
     $zipUrl    = "https://www.python.org/ftp/python/$Version/$zipName"
     $pythonDir = Join-Path $BaseDir "py$Version"
     $pythonExe = Join-Path $pythonDir "python.exe"
+
 
     if (-not (Test-Path $pythonExe)) {
         Write-Host " Descargando Python $Version (embeddable)..."
@@ -213,11 +249,8 @@ function SelectCOMPort {
             if ($outStr -match 'MAC:\s*([0-9A-Fa-f:]{2}(?::[0-9A-Fa-f]{2}){5})') {
                 $macs[$com] = $Matches[1]
                 Write-Host "  OK $($macs[$com])"
-            } else {
-                $last = ($out | Select-Object -Last 1).Trim()
-                $fails[$com] = if ($last) { $last } else { "Sin respuesta" }
-                Write-Host "  error: $last"
-            }
+			}
+
         }
     }
 
@@ -379,7 +412,7 @@ function LoadLocalFirmware {
 
 
 function Start-ESP32Tool {
-    $ErrorActionPreference = "Stop"
+    # $ErrorActionPreference = "Stop"
 
     # Siempre usa TU copia embebida ↴
     $embeddedPy = Install-EmbeddedPython "3.11.4"
@@ -510,35 +543,38 @@ function PrintQRCode
     Pause
 }
 
-# ============================================================
-# BOOTSTRAP: ejecución con log y pausa garantizada
-# ============================================================
-$ErrorActionPreference = 'Stop'
-$logPath = Join-Path $PSScriptRoot 'last_run.log'
+# ===================== MAIN WRAPPER (PEGAR AL FINAL) =====================
+# Hacemos el log y la pausa SIEMPRE, pase lo que pase
 
-# Intenta abrir transcripción (si falla, seguimos igual)
-try { Start-Transcript -Path $logPath -Append -ErrorAction Stop | Out-Null } catch {}
-
-function Pause-And-Exit {
-    Write-Host ""
-    Write-Host "Presiona ENTER para salir..."
-    try { [void][System.Console]::ReadLine() } catch { Read-Host | Out-Null }
-    try { Stop-Transcript | Out-Null } catch {}
+# Si tu probe no creó $global:LogPath, crea uno en %TEMP%
+if (-not $global:LogPath) {
+    $global:LogDir  = Join-Path $env:TEMP 'aio-exe-log'
+    $null = New-Item -ItemType Directory -Force -Path $global:LogDir -ErrorAction SilentlyContinue
+    $global:LogPath = Join-Path $global:LogDir ("boot_{0:yyyyMMdd_HHmmss}.log" -f (Get-Date))
 }
 
-# ===== MAIN ENTRY + ALWAYS-PAUSE =====
+function Write-LogHard([string]$msg) {
+    $ts = Get-Date -Format 'yyyy-MM-dd HH:mm:ss.fff'
+    try { Add-Content -Path $global:LogPath -Value "[$ts] $msg" -Encoding UTF8 } catch {}
+    try { Write-Host $msg } catch {}
+}
+
 try {
-    # IMPORTANT: fix your bug before running (do NOT overwrite venv path):
-    # $script:venvPython = Install-EmbeddedPython "3.11.4"
+    Write-LogHard "== ENTER Start-ESP32Tool =="
+    # *** MUY IMPORTANTE ***: NO sobrescribas $script:venvPython con $venvPython
+    # Debe quedar así dentro de Start-ESP32Tool:
+    #   $script:venvPython = Install-EmbeddedPython "3.11.4"
+
     Start-ESP32Tool
+    Write-LogHard "== Start-ESP32Tool returned =="
 }
 catch {
-    Write-Log "ERROR: $($_ | Out-String)"
-    Write-Host "`nERROR:`n$($_ | Out-String)"
+    Write-LogHard ("ERROR: " + ($_ | Out-String))
 }
 finally {
-    Write-Log "==== BOOT FINISHED ===="
-    Write-Host "`nPresiona ENTER para salir..."
+    Write-LogHard "== FINALLY: pausing =="
+    Write-Host "`nLog: $global:LogPath"
+    Write-Host "Presiona ENTER para salir..."
     try { [void][System.Console]::ReadLine() } catch { Read-Host | Out-Null }
-    try { $sw.Flush(); $sw.Dispose(); $fs.Dispose() } catch {}
 }
+# ========================================================================
