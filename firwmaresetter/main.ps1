@@ -18,7 +18,7 @@ function ShowMainMenu {
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
 		Write-Host "6. Serial monitor "   #  nueva opcion
         Write-Host "7. Salir"
-	Write-Host "8. Resetear a modo fabrica (eliminar Python embebido)"
+	    Write-Host "8. Resetear a modo fabrica (eliminar Python embebido)"
 
         $choice = Read-Host "Seleccione una opcion"
 
@@ -440,7 +440,7 @@ function UpdateFirmwareAndMonitor
 {
 	
 	if (-not $script:SelectedDevice) {
-	Write-Host "⚠️  Primero seleccione un modelo de dispositivo (opción 4 del menú)."
+	Write-Host "Primero seleccione un modelo de dispositivo (opción 4 del menú)."
 	Pause; return
     }
 
@@ -462,10 +462,10 @@ function UpdateFirmwareAndMonitor
 
 
     if ($LASTEXITCODE -eq 0) {
-        Write-Host "✅ Firmware actualizado exitosamente. Esperando conexión y MAC..."
+        Write-Host "Firmware actualizado exitosamente. Esperando conexión y MAC..."
         & "$venvPython" monitor_serial.py $port
     } else {
-        Write-Host "❌ Error actualizando firmware."
+        Write-Host "Error actualizando firmware."
     }
     Pause
 	SerialMonitor($port)
@@ -474,7 +474,7 @@ function UpdateFirmwareAndMonitor
 function PrintQRCode 
 {
     if (-not (Test-Path "mac_qr.png")) {
-        Write-Host "⚠️  No se encontro mac_qr.png. Ejecute el monitor serial primero."
+        Write-Host "No se encontro mac_qr.png. Ejecute el monitor serial primero."
     } else {
         & "$venvPython" print_qr.py
     }
