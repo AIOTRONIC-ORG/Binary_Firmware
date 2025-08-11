@@ -229,32 +229,106 @@ function SelectCOMPort {
     return $ports[$idx-1].ComPort
 }
 
-
 function LoadLocalFirmware {
-    # Cargar tres binarios locales y flashear el ESP32
+    # Cargar tres binarios locales o desde una ruta base (local o URL) y flashear el ESP32
     Add-Type -AssemblyName System.Windows.Forms
 
-    $ofd             = New-Object System.Windows.Forms.OpenFileDialog
-    $ofd.Title       = "Seleccione bootloader.bin, partitions.bin y firmware.bin"
-    $ofd.Filter      = "Archivos binarios (*.bin)|*.bin"
-    $ofd.Multiselect = $true
+    Write-Host ""
+    Write-Host "Seleccione el metodo de carga:"
+    Write-Host "  1) Selector de archivos (OpenFileDialog)"
+    Write-Host "  2) Ruta base (local o URL) que contenga bootloader.bin, partitions.bin y firmware.bin"
+    $mode = Read-Host "Ingrese 1 o 2"
 
-    if ($ofd.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {
-        Write-Host "⚠️  Operacion cancelada."; Pause; return
+    $boot = $null
+    $part = $null
+    $firm = $null
+
+    if ($mode -eq "1") {
+        $ofd             = New-Object System.Windows.Forms.OpenFileDialog
+        $ofd.Title       = "Seleccione bootloader.bin, partitions.bin y firmware.bin"
+        $ofd.Filter      = "Archivos binarios (*.bin)|*.bin"
+        $ofd.Multiselect = $true
+
+        if ($ofd.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {
+            Write-Host "Operacion cancelada."; Pause; return
+        }
+
+        if ($ofd.FileNames.Count -ne 3) {
+            Write-Host "Debe seleccionar exactamente tres archivos .bin."; Pause; return
+        }
+
+        # Identificar cada archivo por su nombre (indiferente a mayusculas/minusculas)
+        $boot = $ofd.FileNames | Where-Object { $_ -match '(?i)bootloader\.bin$' }
+        $part = $ofd.FileNames | Where-Object { $_ -match '(?i)partitions\.bin$' }
+        $firm = $ofd.FileNames | Where-Object { $_ -match '(?i)firmware\.bin$'  }
+
+        if (-not ($boot -and $part -and $firm)) {
+            Write-Host "Los archivos deben llamarse bootloader.bin, partitions.bin y firmware.bin."
+            Pause; return
+        }
     }
+    elseif ($mode -eq "2") {
+        Write-Host ""
+        Write-Host "Modelos de ruta base sugeridos:"
+        Write-Host "  Local (carpeta):    C:\proyectos\esp32\build"
+        Write-Host "  Git local (carpeta): C:\repo\mi_firmware\out"
+        Write-Host "  GitHub raw (URL):   https://raw.githubusercontent.com/usuario/repositorio/rama/build"
+        Write-Host "  GitLab raw (URL):   https://gitlab.com/usuario/proyecto/-/raw/rama/build"
+        Write-Host "  Gitea raw (URL):    https://gitea.dominio.tld/usuario/repo/raw/branch/build"
+        $base = Read-Host "Ingrese la ruta base (local o URL)"
 
-    if ($ofd.FileNames.Count -ne 3) {
-        Write-Host " xxx Debe seleccionar exactamente tres archivos .bin."; Pause; return
+        if ([string]::IsNullOrWhiteSpace($base)) {
+            Write-Host "Ruta base vacia."; Pause; return
+        }
+
+        $isUrl = $base -match '^https?://'
+        if ($isUrl) {
+            if ($base[-1] -ne '/') { $base = $base + '/' }
+
+            $tmp = Join-Path $env:TEMP ("esp32_flash_" + (Get-Date -Format yyyyMMddHHmmss))
+            New-Item -ItemType Directory -Path $tmp -Force | Out-Null
+
+            $targets = @(
+                @{ Name = "bootloader.bin"; Out = (Join-Path $tmp "bootloader.bin") },
+                @{ Name = "partitions.bin"; Out = (Join-Path $tmp "partitions.bin") },
+                @{ Name = "firmware.bin";   Out = (Join-Path $tmp "firmware.bin") }
+            )
+
+            foreach ($t in $targets) {
+                $url = $base + $t.Name
+                try {
+                    Invoke-WebRequest -Uri $url -OutFile $t.Out -UseBasicParsing -ErrorAction Stop
+                } catch {
+                    Write-Host "Error descargando $($t.Name) desde $url"
+                    Pause; return
+                }
+            }
+
+            $boot = Join-Path $tmp "bootloader.bin"
+            $part = Join-Path $tmp "partitions.bin"
+            $firm = Join-Path $tmp "firmware.bin"
+        }
+        else {
+            # Ruta base local: combinar y validar
+            if (-not (Test-Path -LiteralPath $base)) {
+                Write-Host "La ruta base local no existe: $base"
+                Pause; return
+            }
+            $boot = Join-Path $base "bootloader.bin"
+            $part = Join-Path $base "partitions.bin"
+            $firm = Join-Path $base "firmware.bin"
+
+            if (-not (Test-Path -LiteralPath $boot) -or -not (Test-Path -LiteralPath $part) -or -not (Test-Path -LiteralPath $firm)) {
+                Write-Host "No se encontraron los tres archivos requeridos en la ruta base:"
+                Write-Host "  $boot"
+                Write-Host "  $part"
+                Write-Host "  $firm"
+                Pause; return
+            }
+        }
     }
-
-    # Identificar cada archivo por su nombre (indiferente a mayúsculas/minúsculas)
-    $boot = $ofd.FileNames | Where-Object { $_ -match '(?i)bootloader\.bin$' }
-    $part = $ofd.FileNames | Where-Object { $_ -match '(?i)partitions\.bin$' }
-    $firm = $ofd.FileNames | Where-Object { $_ -match '(?i)firmware\.bin$'  }
-
-    if (-not ($boot -and $part -and $firm)) {
-        Write-Host "❌ Los archivos deben llamarse bootloader.bin, partitions.bin y firmware.bin."
-        Pause; return
+    else {
+        Write-Host "Opcion invalida."; Pause; return
     }
 
     $port = SelectCOMPort
@@ -267,9 +341,9 @@ function LoadLocalFirmware {
         0x10000  "`"$firm`""
 
     if ($LASTEXITCODE -eq 0) {
-        Write-Host "✅ Firmware local cargado correctamente."
+        Write-Host "Firmware local cargado correctamente."
     } else {
-        Write-Host "❌ Error al cargar firmware local."
+        Write-Host "Error al cargar firmware."
     }
     Pause
 }
