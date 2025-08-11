@@ -158,6 +158,96 @@ function Install-EmbeddedPython {
 }
 
 
+function Generate-QRImage {
+    param (
+        [string]$mac
+    )
+    # Aquí tendrías que implementar un generador de QR en .NET o usar un ejecutable externo.
+    # Por ahora solo guardaremos el texto en un archivo.
+    $mac | Out-File "mac_address.txt"
+    Write-Host "MAC address saved: $mac"
+}
+
+function Wait-ForDevice {
+    param (
+        [string]$port
+    )
+    Write-Host "Waiting for device to reconnect on $port..."
+    while ($true) {
+        try {
+            $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
+            $sp.Open()
+            $sp.Close()
+            Write-Host "Device reconnected on $port"
+            return
+        } catch {
+            Start-Sleep -Seconds 1
+        }
+    }
+}
+
+function Monitor-Serial {
+    param (
+        [string]$port
+    )
+
+    $macPattern = '^[0-9A-Fa-f]{2}(:[0-9A-Fa-f]{2}){5}$'
+
+    Write-Host "Waiting for device to disconnect..."
+    while ($true) {
+        try {
+            $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
+            $sp.Open()
+            $sp.Close()
+            Start-Sleep -Seconds 1
+        } catch {
+            Write-Host "Device disconnected. Waiting for reconnection..."
+            break
+        }
+    }
+
+    Wait-ForDevice $port
+
+    try {
+        $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
+        $sp.ReadTimeout = 1000
+        $sp.Open()
+
+        Write-Host "Monitoring for MAC address..."
+        $startTime = Get-Date
+        $macFound = $false
+
+        while (((Get-Date) - $startTime).TotalSeconds -lt 60 -and -not $macFound) {
+            try {
+                $line = $sp.ReadLine().Trim()
+                if ($line) {
+                    Write-Host "Received: $line"
+                    if ($line -match $macPattern) {
+                        $macFound = $true
+                        $mac = $line.ToUpper()
+                        Generate-QRImage $mac
+                        break
+                    }
+                }
+            } catch {
+                # timeout u otro error de lectura
+            }
+        }
+
+        if (-not $macFound) {
+            Write-Host "No MAC address found within 60 seconds."
+        }
+
+        $sp.Close()
+    } catch {
+        Write-Host "An error occurred: $_"
+    }
+}
+
+# Ejemplo de uso:
+# Monitor-Serial "COM4"
+
+
 function SerialMonitor {
 	
 	param(
@@ -168,7 +258,8 @@ function SerialMonitor {
     if (-not $port) { return }
 
     Write-Host "\n▶️  Iniciando monitor serial en $port...\n"
-    & $script:venvPython "monitor_serial.py" $port
+	Monitor-Serial $port
+    #& $script:venvPython "monitor_serial.py" $port
 
     Pause
 }
