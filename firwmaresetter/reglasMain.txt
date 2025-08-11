@@ -1,0 +1,6 @@
+no modificar nada respecto a pip installation
+eso arruina todo, aparecerea esptool not installed
+si el pip se instalo de nuevo saviendo que 
+al yo descargar embedded py ahi se descarga el pip
+no se debe hacer nada mas !!! no reiinstalaciones !!
+
