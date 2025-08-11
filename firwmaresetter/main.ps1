@@ -18,6 +18,8 @@ function ShowMainMenu {
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
 		Write-Host "6. Serial monitor "   #  nueva opcion
         Write-Host "7. Salir"
+	Write-Host "8. Resetear a modo fabrica (eliminar Python embebido)"
+
         $choice = Read-Host "Seleccione una opcion"
 
         switch ($choice) {
@@ -28,10 +30,31 @@ function ShowMainMenu {
             "5" { LoadLocalFirmware }          # llama a la nueva funcion
 			"6" { SerialMonitor }
             "7" { return }
+	    "8" { ResetEmbeddedPython }
             default { Write-Host "Opcion invalida"; Pause }
         }
     } while ($true)
 }
+
+function ResetEmbeddedPython {
+    $embedDir = Join-Path $PSScriptRoot "embedded_py"
+    if (Test-Path $embedDir) {
+        try {
+            Remove-Item -Path $embedDir -Recurse -Force
+            Write-Host "Python embebido eliminado correctamente."
+        } catch {
+            Write-Host "Error eliminando la carpeta embebida: $($_.Exception.Message)"
+            Pause
+            return
+        }
+    } else {
+        Write-Host "No hay instalacion embebida para eliminar."
+    }
+    Write-Host "La terminal se cerrara ahora para completar el reseteo..."
+    # Start-Sleep -Seconds 2
+    Stop-Process -Id $PID
+}
+
 
 function Install-EmbeddedPython {
     param(
