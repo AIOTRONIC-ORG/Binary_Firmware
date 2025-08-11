@@ -1,6 +1,35 @@
 ﻿# main.ps1
 #no tildes en este codigo para maxima compatiblidad con all powershell versions
 
+# ==== BOOT PROBE (debe ser lo PRIMERO) ======================
+$global:LogDir  = Join-Path $env:TEMP 'aio-exe-log'
+$null = New-Item -ItemType Directory -Force -Path $global:LogDir -ErrorAction SilentlyContinue
+$global:LogPath = Join-Path $global:LogDir ("boot_{0:yyyyMMdd_HHmmss}.log" -f (Get-Date))
+
+# log mínimo, sin Transcript (por si falla)
+try { "BOOT START PS=$($PSVersionTable.PSVersion)" | Out-File -FilePath $global:LogPath -Append -Encoding UTF8 } catch {}
+
+# Señal visual inmediata para confirmar entrada al script
+try {
+    Add-Type -AssemblyName System.Windows.Forms
+    [System.Windows.Forms.MessageBox]::Show("AIO EXE started.`nLog: $global:LogPath","AIO") | Out-Null
+} catch {
+    # si falla WinForms, igual deja marca
+    try { "MessageBox failed: $($_.Exception.Message)" | Out-File -FilePath $global:LogPath -Append } catch {}
+}
+# ============================================================
+
+
+# Lightweight log helper
+function Write-Log([string]$msg) {
+    $ts = Get-Date -Format 'yyyy-MM-dd HH:mm:ss.fff'
+    try { [Console]::Out.WriteLine("[$ts] $msg") } catch {}
+}
+Write-Log "==== BOOT STARTED (PID=$PID, PS=$($PSVersionTable.PSVersion)) ===="
+
+# Make Write-Host also land in the log (it uses Console.Out under the hood)
+
+
 # -- al principio de main.ps1 --
 $script:SelectedDevice = $null   # guarda el modelo elegido
 
@@ -371,7 +400,7 @@ function Start-ESP32Tool {
 
 	
 	
-    $script:venvPython = $venvPython   # ← resto del script lo usará
+    #$script:venvPython = $venvPython   # ← resto del script lo usará
 
     #& $venvPython -m pip install --upgrade pip
     #& $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
@@ -481,7 +510,35 @@ function PrintQRCode
     Pause
 }
 
-# Ejecutar herramienta
-Start-ESP32Tool
+# ============================================================
+# BOOTSTRAP: ejecución con log y pausa garantizada
+# ============================================================
+$ErrorActionPreference = 'Stop'
+$logPath = Join-Path $PSScriptRoot 'last_run.log'
 
+# Intenta abrir transcripción (si falla, seguimos igual)
+try { Start-Transcript -Path $logPath -Append -ErrorAction Stop | Out-Null } catch {}
 
+function Pause-And-Exit {
+    Write-Host ""
+    Write-Host "Presiona ENTER para salir..."
+    try { [void][System.Console]::ReadLine() } catch { Read-Host | Out-Null }
+    try { Stop-Transcript | Out-Null } catch {}
+}
+
+# ===== MAIN ENTRY + ALWAYS-PAUSE =====
+try {
+    # IMPORTANT: fix your bug before running (do NOT overwrite venv path):
+    # $script:venvPython = Install-EmbeddedPython "3.11.4"
+    Start-ESP32Tool
+}
+catch {
+    Write-Log "ERROR: $($_ | Out-String)"
+    Write-Host "`nERROR:`n$($_ | Out-String)"
+}
+finally {
+    Write-Log "==== BOOT FINISHED ===="
+    Write-Host "`nPresiona ENTER para salir..."
+    try { [void][System.Console]::ReadLine() } catch { Read-Host | Out-Null }
+    try { $sw.Flush(); $sw.Dispose(); $fs.Dispose() } catch {}
+}
