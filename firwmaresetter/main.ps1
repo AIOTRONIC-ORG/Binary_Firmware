@@ -535,8 +535,8 @@ function Start-ESP32Tool {
 
 
     # Descarga/actualiza utilidades auxiliares
-    Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
-    Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py"      -OutFile "print_qr.py"
+    #Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
+    #Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py"      -OutFile "print_qr.py"
 
     
     ShowMainMenu
@@ -616,7 +616,8 @@ function UpdateFirmwareAndMonitor
 
     if ($LASTEXITCODE -eq 0) {
         Write-Host "Firmware actualizado exitosamente. Esperando conexión y MAC..."
-        & "$venvPython" monitor_serial.py $port
+        #& "$venvPython" monitor_serial.py $port
+		Monitor-Serial $port
     } else {
         Write-Host "Error actualizando firmware."
     }
@@ -629,7 +630,10 @@ function PrintQRCode
     if (-not (Test-Path "mac_qr.png")) {
         Write-Host "No se encontro mac_qr.png. Ejecute el monitor serial primero."
     } else {
-        & "$venvPython" print_qr.py
+        #& "$venvPython" print_qr.py
+		Generate-QRImage -Mac $mac
+
+		
     }
     Pause
 }
