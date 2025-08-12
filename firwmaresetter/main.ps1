@@ -185,7 +185,6 @@ function Wait-ForDevice {
         }
     }
 }
-
 function Monitor-Serial {
     param (
         [string]$port
@@ -213,29 +212,32 @@ function Monitor-Serial {
         $sp.ReadTimeout = 1000
         $sp.Open()
 
-        Write-Host "Monitoring for MAC address..."
-        $startTime = Get-Date
-        $macFound = $false
+        Write-Host "Monitoring for MAC address... (press 'q' or Enter to stop)"
+        
+        while ($true) {
+            # teclado no bloqueante
+            if ([Console]::KeyAvailable) {
+                $key = [Console]::ReadKey($true)
+                if ($key.Key -eq 'Enter' -or $key.KeyChar -eq 'q') {
+                    Write-Host "Stopping monitor..."
+                    break
+                }
+            }
 
-        while (((Get-Date) - $startTime).TotalSeconds -lt 60 -and -not $macFound) {
             try {
-                $line = $sp.ReadLine().Trim()
-                if ($line) {
-                    Write-Host "Received: $line"
-                    if ($line -match $macPattern) {
-                        $macFound = $true
-                        $mac = $line.ToUpper()
-                        Generate-QRImage $mac
-                        break
+                if ($sp.BytesToRead -gt 0) {  # leer solo si hay datos
+                    $line = $sp.ReadLine().Trim()
+                    if ($line) {
+                        Write-Host "Received: $line"
+                        if ($line -match $macPattern) {
+                            $mac = $line.ToUpper()
+                            Generate-QRImage $mac
+                        }
                     }
                 }
             } catch {
-                # timeout u otro error de lectura
+                # ignorar timeouts sin interrumpir el bucle
             }
-        }
-
-        if (-not $macFound) {
-            Write-Host "No MAC address found within 60 seconds."
         }
 
         $sp.Close()
@@ -243,6 +245,8 @@ function Monitor-Serial {
         Write-Host "An error occurred: $_"
     }
 }
+
+
 
 # Ejemplo de uso:
 # Monitor-Serial "COM4"
@@ -593,7 +597,7 @@ function UpdateFirmwareAndMonitor
 {
 	
 	if (-not $script:SelectedDevice) {
-	Write-Host "Primero seleccione un modelo de dispositivo (opción 4 del menú)."
+	Write-Host "Primero seleccione un modelo de dispositivo (opción 4 del menu)."
 	Pause; return
     }
 
@@ -615,7 +619,7 @@ function UpdateFirmwareAndMonitor
 
 
     if ($LASTEXITCODE -eq 0) {
-        Write-Host "Firmware actualizado exitosamente. Esperando conexión y MAC..."
+        Write-Host "Firmware actualizado exitosamente. Esperando conexion y MAC..."
         #& "$venvPython" monitor_serial.py $port
 		Monitor-Serial $port
     } else {
