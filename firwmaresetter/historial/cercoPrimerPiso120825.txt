@@ -1,0 +1,618 @@
+
+
+==============
+       Herramientas ESP32
+================================
+1. Flash
+2. Actualizar Firmware desde SERVIDOR y Monitor Serial
+3. Imprimir Codigo QR
+4. Seleccionar Modelo de Dispositivo
+5. Cargar Firmware LOCAL (.bin)
+6. Serial monitor
+7. Salir
+8. Resetear a modo fabrica (eliminar Python embebido)
+Seleccione una opcion: 6
+
+Seleccione modo para elegir puerto COM:
+1. Elegir por indice
+2. Ingresar COM manualmente (ej: COM4)
+Opcion: 2
+Ingrese el nombre del puerto COM (ej: COM4): COM3
+\n??  Iniciando monitor serial en COM3...\n
+Waiting for device to disconnect...
+Device disconnected. Waiting for reconnection...
+Waiting for device to reconnect on COM3...
+Device reconnected on COM3
+Monitoring for MAC address... (press 'q' or Enter to stop)
+Received: load:0x3fce3808,len:0x4bc
+Received: load:0x403cc700,len:0x2a0c
+Received: entry 0x403c98d0
+Received: EA01J ESP32-S3
+Received: Project version v0.1.336, built 2025-08-11 08:43:15.618352
+Received: Api aioserver mode : PRODUCTION
+Received: Certifications Registered :
+Received: -----BEGIN CERTIFICATE-----
+Received: MIIDWTCCAkGgAwIBAgIUTSU6uPvPXEu15JE0Dvz6xmKU3o4wDQYJKoZIhvcNAQEL
+Received: BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+Received: SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDYyMDIyMzU0
+Received: NVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+Received: ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANjW97Qpgd/CMQ1eu/ss
+Received: z3knL7Pe5GvTeArWpw31Ph8Gx3Hw7PA+MDpKMjymKBGk08xyxQ72qp/14vjWkTM7
+Received: 7PoYwk2Qr9+1/zQl6OSbGMFAXhTQnEs6rwK/F4xgR1GSH8U38xx4nda+hblHx1kF
+Received: z3IXkafHxzNSFAJ1GpuBSzkQJgedrPvf6YdE9jvjZG1G48F4DAUbIJTgKOUDFwz8
+Received: tOf9Ix7fTP8tUYBmPs5LCCL5fL5R9kjaMJ3brZfrKzm41aISQeZAi99JGhbTXlei
+Received: dpWO/k+bnRQbjLeOwGGkjyGp/0w83nDxXRfpOWKmQhQe0p7I4ge/MIkY5FNo7LZb
+Received: HNcCAwEAAaNgMF4wHwYDVR0jBBgwFoAUUzAda/V5viWwFmqmiKpCQq5ZINwwHQYD
+Received: VR0OBBYEFOG8vSEPMYi+np7dttkEMUk11WPiMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+Received: AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQA8FgxMqazTjiq1z2msha1ra9rD
+Received: PX/KMi0yGV1MwRgawKd261KCCkzUnEJD7gr/9uBWIa6TlF1SOvnpG0NiHzsBRr0N
+Received: 0ZV5OTicfsu8nVIPPqAsC2M/Jz3aSerIhu3eTioTdHy/3BxU4iZQFaoKfRm0RPqR
+Received: quT3zCblulFl6ND62m9ehAAD+bbRolHgbSt8YWTHdM2177qQpQulB3mjIm43EgGy
+Received: uTn0q2Gv9HcCndp2XtVqD6iOJc7P4NNLC2vKaKz/O6NMjBZfKxt6hhxXF37m2cov
+Received: 3ULIRKgEFGthSkVSwL/oknBCCe3gE7NH3bXIXejdL2VhvRRKJsUi/bwZqYjD
+Received: -----END CERTIFICATE-----
+Received: -----BEGIN RSA PRIVATE KEY-----
+Received: MIIEpQIBAAKCAQEA2Nb3tCmB38IxDV67+yzPeScvs97ka9N4CtanDfU+HwbHcfDs
+Received: 8D4wOkoyPKYoEaTTzHLFDvaqn/Xi+NaRMzvs+hjCTZCv37X/NCXo5JsYwUBeFNCc
+Received: SzqvAr8XjGBHUZIfxTfzHHid1r6FuUfHWQXPcheRp8fHM1IUAnUam4FLORAmB52s
+Received: +9/ph0T2O+NkbUbjwXgMBRsglOAo5QMXDPy05/0jHt9M/y1RgGY+zksIIvl8vlH2
+Received: SNowndutl+srObjVohJB5kCL30kaFtNeV6J2lY7+T5udFBuMt47AYaSPIan/TDze
+Received: cPFdF+k5YqZCFB7SnsjiB78wiRjkU2jstlsc1wIDAQABAoIBAQDWy4LNpXwwQbXD
+Received: b784XTgb5BRd0gJlSTIVUnJi4jcqFtYEaUrb5E5zv0GqUFFKwQLI+Dt5yiBUmga+
+Received: xhVJMihZyaLXoOaG7Uqixpa/tV89N1y6s7bO0o/AYbia5lhfVidAfl7FKjn4Gfxu
+Received: /8pZxearNuuizsPlc328vXGg7t+r4h4230Sclxg6aph9SBDZBJ8F8Kg6MD2vCfwt
+Received: 65jF849O7OQUjHHOM1Z0zeIntuBrVnUypwN/WkwiwRnUtyHD32JLgbdb6ogEp33p
+Received: PHCsKLrqK1D+1tQTIfnixLmyoif7wlw/ZElmvpktS4xJACWs+lTvBcHXsc1QRbys
+Received: OEVbU7IBAoGBAP1dDJ7iZe/9valzsooRB/LzlX5q6DiDp/677Q8K+YjnOdqZmP9c
+Received: oD5368d0defbfsESJgVWF8gwthfhs/V4YjDRQ6ImF8lJW/2nCDYC/7kZ8w4CUgrY
+Received: kVhA4dYRfkFo2IfREJd4Nu65i2PLYRZWn3yp6gXWG1kgtjDq5MXoHO0BAoGBANsY
+Received: ntHKQ1oRrJvLv9/vmZ5PgESNSlOkNcQpWOJw7CZBbO5knQ9g25miv/HYd00DE/+H
+Received: m5rtEOQYJ4C/4IheciXwHxXPEMvlLZxTTCBBk2Zv6oaLPQ8prhv67An8H+/CcE9P
+Received: mrxmuIfd7Y1ktuQl0sUieRQEu/eLxO42SSUDUxHXAoGAd+wPCTVH4qxLlWU54Lfm
+Received: 90vsOoYHnJhUb/IrZq9fJTms3JdPH6+L+YVxiFrLZA80k9YvQN9bKlpEFlGyiEGO
+Received: 2GR0is9U+uVKMWlaLZaFy+tIbB0VECUpxogPXO+yvusNclu2artv5NbV70pYjeY6
+Received: XxtdtZ1+HFWrZsQHvNT8vAECgYEA1TSlQKPiXOC8JrPkmSeRRwQ4Xv1baf9vLt/J
+Received: ljmrJCMgvO/+AvwPVveQb+llVvT63fv5yY6OlFiJAHo4Jpw52n9L0K46ux/e/bP1
+Received: baJCrTmVcK5IkdvOiX3pemH2NhvxrMxbWKFhSx4E0EZEz8mazKmaR4e/3soNrn33
+Received: OeR9TusCgYEAuhX9u2lFukJW5mj9QJfXBBsveCs/D1nwSI0mM7AYRMUo2kI9X0sS
+Received: iuiffqkFG0tyLnqJ1Uqc2YIqorFWG8ycqexPVNerdZrplY4CdYL5wsAGUn8qQq8z
+Received: xRCOzdMYGoYLqrVhf0RiEOAg/glP0Hn0ecuwTiZ/NnhTwSjiKR5eyZQ=
+Received: -----END RSA PRIVATE KEY-----
+Received: Certifications OTA Registered
+Received: icrt : 1
+Received: icrtv1 : 1
+Received: icrtv2 : 1
+Received: icrtv3 : 1
+Received: mac stored : 98:88:E0:03:42:90-EA01J
+Received: actulizando get pgm 1 desde permanent
+Received: Here all conf , from preferences to local variables
+Received: ----MAIN VARIABLES------
+Received: Alarm status: 0
+Received: Alarm last cause: 0
+Received: Key status: 0
+Received: Zone status: 1
+Received: Pgm1 status: 0
+Received: Pgm2 status: 0
+Received: Is locked status: 0
+Received: ---- PAST % MAIN VARIABLES------
+Received: Alarm PAST status: 0
+Received: Alarm PAST  cause: 0
+Received: Key PAST status: 0
+Received: Zone PAST status: 0
+Received: Pgm1 PAST status: 0
+Received: Pgm2 PAST status: 0
+Received: Is locked PAST status: 0
+Received: ----print_ECONF_current_data------
+Received: Tiempo de alarma(seg): 10
+Received: Delay of fence: 2
+Received: Number of arcs: 5
+Received: Type of zone1: 0
+Received: Type of pgm1: 0
+Received: Time of pgm1: 0
+Received: Type of buzzer ON/OFF 1
+Received: Type of rf 1
+Received: ----------------------------------
+Received: ----print_ECONF_PAST_data------
+Received: PAST Tiempo de alarma(seg): 0
+Received: PAST Delay of fence: 0
+Received: PAST Number of arcs: 0
+Received: PAST Type of zone: 0
+Received: PAST Type of pgm: 0
+Received: PAST Type of buzzer ON/OFF 0
+Received: PAST Type of rf 0
+Received: ----------------------------------
+Received: RF ONLINE CONTROLS :
+Received: RF OFFLINE CONTROLS :
+Received: RF SENSORS :
+Received: ==== NVS Memory Stats ====
+Received: Total Entries: 630
+Received: Used Entries: 277
+Received: Free Entries: 353
+Received: Namespace Count: 15
+Received: **********
+Received: Task wirelessfi running on core Setup concluido0
+Received: ******************** Task ledsrgb_sc initialized correctly
+Received: Task ledsrgb running on core1
+Received: WDT created for task ledsrgb
+Received: actulizando put pgm 1 desde flashmanager_save_new_data_e_conf
+Received: ----print_ECONF_current_data------
+Received: Tiempo de alarma(seg): 10
+Received: Delay of fence: 2
+Received: Number of arcs: 5
+Received: Type of zone1: 0
+Received: Type of pgm1: 0
+Received: Time of pgm1: 0
+Received: Type of buzzer ON/OFF 1
+Received: Type of rf 1
+Received: ----------------------------------
+Received: La memoria heap disponible en el dispositivo actualmente es de :
+Received: 304776
+Received: zone 1 en electro_effects_zone_1_tuyareport
+Received: Enciende Zona en electro_effects_zone_1
+Received: pgm 1 en electro_effects_pgm_1_tuyareport
+Received: alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Received: Proceding to save permanent new data, update past data
+Received: electro main past data UPDATED _ in loop()
+Received: Mode: 0
+Received: entre a luego de offline mode verification en wifi()
+Received: he pasado la lectura de memoria interna
+Received: Credentials exists
+Received: MIRAN2025
+Received: Chico955
+Received: WiFi.begin first try 4 seconds
+Received: 60No Se logr?? conectar a Network a la primera !
+Received: credert config
+Received: SSID storage permanent :MIRAN2025
+Received: PSS storage permanent :Chico955
+Received: SSID Current detected :
+Received: PSS Current detected :Actual Password is not allowed to be shown by Class
+Received: Smart config was NOT activated
+Received: Waiting for Wifi
+Received: . ??? Internet dispo
+Received: SSID:MIRAN2025
+Received: PzS:Chico955
+Received: Wifi connectediFi Connected to : MIRAN2025
+Received: IP Address: 192.168.1.33
+Received: MAC Address: 98:88:E0:0 ********************   Deletion of tpace for create wifi tasks )
+Received: Tasks ef, rf and siren have been deleted
+Received: Before is certified conditional in wireless?
+Received: Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Received: Prueba MACC adding :
+Received: ############################El valor de variable connected to amazon es : 1
+Received: The client connects to the AWS MQTT broker with Thingname :
+Received: $aws/things/98:88:E0:03:42:90/jobs/notify
+Received: Trying to suscribe to : 98:88:E0:03:42:90/EA01J == Suscripci??n Exitosa !!
+Received: Trying to suscribe to : 98:88:E0:03:42:90/EA01J_conf == Suscripci??n Exitosa !!
+Received: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs/notifySuscribed to MQTT topics correctly
+Received: end of mqtt() function
+Received: mqtt() 414-line completed
+Received: : 1
+Received: alexafirsttime : 0
+Received: alexafinished : 0
+Received: alexafinished2 : 0
+Received: Task Alexa Created in main loop()
+Received: 98:88:E0:03:42:90/EA01J
+Received: Message Payload :  {"FIRMWARE VERSION":"0.1.336","FIRMWARE BUILD_TIMESTAMP":"2025-08-11 08:43:15.618352","MCU":"ESP32-S3","API MODE":0,"OTA TYPE":"aws","mode":100}
+Received: -----------------------
+Received: Task alexa running on core0
+Received: Welcome to Alexa Device Program :0
+Received: 1
+Received: 2
+Received: 3
+Received: Alexa creation confirmation from task alex
+Received: Fauxmo enviando informacion a alexa
+Received: ******************** Task electricfence_sc initialized correctly
+Received: Task e_fence running on core1
+Received: WDT created for task electric fence
+Received: ******************** Task siren_sc initialized correctly
+Received: Task siren running on core1
+Received: WDT created for task siren
+Received: Publish from electroconf_publishMessage
+Received: JSON  ******************** Task radiofrequency_sc initialized correctly
+Received: Task radiofrequency running on core1
+Received: WDT created for task RF
+Received: Publielectro_publishMessage in electro_main_first_publish_the_aio_server
+Received: Message arrived in topic: 98:88:E2:90/EA01J_conf
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+Received: -----------------------
+Received: A Callback has been device itself
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA0
+Received: "FIRMWARE VERSION":"0.1.336","FIRMWARE BUILD_TIMESTAMP":"2025-08-11 08:43:15.618352","API MODE":0,"MCU":"ESP32-S3","OTA TYPE":"aws","mode":99}
+Received: -----------------------
+Received: Task tuyaiot running on core1
+Received: 8527507
+Received: sadasdasdasd_config
+Received: Vr:110.00 % 1636.00 Battery Caution- Multiplo de 5 published :
+Received: 110%
+Received: 1
+Received: DEBUG: T??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs//update
+Received: ############################El valor de variable var state de jobs de ota aws es : 3
+Received: ############################El valor de variable jobid es :
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA01J
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"sJSON docconf : 144
+Received: lcked":0}
+Received: Publish electroconf_publishMessage_retained_heartbeat
+Received: JSON docconf : 208
+Received: Publish from electroconf_publishMessage
+Received: JSON doctro : 126
+Received: Message arrived in topic: $aws/things/98:88:E0:03:42:90/jobs//update/rejected
+Received: Message Payload :  {"timestamp":1755007411,"code":"InvalidTopic","message":"$aws/things/98:88:E0:03:42:90/jobs//update is not a recognized job topic"}
+Received: -----------------------
+Received: Message arrived in topic: 98:88:E0:0Message Payload :  {"FIRMWARE VERSION":"0.1.336","FIRMWARE BUILD_TIMESTAMP":"2025-08-11 08:43:15.618352","MCU":"ESP32-S3","API MODE":0,"OTA TYPE":"aws","mode":100}
+Received: -----------------------
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA0
+Received: Message Pa"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+Received: Publish from electro_publishMessa
+Received: -----------------------
+Received: electro_publishMessage in electro_main_first_publish_the_aio_server
+Received: A Callback has been discarted bc me
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA01J
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+Received: nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"battLvl":110,"islocked":0}zone 1 en electro_effects_zone_1_t
+Received: -----------------------
+Received: A Callback has been discarted bc message is from device itself
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x01 0x77
+Received: pgm 1 en electro_effects_pgm_1_tuyareport
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x00 0x77
+Received: alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+Received: Publish due to flag_send_periodic time cycle from electro cpp
+Received: JSON doctro : 56
+Received: Publish from electro_publishMessage
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA01J
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+Received: -----------------------
+Received: A publish has been made !!
+Received: Proceding to save permanent new data, update past data
+Received: electro main past data UPDATED _ in loop()
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA01J_conf
+Received: Message Payload :  {"mode":1,"jobId":"JOB_EA01J_9888e0034290_1755007440275"}-----------
+Received: In tuya electroconf updatings
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x69 0x02 0x00 0x04 0x00 0x00 0x00 0x0A 0x8A
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6A 0x02 0x00 0x04 0x00 0x00 0x00 0x05 0x86
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x6E 0x01 0x00 0x01 0x00 0x7E
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6B 0x02 0x00 0x04 0x00 0x00 0x00 0x02 0x84
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6C 0x02 0x00 0x04 0x00 0x00 0x00 0x00 0x83
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x6D 0x01 0x00 0x01 0x01 0x7E
+Received: actulizando put pgm 1 desde flashmanager_save_new_data_e_conf
+Received: ----print_ECONF_current_data------
+Received: Tiempo de alarma(seg): 10
+Received: Delay of fence: 2
+Received: Number of arcs: 5
+Received: Type of zone1: 0
+Received: Type of pgm1: 0
+Received: Time of pgm1: 0
+Received: Type of buzzer ON/OFF 1
+Received: Type of rf 1
+Received: ----------------------------------
+Received: La memoria heap disponible en el dispositivo actualmente es de :
+Received: 171464
+Received: $aws/things/98:88:E0:03:42:90/jobs/notify
+Received: Message Payload :  {"timestamp":1755007444,"jobs":{"QUEUED":[{"jobId":"JOB_EA01J_9888e0034290_1755007440275","queuedAt":1755007444,"lastUpdatedAt":1755007444,"executionNumber":1,"versionNumber":1}]}}
+Received: -----------------------
+Received: DEBUG: T??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/get
+Received: DEBUG: T??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/get/accepted
+Received: DEBUG: T??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/update
+Received: aqui estoy en awsota_jobs_process_loop
+Received: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/get == Suscripci??n Exitosa !!
+Received: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/get/accepted == Suscripci??n Exitosa !!
+Received: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/update
+Received: ############################El valor de variable topicname es : $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/get
+Received: Message arrived in topic: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/update/accepted
+Received: "timestamp":1755007445}
+Received: --------
+Received: Message arrived in topic: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/get/accepted
+Received: "timestamp":1755007445,"execution":{"jobId":"JOB_EA01J_9888e0034290_1755007440275","status":"IN_PROGRESS","queuedAt":1755007444,"startedAt":1755007445,"lastUpdatedAt":1755007445,"verionNumber":2,"executionNumber":1,"jobDocument":{"version":"0.1.329","url":"https://firmwares-esp32.s3.us-east-2.amazonaws.com/EA01J/production/firmware.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARGMLGLKUP27AJHH7%2F20250812%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250812T140400Z&X-Amz-Expires=3600&X-Amz-Signature=78f5402a541ab055ca41f8b4d769d69623543b7f6f8f50f821e70c6670407c99&X-Amz-SignedHeaders=host"}}}
+Received: -----------------------
+Received: https://firmwares-esp32.s3.us-east-2.amazonaws.com/EA01J/production/firmware.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARGMLGLKUP27AJHH7%2F20250812%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250812T140400Z&X-Amz-Expires=3600&X-Amz-Signature=78f5402a541ab055ca41f8b4d769d69623543b7f6f8f50f82[ 59403][E][WiFiClient.cpp:275] connect(): socket error on fd 51, errno: 113, "Software caused connection abort"
+Received: ??? Internet missing was dete
+Received: Hubo una desconexion d
+Received: ESP-ROM:esp32s3-20210327
+Received: Build:Mar 27 2021
+Received: rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Received: Saved PC:0x420e5e12
+Received: SPIWP:0xee
+Received: mode:DIO, clock div:2
+Received: load:0x3fce3808,len:0x4bc
+Received: load:0x403c9700,len:0xbd8
+Received: load:0x403cc700,len:0x2a0c
+Received: entry 0x403c98d0
+Received: Credentials exists
+Received: MIRAN2025
+Received: Chico955
+Received: ..
+Received: Connected to MIRAN2025
+Received: IP address: 192.168.1.33
+Received: ????  Ejecutando desde: app0 (6553600 bytes)
+Received: ????  Destino OTA real  : app1 (6553600 bytes)
+Received: ############################El valor de variable host es : firmwares-esp32.s3.us-east-2.amazonaws.com
+Received: ############################El valor de variable path es : /EA01J/production/firmware.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARGMLGLKUP27AJHH7%2F20250812%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250812T140400Z&X-Amz-Expires=3600&X-Amz-Signature=78f5402a541ab055ca41f8b4d769d69623543b7f6f8f50f821e70c6670407c99&X-Amz-SignedHeaders=host
+Received: Status: HTTP/1.1 200 OK
+Received: Header: x-amz-id-2: uCKTRr/VszMO6nJUbVsWoHNek230FNGYGlNB1p1btRE2v8cXneMoyrDdXri7u0tNg7yedCYjMhXWHY3fzpR0FA==
+Received: Header: x-amz-request-id: 554G36N955BHZ2RM
+Received: Header: Date: Tue, 12 Aug 2025 14:04:13 GMT
+Received: Header: Last-Modified: Tue, 12 Aug 2025 13:56:25 GMT
+Received: Header: ETag: "51fe627d6718827eefc9d123a969518d"
+Received: Header: x-amz-server-side-encryption: AES256
+Received: Header: Accept-Ranges: bytes
+Received: Header: Content-Type: application/octet-stream
+Received: Header: Content-Length: 1332496
+Received: Header: Server: AmazonS3
+Received: Header: Connection: close
+Received: Header:
+Received: Written only : 0/1332496. Retry?
+Received: Error Occurred. Error #: 8
+Received: ESP-ROM:esp32s3-20210327
+Received: Build:Mar 27 2021
+Received: rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Received: Saved PC:0x420e5e12
+Received: SPIWP:0xee
+Received: mode:DIO, clock div:2
+Received: load:0x3fce3808,len:0x4bc
+Received: load:0x403c9700,len:0xbd8
+Received: load:0x403cc700,len:0x2a0c
+Received: entry 0x403c98d0
+Received: EA01J ESP32-S3
+Received: Project version v0.1.336, built 2025-08-11 08:43:15.618352
+Received: Api aioserver mode : PRODUCTION
+Received: Certifications Registered :
+Received: -----BEGIN CERTIFICATE-----
+Received: MIIDWTCCAkGgAwIBAgIUTSU6uPvPXEu15JE0Dvz6xmKU3o4wDQYJKoZIhvcNAQEL
+Received: BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+Received: SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDYyMDIyMzU0
+Received: NVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+Received: ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANjW97Qpgd/CMQ1eu/ss
+Received: z3knL7Pe5GvTeArWpw31Ph8Gx3Hw7PA+MDpKMjymKBGk08xyxQ72qp/14vjWkTM7
+Received: 7PoYwk2Qr9+1/zQl6OSbGMFAXhTQnEs6rwK/F4xgR1GSH8U38xx4nda+hblHx1kF
+Received: z3IXkafHxzNSFAJ1GpuBSzkQJgedrPvf6YdE9jvjZG1G48F4DAUbIJTgKOUDFwz8
+Received: tOf9Ix7fTP8tUYBmPs5LCCL5fL5R9kjaMJ3brZfrKzm41aISQeZAi99JGhbTXlei
+Received: dpWO/k+bnRQbjLeOwGGkjyGp/0w83nDxXRfpOWKmQhQe0p7I4ge/MIkY5FNo7LZb
+Received: HNcCAwEAAaNgMF4wHwYDVR0jBBgwFoAUUzAda/V5viWwFmqmiKpCQq5ZINwwHQYD
+Received: VR0OBBYEFOG8vSEPMYi+np7dttkEMUk11WPiMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+Received: AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQA8FgxMqazTjiq1z2msha1ra9rD
+Received: PX/KMi0yGV1MwRgawKd261KCCkzUnEJD7gr/9uBWIa6TlF1SOvnpG0NiHzsBRr0N
+Received: 0ZV5OTicfsu8nVIPPqAsC2M/Jz3aSerIhu3eTioTdHy/3BxU4iZQFaoKfRm0RPqR
+Received: quT3zCblulFl6ND62m9ehAAD+bbRolHgbSt8YWTHdM2177qQpQulB3mjIm43EgGy
+Received: uTn0q2Gv9HcCndp2XtVqD6iOJc7P4NNLC2vKaKz/O6NMjBZfKxt6hhxXF37m2cov
+Received: 3ULIRKgEFGthSkVSwL/oknBCCe3gE7NH3bXIXejdL2VhvRRKJsUi/bwZqYjD
+Received: -----END CERTIFICATE-----
+Received: -----BEGIN RSA PRIVATE KEY-----
+Received: MIIEpQIBAAKCAQEA2Nb3tCmB38IxDV67+yzPeScvs97ka9N4CtanDfU+HwbHcfDs
+Received: 8D4wOkoyPKYoEaTTzHLFDvaqn/Xi+NaRMzvs+hjCTZCv37X/NCXo5JsYwUBeFNCc
+Received: SzqvAr8XjGBHUZIfxTfzHHid1r6FuUfHWQXPcheRp8fHM1IUAnUam4FLORAmB52s
+Received: +9/ph0T2O+NkbUbjwXgMBRsglOAo5QMXDPy05/0jHt9M/y1RgGY+zksIIvl8vlH2
+Received: SNowndutl+srObjVohJB5kCL30kaFtNeV6J2lY7+T5udFBuMt47AYaSPIan/TDze
+Received: cPFdF+k5YqZCFB7SnsjiB78wiRjkU2jstlsc1wIDAQABAoIBAQDWy4LNpXwwQbXD
+Received: b784XTgb5BRd0gJlSTIVUnJi4jcqFtYEaUrb5E5zv0GqUFFKwQLI+Dt5yiBUmga+
+Received: xhVJMihZyaLXoOaG7Uqixpa/tV89N1y6s7bO0o/AYbia5lhfVidAfl7FKjn4Gfxu
+Received: /8pZxearNuuizsPlc328vXGg7t+r4h4230Sclxg6aph9SBDZBJ8F8Kg6MD2vCfwt
+Received: 65jF849O7OQUjHHOM1Z0zeIntuBrVnUypwN/WkwiwRnUtyHD32JLgbdb6ogEp33p
+Received: PHCsKLrqK1D+1tQTIfnixLmyoif7wlw/ZElmvpktS4xJACWs+lTvBcHXsc1QRbys
+Received: OEVbU7IBAoGBAP1dDJ7iZe/9valzsooRB/LzlX5q6DiDp/677Q8K+YjnOdqZmP9c
+Received: oD5368d0defbfsESJgVWF8gwthfhs/V4YjDRQ6ImF8lJW/2nCDYC/7kZ8w4CUgrY
+Received: kVhA4dYRfkFo2IfREJd4Nu65i2PLYRZWn3yp6gXWG1kgtjDq5MXoHO0BAoGBANsY
+Received: ntHKQ1oRrJvLv9/vmZ5PgESNSlOkNcQpWOJw7CZBbO5knQ9g25miv/HYd00DE/+H
+Received: m5rtEOQYJ4C/4IheciXwHxXPEMvlLZxTTCBBk2Zv6oaLPQ8prhv67An8H+/CcE9P
+Received: mrxmuIfd7Y1ktuQl0sUieRQEu/eLxO42SSUDUxHXAoGAd+wPCTVH4qxLlWU54Lfm
+Received: 90vsOoYHnJhUb/IrZq9fJTms3JdPH6+L+YVxiFrLZA80k9YvQN9bKlpEFlGyiEGO
+Received: 2GR0is9U+uVKMWlaLZaFy+tIbB0VECUpxogPXO+yvusNclu2artv5NbV70pYjeY6
+Received: XxtdtZ1+HFWrZsQHvNT8vAECgYEA1TSlQKPiXOC8JrPkmSeRRwQ4Xv1baf9vLt/J
+Received: ljmrJCMgvO/+AvwPVveQb+llVvT63fv5yY6OlFiJAHo4Jpw52n9L0K46ux/e/bP1
+Received: baJCrTmVcK5IkdvOiX3pemH2NhvxrMxbWKFhSx4E0EZEz8mazKmaR4e/3soNrn33
+Received: OeR9TusCgYEAuhX9u2lFukJW5mj9QJfXBBsveCs/D1nwSI0mM7AYRMUo2kI9X0sS
+Received: iuiffqkFG0tyLnqJ1Uqc2YIqorFWG8ycqexPVNerdZrplY4CdYL5wsAGUn8qQq8z
+Received: xRCOzdMYGoYLqrVhf0RiEOAg/glP0Hn0ecuwTiZ/NnhTwSjiKR5eyZQ=
+Received: -----END RSA PRIVATE KEY-----
+Received: Certifications OTA Registered
+Received: icrt : 1
+Received: icrtv1 : 1
+Received: icrtv2 : 1
+Received: icrtv3 : 1
+Received: mac stored : 98:88:E0:03:42:90-EA01J
+Received: actulizando get pgm 1 desde permanent
+Received: Here all conf , from preferences to local variables
+Received: ----MAIN VARIABLES------
+Received: Alarm status: 0
+Received: Alarm last cause: 0
+Received: Key status: 0
+Received: Zone status: 1
+Received: Pgm1 status: 0
+Received: Pgm2 status: 0
+Received: Is locked status: 0
+Received: ---- PAST % MAIN VARIABLES------
+Received: Alarm PAST status: 0
+Received: Alarm PAST  cause: 0
+Received: Key PAST status: 0
+Received: Zone PAST status: 0
+Received: Pgm1 PAST status: 0
+Received: Pgm2 PAST status: 0
+Received: Is locked PAST status: 0
+Received: ----print_ECONF_current_data------
+Received: Tiempo de alarma(seg): 10
+Received: Delay of fence: 2
+Received: Number of arcs: 5
+Received: Type of zone1: 0
+Received: Type of pgm1: 0
+Received: Time of pgm1: 0
+Received: Type of buzzer ON/OFF 1
+Received: Type of rf 1
+Received: ----------------------------------
+Received: ----print_ECONF_PAST_data------
+Received: PAST Tiempo de alarma(seg): 0
+Received: PAST Delay of fence: 0
+Received: PAST Number of arcs: 0
+Received: PAST Type of zone: 0
+Received: PAST Type of pgm: 0
+Received: PAST Type of buzzer ON/OFF 0
+Received: PAST Type of rf 0
+Received: ----------------------------------
+Received: RF ONLINE CONTROLS :
+Received: RF OFFLINE CONTROLS :
+Received: RF SENSORS :
+Received: ==== NVS Memory Stats ====
+Received: Total Entries: 630
+Received: Used Entries: 278
+Received: Free Entries: 352
+Received: Namespace Count: 15
+Received: ******************** Task wirelessfi_sc initialized correctly
+Received: Task wirelessfi running on core Setup concluido
+Received: 0
+Received: ******************** Task ledsrgb_sc initialized correctly
+Received: Task ledsrgb running on core1
+Received: WDT created for task ledsrgb
+Received: actulizando put pgm 1 desde flashmanager_save_new_data_e_conf
+Received: ----print_ECONF_current_data------
+Received: Tiempo de alarma(seg): 10
+Received: Delay of fence: 2
+Received: Number of arcs: 5
+Received: Type of zone1: 0
+Received: Type of pgm1: 0
+Received: Time of pgm1: 0
+Received: Type of buzzer ON/OFF 1
+Received: Type of rf 1
+Received: ----------------------------------
+Received: La memoria heap disponible en el dispositivo actualmente es de :
+Received: 304712
+Received: zone 1 en electro_effects_zone_1_tuyareport
+Received: Enciende Zona en electro_effects_zone_1
+Received: pgm 1 en electro_effects_pgm_1_tuyareport
+Received: alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Received: Proceding to save permanent new data, update past data
+Received: electro main past data UPDATED _ in loop()
+Received: Mode: 0
+Received: entre a luego de offline mode verification en wifi()
+Received: he pasado la lectura de memoria interna
+Received: Credentials exists
+Received: MIRAN2025
+Received: Chico955
+Received: 60No Se logr?? conectar a Network a la primera !
+Received: credentials before smart config
+Received: SSID storage permanent :MIRAN2025
+Received: PSS storage permanent :Chico95SSID Current detected :
+Received: PSS Current detected :Actual Passwordwn by Class
+Received: Smart config was NOT activated
+Received: Waiting for Wifi
+Received: . ??? Internet disponible.
+Received: SSID:MIRAN2025
+Received: PzS:Chico955
+Received: Wifi connected succesfully 1
+Received: WiFi Connected to : MIRAN2025
+Received: IP Address: 192.168.1.33
+Received: MAC Address: 98:88:E0:03:42:90
+Received: pace for create wifi tasks )
+Received: Tasks ef, rf and siren have been deleted
+Received: *** wifi Connected SUCCESFULLY FOR EVER ***
+Received: Before is certified conditional in wireless?
+Received: Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Received: Prueba MACC adding :
+Received: #######El valor de variable connected to amazon es : 1
+Received: The client connects to the AWS MQTT broker with Thingname :
+Received: $aws/things/98:88:E0:03:42:90/jobs/notify
+Received: Trying to suscribe to : 98:88:E0:03:42:90/EA01J == Suscripci??n Exitosa !!
+Received: Trying to suscribe to : 98:88:E0:03:42:90/EA01J_conf == Suscripci??n Exitosa !!
+Received: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs/notifySuscribed to MQTT topics correctly
+Received: end of mqtt() function
+Received: mqtt() 414-line completed
+Received: nished, notifying to main loop for creating Alexa
+Received: mqtt finished : 1
+Received: alexafirsttime : 0
+Received: alexafinished : 0
+Received: alexafinished2 : 0
+Received: Task Alexa Created in main loop()
+Received: 98:88:E0:03:42:90/EA01J_conf
+Received: Message Payload :  {"FIRMWARE VERSION":"0.1.336","FIRMWARE BUILD_TIMESTAMP":"2025-08-11 08:43:15.618352","MCU":"ESP32-S3","API MODE":0,"OTA TYPE":"aws","mode":100}
+Received: -----------------------
+Received: ******************** Task alexa_sc initialized correctly
+Received: Task alexa running on coreWelcome to Alexa Device Program :0
+Received: 1
+Received: 2
+Received: 3
+Received: Alexa creation confirmation fromFauxmo enviando informacion a alexa
+Received: ******************** Task electricfence_sc initialized correctly
+Received: Task e_fence running on core1
+Received: WDT created for task electric fence
+Received: ******************** Task siren_sc initialized correctly
+Received: Task siren running on core1
+Received: WDT created for task siren
+Received: JSON docconf : 208
+Received: Publish from electroconf_publishMessage
+Received: JSON doctro : 112
+Received: ******************** Task radiofrequency_sc initialized correctly
+Received: Task radiofrequency running on core1
+Received: WDT created for task RF
+Received: Publish from electro_publishMessage
+Received: electro_publishMessage in electro_main_first_publish_the_aio_server
+Received: publishs from EME
+Received: Message arrived in topic: 98:88:E0:032:90/EA01J_conf
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+Received: -----------------------
+Received: A Callback has been discarted bc message is from device itself
+Received: ******************** Task tuyaiot initialized correctly
+Received: Task tuyaiot running on core1
+Received: 8526275
+Received: sadasdasdasd_config
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA01J_conf
+Received: sage Payload :  {"FIRMWARE VERSION":"0.1.336","FIRMWARE BUILD_TIMESTAMP":"2025-08-11 08:43:15.618352","API MODE":0,"MCU":"ESP32-S3","OTA TYPE":"aws","mode":99}110
+Received: -----------------------
+Received: .00 % 1637.00 Battery Caution- Multiplo de 5 published :
+Received: 110%
+Received: 1
+Received: DEBUG: T??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/update
+Received: ############################El valor de variable var state de jobs de ota aws es : 2
+Received: ############################El valor de variable jobid es : JOB_EA01J_9888e0034290_1755007440275
+Received: 98:88:E0:03:42:90/EA01J
+Received: Mess"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"sttus":0,"cause":0},"key":0,"zone":1,"pgm1":0,"iJOB_EA01J_9888e0034290_1755007440275s
+Received: lockedJSON docconf : ":0}
+Received: -----------------------
+Received: 144
+Received: A Callback has been discarted bc message is from device itself
+Received: Publish electroconf_publishMessage_retained_heartbeat
+Received: JSON docconf : 208
+Received: Publish from electroconf_publishMessage
+Received: JSON doctro : 126
+Received: Message arrived in topic: $aws/things/98:88:E0:03:42:90/jobs/JOB_EA01J_9888e0034290_1755007440275/update/accepted
+Received: Message Payload :  {"timestamp":175500746}
+Received: -----------------------
+Received: Message arrived in topic: 98:88:E0:0Message Payload :  {"FIRMWARE VERSION":"0.1.336","FIRMWARE BUILD_TIMESTAMP":"2025-08-11 08:43:15.618352","MCU":"ESP32-S3","API MODE":0,"OTA TYPE":"aws","mode":100}
+Received: ----Message arrived in topic: 98:88:EMessage Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+Received: ---------------------
+Received: A Callback has been discarted bc message is from device itself
+Received: $aws/thinMessage Payload :  {"timestamp":175500476,"job":{}}
+Received: ----
+Received: get
+Received: ??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs//get/accepted
+Received: DEBUG: T??pico MQTT armado: $aws/things/98:88:E0:03:42:90/jobs//update
+Received: Publish from electro_publishMessage
+Received: electro_publishMessage in electro_main_first_publish_the_aio_server
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+Received: zone 1 en electro_effects_zone_1_tuyareport
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x01 0x77
+Received: pgm 1 en electro_effects_pgm_1_tuyareport
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x00 0x77
+Received: alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Received: Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+Received: Publish due to flag_send_periodic time cycle from electro cpp
+Received: JSON doctro : 56
+Received: Message arrived in topic: 98:88:E0:03:42:90/EA01J
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"battLvl":110,"islocked":0}
+Received: -----------------------
+Received: A Callback has been discarted bc message is from device itself
+Received: Publish from electro_publishMessage
+Received: 98:88:E0:03:42:90/EA01
+Received: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+Received: -----------------------
+Received: A Callback has been discarted bc message is from device itself
+Received: A publish has been made !!
+Received: Proceding to save permanent new data, update past data
+Received: electro main past data UPDATED _ in loop()
+Received: aqui estoy en awsota_jobs_process_loop
+Received: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs//get == Suscripci??n Exitosa !!
+Received: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs//get/accepted == Suscripci??n Exitosa !!
+Received: $aws/things/98:88:E0:03:42:90/jobs//update
+Received: ############################El valor de variable topicname es : $aws/things/98:88:E0:03:42:90/jobs//get
+Received: arrived in topic: $aws/things/98:88:E0:03:42:90/jobs//update/rejected
+Received: Message Payload :  {"timestamp":1755007480,"code":"InvalidTopic","message":"$aws/things/98:88:E0:03:42:90/jobs//update is not a recognized job topic"}
+Received: -----------------------
+Received: Message arrived in topic: $aws/things/98:88:E0:03:42:90/jobs//get/rejected
+Received: Message Payload :  {"timestamp":1755007480,"code":"InvalidTopic","message":"$aws/things/98:88:E0:03:42:90/jobs//get is not a recognized job topic"}
+Received: -------------------
