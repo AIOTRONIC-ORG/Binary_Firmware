@@ -192,43 +192,52 @@ function Monitor-Serial {
 
     $macPattern = '^[0-9A-Fa-f]{2}(:[0-9A-Fa-f]{2}){5}$'
 
-    Write-Host "Waiting for device to disconnect..."
-    while ($true) {
-        try {
-            $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
-            $sp.Open()
-            $sp.Close()
-            Start-Sleep -Seconds 1
-        } catch {
-            Write-Host "Device disconnected. Waiting for reconnection..."
-            break
-        }
-    }
+    Write-Host "Seleccione una opcion:"
+    Write-Host "1. Esperar desconexion y luego reconexion del dispositivo"
+    Write-Host "2. Iniciar monitoreo directamente"
+    $choice = Read-Host "Ingrese 1 o 2"
 
-    Wait-ForDevice $port
+    if ($choice -eq '1') {
+        Write-Host "Esperando que el dispositivo se desconecte..."
+        while ($true) {
+            try {
+                $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
+                $sp.Open()
+                $sp.Close()
+                Start-Sleep -Seconds 1
+            } catch {
+                Write-Host "Dispositivo desconectado. Esperando reconexion..."
+                break
+            }
+        }
+
+        Wait-ForDevice $port
+    } elseif ($choice -ne '2') {
+        Write-Host "Opcion no valida. Cancelando operacion."
+        return
+    }
 
     try {
         $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
         $sp.ReadTimeout = 1000
         $sp.Open()
 
-        Write-Host "Monitoring for MAC address... (press 'q' or Enter to stop)"
+        Write-Host "Monitoreando por direccion MAC... (presione 'q' o Enter para detener)"
         
         while ($true) {
-            # teclado no bloqueante
             if ([Console]::KeyAvailable) {
                 $key = [Console]::ReadKey($true)
                 if ($key.Key -eq 'Enter' -or $key.KeyChar -eq 'q') {
-                    Write-Host "Stopping monitor..."
+                    Write-Host "Deteniendo monitoreo..."
                     break
                 }
             }
 
             try {
-                if ($sp.BytesToRead -gt 0) {  # leer solo si hay datos
+                if ($sp.BytesToRead -gt 0) {
                     $line = $sp.ReadLine().Trim()
                     if ($line) {
-                        Write-Host "Received: $line"
+                        Write-Host "Recibido: $line"
                         if ($line -match $macPattern) {
                             $mac = $line.ToUpper()
                             Generate-QRImage $mac
@@ -236,17 +245,15 @@ function Monitor-Serial {
                     }
                 }
             } catch {
-                # ignorar timeouts sin interrumpir el bucle
+                # ignorar timeouts
             }
         }
 
         $sp.Close()
     } catch {
-        Write-Host "An error occurred: $_"
+        Write-Host "Ocurrio un error: $_"
     }
 }
-
-
 
 # Ejemplo de uso:
 # Monitor-Serial "COM4"
@@ -511,6 +518,22 @@ function LoadLocalFirmware {
     }
 
     $port = SelectCOMPort
+	
+	# Tras tu write_flash, añade:
+	# CRUCIAL for failings in charge from aio.exe of main.ps1, ota partition content, avoids you to enter the factory partition
+	# so it appears the code has not been charged !!! 
+	# ( por eso requerias flashear antes de cargar codigo, 
+	# solo si en ese dispositivo ya habias hecho una carga ota por lo menos una vez desde la ultima vez q fue flasheado ) 
+	
+	# SOLO BORRA UNA PARTE DE LA FLASH ( LA OTA DATA ) interfiere con el siguiente inicio q debe ser en factory mode si o si
+	# pero relax, si se podra seguir haciendo cargas de ota, solo estas borrando el contenido de la direccion , no el partitions.bin
+	& $venvPython -m esptool --chip esp32s3 --port $port erase_region 0xE000 0x2000
+	if ($LASTEXITCODE -eq 0) {
+		Write-Host "✅ otadata borrado correctamente"
+	} else {
+		Write-Host "❌ Error al borrar otadata"
+	}
+
 
     & $venvPython -m esptool --chip esp32s3 --port $port --baud 115200 `
         --before default_reset --after hard_reset write_flash -z `
