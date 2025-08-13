@@ -281,25 +281,62 @@ function Get-Esp32Mac {
     return ''
 }
 
-
 function SelectCOMPort {
 
     param(
         [switch]$Verbose
     )
 
+    function ProbarCOMsRapido {
+        param([string[]]$lista)
+
+        $macs  = @{}
+        $fails = @{}
+
+        if ($lista) {
+            Write-Host "`nLeyendo MACs de puertos: $($lista -join ', ')..."
+            foreach ($com in $lista) {
+                Write-Host ("Probing {0,-5}…" -f $com) -NoNewline
+
+                $job = Start-Job -ScriptBlock {
+                    param($py, $port)
+                    & $py -m esptool `
+                          --chip auto --port $port --baud 115200 `
+                          --before default_reset --after no_reset `
+                          --connect-attempts 5 read_mac 2>&1
+                } -ArgumentList $script:venvPython, $com
+				
+				# TIMEOUT DE 1 SEGUNDOS ::::
+                if (Wait-Job $job -Timeout 1) {
+                    $out = Receive-Job $job
+                    Remove-Job $job
+
+                    if ($Verbose) { $out | ForEach-Object { Write-Host "    $_" } }
+
+                    $outStr = $out -join "`n"
+                    if ($outStr -match 'MAC:\s*([0-9A-Fa-f:]{2}(?::[0-9A-Fa-f]{2}){5})') {
+                        $macs[$com] = $Matches[1]
+                        Write-Host "  OK $($macs[$com])"
+                    } else {
+                        $fails[$com] = "Sin respuesta valida"
+                        Write-Host "  error: sin respuesta valida"
+                    }
+                } else {
+                    Stop-Job $job | Out-Null
+                    Remove-Job $job
+                    $fails[$com] = "timeout"
+                    Write-Host "  timeout"
+                }
+            }
+        }
+
+        return @{ macs = $macs ; fails = $fails }
+    }
+
     Write-Host "`nSeleccione modo para elegir puerto COM:"
     Write-Host "1. Elegir por indice"
     Write-Host "2. Ingresar COM manualmente (ej: COM4)"
     $modo = Read-Host "Opcion"
-    if ($modo -eq "2") {
-        $manual = Read-Host "Ingrese el nombre del puerto COM (ej: COM4)"
-        if ($manual -match '^COM\d+$') {
-            return $manual
-        } else {
-            Write-Host "Puerto COM invalido."; Pause; return $null
-        }
-    }
 
     try {
         $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
@@ -320,34 +357,9 @@ function SelectCOMPort {
         if ($m.Success) { $comPortsToCheck += $m.Value.Trim('()') }
     }
 
-    $macs  = @{}
-    $fails = @{}
-
-    if ($comPortsToCheck) {
-        Write-Host "`nLeyendo MACs de puertos: $($comPortsToCheck -join ', ')..."
-        foreach ($com in $comPortsToCheck) {
-            Write-Host ("Probing {0,-5}…" -f $com) -NoNewline
-            try {
-                $out = & $script:venvPython -m esptool `
-                         --chip auto --port $com --baud 115200 `
-                         --before default_reset --after no_reset `
-                         --connect-attempts 5 read_mac 2>&1
-            } catch {
-                $fails[$com] = $_.Exception.Message
-                Write-Host "  error: $($_.Exception.Message)"
-                continue
-            }
-
-            if ($Verbose) { $out | ForEach-Object { Write-Host "    $_" } }
-
-            $outStr = $out -join "`n"
-            if ($outStr -match 'MAC:\s*([0-9A-Fa-f:]{2}(?::[0-9A-Fa-f]{2}){5})') {
-                $macs[$com] = $Matches[1]
-                Write-Host "  OK $($macs[$com])"
-			}
-
-        }
-    }
+    $resultado = ProbarCOMsRapido -lista $comPortsToCheck
+    $macs  = $resultado.macs
+    $fails = $resultado.fails
 
     Write-Host "`nPuertos COM disponibles:"
     for ($i = 0; $i -lt $ports.Count; $i++) {
@@ -378,6 +390,15 @@ function SelectCOMPort {
         Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $info, $usb)
     }
 
+    if ($modo -eq "2") {
+        $manual = Read-Host "Ingrese el nombre del puerto COM (ej: COM4 o com14) (minusculas permitidas)"
+        if ($manual -match '^COM\d+$') {
+            return $manual
+        } else {
+            Write-Host "Puerto COM invalido."; Pause; return $null
+        }
+    }
+
     $sel = Read-Host "`nSeleccione un puerto por indice"
     $idx = 0
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
@@ -385,6 +406,7 @@ function SelectCOMPort {
     }
     return $ports[$idx-1].ComPort
 }
+
 
 function LoadLocalFirmware {
     # Cargar tres binarios locales o desde una ruta base (local o URL) y flashear el ESP32

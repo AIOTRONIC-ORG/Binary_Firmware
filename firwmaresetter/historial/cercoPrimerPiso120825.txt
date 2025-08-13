@@ -14,8 +14,8 @@
 Seleccione una opcion: 6
 
 Seleccione modo para elegir puerto COM:
-1. Elegir por indice
-2. Ingresar COM manualmente (ej: COM4)
+1. Elegir por índice.
+2. Ingresar COM manualmente (ej: COM4).
 Opcion: 2
 Ingrese el nombre del puerto COM (ej: COM4): COM3
 \n??  Iniciando monitor serial en COM3...\n
