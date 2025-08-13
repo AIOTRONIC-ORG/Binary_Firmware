@@ -548,6 +548,8 @@ function LoadLocalFirmware {
         Write-Host "Error al cargar firmware."
     }
     Pause
+	
+	Monitor-Serial $port
 }
 
 
