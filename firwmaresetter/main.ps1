@@ -185,17 +185,17 @@ function Wait-ForDevice {
         }
     }
 }
+
 function Monitor-Serial {
-    param (
-        [string]$port
-    )
+    param ( [string]$port )
 
     $macPattern = '^[0-9A-Fa-f]{2}(:[0-9A-Fa-f]{2}){5}$'
 
     Write-Host "Seleccione una opcion:"
-    Write-Host "1. Esperar desconexion y luego reconexion del dispositivo"
-    Write-Host "2. Iniciar monitoreo directamente"
-    $choice = Read-Host "Ingrese 1 o 2"
+    Write-Host "1. Desconectar dispositivo manualmente e iniciar monitoreo serial"
+    Write-Host "2. Iniciar monitoreo serial directamente (usualmente no permitido)"
+    Write-Host "3. Reiniciar dispositivo (sin desconectarlo) e iniciar monitoreo serial"
+    $choice = Read-Host "Ingrese 1, 2 o 3"
 
     if ($choice -eq '1') {
         Write-Host "Esperando que el dispositivo se desconecte..."
@@ -210,8 +210,35 @@ function Monitor-Serial {
                 break
             }
         }
-
         Wait-ForDevice $port
+    } elseif ($choice -eq '3') {
+        try {
+            $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
+            $sp.ReadTimeout = 500
+            $sp.Open()
+            Write-Host "Reiniciando dispositivo via DTR/RTS..."
+
+            # intento 1: pulso rapido en DTR (suele resetear ESP32)
+            $sp.DtrEnable = $true
+            Start-Sleep -Milliseconds 50
+            $sp.DtrEnable = $false
+
+            # intento 2: breve pulso combinado DTR/RTS (segun placa)
+            Start-Sleep -Milliseconds 50
+            $sp.RtsEnable = $true
+            $sp.DtrEnable = $true
+            Start-Sleep -Milliseconds 50
+            $sp.RtsEnable = $false
+            $sp.DtrEnable = $false
+
+            # breve espera para que el firmware reinicie
+            Start-Sleep -Seconds 2
+        } catch {
+            Write-Host "Error al intentar reiniciar el dispositivo: $_"
+            return
+        } finally {
+            if ($sp -and $sp.IsOpen) { $sp.Close() }
+        }
     } elseif ($choice -ne '2') {
         Write-Host "Opcion no valida. Cancelando operacion."
         return
@@ -222,8 +249,10 @@ function Monitor-Serial {
         $sp.ReadTimeout = 1000
         $sp.Open()
 
+        # limpiar buffer por si quedaron bytes del reinicio
+        try { $sp.DiscardInBuffer() } catch {}
+
         Write-Host "Monitoreando por direccion MAC... (presione 'q' o Enter para detener)"
-        
         while ($true) {
             if ([Console]::KeyAvailable) {
                 $key = [Console]::ReadKey($true)
@@ -232,7 +261,6 @@ function Monitor-Serial {
                     break
                 }
             }
-
             try {
                 if ($sp.BytesToRead -gt 0) {
                     $line = $sp.ReadLine().Trim()
@@ -248,12 +276,12 @@ function Monitor-Serial {
                 # ignorar timeouts
             }
         }
-
         $sp.Close()
     } catch {
         Write-Host "Ocurrio un error: $_"
     }
 }
+
 
 # Ejemplo de uso:
 # Monitor-Serial "COM4"
