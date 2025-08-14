@@ -158,15 +158,7 @@ function Install-EmbeddedPython {
 }
 
 
-function Generate-QRImage {
-    param (
-        [string]$mac
-    )
-    # Aquí tendrías que implementar un generador de QR en .NET o usar un ejecutable externo.
-    # Por ahora solo guardaremos el texto en un archivo.
-    $mac | Out-File "mac_address.txt"
-    Write-Host "MAC address saved: $mac"
-}
+
 
 function Wait-ForDevice {
     param (
@@ -767,16 +759,253 @@ function UpdateFirmwareAndMonitor
 	SerialMonitor($port)
 }
 
-function PrintQRCode 
-{
-    if (-not (Test-Path "mac_qr.png")) {
-        Write-Host "No se encontro mac_qr.png. Ejecute el monitor serial primero."
-    } else {
-        #& "$venvPython" print_qr.py
-		Generate-QRImage -Mac $mac
+# =========================
+#  Utilidad: cargar QRCoder
+# =========================
+function Get-QRCoder {
+    param(
+        [string]$Version = '1.4.3'
+    )
+    $base = Join-Path (Resolve-Path ".") "qrlib"
+    New-Item -ItemType Directory -Force -Path $base | Out-Null
+    $pkg  = Join-Path $base "QRCoder.$Version.nupkg"
 
-		
+    if (-not (Test-Path $pkg)) {
+        Write-Host "Descargando QRCoder $Version desde NuGet..."
+        Invoke-WebRequest -UseBasicParsing -Uri "https://www.nuget.org/api/v2/package/QRCoder/$Version" -OutFile $pkg
     }
+
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $extDir = Join-Path $base "QRCoder.$Version"
+    if (-not (Test-Path $extDir)) {
+        [System.IO.Compression.ZipFile]::ExtractToDirectory($pkg, $extDir)
+    }
+
+    $dll = Get-ChildItem -Path $extDir -Recurse -Filter QRCoder.dll |
+           Where-Object { $_.FullName -match 'netstandard' } |
+           Select-Object -First 1
+    if (-not $dll) { throw "No se encontró QRCoder.dll dentro del paquete." }
+
+    # Cargar solo si no está cargado
+    if (-not ([AppDomain]::CurrentDomain.GetAssemblies() | Where-Object { $_.Location -eq $dll.FullName })) {
+        Add-Type -Path $dll.FullName
+    }
+}
+
+# =========================================
+#  Selección de COM y lectura de MAC (final)
+# =========================================
+
+function Select-COMMac {
+    param([switch]$Verbose)
+
+    function ProbarCOMsRapido {
+        param([string[]]$lista, [switch]$Verbose)
+        $macs  = @{}
+        $fails = @{}
+
+        if ($lista) {
+            Write-Host "`nLeyendo MACs de puertos: $($lista -join ', ')..."
+            foreach ($com in $lista) {
+                Write-Host ("Probing {0,-6}…" -f $com) -NoNewline
+
+                $job = Start-Job -ScriptBlock {
+                    param($py, $port)
+                    & $py -m esptool `
+                          --chip auto --port $port --baud 115200 `
+                          --before default_reset --after no_reset `
+                          --connect-attempts 5 read_mac 2>&1
+                } -ArgumentList $script:venvPython, $com
+
+                # Aumenta un poco el timeout para dar tiempo a abrir puerto
+                if (Wait-Job $job -Timeout 3) {
+                    $out = Receive-Job $job
+                    Remove-Job $job
+                    if ($Verbose) { $out | ForEach-Object { Write-Host "    $_" } }
+                    $outStr = $out -join "`n"
+
+                    if ($outStr -match 'MAC:\s*([0-9A-Fa-f:]{2}(?::[0-9A-Fa-f]{2}){5})') {
+                        $macs[$com] = $Matches[1]
+                        Write-Host "  OK $($macs[$com])"
+                    } else {
+                        $fails[$com] = "sin respuesta válida"
+                        Write-Host "  error: sin respuesta válida"
+                    }
+                } else {
+                    Stop-Job $job | Out-Null
+                    Remove-Job $job
+                    $fails[$com] = "timeout"
+                    Write-Host "  timeout"
+                }
+            }
+        }
+        return @{ macs = $macs ; fails = $fails }
+    }
+
+    # 1) Obtener lista cruda
+    try {
+        $portsRaw = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" | Sort-Object Caption
+    } catch { $portsRaw = @() }
+
+    if (-not $portsRaw) {
+        $portsRaw = [System.IO.Ports.SerialPort]::GetPortNames() |
+                    ForEach-Object { @{ DeviceID = $_ ; Caption = $_ } }
+    }
+    if (-not $portsRaw) { Write-Host "No se encontraron puertos COM."; return $null }
+
+    # 2) Filtrar solo entradas con (COMx) y sin Bluetooth
+    $comRegex = '\(COM\d+\)'
+    $items = @()
+    foreach ($p in $portsRaw) {
+        if ($p.Caption -match 'Bluetooth') { continue }
+        $m = [regex]::Match($p.Caption, $comRegex)
+        if (-not $m.Success) { continue }
+        $com = $m.Value.Trim('()')
+        $items += [pscustomobject]@{
+            ComPort = $com
+            Caption = $p.Caption
+        }
+    }
+
+    if (-not $items) { Write-Host "No hay dispositivos COM válidos."; return $null }
+
+    # 3) Probar lectura rápida de MACs sobre la lista filtrada
+    $resultado = ProbarCOMsRapido -lista ($items.ComPort) -Verbose:$Verbose
+    $macs  = $resultado.macs
+    $fails = $resultado.fails
+
+    # 4) Mostrar SOLO la lista filtrada y numerada
+    Write-Host "`nPuertos COM disponibles:"
+    for ($i = 0; $i -lt $items.Count; $i++) {
+        $row = $items[$i]
+        Write-Host (" {0,2}. {1,-6}  {2}" -f ($i+1), $row.ComPort, $row.Caption)
+    }
+
+    Write-Host "`nPuertos con MAC o error:"
+    for ($i = 0; $i -lt $items.Count; $i++) {
+        $row = $items[$i]
+        $info = if ($macs.ContainsKey($row.ComPort)) { "MAC $($macs[$row.ComPort]) OK" }
+                elseif ($fails.ContainsKey($row.ComPort)) { "error: $($fails[$row.ComPort])" }
+                else { "sin intento" }
+        Write-Host (" {0,2}. {1,-6}  {2}" -f ($i+1), $row.ComPort, $info)
+    }
+
+    # 5) Selección por índice sobre la lista filtrada
+    $sel = Read-Host "`nSeleccione un puerto por indice"
+    $idx = 0
+    if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $items.Count) {
+        Write-Host "Indice inválido."; return $null
+    }
+    $selected = $items[$idx-1]
+    $selectedCom = $selected.ComPort
+
+    # 6) Obtener MAC definitiva (si no llegó en el barrido)
+    $mac = $macs[$selectedCom]
+    if (-not $mac) {
+        Write-Host "Leyendo MAC de $selectedCom..."
+        $out = & $script:venvPython -m esptool `
+              --chip auto --port $selectedCom --baud 115200 `
+              --before default_reset --after no_reset `
+              --connect-attempts 5 read_mac 2>&1
+        $outStr = $out -join "`n"
+        if ($outStr -match 'MAC:\s*([0-9A-Fa-f:]{2}(?::[0-9A-Fa-f]{2}){5})') {
+            $mac = $Matches[1]
+        } else {
+            Write-Host "No se pudo obtener la MAC de $selectedCom."; return $null
+        }
+    }
+
+    # 7) Normalizar a AA:BB:CC:DD:EE:FF
+    $mac = ($mac -replace '[^0-9A-Fa-f]', '').ToUpper()
+    if ($mac.Length -eq 12) {
+        $pairs = for ($i=0; $i -lt 12; $i+=2) { $mac.Substring($i,2) }
+        $mac = ($pairs -join ':')
+    }
+    return $mac
+}
+
+
+
+# =========================================
+#  Generar QR con el texto "OK <MAC>"
+# =========================================
+function Generate-QRImage {
+    param (
+        [string]$Mac
+    )
+    if (-not $Mac) 
+    {
+        $Mac = Select-COMMac
+        if (-not $Mac) { Write-Host "Operación cancelada."; return }
+    }
+
+    # Cargar QRCoder
+    Get-QRCoder -Version '1.4.3'
+
+    # Construir texto final
+    $texto  = "$Mac"
+
+    # $salida = "mac_qr.png"  # o si prefieres: "qr_$($Mac.Replace(':','')) .png"
+    # $basePath = Split-Path -Parent $MyInvocation.MyCommand.Path
+    # $basePath = $PSScriptRoot
+    # $basePath = if ($PSScriptRoot) { $PSScriptRoot } else { "$env:USERPROFILE\Documents" }
+# resuelve carpeta base del script o exe, evitando System32
+    $baseDir = $null
+
+    if ($PSScriptRoot -and $PSScriptRoot.Trim()) {
+        $baseDir = $PSScriptRoot.TrimEnd('\','/')
+    }
+    elseif ($PSCommandPath -and $PSCommandPath.Trim()) {
+        $baseDir = (Split-Path -Parent $PSCommandPath).TrimEnd('\','/')
+    }
+    elseif ($MyInvocation -and $MyInvocation.MyCommand -and $MyInvocation.MyCommand.Path) {
+        $baseDir = (Split-Path -Parent $MyInvocation.MyCommand.Path).TrimEnd('\','/')
+    }
+    elseif ([System.AppDomain]::CurrentDomain -and [System.AppDomain]::CurrentDomain.FriendlyName -like "*.exe") {
+        # ps2exe: base del exe
+        $baseDir = [System.AppDomain]::CurrentDomain.BaseDirectory.TrimEnd('\','/')
+    }
+    else {
+        # ultimo recurso: si se esta dentro de un .exe cualquiera
+        try {
+            $procExe = [System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName
+            if ($procExe -and $procExe.Trim()) { $baseDir = (Split-Path -Parent $procExe).TrimEnd('\','/') }
+        } catch {}
+        if (-not $baseDir) { $baseDir = (Get-Location).Path.TrimEnd('\','/') }
+    }
+
+
+    $salida = Join-Path $baseDir "mac_qr.png"
+    $macFile = Join-Path $baseDir "mac_address.txt"
+
+
+    # Generar PNG en memoria y grabar a archivo
+    $gen   = [QRCoder.QRCodeGenerator]::new()
+    $qr    = $gen.CreateQrCode($texto, [QRCoder.QRCodeGenerator+ECCLevel]::Q)
+    $pngQR = [QRCoder.PngByteQRCode]::new($qr)
+    # $bytes = $pngQR.GetGraphic(10, "#000000", "#FFFFFF", $true)  # 10 px por módulo
+   $dark = [byte[]](0, 0, 0, 255)
+    $light = [byte[]](255, 255, 255, 255)
+    $bytes = $pngQR.GetGraphic(10, $dark, $light, $true)
+
+
+    # [System.IO.File]::WriteAllBytes($salida, $bytes)
+    # $Mac | Out-File -Encoding ascii "mac_address.txt"
+    [System.IO.File]::WriteAllBytes($salida, $bytes)
+    $Mac | Out-File -Encoding ascii $macFile
+
+
+    Write-Host "QR guardado en $salida con contenido: $texto"
+    Write-Host "MAC address saved: $Mac"
+    try { & open $salida } catch {}
+}
+
+# =====================
+#  Acción "imprimir QR"
+# =====================
+function PrintQRCode {
+    # Flujo directo: selecciona COM, lee MAC, genera QR
+    Generate-QRImage
     Pause
 }
 
