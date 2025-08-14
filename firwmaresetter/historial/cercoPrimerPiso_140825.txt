@@ -1,0 +1,391 @@
+7. Salir
+8. Resetear la consola (eliminar Python embebido Offline)
+Seleccione una opcion: 5
+
+Seleccione el metodo de carga:
+  1) Selector de archivos (OpenFileDialog)
+    2) Ruta base (local o URL) que contenga bootloader.bin, partitions.bin y firmware.bin
+    Ingrese 1 o 2: 1
+
+    Seleccione modo para elegir puerto COM:
+    1. Elegir por indice
+    2. Ingresar COM manualmente (ej: COM4)
+    Opcion: 1
+
+    Leyendo MACs de puertos: COM12, COM1...
+    Probing COM12…  OK 98:88:e0:03:42:90
+    Probing COM1 …  timeout
+
+    Puertos COM disponibles:
+      1. COM12   Dispositivo serie USB (COM12) USB
+        2. COM1    Puerto de comunicaciones (COM1)
+          3. COM10   Serie estándar sobre el vínculo Bluetooth (COM10)
+            4. COM11   Serie estándar sobre el vínculo Bluetooth (COM11)
+              5. COM21   Serie estándar sobre el vínculo Bluetooth (COM21)
+                6. COM23   Serie estándar sobre el vínculo Bluetooth (COM23)
+                  7. COM7    Serie estándar sobre el vínculo Bluetooth (COM7)
+                    8. COM8    Serie estándar sobre el vínculo Bluetooth (COM8)
+
+                    Puertos con MAC o error:
+                      1. COM12   MAC 98:88:e0:03:42:90 OK USB
+                        2. COM1    error: timeout
+                          3. COM10   sin intento
+                            4. COM11   sin intento
+                              5. COM21   sin intento
+                                6. COM23   sin intento
+                                  7. COM7    sin intento
+                                    8. COM8    sin intento
+
+                                    Seleccione un puerto por indice: 1
+                                    Warning: Deprecated: Command 'erase_region' is deprecated. Use 'erase-region' instead.
+                                    esptool v5.0.2
+                                    Serial port COM12:
+                                    Connecting...
+                                    Connected to ESP32-S3 on COM12:
+                                    Chip type:          ESP32-S3 (QFN56) (revision v0.2)
+                                    Features:           Wi-Fi, BT 5 (LE), Dual Core + LP Core, 240MHz, Embedded PSRAM 8MB (AP_3v3)
+                                    Crystal frequency:  40MHz
+                                    USB mode:           USB-Serial/JTAG
+                                    MAC:                98:88:e0:03:42:90
+
+                                    Uploading stub flasher...
+                                    Running stub flasher...
+                                    Stub flasher running.
+
+                                    Erasing flash memory region (this may take a while depending on size)...
+                                    Flash memory region erased successfully in 0.0 seconds.
+
+                                    Hard resetting via RTS pin...
+                                    ✅ otadata borrado correctamente
+                                    Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+                                    Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+                                    Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+                                    Warning: Deprecated: Choice 'default_reset' for option '--before' is deprecated. Use 'default-reset' instead.
+                                    Warning: Deprecated: Choice 'hard_reset' for option '--after' is deprecated. Use 'hard-reset' instead.
+                                    Warning: Deprecated: Command 'write_flash' is deprecated. Use 'write-flash' instead.
+                                    esptool v5.0.2
+                                    Serial port COM12:
+                                    Connecting...
+                                    Connected to ESP32-S3 on COM12:
+                                    Chip type:          ESP32-S3 (QFN56) (revision v0.2)
+                                    Features:           Wi-Fi, BT 5 (LE), Dual Core + LP Core, 240MHz, Embedded PSRAM 8MB (AP_3v3)
+                                    Crystal frequency:  40MHz
+                                    USB mode:           USB-Serial/JTAG
+                                    MAC:                98:88:e0:03:42:90
+
+                                    Uploading stub flasher...
+                                    Running stub flasher...
+                                    Stub flasher running.
+
+                                    Configuring flash size...
+                                    Auto-detected flash size: 16MB
+                                    Flash will be erased from 0x00000000 to 0x00003fff...
+                                    Flash will be erased from 0x00008000 to 0x00008fff...
+                                    Flash will be erased from 0x00010000 to 0x00155fff...
+                                    Flash parameters set to 0x0240.
+                                    SHA digest in image updated.
+                                    Compressed 15104 bytes to 10428...
+
+                                    Writing at 0x00000000 [                              ]   0.0% 0/10428 bytes...
+
+                                    Writing at 0x00003b00 [==============================] 100.0% 10428/10428 bytes...
+                                    Wrote 15104 bytes (10428 compressed) at 0x00000000 in 0.2 seconds (725.9 kbit/s).
+                                    Hash of data verified.
+                                    Compressed 3072 bytes to 146...
+
+                                    Writing at 0x00008000 [                              ]   0.0% 0/146 bytes...
+
+                                    Writing at 0x00008c00 [==============================] 100.0% 146/146 bytes...
+                                    Wrote 3072 bytes (146 compressed) at 0x00008000 in 0.0 seconds (775.5 kbit/s).
+                                    Hash of data verified.
+                                    Compressed 1332704 bytes to 812593...
+
+                                    Writing at 0x00010000 [                              ]   0.0% 0/812593 bytes...
+
+                                    Writing at 0x0001b265 [                              ]   2.0% 16384/812593 bytes...
+
+                                    Writing at 0x00026f78 [>                             ]   4.0% 32768/812593 bytes...
+
+                                    Writing at 0x00031f58 [>                             ]   6.0% 49152/812593 bytes...
+
+                                    Writing at 0x0003bfed [=>                            ]   8.1% 65536/812593 bytes...
+
+                                    Writing at 0x00050e61 [==>                           ]  10.1% 81920/812593 bytes...
+
+                                    Writing at 0x00059a51 [==>                           ]  12.1% 98304/812593 bytes...
+
+                                    Writing at 0x0005f49e [===>                          ]  14.1% 114688/812593 bytes...
+
+                                    Writing at 0x00065474 [===>                          ]  16.1% 131072/812593 bytes...
+
+                                    Writing at 0x0006ab0f [====>                         ]  18.1% 147456/812593 bytes...
+
+                                    Writing at 0x000707fd [=====>                        ]  20.2% 163840/812593 bytes...
+
+                                    Writing at 0x0007636b [=====>                        ]  22.2% 180224/812593 bytes...
+
+                                    Writing at 0x0007c36d [======>                       ]  24.2% 196608/812593 bytes...
+
+                                    Writing at 0x000823d3 [======>                       ]  26.2% 212992/812593 bytes...
+
+                                    Writing at 0x00087f7e [=======>                      ]  28.2% 229376/812593 bytes...
+
+                                    Writing at 0x0008d5a7 [========>                     ]  30.2% 245760/812593 bytes...
+
+                                    Writing at 0x00092ea7 [========>                     ]  32.3% 262144/812593 bytes...
+
+                                    Writing at 0x00097fe8 [=========>                    ]  34.3% 278528/812593 bytes...
+
+                                    Writing at 0x0009ce52 [=========>                    ]  36.3% 294912/812593 bytes...
+
+                                    Writing at 0x000a21d7 [==========>                   ]  38.3% 311296/812593 bytes...
+
+                                    Writing at 0x000a7280 [===========>                  ]  40.3% 327680/812593 bytes...
+
+                                    Writing at 0x000ac1a8 [===========>                  ]  42.3% 344064/812593 bytes...
+
+                                    Writing at 0x000b14ac [============>                 ]  44.4% 360448/812593 bytes...
+
+                                    Writing at 0x000b6549 [============>                 ]  46.4% 376832/812593 bytes...
+
+                                    Writing at 0x000bb563 [=============>                ]  48.4% 393216/812593 bytes...
+
+                                    Writing at 0x000c03e1 [==============>               ]  50.4% 409600/812593 bytes...
+
+                                    Writing at 0x000c62e7 [==============>               ]  52.4% 425984/812593 bytes...
+
+                                    Writing at 0x000cb8a3 [===============>              ]  54.4% 442368/812593 bytes...
+
+                                    Writing at 0x000d09e7 [===============>              ]  56.5% 458752/812593 bytes...
+
+                                    Writing at 0x000d5b5d [================>             ]  58.5% 475136/812593 bytes...
+
+                                    Writing at 0x000daa2d [=================>            ]  60.5% 491520/812593 bytes...
+
+                                    Writing at 0x000dfbc1 [=================>            ]  62.5% 507904/812593 bytes...
+
+                                    Writing at 0x000e4c76 [==================>           ]  64.5% 524288/812593 bytes...
+
+                                    Writing at 0x000ea13d [==================>           ]  66.5% 540672/812593 bytes...
+
+                                    Writing at 0x000ef494 [===================>          ]  68.6% 557056/812593 bytes...
+
+                                    Writing at 0x000f507a [====================>         ]  70.6% 573440/812593 bytes...
+
+                                    Writing at 0x000fa5fe [====================>         ]  72.6% 589824/812593 bytes...
+
+                                    Writing at 0x000ffc74 [=====================>        ]  74.6% 606208/812593 bytes...
+
+                                    Writing at 0x00105f07 [=====================>        ]  76.6% 622592/812593 bytes...
+
+                                    Writing at 0x0010dc08 [======================>       ]  78.6% 638976/812593 bytes...
+
+                                    Writing at 0x00116095 [=======================>      ]  80.7% 655360/812593 bytes...
+
+                                    Writing at 0x0011e134 [=======================>      ]  82.7% 671744/812593 bytes...
+
+                                    Writing at 0x00123419 [========================>     ]  84.7% 688128/812593 bytes...
+
+                                    Writing at 0x001289e1 [=========================>    ]  86.7% 704512/812593 bytes...
+
+                                    Writing at 0x0012eaa1 [=========================>    ]  88.7% 720896/812593 bytes...
+
+                                    Writing at 0x00136c94 [==========================>   ]  90.7% 737280/812593 bytes...
+
+                                    Writing at 0x0013d0c2 [==========================>   ]  92.7% 753664/812593 bytes...
+
+                                    Writing at 0x00145c58 [===========================>  ]  94.8% 770048/812593 bytes...
+
+                                    Writing at 0x0014c36b [============================> ]  96.8% 786432/812593 bytes...
+
+                                    Writing at 0x00151c53 [============================> ]  98.8% 802816/812593 bytes...
+
+                                    Writing at 0x001555e0 [==============================] 100.0% 812593/812593 bytes...
+                                    Wrote 1332704 bytes (812593 compressed) at 0x00010000 in 7.4 seconds (1442.5 kbit/s).
+                                    Hash of data verified.
+
+                                    Hard resetting via RTS pin...
+                                    Firmware local cargado correctamente.
+                                    Press Enter to continue...:
+                                    Seleccione una opcion:
+                                    1. Esperar desconexion y luego reconexion del dispositivo
+                                    2. Iniciar monitoreo directamente
+                                    Ingrese 1 o 2: 1
+                                    Esperando que el dispositivo se desconecte...
+                                    Dispositivo desconectado. Esperando reconexion...
+                                    Waiting for device to reconnect on COM12...
+                                    Device reconnected on COM12
+                                    Monitoreando por direccion MAC... (presione 'q' o Enter para detener)
+                                    Recibido: rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+                                    Recibido: SPIWP:0xee
+                                    Recibido: mode:DIO, clock div:2
+                                    Recibido: load:0x3fce3808,len:0x4bc
+                                    Recibido: load:0x403c9700,len:0xbd8
+                                    Recibido: load:0x403cc700,len:0x2a0c
+                                    Recibido: entry 0x403c98d0
+                                    Recibido: ---------------------------------------------------------------------
+                                    Recibido: ---------------------------------------------------------------------
+                                    Recibido: Project version v0.1.352, built 2025-08-13 12:13:20.843513
+                                    Recibido: Api aioserver mode : PRODUCTION
+                                    Recibido: Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+                                    Recibido: Certifications Registered :
+                                    Recibido: -----BEGIN CERTIFICATE-----
+                                    Recibido: MIIDWTCCAkGgAwIBAgIUTSU6uPvPXEu15JE0Dvz6xmKU3o4wDQYJKoZIhvcNAQEL
+                                    Recibido: BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+                                    Recibido: SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDYyMDIyMzU0
+                                    Recibido: NVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+                                    Recibido: ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANjW97Qpgd/CMQ1eu/ss
+                                    Recibido: z3knL7Pe5GvTeArWpw31Ph8Gx3Hw7PA+MDpKMjymKBGk08xyxQ72qp/14vjWkTM7
+                                    Recibido: 7PoYwk2Qr9+1/zQl6OSbGMFAXhTQnEs6rwK/F4xgR1GSH8U38xx4nda+hblHx1kF
+                                    Recibido: z3IXkafHxzNSFAJ1GpuBSzkQJgedrPvf6YdE9jvjZG1G48F4DAUbIJTgKOUDFwz8
+                                    Recibido: tOf9Ix7fTP8tUYBmPs5LCCL5fL5R9kjaMJ3brZfrKzm41aISQeZAi99JGhbTXlei
+                                    Recibido: dpWO/k+bnRQbjLeOwGGkjyGp/0w83nDxXRfpOWKmQhQe0p7I4ge/MIkY5FNo7LZb
+                                    Recibido: HNcCAwEAAaNgMF4wHwYDVR0jBBgwFoAUUzAda/V5viWwFmqmiKpCQq5ZINwwHQYD
+                                    Recibido: VR0OBBYEFOG8vSEPMYi+np7dttkEMUk11WPiMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+                                    Recibido: AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQA8FgxMqazTjiq1z2msha1ra9rD
+                                    Recibido: PX/KMi0yGV1MwRgawKd261KCCkzUnEJD7gr/9uBWIa6TlF1SOvnpG0NiHzsBRr0N
+                                    Recibido: 0ZV5OTicfsu8nVIPPqAsC2M/Jz3aSerIhu3eTioTdHy/3BxU4iZQFaoKfRm0RPqR
+                                    Recibido: quT3zCblulFl6ND62m9ehAAD+bbRolHgbSt8YWTHdM2177qQpQulB3mjIm43EgGy
+                                    Recibido: uTn0q2Gv9HcCndp2XtVqD6iOJc7P4NNLC2vKaKz/O6NMjBZfKxt6hhxXF37m2cov
+                                    Recibido: 3ULIRKgEFGthSkVSwL/oknBCCe3gE7NH3bXIXejdL2VhvRRKJsUi/bwZqYjD
+                                    Recibido: -----END CERTIFICATE-----
+                                    Recibido: -----BEGIN RSA PRIVATE KEY-----
+                                    Recibido: MIIEpQIBAAKCAQEA2Nb3tCmB38IxDV67+yzPeScvs97ka9N4CtanDfU+HwbHcfDs
+                                    Recibido: 8D4wOkoyPKYoEaTTzHLFDvaqn/Xi+NaRMzvs+hjCTZCv37X/NCXo5JsYwUBeFNCc
+                                    Recibido: SzqvAr8XjGBHUZIfxTfzHHid1r6FuUfHWQXPcheRp8fHM1IUAnUam4FLORAmB52s
+                                    Recibido: +9/ph0T2O+NkbUbjwXgMBRsglOAo5QMXDPy05/0jHt9M/y1RgGY+zksIIvl8vlH2
+                                    Recibido: SNowndutl+srObjVohJB5kCL30kaFtNeV6J2lY7+T5udFBuMt47AYaSPIan/TDze
+                                    Recibido: cPFdF+k5YqZCFB7SnsjiB78wiRjkU2jstlsc1wIDAQABAoIBAQDWy4LNpXwwQbXD
+                                    Recibido: b784XTgb5BRd0gJlSTIVUnJi4jcqFtYEaUrb5E5zv0GqUFFKwQLI+Dt5yiBUmga+
+                                    Recibido: xhVJMihZyaLXoOaG7Uqixpa/tV89N1y6s7bO0o/AYbia5lhfVidAfl7FKjn4Gfxu
+                                    Recibido: /8pZxearNuuizsPlc328vXGg7t+r4h4230Sclxg6aph9SBDZBJ8F8Kg6MD2vCfwt
+                                    Recibido: 65jF849O7OQUjHHOM1Z0zeIntuBrVnUypwN/WkwiwRnUtyHD32JLgbdb6ogEp33p
+                                    Recibido: PHCsKLrqK1D+1tQTIfnixLmyoif7wlw/ZElmvpktS4xJACWs+lTvBcHXsc1QRbys
+                                    Recibido: OEVbU7IBAoGBAP1dDJ7iZe/9valzsooRB/LzlX5q6DiDp/677Q8K+YjnOdqZmP9c
+                                    Recibido: oD5368d0defbfsESJgVWF8gwthfhs/V4YjDRQ6ImF8lJW/2nCDYC/7kZ8w4CUgrY
+                                    Recibido: kVhA4dYRfkFo2IfREJd4Nu65i2PLYRZWn3yp6gXWG1kgtjDq5MXoHO0BAoGBANsY
+                                    Recibido: ntHKQ1oRrJvLv9/vmZ5PgESNSlOkNcQpWOJw7CZBbO5knQ9g25miv/HYd00DE/+H
+                                    Recibido: m5rtEOQYJ4C/4IheciXwHxXPEMvlLZxTTCBBk2Zv6oaLPQ8prhv67An8H+/CcE9P
+                                    Recibido: mrxmuIfd7Y1ktuQl0sUieRQEu/eLxO42SSUDUxHXAoGAd+wPCTVH4qxLlWU54Lfm
+                                    Recibido: 90vsOoYHnJhUb/IrZq9fJTms3JdPH6+L+YVxiFrLZA80k9YvQN9bKlpEFlGyiEGO
+                                    Recibido: 2GR0is9U+uVKMWlaLZaFy+tIbB0VECUpxogPXO+yvusNclu2artv5NbV70pYjeY6
+                                    Recibido: XxtdtZ1+HFWrZsQHvNT8vAECgYEA1TSlQKPiXOC8JrPkmSeRRwQ4Xv1baf9vLt/J
+                                    Recibido: ljmrJCMgvO/+AvwPVveQb+llVvT63fv5yY6OlFiJAHo4Jpw52n9L0K46ux/e/bP1
+                                    Recibido: baJCrTmVcK5IkdvOiX3pemH2NhvxrMxbWKFhSx4E0EZEz8mazKmaR4e/3soNrn33
+                                    Recibido: OeR9TusCgYEAuhX9u2lFukJW5mj9QJfXBBsveCs/D1nwSI0mM7AYRMUo2kI9X0sS
+                                    Recibido: iuiffqkFG0tyLnqJ1Uqc2YIqorFWG8ycqexPVNerdZrplY4CdYL5wsAGUn8qQq8z
+                                    Recibido: xRCOzdMYGoYLqrVhf0RiEOAg/glP0Hn0ecuwTiZ/NnhTwSjiKR5eyZQ=
+                                    Recibido: -----END RSA PRIVATE KEY-----
+                                    Recibido: Certifications OTA Registered
+                                    Recibido: icrt : 1
+                                    Recibido: icrtv1 : 1
+                                    Recibido: icrtv2 : 1
+                                    Recibido: icrtv3 : 1
+                                    Recibido: mac stored : 98:88:E0:03:42:90-EA01J
+                                    Recibido: actulizando get pgm 1 desde permanent
+                                    Recibido: Here all conf , from preferences to local variables
+                                    Recibido: ----MAIN VARIABLES------
+                                    Recibido: Alarm status: 0
+                                    Recibido: Alarm last cause: 0
+                                    Recibido: Key status: 0
+                                    Recibido: Zone status: 0
+                                    Recibido: Pgm1 status: 0
+                                    Recibido: Pgm2 status: 0
+                                    Recibido: Is locked status: 0
+                                    Recibido: ---- PAST % MAIN VARIABLES------
+                                    Recibido: Alarm PAST status: 0
+                                    Recibido: Alarm PAST  cause: 0
+                                    Recibido: Key PAST status: 0
+                                    Recibido: Zone PAST status: 0
+                                    Recibido: Pgm1 PAST status: 0
+                                    Recibido: Pgm2 PAST status: 0
+                                    Recibido: Is locked PAST status: 0
+                                    Recibido: ----print_ECONF_current_data------
+                                    Recibido: Tiempo de alarma(seg): 5
+                                    Recibido: Delay of fence: 3
+                                    Recibido: Number of arcs: 5
+                                    Recibido: Type of zone1: 0
+                                    Recibido: Type of pgm1: 0
+                                    Recibido: Time of pgm1: 0
+                                    Recibido: Type of buzzer ON/OFF 1
+                                    Recibido: Type of rf 0
+                                    Recibido: ----------------------------------
+                                    Recibido: ----print_ECONF_PAST_data------
+                                    Recibido: PAST Tiempo de alarma(seg): 0
+                                    Recibido: PAST Delay of fence: 0
+                                    Recibido: PAST Number of arcs: 0
+                                    Recibido: PAST Type of zone: 0
+                                    Recibido: PAST Type of pgm: 0
+                                    Recibido: PAST Type of buzzer ON/OFF 0
+                                    Recibido: PAST Type of rf 0
+                                    Recibido: ----------------------------------
+                                    Recibido: RF ONLINE CONTROLS :
+                                    Recibido: RF OFFLINE CONTROLS :
+                                    Recibido: RF SENSORS :
+                                    Recibido: ==== NVS Memory Stats ====
+                                    Recibido: Total Entries: 630
+                                    Recibido: Used Entries: 266
+                                    Recibido: Free Entries: 364
+                                    Recibido: Namespace Count: 15
+                                    Recibido: ******************** Task wirelessfi_sc initialized correctly
+                                    Recibido: Task wirelessfi running on core Setup concluido
+                                    Recibido: 0
+                                    Recibido: actulizando put pgm 1 desde flashmanager_save_new_data_e_conf
+                                    Recibido: ----print_ECONF_current_data------
+                                    Recibido: Tiempo de alarma(seg): 5
+                                    Recibido: Delay of fence: 3
+                                    Recibido: Number of arcs: 5
+                                    Recibido: Type of zone1: 0
+                                    Recibido: Type of pgm1: 0
+                                    Recibido: Time of pgm1: 0
+                                    Recibido: Type of buzzer ON/OFF 1
+                                    Recibido: Type of rf 0
+                                    Recibido: ----------------------------------
+                                    Recibido: La memoria heap disponible en el dispositivo actualmente es de :
+                                    Recibido: 304804
+                                    Recibido: ******************** Task ledsrgb_sc initialized correctly
+                                    Recibido: Task ledsrgb running on core1
+                                    Recibido: WDT created for task ledsrgb
+                                    Recibido: zone 1 en electro_effects_zone_1_tuyareport
+                                    Recibido: pgm 1 en electro_effects_pgm_1_tuyareport
+                                    Recibido: alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+                                    Recibido: Proceding to save permanent new data, update past data
+                                    Recibido: electro main past data UPDATED _ in loop()
+                                    Recibido: Mode: 0
+                                    Recibido: entre a luego de offline mode verification en wifi()
+                                    Recibido: he pasado la lectura de memoria interna
+                                    Recibido: Credentials exists
+                                    Recibido: AIOTRONIC4
+                                    Recibido: Ch0c0ai0@
+                                    Recibido: WiFi.begin first try 4 seconds
+                                    Recibido: 60No Se logr?? conectar a Network a la primera !
+                                    Recibido: credentials before smart config
+                                    Recibido: SSID storage permanent :AIOTRONIC4
+                                    Recibido: PSS storage permanent :Ch0c0ai0@
+                                    Recibido: SSID Current detected :
+                                    Recibido: PSS Current detected :Actual Password is not allowed to be shown by Class
+                                    Recibido: Smart config was NOT activated
+                                    Recibido: Waiting for Wifi
+                                    Recibido: .  .  .  .  .  .  .  .  .  .  .  .  .  . ??? Internet dispoCh0c0 1
+                                    Recibido: WiFi Connected to : AIOTRONIC4
+                                    Recibido: IP Address: 192..37
+                                    Recibido: MAC Address: 98:88:E0:03:42:90
+                                    Recibido: ********************   Deletionpace for create wifi tasks )
+                                    Recibido: Tasks ef, rf and siren have been deleted
+                                    Recibido: *** wifi Connected SUCCESFULLY FOR EVER ***
+                                    Recibido: Before is certified conditional in wireless?
+                                    Recibido: Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+                                    Recibido: Prueba MACC adding :
+                                    Recibido: #################azon es : 1
+                                    Recibido: The client connects to the AWS MQTT broker with Thingname :
+                                    Recibido: $aws/things/98:88:E0:03:42:90/jobs/notify
+                                    Recibido: Trying to suscribe to : 98:88:E0:03:42:90/EA01J == Suscripci??n Exitosa !!
+                                    Recibido: Trying to suscribe to : 98:88:E0:03:42:90/EA01J_conf == Suscripci??nsa !!
+                                    Recibido: Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs/notifySuscribed end of mqtt() function
+                                    Recibido: mqtt has finished, notifying to main loop for creating Alexa
+                                    Recibido: mqtt finished : 1
+                                    Recibido: alexafirsttime : 0
+                                    Recibido: alexafinished : 0
+                                    Recibido: alexafinished2 : 0
+                                    Recibido: Task Alexa Created in main loop()
+
