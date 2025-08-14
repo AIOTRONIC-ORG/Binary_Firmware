@@ -52,7 +52,7 @@ function ShowMainMenu {
     do {
         Clear-Host
         Write-Host "================================"
-        Write-Host "       Herramientas ESP32"
+        Write-Host "       AIOTRONIC Firmware Manager "
         Write-Host "================================"
         Write-Host "1. Flash"
         Write-Host "2. Actualizar Firmware desde SERVIDOR y Monitor Serial"
@@ -61,7 +61,7 @@ function ShowMainMenu {
         Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
 		Write-Host "6. Serial monitor "   #  nueva opcion
         Write-Host "7. Salir"
-	    Write-Host "8. Resetear a modo fabrica (eliminar Python embebido)"
+	    Write-Host "8. Resetear la consola (eliminar Python embebido Offline)"
 
         $choice = Read-Host "Seleccione una opcion"
 
@@ -73,7 +73,7 @@ function ShowMainMenu {
             "5" { LoadLocalFirmware }          # llama a la nueva funcion
 			"6" { SerialMonitor }
             "7" { return }
-	    "8" { ResetEmbeddedPython }
+	        "8" { ResetEmbeddedPython }
             default { Write-Host "Opcion invalida"; Pause }
         }
     } while ($true)
