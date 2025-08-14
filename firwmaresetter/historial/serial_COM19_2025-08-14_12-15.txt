@@ -1,0 +1,243 @@
+﻿---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.352, built 2025-08-13 12:13:20.843513
+Api aioserver mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUQtSBBQ2RG/8K6Enk86R/6qJeAf4wDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDgxMjE2Mjgx
+OVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMa/4qT9y1b0n/jBQpJg
+YWiBtBjtqJH8HEP/gTXDXlNf7bWc7RN9cvAZ3AZXRgjyMh6cMWdK78NDFvOVM4UP
+BlInPvDEztoRji0pNulG3kQJ4IgTY0nZuWAWv8Fv/9770LfBFk5dOWyr4q9HiTHV
+6g2QJAZ0sYGKmbpG6LFa5j9srYQ0qo4UFBbdZF3i97CkgzK/4BEh8+5vddplvheT
+GG8ZhfuMJB4pYKWacThlenxiOvU7qwYjHQYgDkq95KFay5d00Kodet1SAaolWeAT
+S8/JhpXRfN1kNlOfzA3CcvCTA2PNevRD8wbZIeDjZaH1OfrvUPRTi0Mk7399Oxmj
+y/8CAwEAAaNgMF4wHwYDVR0jBBgwFoAUg55zqM5Fb6oMpJAKQeVOUgjlR20wHQYD
+VR0OBBYEFI4LG/dGttbKqPd0T+mbZ3nIsw3FMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQCuv3JwjI1XI1d4tiZZ1/o5ZhPT
+/vnYPzZ++PsELeAEoASLt7joZ/e9s7voJX+g32YDqVOFwvIbXBKFE1ulxW2zbiXy
+5Kn7jUDF7HMsgkDvzminVGYEf27vp8mA/Ppj0vbzAUsv2fNcNRB9/Uc970EqIwyJ
+x43RV/vsWPDhzfpO8i3ZPsSDVO2ahz/MhDKQvlZsG/fRttv37Msh9s+Q4PFIFbO2
+x9YuLXjucJA1RnEUdok85/IGv65x2REC73jp1vGrU19b22zXtxBobHkY3zQsKJTx
+T+JBgqcq/fNcRuT1sTG5sVRS/7GLWuUFBDTedme/Aa2NBuBp4nDl/zaNRC3v
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAxr/ipP3LVvSf+MFCkmBhaIG0GO2okfwcQ/+BNcNeU1/ttZzt
+E31y8BncBldGCPIyHpwxZ0rvw0MW85UzhQ8GUic+8MTO2hGOLSk26UbeRAngiBNj
+Sdm5YBa/wW//3vvQt8EWTl05bKvir0eJMdXqDZAkBnSxgYqZukbosVrmP2ythDSq
+jhQUFt1kXeL3sKSDMr/gESHz7m912mW+F5MYbxmF+4wkHilgpZpxOGV6fGI69Tur
+BiMdBiAOSr3koVrLl3TQqh163VIBqiVZ4BNLz8mGldF83WQ2U5/MDcJy8JMDY816
+9EPzBtkh4ONlofU5+u9Q9FOLQyTvf307GaPL/wIDAQABAoIBAEJAOHazOxLzXFf5
+ZA2THyVNBxHANw7isTFhfFrFky3Lrlt5wfVbPfMXS6a5dNkKkvZtLnK2IhI+zOnJ
+dHEIPx0ng+2STTmX3ILlWC6OtwyLFlOF0vUNJKQJMUZz5SEZY8u9C4h3vuqgqWGw
+QOVh3zFCOSAFyh3aa8ASXwKvwEyngOMT62dVptWkvd6PU0uuZBJ4AYoGLMn+d8s1
+G8iZu06E3OKpNVCgkkTm5PCI3p6869UaRk1OSoipoEBdzoDrrf3TPKrOkmkEdrno
+gvw9rDW/6XAdVxpr/46zi9NpJOYWO1PZTD+WqPOttIjpf8x+JbxK5vUjtlW+ZuGh
+ByP60yECgYEA7XcV1aqvj+PqJ0hRVDCeYISP4YOb4ttBZFGlf57ORl/7MzbtA+o5
+3plNLg54I/Rlhk416YY9l911n67tb+IA3WTDm7aBhliAb3o7Y6zXT8kbWWKsx/Hu
+oZIxp5JM/6SACSYhyLPYbDSP75qPguZXYO/IQ+hyQtJydNfFmiLPAIcCgYEA1kMz
+/UdQkdj1Noe3KaP0y45KAlNnYOAMsm53vhClFpXUwyEsHyxv6FsVKBPaFTestZDx
+m3Fz2ocjNuxFpzjGbp0ssIKDHw+33Sg2TuxIkJNAtn39yZIC+baK6q0KJzT5xDHZ
+6ZlUG2IcGfyqW+yxoDRG0Qw5RVRafXeaRuKDDskCgYEAuJXr7BXsuD3i4rwtM/NC
++SWyLgs+nn3ue8uXiPdpwnyTaEEWxgdJCoZB3z4yF0i/rkGXWLoXoLft2b2BJYoZ
+P/82qhCY6FRdKcpq5dUR3RwnXTj9s8KUyxU38dkgb0twlywD8N4TqjDFfeu4CHmC
+jIB3PIowX07012xuVp0eKXsCgYBV3NJ9wlFoURBbTOG6vyh/VkMUUYYRDVgpPRmh
+QhxWQ67ij22WBIHIFJAS4nm3nPsKO86Go11xCkyzWtXC4H6snzHkfji7ftoIt2+k
+Cw49WbVKLI1CdM/acCuVRcjW02TwGaYg9b/9xUBLrbQ7aEv6Tli+t25P+TDWLNLX
+azhn+QKBgDxUQ8nrQf0E05CZZXVFxBtorZNY7fAr3k0ti0CbfWbTq8RyXZbhd7y4
+OHkOSMwHmkg6Sh4BSCCJfUbE18ffydhK2IG08mhuqGh0kheXvbUx4N0Fa1xDJ9GW
+IyeNEI2BBCQtIxOCCxHmUnEQt3MlsAOHtts5tuXIdhzdCYw9mdph
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:4A:C4-EA01J
+actulizando get pgm 1 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 2
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of buzzer ON/OFF 1
+Type of rf 1
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 267
+Free Entries: 363
+Namespace Count: 15
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized co0Task ledsrgb running on core1
+WDT created for task ledsrgbSetup concluido
+actulizando put pgm 1 desde flashmanager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 2
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of buzzer ON/OFF 1
+Type of rf 1
+----------------------------------
+La memoria heap disponible en el dispositivo actualmente es de :
+304632
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Proceding to save permanent new data, update past data
+electro main past data UPDATED _ in loop()
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+CredentialAIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credeSSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  .  .  . ??? Internet disponible.
+SSID:AIOTRONIC4
+PzS:Ch0c0ai0@
+Wifi connected succesfully 1
+WiFi Connected to : AIOTRONIC4
+IP Address: 192.168.18.16
+MAC Address: 30:ED:A0:1E:4A:C4
+********************   Deletion of tasks has started ( making space for create wifi tasks )
+Tasks ef, rf and siren have been deleted
+*** wifi Connected SU
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:4A:C4/jobs/notify
+Trying to suscribe t30:ED:A0:1E:4A:C4/EA01JTrying to suscribe to : 30:ED:A0:1E:4A:C4/EA01J_confTrying to suscribe to : $aws/things/30:ED:A0:1E:4A:C4/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying to main loop for mqtt finished : 1
+ale
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:4A:C4/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.352","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:13:20.843513","MCU":"ESP32-S3-N16R8","API MODE":0,"OTA TYPE":"aws","mode":100}
+-----------------------
+******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :0
+2
+3
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+******************** Task electricfence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+JSON docconf : 208
+Publish from electroconf_publishMessage
+JSON doctro : 112
+******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+publishs from EMEREGENCY inform to app done
+Message arrived in topic: 30:ED:A0:1E:4A:C4/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8531119
+sadasdasdasd_config
+30:ED:A0:1E:4A:C4/EA01J
+Message Pa"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+Vr:110.00 % 297.00 Battery Caution- Multiplo de 5 published :
+110A Callback has been discarted bc message is from device itself
+%
+1
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+zone 1 en electro_effects_zone_1_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x00 0x76
+pgm 1 en electro_effects_pgm_1_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x00 0x77
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4A:C4/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to save permanent new data, update past data
+electro main past data UPDATED _ in loop()
+Recibido el valor :####### WIFI_STATE_CMD
+Enviando : 0x55 0xAA 0x03 0x03 0x00 0x00 0x05
+Recibido el valor :Recibido el valor :Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x00 0x76
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x00 0x77
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x69 0x02 0x00 0x04 0x00 0x00 0x00 0x0A 0x8A
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6A 0x02 0x00 0x04 0x00 0x00 0x00 0x05 0x86
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x6E 0x01 0x00 0x01 0x00 0x7E
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6B 0x02 0x00 0x04 0x00 0x00 0x00 0x02 0x84
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x6D 0x01 0x00 0x01 0x01 0x7E
+####### Heartbeat package
+Enviando : 0x55 0xAA 0x03 0x00 0x00 0x01 0x00 0x03
+Recibido el valor :Recibido el valor :####### WIFI_STATE_CMD
+Enviando : 0x55 0xAA 0x03 0x03 0x00 0x00 0x05
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x00 0x76
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x00 0x77
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x69 0x02 0x00 0x04 0x00 0x00 0x00 0x0A 0x8A
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6A 0x02 0x00 0x04 0x00 0x00 0x00 0x05 0x86
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x6E 0x01 0x00 0x01 0x00 0x7E
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x08 0x6B 0x02 0x00 0x04 0x00 0x00 0x00 0x02 0x84
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x6D 0x01 0x00 0x01 0x01 0x7E

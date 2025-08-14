@@ -247,7 +247,58 @@ function Monitor-Serial {
     try {
         $sp = New-Object System.IO.Ports.SerialPort $port,115200,'None',8,'One'
         $sp.ReadTimeout = 1000
+
+        # PONER ESTO ANTES de $sp.Open() (y elimina tu bloque anterior de historial)
+        # $historyDir = Join-Path ".\historial"
+        #  Define AppRoot al inicio (justo después del BOOT PROBE)
+      
+      # REEMPLAZA tu bloque de "Reparar $PSScriptRoot..." por ESTO
+        # obtiene de forma robusta la carpeta del EXE (ps2exe) o del .ps1
+        # REEMPLAZA tu bloque de deteccion de carpeta por este (poner ANTES de $sp.Open())
+
+        # resuelve carpeta base del script o exe, evitando System32
+        $baseDir = $null
+
+        if ($PSScriptRoot -and $PSScriptRoot.Trim()) {
+            $baseDir = $PSScriptRoot.TrimEnd('\','/')
+        }
+        elseif ($PSCommandPath -and $PSCommandPath.Trim()) {
+            $baseDir = (Split-Path -Parent $PSCommandPath).TrimEnd('\','/')
+        }
+        elseif ($MyInvocation -and $MyInvocation.MyCommand -and $MyInvocation.MyCommand.Path) {
+            $baseDir = (Split-Path -Parent $MyInvocation.MyCommand.Path).TrimEnd('\','/')
+        }
+        elseif ([System.AppDomain]::CurrentDomain -and [System.AppDomain]::CurrentDomain.FriendlyName -like "*.exe") {
+            # ps2exe: base del exe
+            $baseDir = [System.AppDomain]::CurrentDomain.BaseDirectory.TrimEnd('\','/')
+        }
+        else {
+            # ultimo recurso: si se esta dentro de un .exe cualquiera
+            try {
+                $procExe = [System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName
+                if ($procExe -and $procExe.Trim()) { $baseDir = (Split-Path -Parent $procExe).TrimEnd('\','/') }
+            } catch {}
+            if (-not $baseDir) { $baseDir = (Get-Location).Path.TrimEnd('\','/') }
+        }
+
+        Write-Host "BaseDir: $baseDir"
+
+        $historyDir = Join-Path $baseDir "historial"
+        if (-not (Test-Path -LiteralPath $historyDir)) {
+            New-Item -ItemType Directory -Path $historyDir -Force | Out-Null
+        }
+
+        $fileSafePort = ($port -replace '[\\/:*?"<>|]', '_')
+        $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+        $logPath = Join-Path $historyDir ("serial_{0}_{1}.txt" -f $fileSafePort, $timestamp)
+        New-Item -ItemType File -Path $logPath -Force | Out-Null
+        $sw = New-Object System.IO.StreamWriter($logPath, $true, [System.Text.Encoding]::UTF8)
+        $sw.AutoFlush = $true
+        Write-Host "Guardando en: $logPath"
+
+
         $sp.Open()
+
 
         # limpiar buffer por si quedaron bytes del reinicio
         try { $sp.DiscardInBuffer() } catch {}
@@ -266,6 +317,9 @@ function Monitor-Serial {
                     $line = $sp.ReadLine().Trim()
                     if ($line) {
                         Write-Host "Recibido: $line"
+                        # dentro del while, justo despues de: Write-Host "Recibido: $line"
+                        $sw.WriteLine($line)
+
                         if ($line -match $macPattern) {
                             $mac = $line.ToUpper()
                             Generate-QRImage $mac
@@ -276,9 +330,18 @@ function Monitor-Serial {
                 # ignorar timeouts
             }
         }
+            # al salir del while, antes de $sp.Close()
+        if ($sw) { $sw.Close() }
         $sp.Close()
     } catch {
         Write-Host "Ocurrio un error: $_"
+        # opcional: en el catch del bloque de monitoreo, antes del Write-Host de error
+        if ($sw) { $sw.Close() }
+
+    }
+    finally {
+    if ($sp -and $sp.IsOpen) { $sp.Close() }
+    if ($sw) { $sw.Close() }
     }
 }
 
