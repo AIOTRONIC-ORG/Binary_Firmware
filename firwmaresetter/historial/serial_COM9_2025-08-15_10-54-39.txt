@@ -1,0 +1,918 @@
+﻿---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.353, built 2025-08-13 12:23:52.563001
+Api aioserver mode : DEVELOPMENT
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+[  4362][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUQBBjkLbXvP71RweuyzukCfRc0kYwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDgxNTEzMTY0
+N1oXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOQIhjXszpp4zbuMjR4e
+0/DB+R1lqJ/MntJYg0gvLwTsNrRlalUGscRKt07HZIAgtgTq4lIeXKYrChvq/qaG
+XQqz2uQta/wRgIE271Up0FeVTBnhUZqqsLvC94xfh/gjB2LlQRd6qj4i7FwfgV5I
+MZWBCQkZV0mkPEyR8QHx0ejY2fFOs/9l2mCz3D2al3Ktt/ZiS4F8oC0VL+CBq6YN
+LclYbSZwXIc26jvROM07SExJnv2/u/4s9o+7NO0nfciQ+0NX6x+ih33+9BqDzLrP
+GPtIWaevQ/IWkdYMOah9npZ7qSvmv0pWcb2FZ3yFykQ5hiFwzppDhgvvTv7kDjw9
+P28CAwEAAaNgMF4wHwYDVR0jBBgwFoAUcjVG/eghaiD6CR7Usyr8Fi6c2w8wHQYD
+VR0OBBYEFGcPBn9giJTHTXeHLELjijvC8EqSMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBR5doqBPnDskhp12kdJ0UdBE0K
+nd0KLGZQczjXtpLB1oTA/lSqt0i2JjKb1baMdah5ZwrshLnnCs9pPJ+H4Qc0q2td
+ajrUPajLs94roHrMTlk8o69mJRRQWqcBOafv3jn8RLzHIrydslIgWnqS2+AdUyzC
+TgHVQIw/nme2lRLjzW5AES3YORQhn3ugeUZh7Uyc3+XDkGeCkHlNAJUbQBH1Weyx
+p97JntKA9yVKl8Nuv0ujvgPffsYQJDekGxPBEspv2RHeAmJxdnuxoUd0SOXWs4hk
+L+jwsj5YirzrFmWFEj4HDMXfGorjd11updQc6uFWRtu62yD6PbEB8DrsKdat
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA5AiGNezOmnjNu4yNHh7T8MH5HWWon8ye0liDSC8vBOw2tGVq
+VQaxxEq3TsdkgCC2BOriUh5cpisKG+r+poZdCrPa5C1r/BGAgTbvVSnQV5VMGeFR
+mqqwu8L3jF+H+CMHYuVBF3qqPiLsXB+BXkgxlYEJCRlXSaQ8TJHxAfHR6NjZ8U6z
+/2XaYLPcPZqXcq239mJLgXygLRUv4IGrpg0tyVhtJnBchzbqO9E4zTtITEme/b+7
+/iz2j7s07Sd9yJD7Q1frH6KHff70GoPMus8Y+0hZp69D8haR1gw5qH2elnupK+a/
+SlZxvYVnfIXKRDmGIXDOmkOGC+9O/uQOPD0/bwIDAQABAoIBAHRdETfFXuyexsV1
+BLIhIyARq/DfZnwdK9LFDkEwqrrFW2kU83zuDJrRUddmkpd7mcbKobEsAzVccy0p
+7sbFfAcxHnsf3qHjwIKvqNP5oXKAIjR2sXDOt58o76/3M+hg360MtfmoQ+WvZpPg
+E+Erz/mtvhGhl9Rhdc/RDX5jiy1ZPM7Qdu+uX0gv2MkPaLcJ5M8uSumqy1Tv7m7k
+FNZG1iNGZ4Rt9xM+xhDpYG8PV0XHROj4E8UlTaVyCTvNzc4k+LOAs8uL3bfMviSO
+N7rOkCp/NTJ+uW0h5qLfACRnr5LugHb7tOx3fuzVcMCfbJNFZqSax/BiUnU38AyT
+cRuqcIkCgYEA8nBGgxvfyE7m50qDCLcaMD3EdLhC5dL5vkIxLLLNmvImRdnYmZ/q
+YPA2sR+a8Mt+mGdo632p1kL7xpSat7lrKJumExRexez19Lk1THR9lLuxPW7iY8gx
+Xo0tBSNYzlowdywzz78W+SW1VyGuTBHTydjSD16/IVvwh+G3g7JC0d0CgYEA8Mn3
+CdcmsxOfGNf+E44/We/oESl2zkOjZ+P4JWbDEo9zaZNrTF35BRdm7R3THw46GXhJ
+Ui42+FIT9T2DRuu1KRT6uxV8h6UmAoBAlxAY3Q8h5ux1nID7TTKs+1faAMkI2wtH
+hiiknmm2cFCswS3IH5zN9S6viXzZsiDQXUKKD7sCgYBvFr9YqFccY/suFFiCj9Qy
+MrtoeF4/DTNe2NnLj4ri6v5al33Gtx4gmTGWa9MFb1ls4EWVUpmWEk9oKQPUF+Rg
+USICMB1VOEVjg9JGXEKG+pI2gi6+ZicpGit85Tt2IqF+mgSLtxYByCOV71r8hFa1
+cOKgJFwUHxrSSL1cXTx9CQKBgQCW+NrGtbqS/1N6nTq2AjNgbZZg5FGUZD5ZTktx
+D+xxf7YKVR8qg6U19wVW2KNdzmrJO20ldMqMidHvqwDbf8BXoMrQcFljJz4cxVM6
+JCKiv/Euu8XGOezW61YgRWXvphzCUmEnEeadWITGCR84BD986rEL8JipKLnKAN8E
+CktMLwKBgD1EzSJalRo1rFs9oIStKOzNxTic1x9UXJKOKDAlI3roBSw24n819lJZ
+WnDvEhfMTCAlQUqQlmHsLz2B790Mz0UOTgQPwziBnVZg2hxmwT4J43P2rlAfGXDC
+2tp+Dfnuf+eFRgie21NL8tlhlcI6/OFCWemGEKJBaCcVyw6Hjo5A
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:57:CC-EA01J
+actulizando get pgm 1 desde permanent
+Here all conf , from preferences to local variables
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 1
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 251
+Free Entries: 379
+Namespace Count: 15
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized co0Task ledsrgb running on core1
+WDT created for task ledsrgbSetup concluido
+actulizando put pgm 1 desde flashmanager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+La memoria heap disponible en el dispositivo actualmente es de :
+304632
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Proceding to save permanent new data, update past data
+electro main past data UPDATED _ in loop()
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+Credentials exists
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  .  .  .  . ??? Internet disponible.
+SSID:AIOTRONIC4
+PzS:Ch0Wifi connected succ168.18.52
+MAC Address: 30:ED:A0:1E:57:CC
+********************   Delpace for create wifi tasks )
+T *** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+############################El valor de variconnected to amazon es : 1
+The client connects to the
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n E
+Suscribedend of mqtt() function
+mqtt() 414-line c
+mqtt has finished, notifying to main loop for creating Alexa
+mqtt finished : 1
+alalexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Mess"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1,"OTA TYPE":"aws","mode":100}
+-----------------------
+******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :0
+1
+2
+3
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+******************** Task electricfence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+JSON docconf : 207
+PublisJSON doctro : 112
+******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+Publiselectro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"t_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+rted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8530235
+sadasdasdasd_config
+Vr:110.00 % 295.00 Battery Caution- Multiplo de 5 published :
+110%
+1
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+zone 1 en electro_effects_zone_1_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x01 0x77
+pgm 1 en electro_effects_pgm_1_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x00 0x77
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 56
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"tye":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to save permanent new data, update past data
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","API MODE":1,"MCU":"ESP32-S3-N16R8","OTA TYPE":"aws","mode":99}
+-----------------------
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 150
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+"FIRMWARE VERSION":"0.1.353","FIRMWARE BULD_TIMESTAMP""2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1,"OTA TYPE":"aws","mode":100}
+-----------------------
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Pa"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Cal
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 293.00 0
+Vr:110.00 % 293.00 0
+button efence pressed 1 time
+button wifi pressed 1 time
+Recibido el valor : button efence pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button depus pressed 1 time
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 296.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 293.00 0
+Vr:110.00 % 295.00 0
+??? Internet missing waected
+??? Internet missing was detected faster than .connected
+??? In ??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+Vr:110.00 % 293.00 0
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+?????? Time has passed , last seconds oppportunity for being faster than .connected
+Starting Clean Disconnection from MQTT
+A disconnection from MQTT was detected !
+El tiempo de try mqtt reconnect transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activating mqueuingtt_connect() in aws_check_connection()
+Debugging the client.state: -1
+Recibido el valor :############################El valor deazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripi??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+##########################0
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1,"OTA TYPE":"aws","mode":100}
+-----------------------
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Recibido el valor :Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+?????? Time has passed , last seconds oppportunity for being faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+Starting Clean Disconnection from MQTT
+A disconnection from MQTT was detected !
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activgging the client.state: -1
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n Exitosa !!
+a tenido exito
+############################El valor heartbeat es : 0
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1,"OTA TYPE":"aws","mode":100}
+-------------------
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 296.00 0
+Vr:110.00 % 293.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 296.00 0
+Vr:110.00 % 295.00 0
+??? Internet missing was detected
+??? Internet missing was detected
+??? In ?????? Time has passed , last seconds oppportunity for being faster than .connected
+Starting Clean Disconnection from M
+A disconnection from MQTT was detected !
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activating mqueuingtt_connectgging the client.state: -1
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+0:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n E
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+############################El valor de variable heartbeat es : 0
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"talarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"01.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1"OTA TYPE":"aws","mode":100}
+-----------------------
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+--------
+A Callback has been discarted bc message is from device itself
+Vr:110.00 % 295.00 0
+58
+1 code_RF DEC: 8742144
+1 code_RF HEX: 856500
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 293.00 0
+207
+1 code_RF DEC: 1024
+1 code_RF HEX: 400
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+207
+1 code_RF DEC: 1024
+1 code_RF HEX: 400
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+3
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 295.00 0
+Vr:110.00 % 296.00 0
+Vr:110.00 % 294.00 0
+Vr:110.00 % 293.00 0
+Vr:110.00 % 295.00 0
+1
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 295.00 0
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+?????ster than .connected
+??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+Vr:110.00 % 295.00 0
+??? Internet missing was detected faster than .connected
+StartinA disconnection from MQTT was detec
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activating mqueuingtt_connect() in aws_check_connection()
+Debugging the client.state: -1
+######################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notifySuscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+########################### es : 0
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0..353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1,"OTA TYPE":"aw","mode":00}
+-----------------------
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA0
+Message Payl"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:110.00 % 293.00 0
+Vr:110.00 % 295.00 0
+button wifi pressed 1 time
+Recibido el valor :Recibido el valor : button efence pressed 1 time
+Screen1 from hold_for_efence has initialized
+Timeout reached disabling screen 1 from hold_for_efence
+button wifi pressed 1 time
+button efence pressed 1 time
+Screen1 from hold_for_efence has initialized
+fence pulse voltaje level 2
+Vr:110.00 % 295.00 0
+button efence pressed 1 time
+Screen1 from hold_for_efence has initialized
+fence pulse voltaje level 3
+button efence pressed 1 time
+Screen1 from hold_for_efence has initialized
+Timeout reached disabling screen 1 from hold_for_efence
+Vr:110.00 % 293.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 293.00 0
+Vr:110.00 % 294.00 0
+Vr:110.00 % 295.00 0
+6
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 296.00 0
+??? Internet missing was detected faster than .connected
+Vr:110.00 % 293.00 0
+3
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+??? Internet missing was detected faster than .connected
+ter than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+?????? Time has passed , last seconds oppportunity for being faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected faster than .connected
+??? Internet missing was detected
+??? Internet missing was detected faster than .connected
+Vr:110.00 % 293.00 0
+??? Internet missing was deteconnected
+??? Internet missing was detected faster than .connected
+Starting Clean Disconnection from MQTT
+A disconnection from MQTT was detected !
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activating mqueuingtt_connect() in aws_check_connection()
+Debugging the client.state: -1
+Timeout interno en mqueuingtt_connect
+########El valor de variable connected to amazon es : 0
+Failed try to connect to mqtt in connection_mqtt() with state: -4
+Tiempo de conexi??n agotado, reintentando...
+failed mqueuingtt_connect Put in offline mode by logic 1
+Mode: 1
+ne mode
+*** OFFLINE mode ON  ***
+Before is certified conditional in wireless? Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+CredentiaCh0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conect
+credentials before smart confSSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not alloSmart config was NOT activated
+Waiting for Wifi
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  *** OFFLINE mode ON  ***
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+Credentials exists
+AIOTRONCh0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Timeout Network reached, activating offline mode ...
+*** OFBefore is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ******Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+Cre
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :wn by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Timeou *** OFFLINE mode ON  ***
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+Credentials exists
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Timeout Network reached, activating offline mode ...
+*** OFFLINE mode ON  ***
+eless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+Credentials exists
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  . ??? Internet disponible.
+SSID:AIOTonnected to : AIOTRO18MAC Address: 30:ED:A0:1pace for create wifi tasks )
+Tasks ef, rf and siren have been deleted
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+The client connects tMQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying t == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtmqtt() 414-line completed
+mqtt has finished, notifying to main loop for creating Almqtt finished : 1
+alexafirsttime : 0
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","API MODE":1,"MCU":"ESP32-S3-N16R8","OTA TYPE":"aws","mode":99}
+-----------------------
+******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :4
+5
+6
+7
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs:5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+--------A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key" ******************** Task electricfence_sc initialized correctly:0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Task e_fence running on core1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8522931
+sadasdasdasd_config
+Vr:110.00 % 295.00 0
+7
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+7
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 293.00 0
+6
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+7
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 295.00 0
+2
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 295.00 0
+1
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button depus pressed 1 time
+button rf pressed 1 time
+button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+Screen 2 related[0] from wifi button done and disabling
+Mode: 1
+Vr:110.00 % 295.00 0
+Direct Jump to Offline mode, activating offline mode ...
+Tasks Wifi have been deleted in order to enter offline mode
+*** OFFLINE mode ON  ***
+Before is certified conditional in
+Permanent offline mode activated
+Web server not allowed in this firmware version
+button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+Screen 2 related[0] from wifi button done and disabling
+Mode: 0
+entre a luego de offline mode verification en wifi()
+he pasado la lectura de memoria interna
+Credentials exists
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.b60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+.  .  .  .  .  .  .  . ??? Internet disponible.
+SSID:succesfully 1
+WiFi Connected to : AIOTRONIC4
+IP Address: 1.153
+MAC Address: 30:ED:A0:1E:57:CC
+pace for create wifi tasks )
+Tasks ef, rf and siren
+*nnected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+[4080536][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-76) UNKNOWN ERROR CODE (004C)
+########################azon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notifySuscend of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying to main loop for creating Al
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","API MODE":1,"MCU":"ESP32-S3-N16R8","OTA TYPE":"aws","mode":99}
+-- ******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :8
+9
+10
+11
+Acreation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 150
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"rc":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R","API MODE":1,"OTA TYPE":"aws","mode":100}Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","API MODE":1,"MCU":"ESP32-S3-N16R8","OTA TYPE":"aws","mode":99}
+--------
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+******************** Task electricfence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task radiofrequency_sc initialized correctly
+Task radiofrequency running on core1
+WDT created for task RF
+5
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8518107
+sadasdasdasd_config
+DEBUG: T??pico MQTT armado: $aws/things/30:ED:A0:1E:57:CC/jobs/nohay/update
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 150
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 207
+Publish from electroconf_publishMessage
+JSON doctro : 112
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"FIRMWARE VERSION":"0.1.353","FIRMWARE BUILD_TIMESTAMP":"2025-08-13 12:23:52.563001","MCU":"ESP32-S3-N16R8","API MODE":1,"OTA TYPE":"aws","mode":100}
+-----------------------
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tUnknown, returning .....p":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+Vr:110.00 % 294.00 0
+27
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+7
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 293.00 0
+6
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 293.00 0
+1
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 297.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 294.00 0
+Vr:110.00 % 293.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 294.00 0
+5
+1 code_RF DEC: 0
+1 code_RF HEX: 0
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 294.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
+Vr:110.00 % 295.00 0
