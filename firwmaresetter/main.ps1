@@ -50,6 +50,9 @@ $script:SelectedDevice = $null   # guarda el modelo elegido
 # Install-Module -Name PSWriteColor -Force
 if (-not (Get-Module -ListAvailable -Name PSWriteColor)) {
     Write-Host "Instalando modulo PSWriteColor..." -ForegroundColor Yellow
+    Remove-Module PowerShellGet -Force
+    Uninstall-Module PowerShellGet -AllVersions -Force
+    Install-Module PowerShellGet -Force -Scope CurrentUser
     Install-Module -Name PSWriteColor -Force -Scope CurrentUser
 }
 Import-Module PSWriteColor
