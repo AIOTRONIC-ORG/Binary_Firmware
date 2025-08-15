@@ -144,6 +144,9 @@ if (-not $pswInstalled) {
 }
 
 # 6) importar PSWriteColor o crear fallback Write-Color para no romper tu script
+# === REEMPLAZA COMPLETAMENTE TU SECCION 6 POR ESTE BLOQUE ===
+
+# 6) importar PSWriteColor o crear fallback Write-Color para no romper tu script
 $pswOk = $false
 try {
     Import-Module PSWriteColor -Force -ErrorAction Stop
@@ -153,16 +156,38 @@ try {
 }
 
 if (-not $pswOk -and -not (Get-Command Write-Color -ErrorAction SilentlyContinue)) {
+    if (Test-Path function:Write-Color) {
+        Remove-Item function:Write-Color -Force -ErrorAction SilentlyContinue
+    }
+
     function Write-Color {
         param(
-            [Parameter(Mandatory=$true)][string]$Text,
-            [ConsoleColor]$Color = [ConsoleColor]::White,
+            [Parameter(Mandatory=$true)]
+            [object[]]$Text,
+            [ConsoleColor[]]$Color,
             [switch]$NoNewLine
         )
-        if ($NoNewLine) { Write-Host -NoNewline -ForegroundColor $Color $Text }
-        else { Write-Host -ForegroundColor $Color $Text }
+
+        $lenT = if ($Text) { $Text.Count } else { 0 }
+        $lenC = if ($Color) { $Color.Count } else { 0 }
+
+        for ($i = 0; $i -lt $lenT; $i++) {
+            $seg = [string]$Text[$i]
+            if ([string]::IsNullOrEmpty($seg)) { continue }
+
+            if ($lenC -gt 0) {
+                $idx = if ($i -lt $lenC) { $i } else { $lenC - 1 }
+                Write-Host -NoNewline -ForegroundColor $Color[$idx] $seg
+            } else {
+                Write-Host -NoNewline $seg
+            }
+        }
+
+        if (-not $NoNewLine) { Write-Host }
     }
 }
+
+# fin de la seccion 6
 
 # fin del bloque
 
