@@ -47,21 +47,33 @@ Write-Host "PSScriptRoot reparado: $PSScriptRoot"
 # -- al principio de main.ps1 --
 $script:SelectedDevice = $null   # guarda el modelo elegido
 
+# Install-Module -Name PSWriteColor -Force
+if (-not (Get-Module -ListAvailable -Name PSWriteColor)) {
+    Write-Host "Instalando modulo PSWriteColor..." -ForegroundColor Yellow
+    Install-Module -Name PSWriteColor -Force -Scope CurrentUser
+}
+Import-Module PSWriteColor
 
 function ShowMainMenu {
     do {
         Clear-Host
-        Write-Host "================================"
-        Write-Host "       AIOTRONIC Firmware Manager "
-        Write-Host "================================"
-        Write-Host "1. Flash"
-        Write-Host "2. Actualizar Firmware desde SERVIDOR y Monitor Serial"
-        Write-Host "3. Imprimir Codigo QR"
-        Write-Host "4. Seleccionar Modelo de Dispositivo"
-        Write-Host "5. Cargar Firmware LOCAL (.bin)"   # nueva opcion
-		Write-Host "6. Serial monitor "   #  nueva opcion
-        Write-Host "7. Salir"
-	    Write-Host "8. Resetear la consola (eliminar Python embebido Offline)"
+        Write-Color -Text "==========================================", " " -Color Cyan, White
+        Write-Color -Text "       AIOTRONIC Firmware Manager         ", " " -Color Yellow, White
+        Write-Color -Text "==========================================", " " -Color Cyan, White
+        Write-Color ""
+
+        Write-Color -Text "  [1] ", "Flash" -Color Cyan, Green
+        Write-Color -Text "  [2] ", "Actualizar Firmware desde SERVIDOR y Monitor Serial" -Color Cyan, Green
+        Write-Color -Text "  [3] ", "Imprimir Codigo QR" -Color Cyan, Green
+        Write-Color -Text "  [4] ", "Seleccionar Modelo de Dispositivo" -Color Cyan, Green
+        Write-Color -Text "  [5] ", "Cargar Firmware LOCAL (.bin)" -Color Cyan, Green
+        Write-Color -Text "  [6] ", "Serial monitor" -Color Cyan, Green
+        Write-Color -Text "  [7] ", "Salir" -Color Cyan, Green
+        Write-Color -Text "  [8] ", "Resetear la consola (eliminar Python embebido Offline)" -Color Cyan, Green
+
+        Write-Color ""
+        Write-Color -Text "==========================================" -Color Cyan
+        Write-Color ""
 
         $choice = Read-Host "Seleccione una opcion"
 
@@ -70,14 +82,18 @@ function ShowMainMenu {
             "2" { SelectDeviceModel; UpdateFirmwareAndMonitor }
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
-            "5" { LoadLocalFirmware }          # llama a la nueva funcion
-			"6" { SerialMonitor }
+            "5" { LoadLocalFirmware }
+            "6" { SerialMonitor }
             "7" { return }
-	        "8" { ResetEmbeddedPython }
-            default { Write-Host "Opcion invalida"; Pause }
+            "8" { ResetEmbeddedPython }
+            default {
+                Write-Color -Text "Opcion invalida" -Color Red
+                Pause
+            }
         }
     } while ($true)
 }
+
 
 function ResetEmbeddedPython {
     # Usa el reparado y, si por algo viene vacío, cae al directorio del EXE
@@ -936,7 +952,7 @@ function Generate-QRImage {
     if (-not $Mac) 
     {
         $Mac = Select-COMMac
-        if (-not $Mac) { Write-Host "Operación cancelada."; return }
+        if (-not $Mac) { Write-Host "Operacion cancelada."; return }
     }
 
     # Cargar QRCoder
