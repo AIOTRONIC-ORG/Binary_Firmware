@@ -47,15 +47,132 @@ Write-Host "PSScriptRoot reparado: $PSScriptRoot"
 # -- al principio de main.ps1 --
 $script:SelectedDevice = $null   # guarda el modelo elegido
 
-# Install-Module -Name PSWriteColor -Force
-if (-not (Get-Module -ListAvailable -Name PSWriteColor)) {
-    Write-Host "Instalando modulo PSWriteColor..." -ForegroundColor Yellow
-    Remove-Module PowerShellGet -Force
-    Uninstall-Module PowerShellGet -AllVersions -Force
-    Install-Module PowerShellGet -Force -Scope CurrentUser
-    Install-Module -Name PSWriteColor -Force -Scope CurrentUser
+# bloque de instalacion robusto para PSWriteColor en PS 5.1 sin romper otras pcs
+
+try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
+try { Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force } catch {}
+
+# 1) normalizar PSModulePath para priorizar modulos de WindowsPowerShell (evitar rutas de PS 7)
+$sysMods   = "$env:WINDIR\System32\WindowsPowerShell\v1.0\Modules"
+$userMods  = Join-Path ([Environment]::GetFolderPath("MyDocuments")) "WindowsPowerShell\Modules"
+$progMods7 = "C:\Program Files\PowerShell\7\Modules"
+
+$paths = ($env:PSModulePath -split ';') | Where-Object { $_ -and $_.Trim() } | Select-Object -Unique
+# quitar ruta de PS 7 (causa el error de fullclr dll) solo en esta sesion
+$paths = $paths | Where-Object { $_ -ne $progMods7 }
+# asegurar rutas clasicas primero
+if ($paths -notcontains $sysMods)  { $paths = @($sysMods) + $paths }
+if ($paths -notcontains $userMods) { $paths = @($userMods) + $paths }
+$env:PSModulePath = ($paths -join ';')
+
+# 2) helper para agregar rutas al PATH del proceso (para pip/wheel)
+function Add-ToPath {
+    param([string]$PathToAdd)
+    if ([string]::IsNullOrWhiteSpace($PathToAdd)) { return }
+    if (-not (Test-Path $PathToAdd)) { return }
+    $p = ($env:PATH -split ';') | Where-Object { $_ -and $_.Trim() }
+    if ($p -notcontains $PathToAdd) { $env:PATH = ($p + $PathToAdd) -join ';' }
 }
-Import-Module PSWriteColor
+
+# agregar Scripts de python embebido si existe (evita warnings wheel.exe/pip.exe)
+try {
+    $pyScripts = Join-Path $PSScriptRoot "embedded_py\py3.11.4\Scripts"
+    Add-ToPath $pyScripts
+} catch {}
+
+# 3) intentar usar PackageManagement y PowerShellGet solo si estan realmente disponibles en rutas de WindowsPowerShell
+$pmImported = $false
+$pmPs1 = Join-Path $sysMods "PackageManagement\PackageManagement.psd1"
+if (Test-Path $pmPs1) {
+    try { Import-Module $pmPs1 -Force -DisableNameChecking -ErrorAction Stop; $pmImported = $true } catch {}
+}
+
+$psgetImported = $false
+$psgetPs1 = Join-Path $sysMods "PowerShellGet\PowerShellGet.psd1"
+if (Test-Path $psgetPs1) {
+    try { Import-Module $psgetPs1 -Force -DisableNameChecking -ErrorAction Stop; $psgetImported = $true } catch {}
+} else {
+    # algunos equipos tienen PowerShellGet solo en documentos del usuario
+    $psgetPs1 = Join-Path $userMods "PowerShellGet\PowerShellGet.psd1"
+    if (Test-Path $psgetPs1) {
+        try { Import-Module $psgetPs1 -Force -DisableNameChecking -ErrorAction Stop; $psgetImported = $true } catch {}
+    }
+}
+
+# 4) si PowerShellGet funciona, instalar PSWriteColor con Install-Module
+$pswInstalled = $false
+if ($psgetImported) {
+    try { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction SilentlyContinue } catch {}
+    if (-not (Get-Module -ListAvailable -Name PSWriteColor)) {
+        Write-Host "Instalando modulo PSWriteColor..." -ForegroundColor Yellow
+        try { Install-Module -Name PSWriteColor -Force -Scope CurrentUser -AllowClobber } catch {}
+    }
+    $pswInstalled = [bool](Get-Module -ListAvailable -Name PSWriteColor)
+}
+
+# 5) si no se pudo, instalacion manual directa desde PowerShell Gallery (sin PackageManagement)
+if (-not $pswInstalled) {
+    try {
+        Write-Host "Instalacion manual de PSWriteColor..." -ForegroundColor Yellow
+        $pkgUrl   = "https://www.powershellgallery.com/api/v2/package/PSWriteColor"
+        $zipPath  = Join-Path $env:TEMP "PSWriteColor.zip"
+        $tmpPath  = Join-Path $env:TEMP "PSWriteColor_unzip"
+        $destBase = Join-Path $userMods "PSWriteColor"
+
+        if (-not (Test-Path $destBase)) { New-Item -Path $destBase -ItemType Directory -Force | Out-Null }
+        Invoke-WebRequest -Uri $pkgUrl -OutFile $zipPath -UseBasicParsing
+        if (Test-Path $tmpPath) { Remove-Item $tmpPath -Recurse -Force }
+        Expand-Archive -Path $zipPath -DestinationPath $tmpPath -Force
+
+        $manifest = Get-ChildItem $tmpPath -Recurse -Filter "PSWriteColor.psd1" | Select-Object -First 1
+        if ($manifest) {
+            $ver = "Manual"
+            try { $mf = Test-ModuleManifest $manifest.FullName; if ($mf.Version) { $ver = $mf.Version.ToString() } } catch {}
+            $destVer = Join-Path $destBase $ver
+            if (Test-Path $destVer) { Remove-Item $destVer -Recurse -Force }
+            New-Item -Path $destVer -ItemType Directory -Force | Out-Null
+            Copy-Item -Path (Split-Path $manifest.FullName -Parent) -Destination $destVer -Recurse -Force
+            Get-ChildItem -Path $destVer -Recurse -ErrorAction SilentlyContinue | Unblock-File -ErrorAction SilentlyContinue
+        }
+
+        Remove-Item $zipPath -Force -ErrorAction SilentlyContinue
+        if (Test-Path $tmpPath) { Remove-Item $tmpPath -Recurse -Force }
+        $pswInstalled = [bool](Get-Module -ListAvailable -Name PSWriteColor)
+    } catch {
+        Write-Host "Fallo instalacion manual de PSWriteColor: $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+# 6) importar PSWriteColor o crear fallback Write-Color para no romper tu script
+$pswOk = $false
+try {
+    Import-Module PSWriteColor -Force -ErrorAction Stop
+    $pswOk = $true
+} catch {
+    Write-Host "No se pudo cargar PSWriteColor, usando fallback simple." -ForegroundColor Yellow
+}
+
+if (-not $pswOk -and -not (Get-Command Write-Color -ErrorAction SilentlyContinue)) {
+    function Write-Color {
+        param(
+            [Parameter(Mandatory=$true)][string]$Text,
+            [ConsoleColor]$Color = [ConsoleColor]::White,
+            [switch]$NoNewLine
+        )
+        if ($NoNewLine) { Write-Host -NoNewline -ForegroundColor $Color $Text }
+        else { Write-Host -ForegroundColor $Color $Text }
+    }
+}
+
+# fin del bloque
+
+
+# ejemplo de uso que ya no deberia romper
+# Write-Color -Text "PSWriteColor listo (o fallback activo)" -Color Green
+
+
+# ejemplo: si usas python embebido, agrega su Scripts al PATH de esta sesion
+# Add-ToPath "C:\Users\Alberto Maldonado\Desktop\Nueva carpeta\embedded_py\py3.11.4\Scripts"
 
 function ShowMainMenu {
     do {
