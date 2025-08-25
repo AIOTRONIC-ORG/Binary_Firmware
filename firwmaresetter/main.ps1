@@ -213,8 +213,9 @@ function ShowMainMenu {
         Write-Color -Text "  [4] ", "Seleccionar Modelo de Dispositivo" -Color Cyan, Green
         Write-Color -Text "  [5] ", "Cargar Firmware LOCAL (.bin)" -Color Cyan, Green
         Write-Color -Text "  [6] ", "Serial monitor" -Color Cyan, Green
-        Write-Color -Text "  [7] ", "Salir" -Color Cyan, Green
-        Write-Color -Text "  [8] ", "Resetear la consola (eliminar Python embebido Offline)" -Color Cyan, Green
+        Write-Color -Text "  [7] ", "Resetear la consola (eliminar Python embebido Offline)" -Color Cyan, Green
+        Write-Color -Text "  [8] ", "Obtener archivos de AIOcore" -Color Cyan, Green
+        Write-Color -Text "  [9] ", "Salir" -Color Cyan, Green
 
         Write-Color ""
         Write-Color -Text "==========================================" -Color Cyan
@@ -229,8 +230,9 @@ function ShowMainMenu {
             "4" { SelectDeviceModel }
             "5" { LoadLocalFirmware }
             "6" { SerialMonitor }
-            "7" { return }
-            "8" { ResetEmbeddedPython }
+            "7" { ResetEmbeddedPython }
+            "8" { $com = SelectCOMPort; Get-ESP32SpiffsFile -Port $com -Trigger -RemotePath "/snap.jpg" }
+            "9" { return }
             default {
                 Write-Color -Text "Opcion invalida" -Color Red
                 Pause
@@ -500,7 +502,162 @@ function Monitor-Serial {
 
 
 # Ejemplo de uso:
-# Monitor-Serial "COM4"
+# Monitor-Serial "COM4
+function Get-ESP32SpiffsFile {
+    <#
+      Pull a file dumped over serial by your ESP32 (SPIFFS -> PC).
+      Expected device protocol:
+        1) prints:  __BEGIN__ <remote_path> <size>\n
+        2) sends exactly <size> raw bytes (binary)
+        3) optionally prints: __END__\n
+
+      Usage examples:
+        Get-ESP32SpiffsFile -Port COM7 -Trigger -RemotePath "/snap.jpg"
+        Get-ESP32SpiffsFile -Port COM7 -OutputPath "C:\tmp\snap.jpg"
+        Get-ESP32SpiffsFile -Port COM7   # passive: waits for __BEGIN__ already sent by device
+    #>
+    param(
+        [Parameter(Mandatory=$false)][string]$Port,
+        [Parameter(Mandatory=$false)][int]$Baud = 460800,
+        [Parameter(Mandatory=$false)][switch]$Trigger,       # if set, send "DUMP <RemotePath>" to device
+        [Parameter(Mandatory=$false)][string]$RemotePath = "/snap.jpg",
+        [Parameter(Mandatory=$false)][string]$OutputPath,
+        [Parameter(Mandatory=$false)][int]$HeaderTimeoutMs = 60000,
+        [Parameter(Mandatory=$false)][int]$ReadChunk = 4096, # bytes per read
+        [Parameter(Mandatory=$false)][int]$ReadIdleTimeoutMs = 60000 # abort if no bytes during body
+    )
+
+    # resolve base directory (script or exe) for default downloads folder
+    $baseDir = $null
+    if ($script:PSScriptRoot -and $script:PSScriptRoot.Trim()) { $baseDir = $script:PSScriptRoot.TrimEnd('\','/') }
+    elseif ($PSCommandPath -and $PSCommandPath.Trim()) { $baseDir = (Split-Path -Parent $PSCommandPath).TrimEnd('\','/') }
+    else { $baseDir = (Get-Location).Path.TrimEnd('\','/') }
+
+    # choose default output path if not provided
+    if (-not $OutputPath -or -not $OutputPath.Trim()) {
+        $downloads = Join-Path $baseDir "downloads"
+        if (-not (Test-Path -LiteralPath $downloads)) { New-Item -ItemType Directory -Path $downloads -Force | Out-Null }
+        $name = ([IO.Path]::GetFileName($RemotePath))
+        if (-not $name) { $name = "spiffs.bin" }
+        $stamp = (Get-Date -Format "yyyyMMdd_HHmmss")
+        $OutputPath = Join-Path $downloads ("{0}_{1}" -f $stamp, $name)
+    }
+
+    # pick port if not given
+    if (-not $Port -or -not $Port.Trim()) {
+        $ports = [System.IO.Ports.SerialPort]::GetPortNames() | Sort-Object
+        if ($ports.Count -eq 0) { throw "No serial ports found." }
+        elseif ($ports.Count -eq 1) { $Port = $ports[0] }
+        else {
+            Write-Host "Available ports: $($ports -join ', ')"
+            $Port = Read-Host "Enter port (e.g., COM7)"
+        }
+    }
+
+    # helpers
+    $headerRegex = '^__BEGIN__\s+(\S+)\s+(\d+)\s*$'
+
+    $sp = $null
+    $fs = $null
+    $sw = $null
+    try {
+        $sp = New-Object System.IO.Ports.SerialPort $Port,$Baud,'None',8,'One'
+        $sp.NewLine = "`n"
+        $sp.ReadTimeout = 1000
+        $sp.WriteTimeout = 2000
+        $sp.Open()
+
+        # flush any stale input
+        try { $sp.DiscardInBuffer() } catch {}
+
+        # optional active trigger
+        if ($Trigger) {
+            $cmd = "DUMP $RemotePath`n"
+            [void]$sp.Write($cmd)
+            Start-Sleep -Milliseconds 150
+        }
+
+        # wait for header line with overall timeout
+        $t0 = [Environment]::TickCount
+        $header = $null
+        while ($true) {
+            try {
+                $line = $sp.ReadLine()
+                if ($line) {
+                    $line = $line.Trim()
+                    if ($line -match $headerRegex) {
+                        $header = $line
+                        break
+                    } else {
+                        # ignore other text noise
+                        Write-Host "[info] $line"
+                    }
+                }
+            } catch {
+                # Read timeout. Check global timeout.
+                if (([Environment]::TickCount - $t0) -ge $HeaderTimeoutMs) {
+                    throw "Timed out waiting for __BEGIN__ header from device."
+                }
+            }
+        }
+
+        # parse header
+        $m = [regex]::Match($header, $headerRegex)
+        $remote = $m.Groups[1].Value
+        [long]$expected = [int64]$m.Groups[2].Value
+        if ($expected -lt 0) { throw "Invalid size in header: $expected" }
+        Write-Host "[begin] remote=$remote size=$expected -> $OutputPath"
+
+        # prepare output stream
+        $fs = [System.IO.File]::Open($OutputPath, [System.IO.FileMode]::Create, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
+        $buf = New-Object byte[] $ReadChunk
+        [long]$remaining = $expected
+        $lastDataTick = [Environment]::TickCount
+
+        # read exactly expected bytes (binary safe)
+        while ($remaining -gt 0) {
+            $want = [int]([Math]::Min($buf.Length, $remaining))
+            $read = 0
+            # Read may return less than requested; loop until at least 1 byte or small timeout
+            while ($read -eq 0) {
+                $n = $sp.BaseStream.Read($buf, 0, $want)
+                if ($n -gt 0) {
+                    $fs.Write($buf, 0, $n)
+                    $remaining -= $n
+                    $lastDataTick = [Environment]::TickCount
+                    break
+                } else {
+                    if (([Environment]::TickCount - $lastDataTick) -ge $ReadIdleTimeoutMs) {
+                        throw "Timed out during body read (no data for $ReadIdleTimeoutMs ms)."
+                    }
+                    Start-Sleep -Milliseconds 10
+                }
+            }
+        }
+        $fs.Flush()
+
+        # optional: read tail markers without blocking long
+        $sp.ReadTimeout = 200
+        try {
+            $tail = $sp.ReadExisting()
+            if ($tail) { Write-Host "[tail] $($tail.Trim())" }
+        } catch {}
+
+        Write-Host "[done] wrote $expected bytes to $OutputPath"
+        return $OutputPath
+    }
+    catch {
+        Write-Host "[error] $($_.Exception.Message)"
+        throw
+    }
+    finally {
+        if ($fs) { $fs.Dispose() }
+        if ($sp) {
+            try { if ($sp.IsOpen) { $sp.Close() } } catch {}
+            $sp.Dispose()
+        }
+    }
+}
 
 
 function SerialMonitor {
@@ -532,13 +689,15 @@ function Get-Esp32Mac {
     return ''
 }
 
+# returns a #COM6
 function SelectCOMPort {
 
     param(
         [switch]$Verbose
     )
 
-    function ProbarCOMsRapido {
+    function ProbarCOMsRapido 
+    {
         param([string[]]$lista)
 
         $macs  = @{}
