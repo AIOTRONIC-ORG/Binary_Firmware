@@ -298,7 +298,8 @@ function Install-EmbeddedPython {
     if (-not (Test-Path $pythonExe)) {
         Write-Host " Descargando Python $Version (embeddable)..."
         New-Item -ItemType Directory -Force -Path $BaseDir | Out-Null
-        Invoke-WebRequest $zipUrl -OutFile $zipName
+        try{Invoke-WebRequest $zipUrl -OutFile $zipName}
+		catch{Write-Error "Embedded py no pudo ser instalado por falta de conexion a internet ! "}
         Expand-Archive $zipName -DestinationPath $pythonDir
         Remove-Item $zipName
 
