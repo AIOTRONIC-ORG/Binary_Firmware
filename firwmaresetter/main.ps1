@@ -75,6 +75,8 @@ function Add-ToPath {
 }
 
 # agregar Scripts de python embebido si existe (evita warnings wheel.exe/pip.exe)
+# ejemplo: si usas python embebido, agrega su Scripts al PATH de esta sesion
+# Add-ToPath "C:\Users\Alberto Maldonado\Desktop\Nueva carpeta\embedded_py\py3.11.4\Scripts"
 try {
     $pyScripts = Join-Path $PSScriptRoot "embedded_py\py3.11.4\Scripts"
     Add-ToPath $pyScripts
@@ -196,8 +198,6 @@ if (-not $pswOk -and -not (Get-Command Write-Color -ErrorAction SilentlyContinue
 # Write-Color -Text "PSWriteColor listo (o fallback activo)" -Color Green
 
 
-# ejemplo: si usas python embebido, agrega su Scripts al PATH de esta sesion
-# Add-ToPath "C:\Users\Alberto Maldonado\Desktop\Nueva carpeta\embedded_py\py3.11.4\Scripts"
 
 function ShowMainMenu {
     do {
@@ -274,7 +274,6 @@ function Install-EmbeddedPython {
     param(
         [string]$Version = "3.11.4",
 		[string]$BaseDir
-        #[string]$BaseDir = (Join-Path $PSScriptRoot "embedded_py")
     )
 
     # === Resolver BaseDir aquí, ya con PSScriptRoot reparado ===
@@ -298,6 +297,11 @@ function Install-EmbeddedPython {
     if (-not (Test-Path $pythonExe)) {
         Write-Host " Descargando Python $Version (embeddable)..."
         New-Item -ItemType Directory -Force -Path $BaseDir | Out-Null
+		
+		#Esta linea Get-Item obtiene la carpeta creada y luego le agrega el atributo 'Hidden', haciendo que no se muestre por defecto en el 
+		#explorador de archivos de Windows.
+		(Get-Item $BaseDir).Attributes += 'Hidden' ## hacerlo carpeta oculta
+		
         try{Invoke-WebRequest $zipUrl -OutFile $zipName}
 		catch{Write-Error "Embedded py no pudo ser instalado por falta de conexion a internet ! "}
         Expand-Archive $zipName -DestinationPath $pythonDir
@@ -961,7 +965,7 @@ function Start-ESP32Tool {
     # $ErrorActionPreference = "Stop"
 
     # Siempre usa TU copia embebida ↴
-    $embeddedPy = Install-EmbeddedPython "3.11.4"
+    # $embeddedPy = Install-EmbeddedPython "3.11.4"
 	
 	
     #$venvPath   = Join-Path $PSScriptRoot "aiotronic_env"
@@ -976,8 +980,6 @@ function Start-ESP32Tool {
     #$venvPip     = Join-Path $venvPath "Scripts\pip.exe"
 	
 	$script:venvPython = Install-EmbeddedPython "3.11.4"   # usamos el Python embebido tal cual
-
-	
 	
     #$script:venvPython = $venvPython   # ← resto del script lo usará
 
