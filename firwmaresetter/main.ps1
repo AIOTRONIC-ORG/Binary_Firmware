@@ -300,8 +300,10 @@ function Install-EmbeddedPython {
 		
 		#Esta linea Get-Item obtiene la carpeta creada y luego le agrega el atributo 'Hidden', haciendo que no se muestre por defecto en el 
 		#explorador de archivos de Windows.
+	
 		(Get-Item $BaseDir).Attributes += 'Hidden' ## hacerlo carpeta oculta
-		
+	
+	
         try{Invoke-WebRequest $zipUrl -OutFile $zipName}
 		catch{Write-Error "Embedded py no pudo ser instalado por falta de conexion a internet ! "}
         Expand-Archive $zipName -DestinationPath $pythonDir
