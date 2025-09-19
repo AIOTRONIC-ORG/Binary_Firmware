@@ -207,7 +207,7 @@ function ShowMainMenu {
         Write-Color -Text "==========================================", " " -Color Cyan, White
         Write-Color ""
 
-        Write-Color -Text "  [1] ", "Flash" -Color Cyan, Green
+        Write-Color -Text "  [1] ", "Flash Erase " -Color Cyan, Green
         Write-Color -Text "  [2] ", "Actualizar Firmware desde SERVIDOR y Monitor Serial" -Color Cyan, Green
         Write-Color -Text "  [3] ", "Imprimir Codigo QR" -Color Cyan, Green
         Write-Color -Text "  [4] ", "Seleccionar Modelo de Dispositivo" -Color Cyan, Green
@@ -224,7 +224,7 @@ function ShowMainMenu {
         $choice = Read-Host "Seleccione una opcion"
 
         switch ($choice) {
-            "1" { FlashESP32 }
+            "1" { FlashESP32Erase }
             "2" { SelectDeviceModel; UpdateFirmwareAndMonitor }
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
@@ -1041,7 +1041,7 @@ function DownloadFirmware($device)
 	 Write-Host " Descargado en $dest"
 }
 
-function FlashESP32 
+function FlashESP32Erase 
 {
     $port = SelectCOMPort
     & "$venvPython" -m esptool --chip esp32s3 --port $port erase_flash
