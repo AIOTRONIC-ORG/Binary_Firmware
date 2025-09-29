@@ -101,93 +101,35 @@ if (Test-Path $psgetPs1) {
     }
 }
 
-# 4) si PowerShellGet funciona, instalar PSWriteColor con Install-Module
-$pswInstalled = $false
-if ($psgetImported) {
-    try { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted -ErrorAction SilentlyContinue } catch {}
-    if (-not (Get-Module -ListAvailable -Name PSWriteColor)) {
-        Write-Host "Instalando modulo PSWriteColor..." -ForegroundColor Yellow
-        try { Install-Module -Name PSWriteColor -Force -Scope CurrentUser -AllowClobber } catch {}
-    }
-    $pswInstalled = [bool](Get-Module -ListAvailable -Name PSWriteColor)
+
+
+
+function Write-Color {
+	param(
+		[Parameter(Mandatory=$true)]
+		[object[]]$Text,
+		[ConsoleColor[]]$Color,
+		[switch]$NoNewLine
+	)
+
+	$lenT = if ($Text) { $Text.Count } else { 0 }
+	$lenC = if ($Color) { $Color.Count } else { 0 }
+
+	for ($i = 0; $i -lt $lenT; $i++) {
+		$seg = [string]$Text[$i]
+		if ([string]::IsNullOrEmpty($seg)) { continue }
+
+		if ($lenC -gt 0) {
+			$idx = if ($i -lt $lenC) { $i } else { $lenC - 1 }
+			Write-Host -NoNewline -ForegroundColor $Color[$idx] $seg
+		} else {
+			Write-Host -NoNewline $seg
+		}
+	}
+
+	if (-not $NoNewLine) { Write-Host }
 }
 
-# 5) si no se pudo, instalacion manual directa desde PowerShell Gallery (sin PackageManagement)
-if (-not $pswInstalled) {
-    try {
-        Write-Host "Instalacion manual de PSWriteColor..." -ForegroundColor Yellow
-        $pkgUrl   = "https://www.powershellgallery.com/api/v2/package/PSWriteColor"
-        $zipPath  = Join-Path $env:TEMP "PSWriteColor.zip"
-        $tmpPath  = Join-Path $env:TEMP "PSWriteColor_unzip"
-        $destBase = Join-Path $userMods "PSWriteColor"
-
-        if (-not (Test-Path $destBase)) { New-Item -Path $destBase -ItemType Directory -Force | Out-Null }
-        Invoke-WebRequest -Uri $pkgUrl -OutFile $zipPath -UseBasicParsing
-        if (Test-Path $tmpPath) { Remove-Item $tmpPath -Recurse -Force }
-        Expand-Archive -Path $zipPath -DestinationPath $tmpPath -Force
-
-        $manifest = Get-ChildItem $tmpPath -Recurse -Filter "PSWriteColor.psd1" | Select-Object -First 1
-        if ($manifest) {
-            $ver = "Manual"
-            try { $mf = Test-ModuleManifest $manifest.FullName; if ($mf.Version) { $ver = $mf.Version.ToString() } } catch {}
-            $destVer = Join-Path $destBase $ver
-            if (Test-Path $destVer) { Remove-Item $destVer -Recurse -Force }
-            New-Item -Path $destVer -ItemType Directory -Force | Out-Null
-            Copy-Item -Path (Split-Path $manifest.FullName -Parent) -Destination $destVer -Recurse -Force
-            Get-ChildItem -Path $destVer -Recurse -ErrorAction SilentlyContinue | Unblock-File -ErrorAction SilentlyContinue
-        }
-
-        Remove-Item $zipPath -Force -ErrorAction SilentlyContinue
-        if (Test-Path $tmpPath) { Remove-Item $tmpPath -Recurse -Force }
-        $pswInstalled = [bool](Get-Module -ListAvailable -Name PSWriteColor)
-    } catch {
-        Write-Host "Fallo instalacion manual de PSWriteColor: $($_.Exception.Message)" -ForegroundColor Red
-    }
-}
-
-# 6) importar PSWriteColor o crear fallback Write-Color para no romper tu script
-# === REEMPLAZA COMPLETAMENTE TU SECCION 6 POR ESTE BLOQUE ===
-
-# 6) importar PSWriteColor o crear fallback Write-Color para no romper tu script
-$pswOk = $false
-try {
-    Import-Module PSWriteColor -Force -ErrorAction Stop
-    $pswOk = $true
-} catch {
-    Write-Host "No se pudo cargar PSWriteColor, usando fallback simple." -ForegroundColor Yellow
-}
-
-if (-not $pswOk -and -not (Get-Command Write-Color -ErrorAction SilentlyContinue)) {
-    if (Test-Path function:Write-Color) {
-        Remove-Item function:Write-Color -Force -ErrorAction SilentlyContinue
-    }
-
-    function Write-Color {
-        param(
-            [Parameter(Mandatory=$true)]
-            [object[]]$Text,
-            [ConsoleColor[]]$Color,
-            [switch]$NoNewLine
-        )
-
-        $lenT = if ($Text) { $Text.Count } else { 0 }
-        $lenC = if ($Color) { $Color.Count } else { 0 }
-
-        for ($i = 0; $i -lt $lenT; $i++) {
-            $seg = [string]$Text[$i]
-            if ([string]::IsNullOrEmpty($seg)) { continue }
-
-            if ($lenC -gt 0) {
-                $idx = if ($i -lt $lenC) { $i } else { $lenC - 1 }
-                Write-Host -NoNewline -ForegroundColor $Color[$idx] $seg
-            } else {
-                Write-Host -NoNewline $seg
-            }
-        }
-
-        if (-not $NoNewLine) { Write-Host }
-    }
-}
 
 # fin de la seccion 6
 
