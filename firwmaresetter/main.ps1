@@ -925,14 +925,22 @@ function Start-ESP32Tool {
 	
 	$script:venvPython = Install-EmbeddedPython "3.11.4"   # usamos el Python embebido tal cual
 	
+    # derivar carpeta base del python embebido y su Scripts
+    $pyDir      = Split-Path -Parent $script:venvPython
+    $pyScripts  = Join-Path $pyDir 'Scripts'
+    if (-not (Test-Path $pyScripts)) { New-Item -ItemType Directory -Force -Path $pyScripts | Out-Null }
+    Add-ToPath $pyScripts   # usa tu funcion Add-ToPath
+
     #$script:venvPython = $venvPython   # ← resto del script lo usará
 
     #& $venvPython -m pip install --upgrade pip
     #& $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
 	
-	& $script:venvPython -m pip install --upgrade pip
-	& $script:venvPython -m pip install esptool pyserial "qrcode[pil]" Pillow pywin32
-
+	# 2) actualizar pip y paquetes reduciendo ruido y quitando el warning de PATH
+    #    --no-warn-script-location evita justamente esos avisos
+    #    -q baja el nivel de salida
+    & $script:venvPython -m pip install --upgrade pip --no-warn-script-location -q
+    & $script:venvPython -m pip install --no-warn-script-location -q esptool pyserial "qrcode[pil]" Pillow pywin32
 
 
     # Descarga/actualiza utilidades auxiliares
