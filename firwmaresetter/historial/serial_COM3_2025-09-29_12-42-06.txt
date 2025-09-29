@@ -1,0 +1,406 @@
+﻿---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.650, built 2025-09-29 11:52:38.521228
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+0
+okok
+El dispositivo SI esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUTSU6uPvPXEu15JE0Dvz6xmKU3o4wDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDYyMDIyMzU0
+NVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANjW97Qpgd/CMQ1eu/ss
+z3knL7Pe5GvTeArWpw31Ph8Gx3Hw7PA+MDpKMjymKBGk08xyxQ72qp/14vjWkTM7
+7PoYwk2Qr9+1/zQl6OSbGMFAXhTQnEs6rwK/F4xgR1GSH8U38xx4nda+hblHx1kF
+z3IXkafHxzNSFAJ1GpuBSzkQJgedrPvf6YdE9jvjZG1G48F4DAUbIJTgKOUDFwz8
+tOf9Ix7fTP8tUYBmPs5LCCL5fL5R9kjaMJ3brZfrKzm41aISQeZAi99JGhbTXlei
+dpWO/k+bnRQbjLeOwGGkjyGp/0w83nDxXRfpOWKmQhQe0p7I4ge/MIkY5FNo7LZb
+HNcCAwEAAaNgMF4wHwYDVR0jBBgwFoAUUzAda/V5viWwFmqmiKpCQq5ZINwwHQYD
+VR0OBBYEFOG8vSEPMYi+np7dttkEMUk11WPiMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQA8FgxMqazTjiq1z2msha1ra9rD
+PX/KMi0yGV1MwRgawKd261KCCkzUnEJD7gr/9uBWIa6TlF1SOvnpG0NiHzsBRr0N
+0ZV5OTicfsu8nVIPPqAsC2M/Jz3aSerIhu3eTioTdHy/3BxU4iZQFaoKfRm0RPqR
+quT3zCblulFl6ND62m9ehAAD+bbRolHgbSt8YWTHdM2177qQpQulB3mjIm43EgGy
+uTn0q2Gv9HcCndp2XtVqD6iOJc7P4NNLC2vKaKz/O6NMjBZfKxt6hhxXF37m2cov
+3ULIRKgEFGthSkVSwL/oknBCCe3gE7NH3bXIXejdL2VhvRRKJsUi/bwZqYjD
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA2Nb3tCmB38IxDV67+yzPeScvs97ka9N4CtanDfU+HwbHcfDs
+8D4wOkoyPKYoEaTTzHLFDvaqn/Xi+NaRMzvs+hjCTZCv37X/NCXo5JsYwUBeFNCc
+SzqvAr8XjGBHUZIfxTfzHHid1r6FuUfHWQXPcheRp8fHM1IUAnUam4FLORAmB52s
++9/ph0T2O+NkbUbjwXgMBRsglOAo5QMXDPy05/0jHt9M/y1RgGY+zksIIvl8vlH2
+SNowndutl+srObjVohJB5kCL30kaFtNeV6J2lY7+T5udFBuMt47AYaSPIan/TDze
+cPFdF+k5YqZCFB7SnsjiB78wiRjkU2jstlsc1wIDAQABAoIBAQDWy4LNpXwwQbXD
+b784XTgb5BRd0gJlSTIVUnJi4jcqFtYEaUrb5E5zv0GqUFFKwQLI+Dt5yiBUmga+
+xhVJMihZyaLXoOaG7Uqixpa/tV89N1y6s7bO0o/AYbia5lhfVidAfl7FKjn4Gfxu
+/8pZxearNuuizsPlc328vXGg7t+r4h4230Sclxg6aph9SBDZBJ8F8Kg6MD2vCfwt
+65jF849O7OQUjHHOM1Z0zeIntuBrVnUypwN/WkwiwRnUtyHD32JLgbdb6ogEp33p
+PHCsKLrqK1D+1tQTIfnixLmyoif7wlw/ZElmvpktS4xJACWs+lTvBcHXsc1QRbys
+OEVbU7IBAoGBAP1dDJ7iZe/9valzsooRB/LzlX5q6DiDp/677Q8K+YjnOdqZmP9c
+oD5368d0defbfsESJgVWF8gwthfhs/V4YjDRQ6ImF8lJW/2nCDYC/7kZ8w4CUgrY
+kVhA4dYRfkFo2IfREJd4Nu65i2PLYRZWn3yp6gXWG1kgtjDq5MXoHO0BAoGBANsY
+ntHKQ1oRrJvLv9/vmZ5PgESNSlOkNcQpWOJw7CZBbO5knQ9g25miv/HYd00DE/+H
+m5rtEOQYJ4C/4IheciXwHxXPEMvlLZxTTCBBk2Zv6oaLPQ8prhv67An8H+/CcE9P
+mrxmuIfd7Y1ktuQl0sUieRQEu/eLxO42SSUDUxHXAoGAd+wPCTVH4qxLlWU54Lfm
+90vsOoYHnJhUb/IrZq9fJTms3JdPH6+L+YVxiFrLZA80k9YvQN9bKlpEFlGyiEGO
+2GR0is9U+uVKMWlaLZaFy+tIbB0VECUpxogPXO+yvusNclu2artv5NbV70pYjeY6
+XxtdtZ1+HFWrZsQHvNT8vAECgYEA1TSlQKPiXOC8JrPkmSeRRwQ4Xv1baf9vLt/J
+ljmrJCMgvO/+AvwPVveQb+llVvT63fv5yY6OlFiJAHo4Jpw52n9L0K46ux/e/bP1
+baJCrTmVcK5IkdvOiX3pemH2NhvxrMxbWKFhSx4E0EZEz8mazKmaR4e/3soNrn33
+OeR9TusCgYEAuhX9u2lFukJW5mj9QJfXBBsveCs/D1nwSI0mM7AYRMUo2kI9X0sS
+iuiffqkFG0tyLnqJ1Uqc2YIqorFWG8ycqexPVNerdZrplY4CdYL5wsAGUn8qQq8z
+xRCOzdMYGoYLqrVhf0RiEOAg/glP0Hn0ecuwTiZ/NnhTwSjiKR5eyZQ=
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_EA01J_9888e0034290_1759165045045
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 98:88:E0:03:42:90-EA01J
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 1
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 2
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of buzzer ON/OFF 0
+Type of rf 1
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 279
+Free Entries: 351
+Namespace Count: 17
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 2
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 0
+Type of buzzer ON/OFF 0
+Type of rf 1
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+304104
+@@@@@@@@@ electro_anyvar_changed by pgm1
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+h
+MIRAN2025
+Chico955
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :MIRAN2025
+PSS storage permanent :Chico955
+SSID Current detected :
+PSS CurrActual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting [WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] GOT_IP: 192.168.1.49
+[WiFi] GOT_IP: 192.168.1.49
+??? Internet disp
+SSID:MIRAN2025
+PzS:Chico955
+Local Wifi Internet connected succesfully 1
+WiFi Connected to : MIRAN2025
+IP Address: 192.168.1.49
+MAC Address: 98:88:E0:03:42:90La intensidad de la se??al es :
+-72
+La velocidad de la se??al internet es :
+********************   Deletion oasks has started ( making space for create wifi tasks )
+**** el task ElectricFence no existia, innecesario eliminarlo
+**** el task Radiofrequency no existia, innecesario eliminarlo
+**** el task siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+***Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/98:88:E0:03:42:90/jobs/notify
+Trying to suscribe to : 98:88:E0:03:42:90/EA01JTrying to suscribe to : 98:88:E0:03:42:90/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/98:88:E0:03:42:90/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+asigor a led
+ejecutando color a led
+mqtt has finished, notifying to main loop for creating Alexa
+mqtt finished : 1
+alexafirsttime : 0
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 98:88:E0:03:42:90/EA01J_conf
+Message Payload :  {"pb":0,"FIRMWARE VERSION":"0.1.650","FIRMWARE BUILD_TIMESTAMP":"2025-09-29 11:52:38.521228","MCU":"ESP32-S3-N16R8","API MODE":0,"OTA TYPE":"aws","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+*****Task alexa running on core0
+Welcome to Alexa Device Program :0
+1
+3
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+JSON docconf : 215
+Publish from electroconf_publishMessage
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+publishs from EMEREGENCY inform to app done
+98:88:E0:03:42:90/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone"0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 98:88:E0:03:42:90/EA01J_conf
+Message Payload :  {"pb":3,"FIRMWARE VERSION":"0.1.650","FIRMWARE BUILD_TIMESTAMP":"2025-09-29 11:52:38.521228","MCU":"ESP32-S3-N16R8","API MODE":0,"OTA TYPE":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : JOB_EA01J_9888e0034290_1759165045045
+JOB_EA01J_9888e0034290_1759165045045
+JSON docconf : 157
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 98:88:E0:03:42:90/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":1,"islocked":0}
+--------
+A Callback has been
+Message arrived in topic: 98:88:E0:03:42:90/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"d_fence":2,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":0,"tp":0}]},"other_conf":{"tp_buzzer":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 98:88:E0:03:42:90/EA01J_conf
+Message Payload :  {"pb":0,"FIRMWARE VERSION":0.1.650","FIRMWARE BUILD_TIMESTAM":"2025-09-29 11:5238.521228","MCU":"EP32-S3-N16R8","API MODE":0,"OTA TYPE":"aws","mode":100}A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":,"src":"ype ******************** Task ElectricFey":0"nro":0},"alar":{"statu":0,"cause":0},"ky:0,"zn":0,"pgm1":1,"islocked":0
+----------------------
+A Callback has been discarted bc message is from device itself
+Task e_fence running on core1
+WDT created for task electric fence
+asignando color a led
+ejecutando color a led
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8526871
+sadasdasdasd_config
+Vr:110.00 % 1627.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro"0}},"battLvl":110}-------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x68 0x01 0x00 0x01 0x00 0x78
+zone 1 en electro_effects_zone_1_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x66 0x01 0x00 0x01 0x00 0x76
+pgm 1 en electro_effects_pgm_1_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x67 0x01 0x00 0x01 0x01 0x78
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Enviando : 0x55 0xAA 0x03 0x07 0x00 0x05 0x65 0x01 0x00 0x01 0x00 0x75
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 1637.00 , Vr:110.00 % 1627.00 , Vr:110.00 % 1629.00 , Vr:110.00 % 1628.00 , Vr:110.00 % 1633.00 , Vr:110.00 % 1630.00 ,
+code_RF ABS :15
+code_RF ABS BIN :1111
+code_RF ABS BIN # :4
+code REST : 15
+code REST BIN : 1111
+code REST BIN # :4
+code_RF : 0
+code_RF BIN : 0
+code_RF BIN # :0
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:110.00 % 1635.00 , Unknown, returning .....
+Vr:110.00 % 1628.00 ,
+code_RF ABS :1
+code_RF ABS BIN :1
+code_RF ABS BIN # :1
+code REST : 1
+code REST BIN : 1
+code REST BIN # :1
+code_RF : 0
+code_RF BIN : 0
+code_RF BIN # :0
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 1629.00 , Vr:110.00 % 1635.00 , Vr:110.00 % 1627.00 , Vr:110.00 % 1635.00 , Vr:110.00 % 1630.00 , Vr:110.00 % 1629.00 , Vr:110.00 % 1629.00 ,
+code_RF ABS :114417685
+code_RF ABS BIN :110110100011110000000010101
+code_RF ABS BIN # :27
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:110.00 % 1629.00 , Unknown, returning .....
+code_RF ABS :114417701
+code_RF ABS BIN :110110100011110000000100101
+code_RF ABS BIN # :27
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :114417701
+code_RF ABS BIN :110110100011110000000100101
+code_RF ABS BIN # :27
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :114417701
+code_RF ABS BIN :110110100011110000000100101
+code_RF ABS BIN # :27
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :114417685
+code_RF ABS BIN :110110100011110000000010101
+code_RF ABS BIN # :27
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:110.00 % 1628.00 , Unknown, returning .....
+code_RF ABS :114417685
+code_RF ABS BIN :110110100011110000000010101
+code_RF ABS BIN # :27
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :114417685
+code_RF ABS BIN :110110100011110000000010101
+code_RF ABS BIN # :27
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :114417685
+code_RF ABS BIN :110110100011110000000010101
+code_RF ABS BIN # :27
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 114417664
+code_RF BIN : 110110100011110000000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
