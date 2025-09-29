@@ -638,8 +638,10 @@ function Get-Esp32Mac {
     return ''
 }
 
-# returns a #COM6
 function SelectCOMPort {
+
+    # Fecha: 2025-09-29
+    # Nuevo: se agrega opcion 3 para usar listado existente (WMI/Device Manager) sin probar MACs
 
     param(
         [switch]$Verbose
@@ -664,8 +666,8 @@ function SelectCOMPort {
                           --before default_reset --after no_reset `
                           --connect-attempts 5 read_mac 2>&1
                 } -ArgumentList $script:venvPython, $com
-				
-				# TIMEOUT DE 1 SEGUNDOS ::::
+                
+                # TIMEOUT DE 1 SEGUNDOS
                 if (Wait-Job $job -Timeout 1) {
                     $out = Receive-Job $job
                     Remove-Job $job
@@ -692,11 +694,7 @@ function SelectCOMPort {
         return @{ macs = $macs ; fails = $fails }
     }
 
-    Write-Host "`nSeleccione modo para elegir puerto COM:"
-    Write-Host "1. Elegir por indice"
-    Write-Host "2. Ingresar COM manualmente (ej: COM4)"
-    $modo = Read-Host "Opcion"
-
+    # cargar listado de puertos desde WMI / sistema
     try {
         $ports = Get-WmiObject Win32_PnPEntity -Filter "Caption like '%(COM%'" |
                  Sort-Object Caption
@@ -708,6 +706,14 @@ function SelectCOMPort {
     }
     if (-not $ports) { Write-Host "No se encontraron puertos COM."; Pause; return $null }
 
+    # menu de modos (ahora con opcion 3)
+    Write-Host "`nSeleccione modo para elegir puerto COM:"
+    Write-Host "1. Elegir por indice (con probing rapido de MAC)"
+    Write-Host "2. Ingresar COM manualmente (ej: COM4)"
+    Write-Host "3. Usar listado existente (WMI/Device Manager) sin probar MAC"
+    $modo = Read-Host "Opcion"
+
+    # regex y extraccion de COMN
     $comRegex        = '\(COM\d+\)'
     $comPortsToCheck = @()
     foreach ($p in $ports) {
@@ -716,10 +722,18 @@ function SelectCOMPort {
         if ($m.Success) { $comPortsToCheck += $m.Value.Trim('()') }
     }
 
-    $resultado = ProbarCOMsRapido -lista $comPortsToCheck
-    $macs  = $resultado.macs
-    $fails = $resultado.fails
+    # si elige 3, saltar probing; caso contrario, ejecutar probing
+    $macs  = @{}
+    $fails = @{}
 
+    # comentario: cuando se usa modo 1 se desea MAC, modo 3 no
+    if ($modo -eq "1") {
+        $resultado = ProbarCOMsRapido -lista $comPortsToCheck
+        $macs  = $resultado.macs
+        $fails = $resultado.fails
+    }
+
+    # mostrar lista disponible
     Write-Host "`nPuertos COM disponibles:"
     for ($i = 0; $i -lt $ports.Count; $i++) {
         $p   = $ports[$i]
@@ -731,24 +745,28 @@ function SelectCOMPort {
         $ports[$i] | Add-Member -NotePropertyName ComPort -NotePropertyValue $com -Force
     }
 
-    Write-Host "`nPuertos con MAC o error:"
-    for ($i = 0; $i -lt $ports.Count; $i++) {
-        $p   = $ports[$i]
-        $m   = [regex]::Match($p.Caption, $comRegex)
-        if (-not $m.Success) { continue }
-        $com = $m.Value.Trim('()')
-        $usb = if ($p.Caption -match '(USB|usb)') { 'USB' } else { '' }
+    # comentario: solo mostrar MACs/errores si se realizo probing (modo 1)
+    if ($modo -eq "1") {
+        Write-Host "`nPuertos con MAC o error:"
+        for ($i = 0; $i -lt $ports.Count; $i++) {
+            $p   = $ports[$i]
+            $m   = [regex]::Match($p.Caption, $comRegex)
+            if (-not $m.Success) { continue }
+            $com = $m.Value.Trim('()')
+            $usb = if ($p.Caption -match '(USB|usb)') { 'USB' } else { '' }
 
-        if ($macs.ContainsKey($com)) {
-            $info = "MAC $($macs[$com]) OK"
-        } elseif ($fails.ContainsKey($com)) {
-            $info = "error: $($fails[$com])"
-        } else {
-            $info = "sin intento"
+            if ($macs.ContainsKey($com)) {
+                $info = "MAC $($macs[$com]) OK"
+            } elseif ($fails.ContainsKey($com)) {
+                $info = "error: $($fails[$com])"
+            } else {
+                $info = "sin intento"
+            }
+            Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $info, $usb)
         }
-        Write-Host (" {0,2}. {1,-6}  {2} {3}" -f ($i+1), $com, $info, $usb)
     }
 
+    # manejo de opcion 2: manual
     if ($modo -eq "2") {
         $manual = Read-Host "Ingrese el nombre del puerto COM (ej: COM4 o com14) (minusculas permitidas)"
         if ($manual -match '^COM\d+$') {
@@ -758,13 +776,15 @@ function SelectCOMPort {
         }
     }
 
+    # manejo de opcion 1 y 3: seleccionar por indice desde la lista ya cargada
     $sel = Read-Host "`nSeleccione un puerto por indice"
     $idx = 0
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
         Write-Host "Indice invalido."; Pause; return $null
     }
     return $ports[$idx-1].ComPort
-}
+} # fin de la funcion SelectCOMPort sin parametros Verbose
+
 
 
 function LoadLocalFirmware {
