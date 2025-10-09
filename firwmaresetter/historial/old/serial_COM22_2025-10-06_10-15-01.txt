@@ -1,0 +1,132 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.316, built 2025-10-04 14:55:11.000248
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10333][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10341][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10352][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : 98:88:E0:03:42:98-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 25
+Free Entries: 605
+Namespace Count: 11
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+0
+actulizando put pgm 1 desde FlashManager_save_new_data_e_confWDT created for task ledsrgb
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+303256
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+[ 14525][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 14533][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont ex
+There is no Credentials Local  mode ...
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+Before is certified conditional ral offline mode has started ....
+Web server not allowed in this firmware version
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+code_RF ABS :72647189
+code_RF ABS BIN :100010101001000001000010101
+code_RF ABS BIN # :27
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 72647168
+code_RF BIN : 100010101001000001000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+******** Retrying to Online Mode ::: ********
+[ 32550][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 32558][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified coness?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** [ 50476][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 50483][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified condition
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version

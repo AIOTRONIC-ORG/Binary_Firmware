@@ -1,0 +1,6 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.662, built 2025-10-01 16:40:24.644157
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION

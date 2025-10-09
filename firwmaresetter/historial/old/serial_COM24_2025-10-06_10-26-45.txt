@@ -1,0 +1,272 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.689, built 2025-10-06 09:58:58.784432
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10282][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10290][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10301][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : 98:88:E0:03:42:34-EA01J
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 29
+Free Entries: 601
+Namespace Count: 11
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+304960
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+[ 14472][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 14479][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******** Retrying to Online Mode ::: ********
+[ 32497][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 32504][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[ 50422][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 50429][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Bral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[ 68347][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 68354][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certifiral offline mode has started ....
+Web server not allowed in this firmware version
+nline Mode ::: ********
+[ 86272][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 86279][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[104197][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[104204][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[122122][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[122129][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[140047][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[140054][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** [157972][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[157979][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+mode ...
+Before is certified conditio
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[175897][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[175904][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[193822][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[193829][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+Th mode ...
+Before is certified conditional inral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[211747][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[211754][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certifiedCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[229672][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[229679][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[247597][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[247604][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[265522][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[265529][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[283447][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[283454][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to
+[301372][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[301379][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[319297][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[319304][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Bral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[337222][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[337229][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[355147][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[355154][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wirel
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[373072][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[373079][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+Thectivating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[390997][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[391004][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[408922][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[408929][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Bral offline mode has started ....
+Web server not allowed in this firmware version

@@ -1,0 +1,554 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.316, built 2025-10-04 14:55:11.000248
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10278][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10286][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10297][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : 30:ED:A0:1E:57:C0-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 25
+Free Entries: 605
+Namespace Count: 11
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+0
+actulizando put pgm 1 desde FlashManager_save_new_data_e_confWDT created for task ledsrgb
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+303256
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+[ 14471][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 14479][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Loc mode ...
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+Bnot allowed in this firmware version
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+*********************** DELETED task wirelessfid
+*********************** DELETED task siren
+Reset Wifi Credentials ACTIVATED FROM SCREEN1
+init timer hold Flashy: 28763
+end timer hold : 29163, 400
+ejecutando color restore a led
+end timer hold : 29573, 400
+ejecutando color restore a led
+init timer hold Flashy: 29613
+end timer hold : 30013, 400
+ejecutando color restore a led
+end timer hold : 30423, 400
+ejecutando color restore a led
+init timer hold Flashy: 30463
+Reseting the WiFi credentials
+Wifi credentials erased
+Credenciales WiFi borradas del espacio 'nvs'.
+Restarting the ESP in 2 seconds
+1end timer hold : 30863, 400
+ejecutando color restore a led
+...end timer hold : 31273, 400
+ejecutando color restore a led
+init timer hold Flashy: 31313
+end timer hold : 31713, 400
+ejecutando color restore a led
+2end timer hold : 32123, 400
+ejecutando color restore a led
+init timer hold Flashy: 32163
+...end timer hold : 32563, 400
+ejecutando color restore a led
+end timer hold : 32973, 400
+ejecutando color restore a led
+init timer hold Flashy: 33013
+end timer hold : 33413, 400
+ejecutando color restore a led
+Reseting has started
+Screen 2 related[1] from wifi button done and disabling
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420e71de
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.316, built 2025-10-04 14:55:11.000248
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10281][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10289][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10300][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : 30:ED:A0:1E:57:C0-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 31
+Free Entries: 599
+Namespace Count: 12
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+actulizando put pgm 1 desde FlashManager_save_new_data_e_confWDT created for task ledsrgb
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+303212
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Credentials dont exist, required Sma
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+storage permanent :
+PSS storage permanent :
+SSID Current detected :
+PSSwn by Class
+Smart Config was manually acti
+Waiting for SmartConfig.
+Tiempo SC: 1Tiempo SC: 2Tiempo SC: 4Tiempo SC: 5Tiempo SC: 7Tiempo SC: 8Tiempo SC: 9Tiempo SC: 10Tiempo SC: 11Tiempo SC: 13Tiempo SC: 14Tiempo SC: 15Tiempo SC: 16Tiempo SC: 17Tiempo SC: 19Tiempo SC: 20Tiempo SC: 21Tiempo SC: 22Tiempo SC: 23Tiempo SC: 25Tiempo SC: 26Tiempo SC: 27Tiempo SC: 28Tiempo SC: 29TiemTiempo SC: 32Tiempo SC: 33Tiempo SC: 34Tiempo SC: 35Tiempo SC: 37Tiempo SC: 38Tiempo SC: 39Tiempo SC: 40Tiempo SC: 41Tiempo SC: 45Tiempo SC: 46Tiempo SC: 47Tiempo SC: 49Tiempo SC: 50Tiempo SC: 51TiemTiempo SC: 53Tiempo SC: 55Tiempo SC: 56Tiempo SC: 57Tiempo SC: 58Tiempo SC: 59Tiempo SC: 61Tiempo SC: 62Tiempo SC: 63Tiempo SC: 64Tiempo SC: 65Tiempo SC: 67Tiempo SC: 68Tiempo SC: 69Tiempo SC: 70
+El dispositivo ya no estar?? en modo fabrica a partir de ahora
+la cre
+stored the new credentials ssid of smart config !
+La credencial SSID es :
+AIOTR
+Ch0c0ai0@
+Waiting for Wifi
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+??? Internet disponible.
+SSID:AIOT
+Local Wifi Internet conn: 192.168.18.58
+MAC Address: -43
+La velocidad de la se??al internet es :
+********************   Deletion of tasks has started ( making space for create wifi tasks )
+**** el task Radiofrequency no existia, innecesario eliminarlo
+*********************** DELETED task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+Tasks ef, rf and siren have been deleted
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wire ********************   Deletion of tasks has started ( making space for create wifi tasks )
+*********************** DELETED task Radiofrequency
+**** el task siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+After is certified conditional in wireleication
+******************** Task awscertification_sc initialized correctly
+Task awscertification_sc running on core0
+Connecting to api aiohttp://38.253.172.13:3000/mqtt-iot/create-thing
+*********************** DELETED task wirelessfid
+30:ED:A0:1E:57:C0","model":"CA01N","version":"0.1.316"}
+201
+Valores del JSONBEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA2clGsZx70U666Rvwe+Esx3Uebv7wBfIaQAcOuuDNTEiru8sS
+1MnVbpiSw60pG7lfy+VstnSfLrJFUaHcFipuXjpiupkHgcUyk3qkJOHmnmLikuRc
+BVx9ww/piBwjtFuk6cxWcjTq6jzFltawf4hWc6ML9z/nNYKICmAx3w5k283ysHZj
+GbS0P8i6dzeVMn12G0H8t9DTNBQg26ln3P6EwuyKbE51sCInWCiuME5Ss6UyCWpS
+MIKbGOjPN05Z7dlAmiHfNUtZ2Ck4ahH1CwPzsFyb79xOyi/8iNMW0q+x56dx4pPS
+M/tCY9Rh8jBI3a3G9QqvttRo9y3CvzIsV/MLfQIDAQABAoIBAQDRNLs3JJYAY3vD
+L/acWZs1YvlAMJ+LZpz2wpDQzeAIlop51EKbq+Ld4ayiUbX6juFKMXJz9qVvKwrR
+twV/OXVaCQYML7J5Y2AJMbd6QpLRtTXnW3xWHholBiUUfcuClsJdYM/t142OQ6Cf
+HE7hw6sgXBDDi1xkF6btKKjfl6klRvOvRSwn63Z28RfLR9B/QUDEzB8KomIR/07R
+GsM47hL5DzT9G3vr57fvP9BZE+vrXQ1Vz+lIMcKsJuxAh6wKRT9x1ROAvpYQ0ELX
+2A+pQdGzmJv9/kP8Ab1RuvcZ1C+acZK6ARm5xZf9eW5d/0D/H9biC7EH6GOgLk98
+4TK/WHi1AoGBAPmyPJyf107cdf8/x7gpMxAG/vuznAwMn0lysqQh8ZzaQikpufQe
+i5Y0x9suY/rz8EytFS99bDuthrpZ8ISRG474RvSQh2a243PPMCfHUmNUYLHDCepF
+2zVndIPB/C9QKcUAXtFRJ8q6wkIMK26tRNXBjdWtFZ5PaEeETdzAdNvHAoGBAN9I
+ztwgCihJ6f+PGAOOlo7lvhtNd/0RpZP1gijJM0TH3owq2+AWITcoN9+KYfCHxPan
+1h8LHuJdrUzRBXGldY2XaRe7iGb1q9oqJD6jaiVc0xPditYbRdpUeH6PKjwlopoB
+S5wSjEg0jwZNiOFNwwh+cPYU4aWH6VUCW6YiejabAoGAE9yOn7LDMJ2usSAEpex5
+CFRWIfVWe0rhvLjn5tBgZKajzpxoEzf+yHLoVtHo2ARhX+gAoGdsnY6fAeG3lQPp
+2kR7eGaqrovrqcGYRgG/1vDWRC2Mc1sdJbFV/kkG40iQGgB+ik3XSXPzkcdgCQy1
+Rf+AZbe/2XjdhZrLirywTu8CgYEAjeek6EtIiVBoce3MUj5lu02Ro6J5dpGnjMBE
+R42Pks//xU9bzC/kTjy2PdCh7A8tg6EpOTOFHlJw2FgjQJXqfuFSfi3GQ8Ewxgdw
+X4rV5Ab5cy+ik+5jV53FspFkQzOcAop+NiOnmiAlIdlW+/HC2Pwa6Jpeyif1h/xm
+qNBSoa8CgYBXt+UVpbdGcJawxMwCtXJjxb0VZiaHXHoD4WzucR7x//WT/oJlllFx
+ZT/s5xd4x7RptziX25hpDdbvm2lzkRI/sstpPEGozMCin3NQ5G+vq9ea6doKy7Cr
+yhGmK/MD44ygdAHlGvWJvfQwOX7i9WICl+3RNgnQMwPgEse1Tx4f1g==
+-----END RSA PRIVATE KEY-----
+DeviceCertificate: -----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUVfO+C58VdqlBdXAoLAVwP9zcUjIwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MTAwNjE1Mjcz
+MVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANnJRrGce9FOuukb8Hvh
+LMd1Hm7+8AXyGkAHDrrgzUxIq7vLEtTJ1W6YksOtKRu5X8vlbLZ0ny6yRVGh3BYq
+bl46YrqZB4HFMpN6pCTh5p5i4pLkXAVcfcMP6YgcI7RbpOnMVnI06uo8xZbWsH+I
+VnOjC/c/5zWCiApgMd8OZNvN8rB2Yxm0tD/Iunc3lTJ9dhtB/LfQ0zQUINupZ9z+
+hMLsimxOdbAiJ1gorjBOUrOlMglqUjCCmxjozzdOWe3ZQJoh3zVLWdgpOGoR9QsD
+87Bcm+/cTsov/IjTFtKvseenceKT0jP7QmPUYfIwSN2txvUKr7bUaPctwr8yLFfz
+C30CAwEAAaNgMF4wHwYDVR0jBBgwFoAU5qsxURMqOLRlSQi3/LyDbNV3xLswHQYD
+VR0OBBYEFFpTdHtUWN7tmq5S6IhKkPJRq3TTMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBrFQnkdVUY+Xy9dD0qDZCOkulp
+3FcOHOAeiGM8Eizz9d4AP85b8VOdEHeiPIM4oqZwrZOEKGMXvrCXHoY6gRyiiXs4
+U+OtXP9yLA82Q+YHAted0MfBxyP85R5vCaUDx36+/VoQW+0oxrwOMws5AjeEOMVO
+MDXbg6P/VhfWuBYdZ78OzfxtbaEF9t68/VBylILbecBvLto90SOWTpQl7tVgmvII
+gm9U8wtXoowhaMK2x6ezzda+pbHCgsM4476w2UsUihkmhSnpY5SqKws5w8eoML56E
+-----END CERTIFICATE-----
+---788
+Starts Deletion of certificates()
+Device will restart  on purpose in the next seconds :
+[WiFi] DISCONNECTED reason=8
+[WiFi] esp_wifi_connect() retried
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403779b0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.316, built 2025-10-04 14:55:11.000248
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUVfO+C58VdqlBdXAoLAVwP9zcUjIwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MTAwNjE1Mjcz
+MVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANnJRrGce9FOuukb8Hvh
+LMd1Hm7+8AXyGkAHDrrgzUxIq7vLEtTJ1W6YksOtKRu5X8vlbLZ0ny6yRVGh3BYq
+bl46YrqZB4HFMpN6pCTh5p5i4pLkXAVcfcMP6YgcI7RbpOnMVnI06uo8xZbWsH+I
+VnOjC/c/5zWCiApgMd8OZNvN8rB2Yxm0tD/Iunc3lTJ9dhtB/LfQ0zQUINupZ9z+
+hMLsimxOdbAiJ1gorjBOUrOlMglqUjCCmxjozzdOWe3ZQJoh3zVLWdgpOGoR9QsD
+87Bcm+/cTsov/IjTFtKvseenceKT0jP7QmPUYfIwSN2txvUKr7bUaPctwr8yLFfz
+C30CAwEAAaNgMF4wHwYDVR0jBBgwFoAU5qsxURMqOLRlSQi3/LyDbNV3xLswHQYD
+VR0OBBYEFFpTdHtUWN7tmq5S6IhKkPJRq3TTMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBrFQnkdVUY+Xy9dD0qDZCOkulp
+3FcOHOAeiGM8Eizz9d4AP85b8VOdEHeiPIM4oqZwrZOEKGMXvrCXHoY6gRyiiXs4
+U+OtXP9yLA82Q+YHAted0MfBxyP85R5vCaUDx36+/VoQW+0oxrwOMws5AjeEOMVO
+MDXbg6P/VhfWuBYdZ78OzfxtbaEF9t68/VBylILbecBvLto90SOWTpQl7tVgmvII
+gm9U8wtXoowhaMK2x6ezzda+pbHCgsM4476w2UsUihkmhSnpY5SqKws5wDeWwU8I
+ts6vq9s/ZqlQVH9vJieqfbRIdWq07AAG4dbZXeY5Z/GuvrjYBBYS8eoML56E
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA2clGsZx70U666Rvwe+Esx3Uebv7wBfIaQAcOuuDNTEiru8sS
+1MnVbpiSw60pG7lfy+VstnSfLrJFUaHcFipuXjpiupkHgcUyk3qkJOHmnmLikuRc
+BVx9ww/piBwjtFuk6cxWcjTq6jzFltawf4hWc6ML9z/nNYKICmAx3w5k283ysHZj
+GbS0P8i6dzeVMn12G0H8t9DTNBQg26ln3P6EwuyKbE51sCInWCiuME5Ss6UyCWpS
+MIKbGOjPN05Z7dlAmiHfNUtZ2Ck4ahH1CwPzsFyb79xOyi/8iNMW0q+x56dx4pPS
+M/tCY9Rh8jBI3a3G9QqvttRo9y3CvzIsV/MLfQIDAQABAoIBAQDRNLs3JJYAY3vD
+L/acWZs1YvlAMJ+LZpz2wpDQzeAIlop51EKbq+Ld4ayiUbX6juFKMXJz9qVvKwrR
+twV/OXVaCQYML7J5Y2AJMbd6QpLRtTXnW3xWHholBiUUfcuClsJdYM/t142OQ6Cf
+HE7hw6sgXBDDi1xkF6btKKjfl6klRvOvRSwn63Z28RfLR9B/QUDEzB8KomIR/07R
+GsM47hL5DzT9G3vr57fvP9BZE+vrXQ1Vz+lIMcKsJuxAh6wKRT9x1ROAvpYQ0ELX
+2A+pQdGzmJv9/kP8Ab1RuvcZ1C+acZK6ARm5xZf9eW5d/0D/H9biC7EH6GOgLk98
+4TK/WHi1AoGBAPmyPJyf107cdf8/x7gpMxAG/vuznAwMn0lysqQh8ZzaQikpufQe
+i5Y0x9suY/rz8EytFS99bDuthrpZ8ISRG474RvSQh2a243PPMCfHUmNUYLHDCepF
+2zVndIPB/C9QKcUAXtFRJ8q6wkIMK26tRNXBjdWtFZ5PaEeETdzAdNvHAoGBAN9I
+ztwgCihJ6f+PGAOOlo7lvhtNd/0RpZP1gijJM0TH3owq2+AWITcoN9+KYfCHxPan
+1h8LHuJdrUzRBXGldY2XaRe7iGb1q9oqJD6jaiVc0xPditYbRdpUeH6PKjwlopoB
+S5wSjEg0jwZNiOFNwwh+cPYU4aWH6VUCW6YiejabAoGAE9yOn7LDMJ2usSAEpex5
+CFRWIfVWe0rhvLjn5tBgZKajzpxoEzf+yHLoVtHo2ARhX+gAoGdsnY6fAeG3lQPp
+2kR7eGaqrovrqcGYRgG/1vDWRC2Mc1sdJbFV/kkG40iQGgB+ik3XSXPzkcdgCQy1
+Rf+AZbe/2XjdhZrLirywTu8CgYEAjeek6EtIiVBoce3MUj5lu02Ro6J5dpGnjMBE
+R42Pks//xU9bzC/kTjy2PdCh7A8tg6EpOTOFHlJw2FgjQJXqfuFSfi3GQ8Ewxgdw
+X4rV5Ab5cy+ik+5jV53FspFkQzOcAop+NiOnmiAlIdlW+/HC2Pwa6Jpeyif1h/xm
+qNBSoa8CgYBXt+UVpbdGcJawxMwCtXJjxb0VZiaHXHoD4WzucR7x//WT/oJlllFx
+ZT/s5xd4x7RptziX25hpDdbvm2lzkRI/sstpPEGozMCin3NQ5G+vq9ea6doKy7Cr
+yhGmK/MD44ygdAHlGvWJvfQwOX7i9WICl+3RNgnQMwPgEse1Tx4f1g==
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+[ 10310][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:57:C0-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 252
+Free Entries: 378
+Namespace Count: 16
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+0
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of pgm2: 0
+Time of pgm2: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+302604
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Credentials alrea
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :SSID Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] GOT_IP: 192.168.18.58
+[WiFi] GOT_IP: 192.168.18.58
+???AIOTRONIC4
+PzS:Ch0c0ai0@
+o : AIOTRONIC4
+IP Address: 192.
+MAC Address: La intensidad de la se??al es :
+La velocidad de la se??al internet es :
+**************pace for create wifi tasks )
+**** el task Radiofreq no existia, innecesario eliminarlo
+**** el task siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:C0/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:C0/CA01N == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:C0/CA01N_conf == Trying to suscribe to : $aws/things/30:ED:A0:1E:57:C0/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end o
+mqtttt finished : 1ished2 : 0
+Task Alexa Created in main loop()
+******************** Task alexa_sc initialized correctly
+Task alexa running on core
+0
+Welcome to Alexa Device Program :0
+1
+2
+3
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+JSON docconf : 215
+Publish from electroconf_publishMesse
+JSON doctro : 107
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+publishs from EMEREGENCY inform to app done
+Message arrived in topic: 30:ED:A0:1E:57:C0/CA01N_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":0},{"id":2,"t":10,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+--------A Callback has iscarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:C0/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":0,"pgm2":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+E (68412) uart: uart_write_bytes(1282): uart driver error
+E (68412) uart: uart_write_bytes(1282): uart driver error
+E (68413) uart: uart_write_bytes(1282): uart driver error
+E (68417) uart: uart_write_bytes(1282): uart driver error
+E (68422) uart: uart_write_bytes(1282): uart driver error
+E (68427) uart: uart_write_bytes(1282): uart driver error
+E (68432) uart: uart_write_bytes(1282): uart driver error
+E (68437) uart: uart_wait_tx_done(1152): uart driver error
+ejecutando color restore a led
+Screen click related[1] from wifi button done and disabling
+ejecutando color restore a led
+Screen 2 related[2] from wifi button done and disabling

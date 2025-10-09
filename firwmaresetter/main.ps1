@@ -291,7 +291,9 @@ function Wait-ForDevice {
 }
 
 function Monitor-Serial {
-    param ( [string]$port )
+    param ( 
+        [string]$port,
+        [string] $mac )
 
     $macPattern = '^[0-9A-Fa-f]{2}(:[0-9A-Fa-f]{2}){5}$'
 
@@ -394,7 +396,9 @@ function Monitor-Serial {
 
         $fileSafePort = ($port -replace '[\\/:*?"<>|]', '_')
         $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
-        $logPath = Join-Path $historyDir ("serial_{0}_{1}.txt" -f $fileSafePort, $timestamp)
+        $macClean = if ([string]::IsNullOrWhiteSpace($mac)) { "Unknown" } else { ($mac -replace ':', '') }
+
+        $logPath = Join-Path $historyDir ("serial_{0}_{1}_{2}.txt" -f $macClean, $fileSafePort, $timestamp)
         New-Item -ItemType File -Path $logPath -Force | Out-Null
         $sw = New-Object System.IO.StreamWriter($logPath, $true, [System.Text.Encoding]::UTF8)
         $sw.AutoFlush = $true
@@ -615,11 +619,12 @@ function SerialMonitor {
         [string]$port
     )
 	
-    $port = SelectCOMPort
-    if (-not $port) { return }
+    $porAndMac = SelectCOMPort
+    if (-not $porAndMac) { return }
 
     Write-Host "\n▶️  Iniciando monitor serial en $port...\n"
-	Monitor-Serial $port
+    # Write-Output $porAndMac.Mac
+	Monitor-Serial $porAndMac.Port $porAndMac.Mac
     #& $script:venvPython "monitor_serial.py" $port
 
     Pause
@@ -638,6 +643,29 @@ function Get-Esp32Mac {
     return ''
 }
 
+
+<#
+    .SYNOPSIS
+        Selecciona un puerto COM y retorna tambien la MAC si se obtuvo durante el probing.
+    .DESCRIPTION
+        Agrega retorno como objeto con propiedades Port y Mac. 
+        En modo 1 se muestran y usan las MACs detectadas por ProbarCOMsRapido.
+        En modo 2 (manual) se intenta un probing rapido del puerto ingresado para obtener la MAC.
+        En modo 3 no se hace probing y la propiedad Mac sera $null.
+    .PARAMETER Verbose
+        Muestra salida detallada del probing de MACs.
+    .EXAMPLE
+        $sel = SelectCOMPort -Verbose
+        "Puerto: {0}  MAC: {1}" -f $sel.Port, $sel.Mac
+    .EXAMPLE
+        $s = SelectCOMPort
+        $s.Port
+        $s.Mac
+    .NOTES
+        ADVERTENCIA: cambiar el tipo de retorno a objeto puede afectar codigo que esperaba solo una cadena.
+    .FECHA
+        2025-10-09
+#>
 function SelectCOMPort {
 
     # Fecha: 2025-09-29
@@ -770,7 +798,16 @@ function SelectCOMPort {
     if ($modo -eq "2") {
         $manual = Read-Host "Ingrese el nombre del puerto COM (ej: COM4 o com14) (minusculas permitidas)"
         if ($manual -match '^COM\d+$') {
-            return $manual
+            # intento de probing rapido del puerto manual para obtener MAC
+            $macManual = $null
+            $r = ProbarCOMsRapido -lista @($manual)
+            if ($r.macs.ContainsKey($manual)) { $macManual = $r.macs[$manual] }
+
+            # retornar objeto con puerto y mac encontrada (o $null si no)
+            return [pscustomobject]@{
+                Port = $manual
+                Mac  = $macManual
+            }
         } else {
             Write-Host "Puerto COM invalido."; Pause; return $null
         }
@@ -782,9 +819,22 @@ function SelectCOMPort {
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
         Write-Host "Indice invalido."; Pause; return $null
     }
-    return $ports[$idx-1].ComPort
-} # fin de la funcion SelectCOMPort sin parametros Verbose
 
+    # obtener COM elegido
+    $puertoElegido = $ports[$idx-1].ComPort
+
+    # si hubo probing (modo 1), intentar devolver la MAC asociada; en otros modos sera $null
+    $macElegida = $null
+    if ($modo -eq "1" -and $macs.ContainsKey($puertoElegido)) {
+        $macElegida = $macs[$puertoElegido]
+    }
+
+    # retornar objeto con puerto y mac
+    return [pscustomobject]@{
+        Port = $puertoElegido
+        Mac  = $macElegida
+    }
+} # fin de la funcion SelectCOMPort con parametros Verbose y retorno Port/Mac
 
 
 function LoadLocalFirmware {
@@ -921,7 +971,7 @@ function LoadLocalFirmware {
     }
     Pause
 	
-	Monitor-Serial $port
+	Monitor-Serial $port.Port $port.Mac
 }
 
 
@@ -1046,7 +1096,7 @@ function UpdateFirmwareAndMonitor
     if ($LASTEXITCODE -eq 0) {
         Write-Host "Firmware actualizado exitosamente. Esperando conexion y MAC..."
         #& "$venvPython" monitor_serial.py $port
-		Monitor-Serial $port
+		Monitor-Serial $port.Port $port.Mac
     } else {
         Write-Host "Error actualizando firmware."
     }

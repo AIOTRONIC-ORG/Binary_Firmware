@@ -1,0 +1,4681 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.689, built 2025-10-06 09:58:58.784432
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUQBBjkLbXvP71RweuyzukCfRc0kYwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDgxNTEzMTY0
+N1oXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOQIhjXszpp4zbuMjR4e
+0/DB+R1lqJ/MntJYg0gvLwTsNrRlalUGscRKt07HZIAgtgTq4lIeXKYrChvq/qaG
+XQqz2uQta/wRgIE271Up0FeVTBnhUZqqsLvC94xfh/gjB2LlQRd6qj4i7FwfgV5I
+MZWBCQkZV0mkPEyR8QHx0ejY2fFOs/9l2mCz3D2al3Ktt/ZiS4F8oC0VL+CBq6YN
+LclYbSZwXIc26jvROM07SExJnv2/u/4s9o+7NO0nfciQ+0NX6x+ih33+9BqDzLrP
+GPtIWaevQ/IWkdYMOah9npZ7qSvmv0pWcb2FZ3yFykQ5hiFwzppDhgvvTv7kDjw9
+P28CAwEAAaNgMF4wHwYDVR0jBBgwFoAUcjVG/eghaiD6CR7Usyr8Fi6c2w8wHQYD
+VR0OBBYEFGcPBn9giJTHTXeHLELjijvC8EqSMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBR5doqBPnDskhp12kdJ0UdBE0K
+nd0KLGZQczjXtpLB1oTA/lSqt0i2JjKb1baMdah5ZwrshLnnCs9pPJ+H4Qc0q2td
+ajrUPajLs94roHrMTlk8o69mJRRQWqcBOafv3jn8RLzHIrydslIgWnqS2+AdUyzC
+TgHVQIw/nme2lRLjzW5AES3YORQhn3ugeUZh7Uyc3+XDkGeCkHlNAJUbQBH1Weyx
+p97JntKA9yVKl8Nuv0ujvgPffsYQJDekGxPBEspv2RHeAmJxdnuxoUd0SOXWs4hk
+L+jwsj5YirzrFmWFEj4HDMXfGorjd11updQc6uFWRtu62yD6PbEB8DrsKdat
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA5AiGNezOmnjNu4yNHh7T8MH5HWWon8ye0liDSC8vBOw2tGVq
+VQaxxEq3TsdkgCC2BOriUh5cpisKG+r+poZdCrPa5C1r/BGAgTbvVSnQV5VMGeFR
+mqqwu8L3jF+H+CMHYuVBF3qqPiLsXB+BXkgxlYEJCRlXSaQ8TJHxAfHR6NjZ8U6z
+/2XaYLPcPZqXcq239mJLgXygLRUv4IGrpg0tyVhtJnBchzbqO9E4zTtITEme/b+7
+/iz2j7s07Sd9yJD7Q1frH6KHff70GoPMus8Y+0hZp69D8haR1gw5qH2elnupK+a/
+SlZxvYVnfIXKRDmGIXDOmkOGC+9O/uQOPD0/bwIDAQABAoIBAHRdETfFXuyexsV1
+BLIhIyARq/DfZnwdK9LFDkEwqrrFW2kU83zuDJrRUddmkpd7mcbKobEsAzVccy0p
+7sbFfAcxHnsf3qHjwIKvqNP5oXKAIjR2sXDOt58o76/3M+hg360MtfmoQ+WvZpPg
+E+Erz/mtvhGhl9Rhdc/RDX5jiy1ZPM7Qdu+uX0gv2MkPaLcJ5M8uSumqy1Tv7m7k
+FNZG1iNGZ4Rt9xM+xhDpYG8PV0XHROj4E8UlTaVyCTvNzc4k+LOAs8uL3bfMviSO
+N7rOkCp/NTJ+uW0h5qLfACRnr5LugHb7tOx3fuzVcMCfbJNFZqSax/BiUnU38AyT
+cRuqcIkCgYEA8nBGgxvfyE7m50qDCLcaMD3EdLhC5dL5vkIxLLLNmvImRdnYmZ/q
+YPA2sR+a8Mt+mGdo632p1kL7xpSat7lrKJumExRexez19Lk1THR9lLuxPW7iY8gx
+Xo0tBSNYzlowdywzz78W+SW1VyGuTBHTydjSD16/IVvwh+G3g7JC0d0CgYEA8Mn3
+CdcmsxOfGNf+E44/We/oESl2zkOjZ+P4JWbDEo9zaZNrTF35BRdm7R3THw46GXhJ
+Ui42+FIT9T2DRuu1KRT6uxV8h6UmAoBAlxAY3Q8h5ux1nID7TTKs+1faAMkI2wtH
+hiiknmm2cFCswS3IH5zN9S6viXzZsiDQXUKKD7sCgYBvFr9YqFccY/suFFiCj9Qy
+MrtoeF4/DTNe2NnLj4ri6v5al33Gtx4gmTGWa9MFb1ls4EWVUpmWEk9oKQPUF+Rg
+USICMB1VOEVjg9JGXEKG+pI2gi6+ZicpGit85Tt2IqF+mgSLtxYByCOV71r8hFa1
+cOKgJFwUHxrSSL1cXTx9CQKBgQCW+NrGtbqS/1N6nTq2AjNgbZZg5FGUZD5ZTktx
+D+xxf7YKVR8qg6U19wVW2KNdzmrJO20ldMqMidHvqwDbf8BXoMrQcFljJz4cxVM6
+JCKiv/Euu8XGOezW61YgRWXvphzCUmEnEeadWITGCR84BD986rEL8JipKLnKAN8E
+CktMLwKBgD1EzSJalRo1rFs9oIStKOzNxTic1x9UXJKOKDAlI3roBSw24n819lJZ
+WnDvEhfMTCAlQUqQlmHsLz2B790Mz0UOTgQPwziBnVZg2hxmwT4J43P2rlAfGXDC
+2tp+Dfnuf+eFRgie21NL8tlhlcI6/OFCWemGEKJBaCcVyw6Hjo5A
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_EA01J_30eda01e57cc_1759171874516
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:57:CC-EA01J
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF1 : 30507008
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 276
+Free Entries: 354
+Namespace Count: 16
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+304108
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Credentials already exists in Flash
+AIOTRO
+Ch0c0ai0@
+t try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart coSSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0cSSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN:1Tiempo WiFi LAN: 2Tiempo WiFi LAN: 3Tiempo WiFi LAN: 4Tiempo WiFi LAN: 5Tiempo WiFi LAN: 7ating offline mode ...
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+[WiFi] GOT_IP: 192.168.18.54
+******** Retrying to Online Mode ::: ********
+Wifi Credentials already exists in Flash
+AIOT
+[WiFi] DISCONNECTED reason=8
+[WiFi] esp_wifi_connect() retried
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] GOT_IP: 192.168.18.54
+[WiFi] GOT_IP: 192.168.18.54
+[WiFi] GOT_IP: 192.168.18.54
+??? IntSSID:AIOTRONIC4
+PzS:Ch0c0ai0@
+Locaccesfully 1
+WiFi Connected to : AIOTRONIC4
+IP Address: 192.168.18.54
+MAC Address: 30:ED:A0:1E:57:CC
+La intensidad de la se??al es :
+La velocidad de la se??al internet es :
+*************   Deletion of tasks has started ( making space for create wifi tasks )
+*********************** DELETED task ElectricFence
+*********************** DELETED task Radiofrequency
+*********************** DELETED task siren
+Tasks ef, rf and siren have been deleted
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, connect to Aws MQTT
+Prueba MACC adding :
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n Exitosa !!
+end of mqtt() function
+mqtt() 414-line completed
+mnishe : 1
+alexafirsttime : 0
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.689","firmwareBuildTimeStamp":"2025-10-06 09:58:58784432","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+Task alexa running on core0
+Welcome to Alexa Device Program :0
+1
+2
+3
+Alexa creation confiFauxmo enviando informacion a alexa
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : JOB_EA01J_30eda01e57cc_1759171874516
+JOB_EA01J_30eda01e57cc_1759171874516
+JSON docconf : 152
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"t_buzzer":1}}
+-----------------------
+A CallbMessage arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.689","fimwareBuildTimeStamp":"2025-10-06 09:58:58.784432","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm" ******************** Task ElectricFence_sc initialized correctly:{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+Task e_fence running on coreA Callback has been discarted bc message is from device itself
+1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8526903
+sadasdasdasd_config
+Vr:110.00 % 1746.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+####### Heartbeat package
+####### Heartbeat package
+####### Product information
+set_wifi_uart_buffer PRODUCT_KEY:
+set_wifi_uart_buffer MCU_VER:
+CONFIG_MODE_CHOOSE :
+####### Query working mode
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,  ??? Internet missing was detected faster than .connected
+####### Heartbeat package
+Vr:110.00 % 1771.00 ,  ??? Internet missing was detected faster than .connected
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,  ??? Internet missing was detected faster than .connected
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+than .connected
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+??? Internet missing was detected faster than .connected
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1750.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1689.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1751.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1747.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 , Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1747.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1765.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1760.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+code_RF ABS :1230
+code_RF ABS BIN :10011001110
+code_RF ABS BIN # :11
+code REST : 206
+code REST BIN : 11001110
+code REST BIN # :8
+code_RF : 1024
+code_RF BIN : 10000000000
+code_RF BIN # :11
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:110.00 % 1761.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+??? Internet missing was detected faster than .connected
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1720.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1755.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1781.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+code_RF ABS :1231
+code_RF ABS BIN :10011001111
+code_RF ABS BIN # :11
+code REST : 207
+code REST BIN : 11001111
+code REST BIN # :8
+code_RF : 1024
+code_RF BIN : 10000000000
+code_RF BIN # :11
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:110.00 % 1759.00 , Unknown, returning .....
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1765.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1767.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:110.00 % 1756.00 , Unknown, returning .....
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1743.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 , Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1750.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1772.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1747.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1766.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1762.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1743.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,  ??? Internet missing was detected faster than .connected
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,  ??? Internet missing was detected faster than .connected
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 , Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1769.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+code_RF ABS :30507077
+code_RF ABS BIN :1110100011000000001000101
+code_RF ABS BIN # :25
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se activo ZONA 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+---------------high stack water mark at wireless() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  592
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"zone":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+####### Heartbeat package
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}ejecutando color hold flashy a led
+init timer hold Flashy: 4111805
+Vr:110.00 % 1759.00 , end timer hold : 4113405, 1600
+ejecutando color restore a led
+30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":0,"pgm2":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 4114836
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+zone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 4116247
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Fauxmo enviando informacion a alexa
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4117848, 1600
+ejecutando color restore a led
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":0,"pgm2":0}
+ejecutando color hold flashy a led
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+init timer hold Flashy: 4118239
+Fauxmo enviando informacion a alexa
+zone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4119840, 1600
+ejecutando color restore a led
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-----------------------
+ejecutando color hold flashy a led
+return from electro_pgms_panic_effects_1 by messageNonUpgraded
+init timer hold Flashy: 4120592
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4122192, 1600
+ejecutando color restore a led
+####### Heartbeat package
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":1,"islocked":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 4123994
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Fauxmo enviando informacion a alexa
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+end timer hold : 4125601, 1600
+ejecutando color hold flashy a led
+ejecutando color restore a led
+init timer hold Flashy: 4125643
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":3,"src":{"type":2,"end timer hold : 4127273, 1600
+nro":0}},"alarm":{"status":1,"cause":4},"key":0,"zone":1,"pgm1":0,"islocked":0}Vr:
+-----------------------
+110.00 % 1699.00 , ejecutando color restore a led
+ereturn from electro_pgms_panic_effects_1 by messageNonUpgraded
+init timer hold Flashy: 4127384
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+siren on
+electro main past data UPDATED _ in loop()
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+d :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"key":1,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 4136226
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+skip arcs : 2
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4137827, 1600
+ejecutando color restore a led
+---------------high stack water mark at e_fence() task is :  1044
+skip arcs : 1
+####### Heartbeat package
+---------------high stack water mark at e_fence() task is :  1044
+Vr:3.55 , value read: 3877.00warn_sirenend_tofence here !
+---------------high stack water mark at e_fence() task is :  1028
+Vr:3.58 , value read: 3914.00Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":0,"islocked":0}
+-----------------------
+return from electro_pgms_panic_effects_1 by messageNonUpgraded
+ejecutando color hold flashy a led
+init timer hold Flashy: 4142013
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+Apaga Cerco El??ctrico en electro_effects_fence_1
+beep sound SirenAio or panic sound SirenAio
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 1734.00 , Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  984
+end timer hold : 4143613, 1600
+ejecutando color restore a led
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se activo PGM 1 en task rf
+task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  580
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":1}
+-----------------------
+beep sound SirenAio or panic sound SirenAio
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se desactivo PGM 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+---------------high stack water mark at wireless() task is :  1832
+7
+Fauxmo enviando informacion a alexa
+---------------high stack water mark at ledsrgb() task is :  580
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se activo PGM 1 en task rf
+-32
+7
+---------------high stack water mark at ledsrgb() task is :  560
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+####### Heartbeat package
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se desactivo PGM 1 en task rf
+32
+7
+---------------high stack water mark at ledsrgb() task is :  560
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+Vr:110.00 % 1755.00 ,
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se activo PGM 1 en task rf
+1832
+7
+---------------high stack water mark at ledsrgb() task is :  560
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+code_RF ABS :30507141
+code_RF ABS BIN :1110100011000000010000101
+code_RF ABS BIN # :25
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Enciende Siren en task RF
+-32
+7
+---------------high stack water mark at ledsrgb() task is :  560
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+ormacion a alexa
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"alarm":{"status":1,"cause":3}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+####### Heartbeat package
+siren on
+siren on
+siren on
+Vr:110.00 % 1753.00 , siren on
+siren on
+siren on
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+30:EMessage Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0}}
+--------
+A Callback has been discarted bc message is from device itself
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se desactivo PGM 1 en task rf
+---------------high stack water mark at wireles() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  560
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+---------------ess() task is :  1832
+7
+Se activo PGM 1 en task rf
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":1}
+-------------------
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se desactivo PGM 1 en task rf
+---------------high stack water mark atask is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":0}
+----A Callback has been discarted bc message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+####### Heartbeat package
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Se activo PGM 1 en task rf
+---------------high stack water mar1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+Turn off SirenAio sound
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 1748.00 , beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :30507141
+code_RF ABS BIN :1110100011000000010000101
+code_RF ABS BIN # :25
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1024
+3
+Enciende Siren en task RF
+task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando i
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"alarm":{"status":1,"cause":3}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+code_RF ABS :30507141
+code_RF ABS BIN :1110100011000000010000101
+code_RF ABS BIN # :25
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Apaga Siren en task RF
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+---------------high stack water mark at wireless() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+30:ED:A0:1E:57:CCJ
+Message Pa"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"alarm":{"status":0,"cause":3}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+code_RF ABS :30507029
+code_RF ABS BIN :1110100011000000000010101
+code_RF ABS BIN # :25
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Se activo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando informacion a alexa
+---------------high stack water mark a1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"key":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  984
+skip arcs : 1
+code_RF ABS :30507029
+code_RF ABS BIN :1110100011000000000010101
+code_RF ABS BIN # :25
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+---------------high stter mark at wireless() task is :  1832
+Se desactivo CERCO en task rf
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando informacion a alexa
+---------------high stack water mark at e_fence() task is :  984
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"key":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+####### Heartbeat package
+code_RF ABS :30507077
+code_RF ABS BIN :1110100011000000001000101
+code_RF ABS BIN # :25
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Se desactivo ZONA 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+---------------high stack water mark at wireless() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"zone":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 1758.00 , beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :30507141
+code_RF ABS BIN :1110100011000000010000101
+code_RF ABS BIN # :25
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Enciende Siren en task RF
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+---------------high stack water mark at wireless() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"alarm":{"status":1,"cause":3}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Se desactivo PGM 1 en task rf
+task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1":0}
+----------------------
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Se activo PGM 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+---------------high st1832
+---------------high stack water mark at ledsrgb() task is :  368
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"pgm1:1}
+-----------------------
+beep sound SirenAio or panic sound SirenAio
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+####### Heartbeat package
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Se desactivo PGM 1 en task rf
+------------k is :  1832
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"tpe"beep sound SirenAio or panic sound SirenAio
+:1,"nro":0}},"pgm1":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 1755.00 , Turn off SirenAio sound
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":2}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+############################s size es : 1
+###########################pgms size es : 4
+init timer hold Flashy: 4241544
+In tuya electroconf updatings
+2
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 2
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+170392
+end timer hold : 4241944, 400
+ejecutando color restore a led
+end timer hold : 4242355, 400
+ejecutando color restore a led
+init timer hold Flashy: 4242396
+end timer hold : 4242796, 400
+ejecutando color restore a led
+end timer hold : 4243207, 400
+ejecutando color restore a led
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+########## es : 1
+#####4
+init timer hold Flashy: 4245818
+In tuya electroconf updatings
+1
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+170380
+end timer hold : 4246218, 400
+ejecutando color restore a led
+end timer hold : 4246629, 400
+ejecutando color restore a led
+init timer hold Flashy: 4246670
+end timer hold : 4247070, 400
+ejecutando color restore a led
+####### Heartbeat package
+end timer hold : 4247481, 400
+ejecutando color restore a led
+Vr:110.00 % 1756.00 ,  button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+ejecutando color restore a led
+Screen click related[1] from wifi button done and disabling
+ejecutando color restore a led
+Screen 2 related[2] from wifi button done and disabling
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1747.00 ,
+####### Heartbeat package
+####### Heartbeat package
+####### Product information
+set_wifi_uart_buffer PRODUCT_KEY:
+set_wifi_uart_buffer MCU_VER:
+CONFIG_MODE_CHOOSE :
+####### Query working mode
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4304913
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"zone":1}
+-----------------------
+iscarted bc message is from device itself
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+end timer hold : 4306514, 1600
+ejecutando color restore a led
+Turn off SirenAio sound
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo envi
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4308506
+30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"zone":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4310107, 1600
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+init timer hold Flashy: 4312438
+skip arcs : 2
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"key":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4314040, 1600
+ejecutando color restore a led
+---------------high stack water mark at e_fence() task is :  984
+skip arcs : 1
+Vr:110.00 % 1741.00 , ---------------high stack water mark at e_fence() task is :  984
+Vr:3.57 , value read: 3903.00warn_sirenend_tofence here !
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+init timer hold Flashy: 4316683
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"key":0}
+-----------------------
+AApaga Cerco El??ctrico en electro_effects_fence_1
+beep sound SirenAio or panic sound SirenAio
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+---------------high stack water mark at e_fence() task is :  984
+Turn off SirenAio sound
+####### Heartbeat package
+end timer hold : 4318283, 1600
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4319254
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+end timer hold : 4320859, 1600
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4322410
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"pgm1":0}beep sound SirenAio or panic sound SirenAio
+A Callback has been discarte message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+end timer hold : 4324010, 1600
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+1
+init timer hold Flashy: 4325231
+end timer hold : 4325631, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166812
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+4326142, 400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4326208
+end timer hold : 4326608, 400
+ejecutando color restore a led
+end timer hold : 4327019, 400
+ejecutando color restore a led
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+1
+init timer hold Flashy: 4334760
+end timer hold : 4335160, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 11
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166864
+Message arrived in topic: 30:ED:A0:1Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"f_conf:{"cton":,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,n_arcs":5,"end timer hold : tp_zone":0,"pgms":[{"id":1,"t4335665":11,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+, 400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4335778
+end timer hold : 4336178, 400
+ejecutando color restore a led
+####### WIFI_WORKING STATUS
+end timer hold : 4336589, 400
+ejecutando color restore a led
+####### STATE_QUERY BY TUYA MODULE
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+1
+init timer hold Flashy: 4343570
+end timer hold : 4343970, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166848
+30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{end timer hold : "t_alarm":5,"d_fence"4344445:, 3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"othr_conf":{"tp_buzzer":1}}400
+-----------------------
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4344595
+end timer hold : 4344995, 400
+ejecutando color restore a led
+end timer hold : 4345406, 400
+ejecutando color restore a led
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4355267
+end timer hold : 4355667, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 6
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167264
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":6,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"t4356178p_buzzer":1}},
+-----------------------
+400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4356248
+end timer hold : 4356648, 400
+ejecutando color restore a led
+end timer hold : 4357059, 400
+ejecutando color restore a led
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1752.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### DATA_QUERT_CMD
+####### Heartbeat package
+In tuya electroconf updatings
+init timer hold Flashy: 4395190
+end timer hold : 4395590, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 7
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167076
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"cde":0,"position":0},"all_conf":{"_alarm":7,"d_fece":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+4396102, 400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4396198
+end timer hold : 4396598, 400
+ejecutando color restore a led
+end timer hold : 4397009, 400
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4400680
+end timer hold : 4401080, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 7
+Delay of fence: 4
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166156
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code"end timer hold : :0,"position":0},"all_conf":{"t_alarm":7,"d_fence":4,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp, ":1}400
+]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+ejecutando color restore a led
+A Callback has been discarted bc
+init timer hold Flashy: 4401669
+end timer hold : 4402069, 400
+ejecutando color restore a led
+end timer hold : 4402480, 400
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4403041
+end timer hold : 4403441, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 7
+Delay of fence: 4
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166868
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Me"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"end timer hold : 4403869, 400
+rf_conf":{"action":0,"code":0ejecutando color restore a led,
+"position":0},"all_conf":{"t_alarm":7,"d_fenceinit timer hold Flashy: "4403929
+:4,"n_arcs":4,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+A Callback has been discarted bc message is from device itself
+end timer hold : 4404337, 400
+ejecutando color restore a led
+end timer hold : 4404748, 400
+ejecutando color restore a led
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4416570
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: Mesload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"pgm1":1}
+--------A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 4418170, 1600
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4419812
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"pgm1":0}
+A Callback has been discarted bc message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Vr:110.00 % 1757.00 , end timer hold : 4421412, 1600
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 4422715
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":3,"nro":0}},"alarm":{"status":1,"cause":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+siren on
+siren on
+electro main past data UPDATED _ in loop()
+siren on
+siren on
+####### Heartbeat package
+siren on
+siren on
+siren on
+siren on
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0}}
+-A Callback has been discarted bc message is from device itself
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+1
+init timer hold Flashy: 4433768
+end timer hold : 4434168, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 7
+Delay of fence: 4
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 11
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167272
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":7,"d_fence":4,"n_arcs":4,"tp_zone":0,"pgms":[{"id":1,"tend timer hold : ":11,"tp":1}]},"other_c4434673o, nf":{"tp_buzzer":1}}400
+-----------------------
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4434759
+end timer hold : 4435159, 400
+ejecutando color restore a led
+end timer hold : 4435570, 400
+ejecutando color restore a led
+Vr:110.00 % 1756.00 ,
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4438221
+end timer hold : 4438621, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 7
+Delay of fence: 5
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 11
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167284
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pbend timer hold : ":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"sn":0},"allnf":{"t_alarmfee":5_a":4,"tp_zone"0"pgs":[{"id":1,"t":11,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4439288
+end timer hold : 4439688, 400
+ejecutando color restore a led
+end timer hold : 4440099, 400
+ejecutando color restore a led
+####### Heartbeat package
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4441860
+end timer hold : 4442260, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 7
+Delay of fence: 4
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 11
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166980
+Message arrived in topic: A01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},end timer hold : "a4442696ll_conf":{"t_alarm":7,"d_fence":4,"n_arcs":4,"tp_zone":0,"pgm":[{"id":1,"t":11,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4442858
+end timer hold : 4443258, 400
+ejecutando color restore a led
+end timer hold : 4443669, 400
+ejecutando color restore a led
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4454220
+end timer hold : 4454620, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 8
+Delay of fence: 4
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 11
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167272
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":8,"d_fence":4,"n_arcs":4,"tp_zone":0,"pgms":[{"id":1,"t":11,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+, 400
+A Callback has been discarted bc message is from device itself
+ejecutando color restore a led
+init timer hold Flashy: 4455283
+end timer hold : 4455683, 400
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4455935
+end timer hold : 4456335, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 9
+Delay of fence: 4
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 11
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167272
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"allend timer hold : _conf":{"t_alarm":9,"d_fence":4,"n_arcs":44456754,"tp_zone":0,"pgms":[{"id":1,"t":11,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+------
+, 400
+ejecutando color restore a led
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+1
+init timer hold Flashy: 4471013
+end timer hold : 4471413, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 9
+Delay of fence: 4
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 12
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166260
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_end timer hold : conf":{"action":0,"code4471830":0,"position":0},"all_conf":{"t_alarm":9,"d_fence":4, ,"n_arcs":4,"tp_zone":0,"pgms":[{"id":1,"400t
+":12,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+ejecutando color restore a led
+A Callback has been discarted bc message is from device itself
+init timer hold Flashy: 4472019
+####### Heartbeat package
+end timer hold : 4472419, 400
+ejecutando color restore a led
+end timer hold : 4472830, 400
+ejecutando color restore a led
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4479721
+end timer hold : 4480121, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 9
+Delay of fence: 5
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 12
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+166724
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":9,"d_fence":5,"n_ar4480632cs":4,"tp_zone":0,"gms":[{"id":1,"t":2,", t400
+p":1}]},"other_conf":{"tp_bzzer":1}}
+-----------------------
+ejecutando color restore a led
+A Callback has been discarted bc message is from device itself
+init timer hold Flashy: 4480763
+Vr:110.00 % 1759.00 , end timer hold : 4481163, 400
+ejecutando color restore a led
+end timer hold : 4481574, 400
+ejecutando color restore a led
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1765.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1780.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### DATA_QUERT_CMD
+In tuya electroconf updatings
+init timer hold Flashy: 4894098
+end timer hold : 4894498, 400
+ejecutando color restore a led
+JSON docconf : 215
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 9
+Delay of fence: 6
+Number of arcs: 4
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 12
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+165888
+end timer hold : 4894910, 400
+ejecutando color restore a led
+init timer hold Flashy: 4894951
+end timer hold : 4895351, 400
+ejecutando color restore a led
+??? Internet missing was detected faster than .connected
+end timer hold : 4895762, 400
+ejecutando color restore a led
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm:9,"d_fence":6,"n_arcs":4,"tp_zone":0,"pgms":[{"id":1,"t":12,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+A Callback has been discarted bc message is from device itself
+####### Heartbeat package
+Vr:110.00 % 1755.00 , Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+init timer hold Flashy: 5010214
+zone 1 en electro_effects_zone_1_tuyareport
+Message arrived in topic: 30:ED:A0:1Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"zone":1}
+------
+A Callback has been discarted bc message is from device itself
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 5011814, 1600
+ejecutando color restore a led
+####### Heartbeat package
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 5020175
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 5021775, 1600
+ejecutando color restore a led
+Vr:110.00 % 1757.00 ,
+####### DATA_QUERT_CMD
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+ejecutando color hold flashy a led
+zone 1 en electro_effects_zone_1_tuyareport
+init timer hold Flashy: 5025117
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":3,"nro":0}},"alarm":{"status":1,"cause":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+siren on
+electro main past data UPDATED _ in loop()
+siren on
+####### Heartbeat package
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0}}
+-----------------------
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+code_RF ABS :30507141
+code_RF ABS BIN :1110100011000000010000101
+code_RF ABS BIN # :25
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Enciende Siren en task RF
+---------------high stack water mark at wireless() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"alarm":{"status":1,"cause":3}}
+TTTTTTTTTTTTTT Siren time has started
+-----------------------beep sound SirenAio or panic sound SirenAio
+A Callback has been discarted bc message is from device itself
+####### Heartbeat package
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+JSON doctro : 80
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+Message arrived in topic: Message Payload :  {"b":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1776.00 ,
+####### Heartbeat package
+Vr:110.00 % 1781.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1709.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1741.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1748.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1750.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1747.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1779.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1769.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1747.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1737.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1699.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1801.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1767.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1753.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1757.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1764.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1764.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1764.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1745.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1779.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1750.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1773.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1726.00 ,
+####### Heartbeat package
+Vr:110.00 % 1783.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 , Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1807.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1749.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1767.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1764.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1764.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1765.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1811.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1756.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 , Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1783.00 ,
+####### Heartbeat package
+Vr:110.00 % 1767.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1739.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+??? Internet missing was detected faster than .connected
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1756.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1787.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,  ??? Internet missing was detected faster than .connected
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+Vr:110.00 % 1757.00 ,
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1725.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1762.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1760.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1767.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+Vr:110.00 % 1749.00 ,  button efence pressed 1 time
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1768.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1752.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+code_RF ABS :30507077
+code_RF ABS BIN :1110100011000000001000101
+code_RF ABS BIN # :25
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  960
+3
+Se desactivo ZONA 1 en task rf
+---------------high stack water mark at wireless() task is :  1832
+7
+---------------high stack water mark at ledsrgb() task is :  368
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Message arrived in topic: "pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"zone":0}
+-----------------------
+A Callback has be
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1769.00 ,
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1763.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 , Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1763.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1761.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1754.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1756.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1689.00 ,
+####### Heartbeat package
+Vr:110.00 % 1749.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1769.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+code_RF ABS :1231
+code_RF ABS BIN :10011001111
+code_RF ABS BIN # :11
+code REST : 207
+code REST BIN : 11001111
+code REST BIN # :8
+code_RF : 1024
+code_RF BIN : 10000000000
+code_RF BIN # :11
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+####### Heartbeat package
+Unknown, returning .....
+Vr:110.00 % 1753.00 ,
+code_RF ABS :1231
+code_RF ABS BIN :10011001111
+code_RF ABS BIN # :11
+code REST : 207
+code REST BIN : 11001111
+code REST BIN # :8
+code_RF : 1024
+code_RF BIN : 10000000000
+code_RF BIN # :11
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :1231
+code_RF ABS BIN :10011001111
+code_RF ABS BIN # :11
+code REST : 207
+code REST BIN : 11001111
+code REST BIN # :8
+code_RF : 1024
+code_RF BIN : 10000000000
+code_RF BIN # :11
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+####### Heartbeat package
+Unknown, returning .....
+Vr:110.00 % 1773.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1747.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1758.00 ,
+####### Heartbeat package
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+Vr:110.00 % 1753.00 ,
+####### Heartbeat package
+Vr:110.00 % 1758.00 ,
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1756.00 ,
+####### Heartbeat package
+Vr:110.00 % 1755.00 ,
+####### Heartbeat package
+Vr:110.00 % 1759.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1751.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+Vr:110.00 % 1757.00 ,
+####### Heartbeat package
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....

@@ -1,0 +1,961 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.689, built 2025-10-06 09:58:58.784432
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUQBBjkLbXvP71RweuyzukCfRc0kYwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDgxNTEzMTY0
+N1oXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOQIhjXszpp4zbuMjR4e
+0/DB+R1lqJ/MntJYg0gvLwTsNrRlalUGscRKt07HZIAgtgTq4lIeXKYrChvq/qaG
+XQqz2uQta/wRgIE271Up0FeVTBnhUZqqsLvC94xfh/gjB2LlQRd6qj4i7FwfgV5I
+MZWBCQkZV0mkPEyR8QHx0ejY2fFOs/9l2mCz3D2al3Ktt/ZiS4F8oC0VL+CBq6YN
+LclYbSZwXIc26jvROM07SExJnv2/u/4s9o+7NO0nfciQ+0NX6x+ih33+9BqDzLrP
+GPtIWaevQ/IWkdYMOah9npZ7qSvmv0pWcb2FZ3yFykQ5hiFwzppDhgvvTv7kDjw9
+P28CAwEAAaNgMF4wHwYDVR0jBBgwFoAUcjVG/eghaiD6CR7Usyr8Fi6c2w8wHQYD
+VR0OBBYEFGcPBn9giJTHTXeHLELjijvC8EqSMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBR5doqBPnDskhp12kdJ0UdBE0K
+nd0KLGZQczjXtpLB1oTA/lSqt0i2JjKb1baMdah5ZwrshLnnCs9pPJ+H4Qc0q2td
+ajrUPajLs94roHrMTlk8o69mJRRQWqcBOafv3jn8RLzHIrydslIgWnqS2+AdUyzC
+TgHVQIw/nme2lRLjzW5AES3YORQhn3ugeUZh7Uyc3+XDkGeCkHlNAJUbQBH1Weyx
+p97JntKA9yVKl8Nuv0ujvgPffsYQJDekGxPBEspv2RHeAmJxdnuxoUd0SOXWs4hk
+L+jwsj5YirzrFmWFEj4HDMXfGorjd11updQc6uFWRtu62yD6PbEB8DrsKdat
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA5AiGNezOmnjNu4yNHh7T8MH5HWWon8ye0liDSC8vBOw2tGVq
+VQaxxEq3TsdkgCC2BOriUh5cpisKG+r+poZdCrPa5C1r/BGAgTbvVSnQV5VMGeFR
+mqqwu8L3jF+H+CMHYuVBF3qqPiLsXB+BXkgxlYEJCRlXSaQ8TJHxAfHR6NjZ8U6z
+/2XaYLPcPZqXcq239mJLgXygLRUv4IGrpg0tyVhtJnBchzbqO9E4zTtITEme/b+7
+/iz2j7s07Sd9yJD7Q1frH6KHff70GoPMus8Y+0hZp69D8haR1gw5qH2elnupK+a/
+SlZxvYVnfIXKRDmGIXDOmkOGC+9O/uQOPD0/bwIDAQABAoIBAHRdETfFXuyexsV1
+BLIhIyARq/DfZnwdK9LFDkEwqrrFW2kU83zuDJrRUddmkpd7mcbKobEsAzVccy0p
+7sbFfAcxHnsf3qHjwIKvqNP5oXKAIjR2sXDOt58o76/3M+hg360MtfmoQ+WvZpPg
+E+Erz/mtvhGhl9Rhdc/RDX5jiy1ZPM7Qdu+uX0gv2MkPaLcJ5M8uSumqy1Tv7m7k
+FNZG1iNGZ4Rt9xM+xhDpYG8PV0XHROj4E8UlTaVyCTvNzc4k+LOAs8uL3bfMviSO
+N7rOkCp/NTJ+uW0h5qLfACRnr5LugHb7tOx3fuzVcMCfbJNFZqSax/BiUnU38AyT
+cRuqcIkCgYEA8nBGgxvfyE7m50qDCLcaMD3EdLhC5dL5vkIxLLLNmvImRdnYmZ/q
+YPA2sR+a8Mt+mGdo632p1kL7xpSat7lrKJumExRexez19Lk1THR9lLuxPW7iY8gx
+Xo0tBSNYzlowdywzz78W+SW1VyGuTBHTydjSD16/IVvwh+G3g7JC0d0CgYEA8Mn3
+CdcmsxOfGNf+E44/We/oESl2zkOjZ+P4JWbDEo9zaZNrTF35BRdm7R3THw46GXhJ
+Ui42+FIT9T2DRuu1KRT6uxV8h6UmAoBAlxAY3Q8h5ux1nID7TTKs+1faAMkI2wtH
+hiiknmm2cFCswS3IH5zN9S6viXzZsiDQXUKKD7sCgYBvFr9YqFccY/suFFiCj9Qy
+MrtoeF4/DTNe2NnLj4ri6v5al33Gtx4gmTGWa9MFb1ls4EWVUpmWEk9oKQPUF+Rg
+USICMB1VOEVjg9JGXEKG+pI2gi6+ZicpGit85Tt2IqF+mgSLtxYByCOV71r8hFa1
+cOKgJFwUHxrSSL1cXTx9CQKBgQCW+NrGtbqS/1N6nTq2AjNgbZZg5FGUZD5ZTktx
+D+xxf7YKVR8qg6U19wVW2KNdzmrJO20ldMqMidHvqwDbf8BXoMrQcFljJz4cxVM6
+JCKiv/Euu8XGOezW61YgRWXvphzCUmEnEeadWITGCR84BD986rEL8JipKLnKAN8E
+CktMLwKBgD1EzSJalRo1rFs9oIStKOzNxTic1x9UXJKOKDAlI3roBSw24n819lJZ
+WnDvEhfMTCAlQUqQlmHsLz2B790Mz0UOTgQPwziBnVZg2hxmwT4J43P2rlAfGXDC
+2tp+Dfnuf+eFRgie21NL8tlhlcI6/OFCWemGEKJBaCcVyw6Hjo5A
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_EA01J_30eda01e57cc_1759171874516
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:57:CC-EA01J
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 275
+Free Entries: 355
+Namespace Count: 16
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+304136
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Cr
+WiFi.begin first try 4 seconds
+credentialSSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN: 1[WiFi] GOT_IP: 192.168.18.152
+[WiFi] GOT_IP: 192.168.18.152
+AIOTRONIC4
+PzS:Ch0c0ai0@
+Local Wifi Internet connected succesfully 1
+WiFi Connected to : AIOTRONIC4
+IP Address: 192.168.18.152
+MAC Address: 30:ED:A0:1E:57:CC
+La intensidad de la se??al es :
+-52
+La velocidad de la se??al internet es :
+********************   Deletion of tasks has started ( making space for create wifi tasks )
+**** el task ElectricFence no existia, innecesario eliminarlo
+tia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditio
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+button wifi pressed 1 time
+Timeout interno en mqueuingtt_connect
+#able connected to amazon es : 0
+Failed try to connect to mqtt in connection_mqtt() with state: -1
+Error desconocido,(tal vez credenciales caducadas)
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying to mainmqtt finished : 1
+alealexafinished2 : 0
+Fallo client.loop detected faster than .connected
+Task Alexa Created in main loop()
+detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+ected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo ccted faster than .connected
+Fallo client.loop detected faster than .c
+Fallo client.loop detected faster than .connected
+Fallo client.loop
+Fallo client.loop detected faster than .connected
+Fallo cliented faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :0
+1
+2
+3
+Fallo client.loop detected faster than .c
+Alexa creation confirmation frformacion a alexa
+loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+oop detected faster than .connected
+Fallo client.loop detected faster than .connected
+Fallo client.loop detected faster than .connected
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+P
+electro_publishMessage in electro_main_first_publish_the_aio_server
+publishs from EMEREGENCY inform to app done
+A disconnection from MQTT was detected !
+connect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamaz
+Actigging the client.state: -1
+to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == SuSuscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+############################El valor de variable heartbeat es : 0
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Pa"pb":3,"firmwareVersion":"0.1.689","firmwareBuildTimeStamp":"2025-10-06 09:58:58.784432","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : JOB_EA01J_30eda01e57cc_1759171874516
+JOB_EA01J_30eda01e57cc_1759171874516
+JSON docconf : 152
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"acin":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence"3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+"pb":0,"firmwareVersion":"0.1.689","firmwareBuildTimeStamp":"2025-10-06 09:58:58.784432","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro"0}},"alarm":{"status":0,"cause":0},"key":0,"zone": ******************** Task ElectricFence_sc initialized correctly
+0,"pgm1":0,"islocked":0}
+-----------------------
+Task e_fence running on coreA Callback has been discarted bc mee is from device itself
+1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8526899
+sadasdasdasd_config
+Vr:110.00 % 291.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+--------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 297.00 , Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"mode":2}
+-----------------------
+[WiFi] DISCONNECTED reason=8
+[WiFi] esp_wifi_connect() retried
+[WiFi] DISCONNECTED reason=8
+[142312][E][WiFiClient.cpp:275] connect(): socket error on fd 50, errno: 113, "Software caused connection abort"
+??? Internet missing was detected faster than .connected
+[142323][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-76) UNKNOWN ERROR CODE (004C)
+A disconnection from MQTT was detected !
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activating mquennect() in aws_check_connection()
+Debugging the client.state: -3
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420e8a46
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.689, built 2025-10-06 09:58:58.784432
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUQBBjkLbXvP71RweuyzukCfRc0kYwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDgxNTEzMTY0
+N1oXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOQIhjXszpp4zbuMjR4e
+0/DB+R1lqJ/MntJYg0gvLwTsNrRlalUGscRKt07HZIAgtgTq4lIeXKYrChvq/qaG
+XQqz2uQta/wRgIE271Up0FeVTBnhUZqqsLvC94xfh/gjB2LlQRd6qj4i7FwfgV5I
+MZWBCQkZV0mkPEyR8QHx0ejY2fFOs/9l2mCz3D2al3Ktt/ZiS4F8oC0VL+CBq6YN
+LclYbSZwXIc26jvROM07SExJnv2/u/4s9o+7NO0nfciQ+0NX6x+ih33+9BqDzLrP
+GPtIWaevQ/IWkdYMOah9npZ7qSvmv0pWcb2FZ3yFykQ5hiFwzppDhgvvTv7kDjw9
+P28CAwEAAaNgMF4wHwYDVR0jBBgwFoAUcjVG/eghaiD6CR7Usyr8Fi6c2w8wHQYD
+VR0OBBYEFGcPBn9giJTHTXeHLELjijvC8EqSMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBR5doqBPnDskhp12kdJ0UdBE0K
+nd0KLGZQczjXtpLB1oTA/lSqt0i2JjKb1baMdah5ZwrshLnnCs9pPJ+H4Qc0q2td
+ajrUPajLs94roHrMTlk8o69mJRRQWqcBOafv3jn8RLzHIrydslIgWnqS2+AdUyzC
+TgHVQIw/nme2lRLjzW5AES3YORQhn3ugeUZh7Uyc3+XDkGeCkHlNAJUbQBH1Weyx
+p97JntKA9yVKl8Nuv0ujvgPffsYQJDekGxPBEspv2RHeAmJxdnuxoUd0SOXWs4hk
+L+jwsj5YirzrFmWFEj4HDMXfGorjd11updQc6uFWRtu62yD6PbEB8DrsKdat
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA5AiGNezOmnjNu4yNHh7T8MH5HWWon8ye0liDSC8vBOw2tGVq
+VQaxxEq3TsdkgCC2BOriUh5cpisKG+r+poZdCrPa5C1r/BGAgTbvVSnQV5VMGeFR
+mqqwu8L3jF+H+CMHYuVBF3qqPiLsXB+BXkgxlYEJCRlXSaQ8TJHxAfHR6NjZ8U6z
+/2XaYLPcPZqXcq239mJLgXygLRUv4IGrpg0tyVhtJnBchzbqO9E4zTtITEme/b+7
+/iz2j7s07Sd9yJD7Q1frH6KHff70GoPMus8Y+0hZp69D8haR1gw5qH2elnupK+a/
+SlZxvYVnfIXKRDmGIXDOmkOGC+9O/uQOPD0/bwIDAQABAoIBAHRdETfFXuyexsV1
+BLIhIyARq/DfZnwdK9LFDkEwqrrFW2kU83zuDJrRUddmkpd7mcbKobEsAzVccy0p
+7sbFfAcxHnsf3qHjwIKvqNP5oXKAIjR2sXDOt58o76/3M+hg360MtfmoQ+WvZpPg
+E+Erz/mtvhGhl9Rhdc/RDX5jiy1ZPM7Qdu+uX0gv2MkPaLcJ5M8uSumqy1Tv7m7k
+FNZG1iNGZ4Rt9xM+xhDpYG8PV0XHROj4E8UlTaVyCTvNzc4k+LOAs8uL3bfMviSO
+N7rOkCp/NTJ+uW0h5qLfACRnr5LugHb7tOx3fuzVcMCfbJNFZqSax/BiUnU38AyT
+cRuqcIkCgYEA8nBGgxvfyE7m50qDCLcaMD3EdLhC5dL5vkIxLLLNmvImRdnYmZ/q
+YPA2sR+a8Mt+mGdo632p1kL7xpSat7lrKJumExRexez19Lk1THR9lLuxPW7iY8gx
+Xo0tBSNYzlowdywzz78W+SW1VyGuTBHTydjSD16/IVvwh+G3g7JC0d0CgYEA8Mn3
+CdcmsxOfGNf+E44/We/oESl2zkOjZ+P4JWbDEo9zaZNrTF35BRdm7R3THw46GXhJ
+Ui42+FIT9T2DRuu1KRT6uxV8h6UmAoBAlxAY3Q8h5ux1nID7TTKs+1faAMkI2wtH
+hiiknmm2cFCswS3IH5zN9S6viXzZsiDQXUKKD7sCgYBvFr9YqFccY/suFFiCj9Qy
+MrtoeF4/DTNe2NnLj4ri6v5al33Gtx4gmTGWa9MFb1ls4EWVUpmWEk9oKQPUF+Rg
+USICMB1VOEVjg9JGXEKG+pI2gi6+ZicpGit85Tt2IqF+mgSLtxYByCOV71r8hFa1
+cOKgJFwUHxrSSL1cXTx9CQKBgQCW+NrGtbqS/1N6nTq2AjNgbZZg5FGUZD5ZTktx
+D+xxf7YKVR8qg6U19wVW2KNdzmrJO20ldMqMidHvqwDbf8BXoMrQcFljJz4cxVM6
+JCKiv/Euu8XGOezW61YgRWXvphzCUmEnEeadWITGCR84BD986rEL8JipKLnKAN8E
+CktMLwKBgD1EzSJalRo1rFs9oIStKOzNxTic1x9UXJKOKDAlI3roBSw24n819lJZ
+WnDvEhfMTCAlQUqQlmHsLz2B790Mz0UOTgQPwziBnVZg2hxmwT4J43P2rlAfGXDC
+2tp+Dfnuf+eFRgie21NL8tlhlcI6/OFCWemGEKJBaCcVyw6Hjo5A
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_EA01J_30eda01e57cc_1759171874516
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:57:CC-EA01J
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 275
+Free Entries: 355
+Nameszed correctly
+Task wirelessfi running on core Setup concluido
+0
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 1
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+304108
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Credentials already
+WiFi.begin first tr
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS CurrActual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN: 1Tiempo WiFi LAN: 2Tiempo WiFi LAN: 3Tiempo WiFi LAN: 4Tiempo WiFi LAN: 6[WiFi] GOT_IP: 192.168.18.45
+[WiFi] GOT_IP: 192.168.18.45
+rnet disponible.
+SSID:AIOTRONIC4
+PzS:Ch0c0ai0@
+Local Wifi InterneIP Address: 192.168.18.45
+MAC Address: 30:ED:A0:1E:57:CC
+La intensidad de la se??al es :
+-45
+La velocidad de la se??al internet es :
+********************   Deletion of tasks has started ( making space for create wifi tasks )
+**** el task ElectricFence no existia, innecesario eliminarlo
+**** el task Radiofrequency no existia, innecesario eliminarlo
+**** el task siren no existia, innecesario eliminarlo Tasks  *** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+azon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:57:CC/jobs/notify
+Trying to suscribe to30:ED:A0:1E:57:CC/EA01J == Suscripci??n Exitosa !!Trying to suscribe to : 30:ED:A0:1E:57:CC/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:57:CC/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT top
+tion
+mqtt() 414-line completed
+mqtt has finished, notifying to main loop for creating Alexa
+mqtt finished : 1
+alex
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.689","firmwareBuildTimeStamp":"2025-10-06 09:58:58.784432","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task alexa_sc initialized correctly
+Task alexa running on core0
+Welcome to Alexa Device Program :0
+1
+3
+Alexa creation confirmation from task ale
+Fauxmo enviando informacion a alexa
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+publishs from EMEREGENCY inform to app done
+30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"allconf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":1}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.689","firmwareBuildTimeStamp":"2025-10-06 09:58:58.784432","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : JOB_EA01J_30eda01e57cc_1759171874516
+JOB_EA01J_30eda01e57cc_1759171874516
+JSON docconf : 152
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_cof":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.689","firmwareBuildTimeStamp":"2025-10-06 09:58:58.784432","mcu":"ESP32-S3-16R8","apiMode":0,"otaType":"aws","mode":10}
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,cause":0},"key":0,"zone":0,"pgm1":0,"yislocked":0}
+-----------------------
+Task e_fence running on coreA Callback has been discarted bc message is from device itself
+1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8527007
+sadasdasdasd_config
+Vr:110.00 % 295.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 296.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 294.00 , Vr:110.00 % 296.00 , Vr:110.00 % 293.00 , Vr:110.00 % 296.00 , Vr:110.00 % 294.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 296.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 294.00 , Vr:110.00 % 293.00 , Vr:110.00 % 295.00 ,  button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+Vr:110.00 % 296.00 ,  button rf pressed 1 time
+button wifi pressed 1 time
+Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 297.00 , Vr:110.00 % 297.00 , Vr:110.00 % 296.00 , Vr:110.00 % 293.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 294.00 , Vr:110.00 % 294.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 294.00 , Vr:110.00 % 294.00 , Vr:110.00 % 295.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 294.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 296.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 , Vr:110.00 % 295.00 ,  button efence pressed 1 time
+button rf pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+Vr:110.00 % 295.00 ,  button depus pressed 1 time
+button wifi pressed 1 time
+Vr:110.00 % 295.00 ,
+code_RF ABS :30507029
+code_RF ABS BIN :1110100011000000000010101
+code_RF ABS BIN # :25
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+button rf pressed 1 time
+Screen 1 hold_for_rf initialized
+ejecutando color restore a led
+code_RF ABS :30507045
+code_RF ABS BIN :1110100011000000000100101
+code_RF ABS BIN # :25
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+RF Add Offline control activated (by physical Button)
+aqui estoy en add offline control
+2 code_RF DEC: 30507008
+2 code_RF HEX: 1D18000
+0
+0
+rfcodes_check_already_stored_ctrls_online : invalid user value
+Espacio disponible encontrado en la posicion 0 Del usuario 0
+RF offline Controller succesfully stored
+Control Nro: 1 Code: 30507008
+Answer to the app sended messagesef.rf_config[0] = 3
+Unknown, returning .....
+RF OFFLINE CONTROLS :
+RF1 : 30507008
+ejecutando color restore a led
+Vr:110.00 % 297.00 ,
+code_RF ABS :30507029
+code_RF ABS BIN :1110100011000000000010101
+code_RF ABS BIN # :25
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1032
+3
+Se activo CERCO en task rf
+---------------high stack water mark at wireless() task is :  1768
+7
+---------------high stack water mark at ledsrgb() task is :  592
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"key":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+---------------high stack water mark at e_fence() task is :  1048
+skip arcs : 1
+Turn off SirenAio sound
+code_RF ABS :30507029
+code_RF ABS BIN :1110100011000000000010101
+code_RF ABS BIN # :25
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1032
+3
+---------------high stack water mark at wireless() task is :  1768
+7
+---------------high stack water mark at ledsrgb() task is :  592
+Se desactivo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"key":0}
+A Callback has been discarted bc message is from device itself
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+---------------high stack water mark at e_fence() task is :  1048
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Vr:110.00 % 1755.00 ,
+code_RF ABS :30507029
+code_RF ABS BIN :1110100011000000000010101
+code_RF ABS BIN # :25
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 30507008
+code_RF BIN : 1110100011000000000000000
+code_RF BIN # :25
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1032
+3
+task is :  1768
+7
+---------------high stack water mark at ledsrgb() task is :  592
+Se activo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+JSON doctro : 57
+Fauxmo enviando i
+skip arcs : 2
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":0}},"key":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  1048
+skip arcs : 1
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  1048
+Vr:3.58 , value read: 3911.00---------------high stack water mark at e_fence() task is :  988
+Vr:3.57 , value read: 3895.00---------------high stack water mark at e_fence() task is :  988
+Vr:3.61 , value read: 3947.00---------------high stack water mark at e_fence() task is :  988
+Vr:3.59 , value read: 3915.00---------------high stack water mark at e_fence() task is :  988
+Vr:3.58 , value read: 3909.00---------------high stack water mark at e_fence() task is :  988
+Vr:3.57 , value read: 3901.00---------------high stack water mark at e_fence() task is :  956
+Vr:3.57 , value read: 3899.00---------------high stack water mark at e_fence() task is :  956
+Vr:3.59 , value read: 3925.00Vr:110.00 % 1739.00 , Message arrived in topic: 30:ED:A0:Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"aarm":{"status":0,---------------high stack water mark at "cause":0},"key:0,"zone":0,"pgm1":0,"islocked":0}e_fence()
+-----------------------
+task is :  956
+ejecutando color hold flashy a led
+skip arcs : 0
+init timer hold Flashy: 1414272
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  956
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"key":1,"zone":0,"pend timer hold : gm1":0,"islocked":0}1415939
+-----------------------
+, 1600
+ejecutando color hold flashy a led
+ejecutando color restore a led
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+init timer hold Flashy: 1415999
+skip arcs : 2
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 1417600, 1600
+ejecutando color restore a led
+Message arrived in topic: 30:ED:Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+--------
+ejecutando color hold flashy a led
+init timer hold Flashy: 1417962
+return from electro_pgms_panic_effects_1 by messageNonUpgraded
+---------------high stack water mark at e_fence() task is :  956
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 1419523
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo enviando informacion a alexa
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 1421123, 1600
+ejecutando color restore a led
+Vr:110.00 % 1756.00 , Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":0,"pgm2":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 1428804
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+Fauxmo ezone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 1430405, 1600
+ejecutando color restore a led
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 1442686
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Fauxmo enviando informacion a alexa
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 1755.00 , beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+end timer hold : 1444286, 1600
+Turn off SirenAio sound
+ejecutando color restore a led
+Message arrived in topic: 30:ED:A0:1E:57:CC/EA01J
+Message Payload :  {"user":{"id":1,"src":{"type":2,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":0,"pgm2":0}
+-----------------------
+ejecutando color hold flashy a led
+init timer hold Flashy: 1446368
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Changes not published because those were made by app and not from device itself
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Fauxmo enviando informacion a alexa
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+end timer hold : 1447969, 1600
+ejecutando color restore a led
+Vr:110.00 % 1751.00 , Vr:110.00 % 1751.00 , Vr:110.00 % 1755.00 ,  button wifi pressed 1 time
+button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+ejecutando color restore a led
+Screen click related[1] from wifi button done and disabling
+ejecutando color restore a led
+Screen 2 related[2] from wifi button done and disabling
+Vr:110.00 % 1756.00 , Vr:110.00 % 1749.00 , Vr:110.00 % 1749.00 , Vr:110.00 % 1745.00 , Vr:110.00 % 1764.00 , Vr:110.00 % 1759.00 , Vr:110.00 % 1757.00 ,  button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+ejecutando color restore a led
+Screen click related[1] from wifi button done and disabling
+ejecutando color restore a led
+Screen 2 related[2] from wifi button done and disabling
+Vr:110.00 % 1757.00 , Vr:110.00 % 1771.00 ,  button rf pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+Vr:110.00 % 1756.00 ,  button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button rf pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+Vr:110.00 % 1757.00 ,  button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button depus pressed 1 time
+button wifi pressed 1 time
+Screen 1 hold_for_wifi initialized
+ejecutando color restore a led
+Screen click related[1] from wifi button done and disabling
+ejecutando color restore a led
+Screen 2 related[2] from wifi button done and disabling
