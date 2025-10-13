@@ -612,7 +612,7 @@ function Get-ESP32SpiffsFile {
     }
 }
 
-
+# Recibe el puerto elegido por parte del usuario e inicia la comunicacion serial inmediatamente despues
 function SerialMonitor {
 	
 	param(
@@ -622,7 +622,7 @@ function SerialMonitor {
     $porAndMac = SelectCOMPort
     if (-not $porAndMac) { return }
 
-    Write-Host "\n▶️  Iniciando monitor serial en $port...\n"
+    Write-Host "\n▶️  Iniciando monitor serial en ${$porAndMac.Port}...\n"
     # Write-Output $porAndMac.Mac
 	Monitor-Serial $porAndMac.Port $porAndMac.Mac
     #& $script:venvPython "monitor_serial.py" $port
@@ -643,17 +643,20 @@ function Get-Esp32Mac {
     return ''
 }
 
-
 <#
     .SYNOPSIS
         Selecciona un puerto COM y retorna tambien la MAC si se obtuvo durante el probing.
     .DESCRIPTION
-        Agrega retorno como objeto con propiedades Port y Mac. 
-        En modo 1 se muestran y usan las MACs detectadas por ProbarCOMsRapido.
+        Agrega retorno como objeto con propiedades Port y Mac.
+        En modo 1 se listan las MACs detectadas por ProbarCOMsRapido antes de elegir.
         En modo 2 (manual) se intenta un probing rapido del puerto ingresado para obtener la MAC.
-        En modo 3 no se hace probing y la propiedad Mac sera $null.
+        En modo 3 ahora tambien se intenta obtener la MAC, pero solo del puerto elegido tras seleccionar el indice.
     .PARAMETER Verbose
         Muestra salida detallada del probing de MACs.
+    .OUTPUTS
+        Retorna un [PSCustomObject] con:
+            - Port: cadena con el puerto COM elegido (ej: "COM4")
+            - Mac: cadena con la MAC detectada (ej: "AA:BB:CC:DD:EE:FF") o $null si no se obtuvo
     .EXAMPLE
         $sel = SelectCOMPort -Verbose
         "Puerto: {0}  MAC: {1}" -f $sel.Port, $sel.Mac
@@ -664,19 +667,19 @@ function Get-Esp32Mac {
     .NOTES
         ADVERTENCIA: cambiar el tipo de retorno a objeto puede afectar codigo que esperaba solo una cadena.
     .FECHA
-        2025-10-09
+        2025-10-13
 #>
 function SelectCOMPort {
 
     # Fecha: 2025-09-29
-    # Nuevo: se agrega opcion 3 para usar listado existente (WMI/Device Manager) sin probar MACs
+    # Nuevo: se agrega opcion 3 para usar listado existente (WMI/Device Manager) sin probar MACs previas
+    # Ajuste: en opcion 3 ahora se intenta leer la MAC del puerto seleccionado (probing puntual)
 
     param(
         [switch]$Verbose
     )
 
-    function ProbarCOMsRapido 
-    {
+    function ProbarCOMsRapido {
         param([string[]]$lista)
 
         $macs  = @{}
@@ -694,8 +697,8 @@ function SelectCOMPort {
                           --before default_reset --after no_reset `
                           --connect-attempts 5 read_mac 2>&1
                 } -ArgumentList $script:venvPython, $com
-                
-                # TIMEOUT DE 1 SEGUNDOS
+
+                # TIMEOUT DE 1 SEGUNDO
                 if (Wait-Job $job -Timeout 1) {
                     $out = Receive-Job $job
                     Remove-Job $job
@@ -738,7 +741,7 @@ function SelectCOMPort {
     Write-Host "`nSeleccione modo para elegir puerto COM:"
     Write-Host "1. Elegir por indice (con probing rapido de MAC)"
     Write-Host "2. Ingresar COM manualmente (ej: COM4)"
-    Write-Host "3. Usar listado existente (WMI/Device Manager) sin probar MAC"
+    Write-Host "3. Usar listado existente (WMI/Device Manager) e intentar MAC solo del elegido"
     $modo = Read-Host "Opcion"
 
     # regex y extraccion de COMN
@@ -750,11 +753,10 @@ function SelectCOMPort {
         if ($m.Success) { $comPortsToCheck += $m.Value.Trim('()') }
     }
 
-    # si elige 3, saltar probing; caso contrario, ejecutar probing
+    # si elige 1, ejecutar probing previo sobre todos; en 3 se hara mas adelante, solo del elegido
     $macs  = @{}
     $fails = @{}
 
-    # comentario: cuando se usa modo 1 se desea MAC, modo 3 no
     if ($modo -eq "1") {
         $resultado = ProbarCOMsRapido -lista $comPortsToCheck
         $macs  = $resultado.macs
@@ -773,7 +775,7 @@ function SelectCOMPort {
         $ports[$i] | Add-Member -NotePropertyName ComPort -NotePropertyValue $com -Force
     }
 
-    # comentario: solo mostrar MACs/errores si se realizo probing (modo 1)
+    # solo mostrar MACs/errores si hubo probing previo (modo 1)
     if ($modo -eq "1") {
         Write-Host "`nPuertos con MAC o error:"
         for ($i = 0; $i -lt $ports.Count; $i++) {
@@ -797,13 +799,13 @@ function SelectCOMPort {
     # manejo de opcion 2: manual
     if ($modo -eq "2") {
         $manual = Read-Host "Ingrese el nombre del puerto COM (ej: COM4 o com14) (minusculas permitidas)"
+        if ($null -ne $manual) { $manual = $manual.ToUpper() }
         if ($manual -match '^COM\d+$') {
             # intento de probing rapido del puerto manual para obtener MAC
             $macManual = $null
             $r = ProbarCOMsRapido -lista @($manual)
             if ($r.macs.ContainsKey($manual)) { $macManual = $r.macs[$manual] }
 
-            # retornar objeto con puerto y mac encontrada (o $null si no)
             return [pscustomobject]@{
                 Port = $manual
                 Mac  = $macManual
@@ -813,7 +815,7 @@ function SelectCOMPort {
         }
     }
 
-    # manejo de opcion 1 y 3: seleccionar por indice desde la lista ya cargada
+    # manejo de opcion 1 y 3: seleccionar por indice
     $sel = Read-Host "`nSeleccione un puerto por indice"
     $idx = 0
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
@@ -823,10 +825,20 @@ function SelectCOMPort {
     # obtener COM elegido
     $puertoElegido = $ports[$idx-1].ComPort
 
-    # si hubo probing (modo 1), intentar devolver la MAC asociada; en otros modos sera $null
+    # MAC a devolver
     $macElegida = $null
+
+    # si hubo probing previo (modo 1), usarlo
     if ($modo -eq "1" -and $macs.ContainsKey($puertoElegido)) {
         $macElegida = $macs[$puertoElegido]
+    }
+
+    # NUEVO: si es modo 3, intentar probing puntual del puerto elegido para obtener MAC
+    if ($modo -eq "3") {
+        $r3 = ProbarCOMsRapido -lista @($puertoElegido)
+        if ($r3.macs.ContainsKey($puertoElegido)) {
+            $macElegida = $r3.macs[$puertoElegido]
+        }
     }
 
     # retornar objeto con puerto y mac
@@ -837,8 +849,26 @@ function SelectCOMPort {
 } # fin de la funcion SelectCOMPort con parametros Verbose y retorno Port/Mac
 
 
+
+<#
+    .SYNOPSIS
+        Flashea ESP32S3 con 3 binarios locales o por URL, corrigiendo quoting y usando sintaxis nueva de esptool.
+    .DESCRIPTION
+        Evita el error Invalid argument removiendo comillas incrustadas y pasando argumentos como arreglo.
+        Actualiza comandos/flags deprecados: erase-region, write-flash, --flash-mode, --flash-freq, --flash-size, default-reset, hard-reset.
+    .PARAMETER (interactivo)
+        No recibe parametros. Pide seleccionar los .bin y el puerto.
+    .EXAMPLE
+        LoadLocalFirmware
+        Ejecuta el asistente, selecciona 3 .bin y flashea al puerto elegido.
+    .NOTES
+        ADVERTENCIA: erase-region 0xE000 0x2000 solo limpia otadata; no borra particiones. Use con criterio.
+    .FECHA
+        2025-10-13
+#>
 function LoadLocalFirmware {
-    # Cargar tres binarios locales o desde una ruta base (local o URL) y flashear el ESP32
+
+    # UI para seleccionar archivos o ruta base
     Add-Type -AssemblyName System.Windows.Forms
 
     Write-Host ""
@@ -865,7 +895,7 @@ function LoadLocalFirmware {
             Write-Host "Debe seleccionar exactamente tres archivos .bin."; Pause; return
         }
 
-        # Identificar cada archivo por su nombre (indiferente a mayusculas/minusculas)
+        # Detectar cada archivo por nombre ignorando mayusculas
         $boot = $ofd.FileNames | Where-Object { $_ -match '(?i)bootloader\.bin$' }
         $part = $ofd.FileNames | Where-Object { $_ -match '(?i)partitions\.bin$' }
         $firm = $ofd.FileNames | Where-Object { $_ -match '(?i)firmware\.bin$'  }
@@ -905,6 +935,7 @@ function LoadLocalFirmware {
             foreach ($t in $targets) {
                 $url = $base + $t.Name
                 try {
+                    # Descarga cada binario sin comillas extra
                     Invoke-WebRequest -Uri $url -OutFile $t.Out -UseBasicParsing -ErrorAction Stop
                 } catch {
                     Write-Host "Error descargando $($t.Name) desde $url"
@@ -917,7 +948,6 @@ function LoadLocalFirmware {
             $firm = Join-Path $tmp "firmware.bin"
         }
         else {
-            # Ruta base local: combinar y validar
             if (-not (Test-Path -LiteralPath $base)) {
                 Write-Host "La ruta base local no existe: $base"
                 Pause; return
@@ -939,40 +969,78 @@ function LoadLocalFirmware {
         Write-Host "Opcion invalida."; Pause; return
     }
 
+    # Seleccion de puerto (puede devolver string o un objeto con .Port y .Mac)
     $port = SelectCOMPort
-	
-	# Tras tu write_flash, añade:
-	# CRUCIAL for failings in charge from aio.exe of main.ps1, ota partition content, avoids you to enter the factory partition
-	# so it appears the code has not been charged !!! 
-	# ( por eso requerias flashear antes de cargar codigo, 
-	# solo si en ese dispositivo ya habias hecho una carga ota por lo menos una vez desde la ultima vez q fue flasheado ) 
-	
-	# SOLO BORRA UNA PARTE DE LA FLASH ( LA OTA DATA ) interfiere con el siguiente inicio q debe ser en factory mode si o si
-	# pero relax, si se podra seguir haciendo cargas de ota, solo estas borrando el contenido de la direccion , no el partitions.bin
-	& $venvPython -m esptool --chip esp32s3 --port $port erase_region 0xE000 0x2000
-	if ($LASTEXITCODE -eq 0) {
-		Write-Host "✅ otadata borrado correctamente"
-	} else {
-		Write-Host "❌ Error al borrar otadata"
-	}
 
+    # CRUCIAL: normalizar a string simple para esptool
+    if ($null -eq $port) { Write-Host "No se selecciono puerto."; Pause; return }
+    if ($port -is [string]) {
+        $portString = $port
+        $macString  = $null
+    } else {
+        $portString = $port.Port
+        $macString  = $port.Mac
+    }
+    if ([string]::IsNullOrWhiteSpace($portString)) { Write-Host "Puerto invalido."; Pause; return }
 
-    & $venvPython -m esptool --chip esp32s3 --port $port --baud 115200 `
-        --before default_reset --after hard_reset write_flash -z `
-        --flash_mode dio --flash_freq 40m --flash_size detect `
-        0x0      "`"$boot`"" `
-        0x8000   "`"$part`"" `
-        0x10000  "`"$firm`""
+    # CRUCIAL: validar que los .bin existan y expandir a rutas completas
+    foreach ($p in @('boot','part','firm')) {
+        $val = Get-Variable -Name $p -ValueOnly
+        if (-not (Test-Path -LiteralPath $val)) {
+            Write-Host "Archivo no encontrado: $val"; Pause; return
+        }
+        Set-Variable -Name $p -Value (Resolve-Path -LiteralPath $val).Path
+    }
+
+    # CRUCIAL: preparar argumentos como array para evitar comillas incrustadas
+    $eraseArgs = @(
+        '-m','esptool',
+        '--chip','esp32s3',
+        '--port', $portString,
+        'erase-region','0xE000','0x2000'
+    )
+
+    # Ejecutar erase-region sin comillas extra
+    & $venvPython @eraseArgs
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "✅ otadata borrado correctamente"
+    } else {
+        Write-Host "❌ Error al borrar otadata"
+    }
+
+    # CRUCIAL: write-flash con flags nuevos y sin comillas en rutas
+    $flashArgs = @(
+        '-m','esptool',
+        '--chip','esp32s3',
+        '--port', $portString,
+        '--baud','115200',
+        '--before','default-reset',
+        '--after','hard-reset',
+        'write-flash','-z',
+        '--flash-mode','dio',
+        '--flash-freq','40m',
+        '--flash-size','detect',
+        '0x0',     $boot,
+        '0x8000',  $part,
+        '0x10000', $firm
+    )
+
+    & $venvPython @flashArgs
 
     if ($LASTEXITCODE -eq 0) {
         Write-Host "Firmware local cargado correctamente."
     } else {
         Write-Host "Error al cargar firmware."
     }
+
     Pause
-	
-	Monitor-Serial $port.Port $port.Mac
-}
+
+    if ($macString) {
+        Monitor-Serial $portString $macString
+    } else {
+        Monitor-Serial $portString
+    }
+} # fin de la funcion LoadLocalFirmware
 
 
 function Start-ESP32Tool {
@@ -1064,7 +1132,7 @@ function DownloadFirmware($device)
 function FlashESP32Erase 
 {
     $port = SelectCOMPort
-    & "$venvPython" -m esptool --chip esp32s3 --port $port erase_flash
+    & "$venvPython" -m esptool --chip esp32s3 --port $port.Port erase_flash
     Pause
 }
 
@@ -1085,7 +1153,7 @@ function UpdateFirmwareAndMonitor
     
 	#& "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x0 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
 	
-	& "$venvPython" -m esptool --chip esp32s3 --port $port --baud 115200 `
+	& "$venvPython" -m esptool --chip esp32s3 --port $port.Port --baud 115200 `
 	--before default_reset --after hard_reset write_flash -z `
 	--flash_mode dio --flash_freq 40m --flash_size detect `
 	0x0      $boot `
@@ -1102,7 +1170,7 @@ function UpdateFirmwareAndMonitor
     }
     Pause
 	SerialMonitor($port)
-}
+} # end of UpdateFirmwareAndMonitor()
 
 # =========================
 #  Utilidad: cargar QRCoder
