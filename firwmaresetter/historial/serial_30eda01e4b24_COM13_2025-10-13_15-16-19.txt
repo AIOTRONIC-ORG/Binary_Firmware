@@ -1,0 +1,763 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.321, built 2025-10-10 16:17:35.075857
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUaK6chh5yvlqdfjBiBHU4Bov0xJgwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDkxMTIwNTYx
+MVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALeWVxL/axTYekMIDXxG
+r0MslNdSVG0kvOy4yaabyP31+rypENftBnCtDHJktnFmgyMESaWlwkMr1S1N2T7t
+ZVXT37g7idEZ03xhuX65GaoOoXuMbzBYpsyJXW0uFBiNzV0Pzbn24gi87iEm2rxa
+UJZlu23RB434pMWtYSRquxFzSpIPkBXCEPpZh3Iawc/V+bVITtQjYZxyFaMrqHqh
+ftc1HqYGogWadvehtNg0Ki9i8y/Jlhy5SmfIga8kHW58fl/ZZO2g5PzXZSCiv+FK
+Ur5HouUFClDQ/TvnKfS7Rk1svZKnJdTuVLChA5xg0nr73YHFn4J5i2cM7SxAkOxN
+HYsCAwEAAaNgMF4wHwYDVR0jBBgwFoAUnzhxUer7p7evgv4LWwp/u9VQJZMwHQYD
+VR0OBBYEFMLkzvuEulFC2yjn/QNbmNypCe6kMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQCvTwAAnHpxuiSlTvRP0UNQob3j
+YaFJrVJNWrrVkxONGtxyaSOqk/TXL3kQ9PSSxSbXRA3qzEF9StUnzbIrLFkc6Swb
+Hb0GiuCdt6qcYUtYc3YISLLU4XLjSNm8V37ScvJU15Af3nQZxqaUz0biYg/Nk/do
+niJmvifuO8/u9SQusqB2Jkp5u/hSgrHpFMJqaH4+qPsJ+IjHprfOp9O6l/yG++Gf
+FISe256u8IzWBNveksaKkyEN7qGohzodZYPppB9u7E2wpeiCaKEcdHScmJixJN5p
+SE2A1LwCDGd6HFk1c9FVJb9idMZ+axDA8DpUSIVdyw77fchQTl3WNOOhXLNb
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAt5ZXEv9rFNh6QwgNfEavQyyU11JUbSS87LjJppvI/fX6vKkQ
+1+0GcK0McmS2cWaDIwRJpaXCQyvVLU3ZPu1lVdPfuDuJ0RnTfGG5frkZqg6he4xv
+MFimzIldbS4UGI3NXQ/NufbiCLzuISbavFpQlmW7bdEHjfikxa1hJGq7EXNKkg+Q
+FcIQ+lmHchrBz9X5tUhO1CNhnHIVoyuoeqF+1zUepgaiBZp296G02DQqL2LzL8mW
+HLlKZ8iBryQdbnx+X9lk7aDk/NdlIKK/4UpSvkei5QUKUND9O+cp9LtGTWy9kqcl
+1O5UsKEDnGDSevvdgcWfgnmLZwztLECQ7E0diwIDAQABAoIBADAbOAPlZBTZSOhJ
+subuyrwqcXIew7q51rudDFIZHkjV7PcEwkIifP6Hiexr0ZbTiudhFz9NuSLK2Jh/
+fr7LjDM6SrRG/a0KPG2qWeYH8N6r6MqsGPKtOD/+ernCSkfI2JhbLMhfFgm+IBQV
+z1ltvRI75Co5jOY50ktuTDcztIM0pa6A7U8AlrnDHkc/fiGtxOq8qTTampMSvYMQ
+MQrhDMbCRaH6i87PEY0Bugq4y9cv83YokbmsIMLXYb5g6uLOeZWCLBXbXOVPzOQ7
+bpLnC43IhpUHkqwZXLxq2h5Y1l43kHrCNTx0+V7bxh9wLSRplPLy7k/djN28fOXZ
+xmIh5wkCgYEA7XSEhBbQHppFgt7tI8GzJii/ZiB61R8TI7yWcsY4pzG4TRP6EJQJ
+6cVchmLg4Ojjht5LPF1SzC8W9raYyTpP5yhzkPPxqiL+c2E0Lc0Mzf7FOv3MwKXW
+KssqpVdBTmJmi1v6VnkA1JlcBTiAikerNXufUhmIyvvXzyjIrQHIQL0CgYEAxezV
+H4Z3n3yJyJVMZRuCW3McCwpFh4ArMY6a/f7p+RYBfHZGQwqxRG7/alkysN1+vhyx
+K7IqPzWiq/bCrNSsfOuktlq88rhirt+7F34pPPFq0T5ZhSrHK9tIoxFCveYTd89j
+ZHri/k/epEX/beRL6RXwJBNUtTghYrr3B5cYL+cCgYBZ9Cj7TRUccr7gfAkD4a43
+R3pyet1tfS8n+5pW8oalt+0kreuuehZjS9PoSO795NvEzNNdk9D47uHZJoUsvf1l
+CWr2P6OOG2GfXfSBYUt3ggs/dMQrOueuIHcQWcSwqBBGvNpSBdbtswcsJyJywAG4
+6hMJ7AhpNQylOsMC30j4VQKBgCf4axXhvvirWtvyIqpsgsfbGDe2jFIP9Skd5nkS
+6MdPxV8QN6JEX4Y1cElW2CDVqknUW4c6hMOdHkviGnByxp63q9zTuELAL9WnAw58
+gPF4w5ycHdIB0JUvxJyB2Numwhm4/RaGpp67HHhKVoonx5i7wHJYoQuz2TIqFccn
+oU/TAoGBALzvalnJm0+snhHEMdEVaPpxp7xJmO6qTJHzjM1PpKiEQZnTgYY3ThVY
+6g0WzCVvCps7UewBqoLXtnyqt2WCBQnPgVgePaLKFH23zJJMKl/HPTXWwPglA4G3
+Fv993O8I9Jzafx42tMAu3NbZ4NKbCDttbm7jb1Dy3Kws8kBexlIc
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_CA01N_30eda01e4b24_1760384264882
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:4B:24-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 1
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 5
+Type of pgm2: 3
+Time of pgm2: 3
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF1 : 303616
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 278
+Free Entries: 352
+Namespace Count: 16
+********Task wirelessfi running on core 0
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 5
+Type of pgm2: 3
+Time of pgm2: 3
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+302356
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+sh
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Passconfig was NOT activated
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] GOT_IP: 192.168.18.159
+[WiFi] GOT_IP: 192.168.18.159
+???SSID:AIOTRONIC4
+PzS:Ch0c0ai0@
+Local Wifi Internet connected succesfully 1
+WiFi Connect.18.159
+MAC
+-
+La velocidad de la se??al internet es :
+********* Deletion of tasks has started ( making space for create wifi tasks )
+**
+**** el task siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated fromconnect to Aws MQTT
+Prueba MACC adding :
+###############El valor de variable connecte1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:4B:24/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:4B:24/CA01N == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:4B:24/CA01N_conf == Suscripci??n Exitosa !!
+Tryy == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished,qtt finished : 1
+alexafirsttime : 0
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.322","firmwareBuildTimeStamp":"2025-10-13 14:31:42.356770","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"3:12:57PM_131025","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Messa"pb":3,"firmwareVersion":"0.1.322","firmwareBuildTimeStamp":"2025-10-13 14:31:42.356770","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+******************** Task alexa_sc initialized correctly
+Task alexa running on core
+0
+Welcome to Alexa Device Program :0
+1
+3
+formacion a alexa
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : JOB_CA01N_30eda01e4b24_1760384264882
+JOB_CA01N_30eda01e4b24_1760384264882
+JSON docconf : 178
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 214
+Publish from electroconf_publishMessage
+JSON doctro : 107
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf:{"t_alarm":10,"tp_zone":0,"pgms":[{"id":1,"t":5,"tp":0},{"id":2,"t":3,"tp":3}]},"other_conf":{"tp_buzzer":1}}
+--------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.321","firmwareBuildTimeStamp":"2025-10-10 16:17:35.075857","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"3:16:44PM_1310
+Publish from electro_publishMessage
+25","mode":100}
+-----------------------
+electro_publishMessage in electro_main_first_publish_the_aio_server
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N
+Message Payload :  {"p":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core
+1
+Vr:110.00 % 287.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"mode":1,"jobId":"JOB_CA01N_30eda01e4b24_1760386619490"}
+-----------------------
+In tuya electroconf updatings
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 5
+Type of pgm2: 3
+Time of pgm2: 3
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167712
+Vr:110.00 % 315.00 , Message arrived in topic: $aws/things/30:ED:A0:1E:4B:24/jobs/notify
+Message Payload :  {"timestamp":1760386624,"jobs":{"QUEUED":[{"jobId":"JOB_CA01N_30eda01e4b24_1760386619490","queuedAt":1760386623,"lastUpdatedAt":1760386623,"executionNumber":1,"versionNumber":1}]}}
+-----------------------
+aqui estoy en awsota_jobs_process_loop
+Trying to suscribe to : $aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760386619490/get == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760386619490/get/accepted == Suscripci??n Exitosa !!
+$aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760386619490/update
+### STARTING A PUBLISH
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"result":{"endpoint":"advad9kn9rt2k-ats.iot.us-east-2.amazonaws.com","action":ota","jobId":"JOB_CA01N_30eda01e4b24_1760386619490"}}
+-----------------------
+A Callba
+### STARTING A PUBLISH
+############################El valor de variable topicname es : $aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760386619490/get
+Message arrived in topic: $aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760386619490/get/accepted
+Message Payload :  {"timestamp":1760386632,"execution":{"jobId":"JOB_CA01N_30eda01e4b24_1760386619490","status":"QUEUED","queuedAt":1760386623,"lastUpdatedAt":1760386623,"versionNumber":1,"executionNumber":1,"jobDocument":{"version":"0.1.322","url":"https://firmwares-esp32.s3.us-east-2.amazonaws.com/CA01N/production/firmware.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARGMLGLKUP27AJHH7%2F20251013%2Fus-east-2%2Fs3%Faws4_request&X-Amz-Date=20251013T201659Z&X-Amz-Expires=3600&X-Amz-Signature=7f30e0bb8e20ca7376d6e0c1ece88be9e8da15e04fd7f71fb400c61a8809d6e5&X-Amz-SignedHeaders=host"}}}
+-----------------------
+4000
+### STARTING A PUBLISH HEAVY
+Message arrived in topic: $aws/things/30:ED:A06619490/update/accepted
+Message Payload :  {"timestamp":1760386632}
+--------Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"result":{"endpoint":"advad9kn9rt2k-ats.iot.us-east-2.amazonaws.com","action":"ota_jobID","s3linkJob":"https://firmwares-esp32.s3.us-east-2.amazonaws.com/CA01N/production/firmware.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARGMLGLKUP27AJHH7%2F20251013%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20251013T201659Z&X-Amz-Expires=3600&X-Amz-Signature=7f30e0bb8e20ca7376d6e0c1ece88be9e8da15e04fd7f71fb400c61a8809d6e5&X-Amz-SignedHeaders=host"}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+[WiFi] DISCONNECTED reason=8
+[WiFi] esp_wifi_connect() retried
+[WiFi] DISCONNECTED reason=8
+[ 56111][E][WiFiClient.cpp:275] connect(): socket error on fd 51, errno: 113, "Software caused connection abort"
+??? Internet m
+[ 56123][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-76) UNKNOWN ERROR CODE (004C)
+on from MQTT was detected !
+Certificates AWS have been validatedconnect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+Activating mqueuingtt_connect() in aws_check_connection()
+Debugging the client.state: -3
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420e7e02
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Wifi Credentials already exists in Flash
+AIOTRONIC4
+Ch0c0ai0@
+Tiempo WiFi LAN: 1
+Connected to AIOTRONIC4
+IP address: 192.168.18.159
+????  Ejecutando desde: app0 (6553600 bytes)
+????  Destino OTA real  : app1 (6553600 bytes)
+############################El valor de variable host es : firmwares-esp32.s3.us-east-2.amazonaws.com
+############################El valor de variable path es : /CA01N/production/firmware.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARGMLGLKUP27AJHH7%2F20251013%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20251013T201659Z&X-Amz-Expires=3600&X-Amz-Signature=7f30e0bb8e20ca7376d6e0c1ece88be9e8da15e04fd7f71fb400c61a8809d6e5&X-Amz-SignedHeaders=host
+Status: HTTP/1.1 200 OK
+Header: x-amz-id-2: PnK3IUwEcepufS6iU9ibowNZux7Up4M48f88t3Wft+sf9f0U/+I1V5PWmxFS4hbzatGOYkf/Y5NHkwUmV1L8f2TTcL3Ha/usFcNmrsLMbpo=
+Header: x-amz-request-id: YZNR8C0EJ9NZPRT1
+Header: Date: Mon, 13 Oct 2025 20:17:20 GMT
+Header: Last-Modified: Mon, 13 Oct 2025 19:39:25 GMT
+Header: ETag: "24e038d919fd3faa33231f0c2a29625c"
+Header: x-amz-server-side-encryption: AES256
+Header: Accept-Ranges: bytes
+Header: Content-Type: application/octet-stream
+Header: Content-Length: 1345232
+Header: Server: AmazonS3
+Header: Connection: close
+Header:
+[WIFI] RSSI actual -39 dBm, canal 3 (min:-39 max:-39 prom:-39)
+???? OTA progreso: 1% (16384/1345232 bytes) [NET 139 kB/s]
+???? OTA progreso: 2% (29232/1345232 bytes) [NET 51 kB/s]
+???? OTA progreso: 3% (42544/1345232 bytes) [NET 43 kB/s]
+???? OTA progreso: 4% (55856/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 5% (68144/1345232 bytes) [NET 46 kB/s]
+???? OTA progreso: 6% (81456/1345232 bytes) [NET 41 kB/s]
+[WIFI] RSSI actual -38 dBm, canal 3 (min:-39 max:-38 prom:-38)
+???? OTA progreso: 7% (94768/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 8% (108080/1345232 bytes) [NET 37 kB/s]
+???? OTA progreso: 9% (121392/1345232 bytes) [NET 42 kB/s]
+???? OTA progreso: 10% (137776/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 11% (151088/1345232 bytes) [NET 40 kB/s]
+[WIFI] RSSI actual -39 dBm, canal 3 (min:-39 max:-38 prom:-38)
+???? OTA progreso: 12% (164400/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 13% (177712/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 14% (190000/1345232 bytes) [NET 41 kB/s]
+???? OTA progreso: 15% (203312/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 16% (216624/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 17% (229936/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 18% (242224/1345232 bytes) [NET 40 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 19% (259632/1345232 bytes) [NET 41 kB/s]
+???? OTA progreso: 20% (272944/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 21% (286256/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 22% (299568/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 23% (311856/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 24% (325168/1345232 bytes) [NET 40 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 25% (338480/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 26% (351792/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 27% (364080/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 28% (377392/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 29% (390704/1345232 bytes) [NET 39 kB/s]
+[WIFI] RSSI actual -39 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 30% (404016/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 31% (417328/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 32% (433712/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 33% (447024/1345232 bytes) [NET 40 kB/s]
+???? OTA progreso: 34% (460336/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 35% (473648/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 36% (485936/1345232 bytes) [NET 40 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 37% (499248/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 38% (512560/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 39% (525872/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 40% (538160/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 41% (555568/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 42% (568880/1345232 bytes) [NET 39 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 43% (582192/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 44% (595504/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 45% (607792/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 46% (621104/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 47% (634416/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 48% (647728/1345232 bytes) [NET 39 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 49% (660016/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 50% (673328/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 51% (686640/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 52% (699952/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 53% (713264/1345232 bytes) [NET 38 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 54% (729648/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 55% (742960/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 56% (756272/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 57% (769584/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 58% (781872/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 59% (795184/1345232 bytes) [NET 38 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 60% (808496/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 61% (821808/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 62% (834096/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 63% (851504/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 64% (864816/1345232 bytes) [NET 38 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 65% (878128/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 66% (891440/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 67% (903728/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 68% (917040/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 69% (930352/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 70% (943664/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 71% (955952/1345232 bytes) [NET 39 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 72% (969264/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 73% (982576/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 74% (995888/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 75% (1009200/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 76% (1025584/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 77% (1038896/1345232 bytes) [NET 39 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 78% (1052208/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 79% (1065520/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 80% (1077808/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 81% (1091120/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 82% (1104432/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 83% (1117744/1345232 bytes) [NET 38 kB/s]
+[WIFI] RSSI actual -39 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 84% (1130032/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 85% (1147440/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 86% (1160752/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 87% (1174064/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 88% (1187376/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 89% (1199664/1345232 bytes) [NET 39 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 90% (1212976/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 91% (1226288/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 92% (1239600/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 93% (1251888/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 94% (1265200/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 95% (1278512/1345232 bytes) [NET 38 kB/s]
+[WIFI] RSSI actual -40 dBm, canal 3 (min:-40 max:-38 prom:-39)
+???? OTA progreso: 96% (1291824/1345232 bytes) [NET 38 kB/s]
+???? OTA progreso: 97% (1305136/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 98% (1321520/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 99% (1334832/1345232 bytes) [NET 39 kB/s]
+???? OTA progreso: 100% (1345232/1345232 bytes) [NET 39 kB/s]
+[NET] ===== resumen de red OTA =====
+[NET] duracion total: 33744 ms, bytes: 1345232
+[NET] espera acumulada: 28420 ms (84%), activa: 5324 ms
+[NET] espera continua maxima: 780 ms, eventos de espera: 79
+[NET] tiempo al primer byte tras header: 1 ms
+[NET] interarribo promedio: 87 ms, max interarribo: 791 ms
+[NET] chunks: 387, chunk promedio: 3476 bytes, chunk max: 4096 bytes
+[NET] rendimiento medio: 38 kB/s (~64 kbps)
+[NET] =================================
+[WAN] Ping no disponible (agrega ESP32Ping.h para habilitar pings).
+[WIFI] SSID:AIOTRONIC4 BSSID:24:2F:D0:8E:F2:D1 canal:3 RSSI prom:-39 dBm (min:-40 max:-38)
+??? OTA exitosa. Reiniciando...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420e7e02
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.322, built 2025-10-13 14:31:42.356770
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUaK6chh5yvlqdfjBiBHU4Bov0xJgwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MDkxMTIwNTYx
+MVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALeWVxL/axTYekMIDXxG
+r0MslNdSVG0kvOy4yaabyP31+rypENftBnCtDHJktnFmgyMESaWlwkMr1S1N2T7t
+ZVXT37g7idEZ03xhuX65GaoOoXuMbzBYpsyJXW0uFBiNzV0Pzbn24gi87iEm2rxa
+UJZlu23RB434pMWtYSRquxFzSpIPkBXCEPpZh3Iawc/V+bVITtQjYZxyFaMrqHqh
+ftc1HqYGogWadvehtNg0Ki9i8y/Jlhy5SmfIga8kHW58fl/ZZO2g5PzXZSCiv+FK
+Ur5HouUFClDQ/TvnKfS7Rk1svZKnJdTuVLChA5xg0nr73YHFn4J5i2cM7SxAkOxN
+HYsCAwEAAaNgMF4wHwYDVR0jBBgwFoAUnzhxUer7p7evgv4LWwp/u9VQJZMwHQYD
+VR0OBBYEFMLkzvuEulFC2yjn/QNbmNypCe6kMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQCvTwAAnHpxuiSlTvRP0UNQob3j
+YaFJrVJNWrrVkxONGtxyaSOqk/TXL3kQ9PSSxSbXRA3qzEF9StUnzbIrLFkc6Swb
+Hb0GiuCdt6qcYUtYc3YISLLU4XLjSNm8V37ScvJU15Af3nQZxqaUz0biYg/Nk/do
+niJmvifuO8/u9SQusqB2Jkp5u/hSgrHpFMJqaH4+qPsJ+IjHprfOp9O6l/yG++Gf
+FISe256u8IzWBNveksaKkyEN7qGohzodZYPppB9u7E2wpeiCaKEcdHScmJixJN5p
+SE2A1LwCDGd6HFk1c9FVJb9idMZ+axDA8DpUSIVdyw77fchQTl3WNOOhXLNb
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAt5ZXEv9rFNh6QwgNfEavQyyU11JUbSS87LjJppvI/fX6vKkQ
+1+0GcK0McmS2cWaDIwRJpaXCQyvVLU3ZPu1lVdPfuDuJ0RnTfGG5frkZqg6he4xv
+MFimzIldbS4UGI3NXQ/NufbiCLzuISbavFpQlmW7bdEHjfikxa1hJGq7EXNKkg+Q
+FcIQ+lmHchrBz9X5tUhO1CNhnHIVoyuoeqF+1zUepgaiBZp296G02DQqL2LzL8mW
+HLlKZ8iBryQdbnx+X9lk7aDk/NdlIKK/4UpSvkei5QUKUND9O+cp9LtGTWy9kqcl
+1O5UsKEDnGDSevvdgcWfgnmLZwztLECQ7E0diwIDAQABAoIBADAbOAPlZBTZSOhJ
+subuyrwqcXIew7q51rudDFIZHkjV7PcEwkIifP6Hiexr0ZbTiudhFz9NuSLK2Jh/
+fr7LjDM6SrRG/a0KPG2qWeYH8N6r6MqsGPKtOD/+ernCSkfI2JhbLMhfFgm+IBQV
+z1ltvRI75Co5jOY50ktuTDcztIM0pa6A7U8AlrnDHkc/fiGtxOq8qTTampMSvYMQ
+MQrhDMbCRaH6i87PEY0Bugq4y9cv83YokbmsIMLXYb5g6uLOeZWCLBXbXOVPzOQ7
+bpLnC43IhpUHkqwZXLxq2h5Y1l43kHrCNTx0+V7bxh9wLSRplPLy7k/djN28fOXZ
+xmIh5wkCgYEA7XSEhBbQHppFgt7tI8GzJii/ZiB61R8TI7yWcsY4pzG4TRP6EJQJ
+6cVchmLg4Ojjht5LPF1SzC8W9raYyTpP5yhzkPPxqiL+c2E0Lc0Mzf7FOv3MwKXW
+KssqpVdBTmJmi1v6VnkA1JlcBTiAikerNXufUhmIyvvXzyjIrQHIQL0CgYEAxezV
+H4Z3n3yJyJVMZRuCW3McCwpFh4ArMY6a/f7p+RYBfHZGQwqxRG7/alkysN1+vhyx
+K7IqPzWiq/bCrNSsfOuktlq88rhirt+7F34pPPFq0T5ZhSrHK9tIoxFCveYTd89j
+ZHri/k/epEX/beRL6RXwJBNUtTghYrr3B5cYL+cCgYBZ9Cj7TRUccr7gfAkD4a43
+R3pyet1tfS8n+5pW8oalt+0kreuuehZjS9PoSO795NvEzNNdk9D47uHZJoUsvf1l
+CWr2P6OOG2GfXfSBYUt3ggs/dMQrOueuIHcQWcSwqBBGvNpSBdbtswcsJyJywAG4
+6hMJ7AhpNQylOsMC30j4VQKBgCf4axXhvvirWtvyIqpsgsfbGDe2jFIP9Skd5nkS
+6MdPxV8QN6JEX4Y1cElW2CDVqknUW4c6hMOdHkviGnByxp63q9zTuELAL9WnAw58
+gPF4w5ycHdIB0JUvxJyB2Numwhm4/RaGpp67HHhKVoonx5i7wHJYoQuz2TIqFccn
+oU/TAoGBALzvalnJm0+snhHEMdEVaPpxp7xJmO6qTJHzjM1PpKiEQZnTgYY3ThVY
+6g0WzCVvCps7UewBqoLXtnyqt2WCBQnPgVgePaLKFH23zJJMKl/HPTXWwPglA4G3
+Fv993O8I9Jzafx42tMAu3NbZ4NKbCDttbm7jb1Dy3Kws8kBexlIc
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_CA01N_30eda01e4b24_1760384264882
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:4B:24-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 1
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 5
+Type of pgm2: 3
+Time of pgm2: 3
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF1 : 303616
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 281
+Free Entries: 349
+Namespace Count: 16
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+0
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 10
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 5
+Type of pgm2: 3
+Time of pgm2: 3
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+302356
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+sh
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :ted :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] GOT_IP: 192.168.18.159
+[WiFi] GOT_IP: 192.168.18.159
+??? Internet dispAIOTR
+PzS:Ch0c0ai0@
+LocalFi Connected to : AIOTRONIC4
+IP Address: 18.159
+MAC Address: 30:ED:A0:1E:4B:24
+La intensidad d
+La velocidad de la se??al internet es :
+********************   Deletion of tasks has started ( making space for create wifi tasks )
+*Radiofrequency no existia, innecesario elimi siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+*** wifi ConnecteCCESFULLY FOR EVER ***
+BefCertificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+############################El valor de variable connected to amazon es : 1
+The c
+$aws/things/30:ED:A0:1E:4B:24/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:4B:24/CA01N == Suscripci??n Exitosa !!
+== Suscripci??n Exitosa !!
+Tryiy == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying qtt finished : 1
+alexafirsttime : 0
+alex
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: Message Payload :  {"pb":3,"firmwareVersion":"0.1.321","firmwareBuildTimeStamp":"2025-10-10 16:17:35.075857","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+--------------------
+******************** Task alexa_sc initialized correctly
+0
+Welcome to Alexa Device Program :0
+1
+2
+3
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+############################El valor de variable var state de jobs de ota aws es : 1
+############################El valor de variable jobid es : JOB_CA01N_30eda01e4b24_1760384264882
+### STARTING A PUBLISH
+JOB_CA01N_30eda01e4b24_1760384264882
+Message arrived in topic: $aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760384264882/update/rejected
+"timestamp":1760386700,"xecutionState":{"status":"TIMED_OUT","versionNumber":3},"code":"InvalidStatJSON docconf : e178Transi
+tion","message":
+Publish electroconf_publishMessage_retained_heartbeat"Job JO
+B_CA01N_30eda01e4b24_1760384264882 for 30:ED:A0:1E:4B:24 has already finisJSON docconf : hed with sttus TIMED_OUT"}214
+-----------------------
+Publish from electroconf_publishMessage
+JSON doctro : 107
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.322","firmwareBuildTimeStamp":"2025-10-13 14:31:42.356770","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"3:18:20PM_131025","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":10,"tp_zone":0,"pgms":[{"id":1,"t":5,"tp":0},{"id":2,"t":3,"tp":3}]},"other_conf":{"tp_buzzer":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core
+1
+Vr:110.00 % 294.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:110.00 % 293.00 , Vr:110.00 % 291.00 , Vr:110.00 % 292.00 , Vr:110.00 % 295.00 , Vr:110.00 % 293.00 , Vr:110.00 % 293.00 , Vr:110.00 % 293.00 , Vr:110.00 % 288.00 , Vr:110.00 % 293.00 , Vr:110.00 % 292.00 , Vr:110.00 % 293.00 , Vr:110.00 % 293.00 , Vr:110.00 % 291.00 , Vr:110.00 % 288.00 , Vr:110.00 % 293.00 , Message arrived in topic: Message Payload :  {"timestamp":1760386940,"jobs":{}}
+-----------------------
+aqui estoy en awsota_jobs_process_loop
+Trying to suscribe to :  == Suscripci??n Exitosa !!
+Trying to suscribe to :  == Suscripci??n Exitosa !!
+$aws/things/30:ED:A0:1E:4B:24/jobs/JOB_CA01N_30eda01e4b24_1760384264882/update
+### STARTING A PUBLISH
+Fallo client.loop detected faster th
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected: 1
+gging the client.state: -3
+### STARTING A PUBLISH
+############################El valor de variable topicname es :
+Vr:110.00 % 291.00 ,
+azon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:4B:24/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:4B:24/CA01N == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:4B:24/CA01N_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/30:ED:A0:1E:4B:24/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+############################El valor de variable heartbeat es : 0
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.322","firmwareBuildTimeStamp":"2025-10-13 14:31:42.356770","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 3
+############################El valor de variable jobid es : JOB_CA01N_30eda01e4b24_1760384264882
+### STARTING A PUBLISH
+JOB_CA01N_30eda01e4b24_1760384264882
+Message arrived in topic: 4264882/update/rejected
+Message Payload :  {"timestamp":1760386951,"executionState":{"status":"TIMED_OUT","verJSON docconf : s178
+ionNumber:3},"code":"InvalidStateTransition","message":"Job JOB_CA01N_30eda01e4b24_1760384264882 for 30:ED:A0:1E:4B:24 has already finished with status TIMED_
+OUT"}JSON docconf :
+-----------------------
+214
+Publish from electroconf_publishMessage
+JSON doctro : 107
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.322","firmwareBuildTimeStamp":"2025-10-13 14:31:42.356770","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"3:22:31PM_131025","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_cnf":{"action":0,"code":0,"position":0},"al_conf":{"t_alarm":10,"tp_zone":0,"pgms":[{"id":1,"t":5,"tp":0},{"id":2,"t":3,"tp":3}]},"other_onf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:4B:24/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":1,"pgm1":0,"pgm2":0}
+-----------------------
