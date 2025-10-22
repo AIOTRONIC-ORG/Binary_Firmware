@@ -1,0 +1,296 @@
+﻿------------------------------------------
+GAN ELECTRIFIER ??????????? - ESP32-C3-WROOM-02
+------------------------------------------
+---------------------------------
+DEVICE STATUS:
+Fence: ???? OFF.
+Speed: ???? LOW.
+AutoSense Status: ???? OFF.
+Buzzer sync with: NO SYNC.
+---------------------------------
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: Speed
+Option: Low
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: Medium
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: High
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: Low
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: Medium
+==========
+==========
+Function: Speed
+Option: High
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: Speed
+Option: Medium
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Speed
+Option: Low
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: Medium
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Speed
+Option: High
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Solar Charging
+Option: Auto Sense ON
+==========
+==========
+Function: Speed
+Option: Low
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: RF Control
+Option: Link RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense ON
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 132
+POWERON : 36
+SW      : 0
+WDT     : 0
+BROWNOUT: 1
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: RF Control
+Option: Link RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense ON
+==========
+==========
+Function: Speed
+Option: Low
+==========
+==========
+Function: Speed
+Option: Medium
+==========
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: RF Control
+Option: Link RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========

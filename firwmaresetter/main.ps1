@@ -1,4 +1,7 @@
-﻿# main.ps1
+﻿$global:mcu = "esp32s3"
+$global:model = "EA01J"
+$script:baseDir = $null  # carpeta base del script o exe (resuelta por Set-BaseDir)
+# main.ps1
 #no tildes en este codigo para maxima compatiblidad con all powershell versions
 
 # ==== BOOT PROBE (debe ser lo PRIMERO) ======================
@@ -21,10 +24,103 @@ try {
 }
 # ============================================================
 
+function Set-BaseDir {
+<#
+    .SYNOPSIS
+        Resuelve la carpeta base del script o exe y la guarda en $script:baseDir.
+
+    .DESCRIPTION
+        Detecta la carpeta segun contexto: $PSScriptRoot, $PSCommandPath, $MyInvocation, o exe (ps2exe).
+        Si todo falla usa la ruta del proceso o la ubicacion actual. Evita devolver Windows\System32.
+        Asigna el resultado en $script:baseDir y lo retorna.
+
+    .EXAMPLE
+        Set-BaseDir
+        # Calcula y asigna $script:baseDir, mostrando la ruta resuelta.
+
+    .EXAMPLE
+        $null = Set-BaseDir
+        # Solo inicializa $script:baseDir en segundo plano sin imprimir.
+
+    .NOTES
+        ADVERTENCIA: si el entorno fuerza System32 como ubicacion, se hace fallback a Get-Location.
+    .FECHA
+        2025-10-22
+#>
+    [CmdletBinding()]
+    param()
+
+    # helper: normaliza y trim de separadores finales
+    function _Norm {
+        param([string]$p)
+        if ([string]::IsNullOrWhiteSpace($p)) { return $null }
+        return $p.Trim().TrimEnd('\','/')
+    }
+
+    try {
+        # resuelve carpeta base del script o exe, evitando System32
+        $baseDir = $null
+
+        # 1) contexto de script
+        if ($PSScriptRoot -and $PSScriptRoot.Trim()) {
+            $baseDir = _Norm $PSScriptRoot
+        }
+        elseif ($PSCommandPath -and $PSCommandPath.Trim()) {
+            $baseDir = _Norm (Split-Path -Parent $PSCommandPath)
+        }
+        elseif ($MyInvocation -and $MyInvocation.MyCommand -and $MyInvocation.MyCommand.Path) {
+            $baseDir = _Norm (Split-Path -Parent $MyInvocation.MyCommand.Path)
+        }
+        # 2) ejecutable empaquetado (ps2exe)
+        elseif ([System.AppDomain]::CurrentDomain -and [System.AppDomain]::CurrentDomain.FriendlyName -like "*.exe") {
+            $baseDir = _Norm ([System.AppDomain]::CurrentDomain.BaseDirectory)
+        }
+        # 3) ultimo recurso: del proceso o ubicacion actual
+        else {
+            try {
+                $procExe = [System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName
+                if ($procExe -and $procExe.Trim()) {
+                    $baseDir = _Norm (Split-Path -Parent $procExe)
+                }
+            } catch {
+                # si no se puede leer MainModule, ignorar
+            }
+            if (-not $baseDir) {
+                $baseDir = _Norm ((Get-Location).Path)
+            }
+        }
+
+        # si por cualquier razon caimos en System32, usar ubicacion actual
+        if ($baseDir -match '\\Windows\\System32($|\\)') {
+            $fallback = _Norm ((Get-Location).Path)
+            if ($fallback -and ($fallback -notmatch '\\Windows\\System32($|\\)')) {
+                $baseDir = $fallback
+            }
+        }
+
+        # si aun no tenemos algo, fuerza Get-Location
+        if (-not $baseDir) {
+            $baseDir = _Norm ((Get-Location).Path)
+        }
+
+        # expone globalmente
+        $script:baseDir = $baseDir
+
+        # devuelve tambien por pipeline
+        return $script:baseDir
+    }
+    catch {
+        # en error, intenta al menos fijar algo sensato
+        try { $script:baseDir = _Norm ((Get-Location).Path) } catch {}
+        return $script:baseDir
+    }
+} # fin de la funcion Set-BaseDir
+
+
 
 # Lightweight log helper
 function Write-Log([string]$msg) {
-    $ts = Get-Date -Format 'yyyy-MM-dd HH:mm:ss.fff'
+    $ts = Get-Date -Format 'dd-MM-yy HH:mm:ss.fff'
     try { [Console]::Out.WriteLine("[$ts] $msg") } catch {}
 }
 Write-Log "==== BOOT STARTED (PID=$PID, PS=$($PSVersionTable.PSVersion)) ===="
@@ -150,14 +246,15 @@ function ShowMainMenu {
         Write-Color ""
 
         Write-Color -Text "  [1] ", "Flash Erase " -Color Cyan, Green
-        Write-Color -Text "  [2] ", "Actualizar Firmware desde SERVIDOR y Monitor Serial" -Color Cyan, Green
+        Write-Color -Text "  [2] ", "Actualizar Firmware desde SERVIDOR" -Color Cyan, Green
         Write-Color -Text "  [3] ", "Imprimir Codigo QR" -Color Cyan, Green
         Write-Color -Text "  [4] ", "Seleccionar Modelo de Dispositivo" -Color Cyan, Green
         Write-Color -Text "  [5] ", "Cargar Firmware LOCAL (.bin)" -Color Cyan, Green
         Write-Color -Text "  [6] ", "Serial monitor" -Color Cyan, Green
         Write-Color -Text "  [7] ", "Resetear la consola (eliminar Python embebido Offline)" -Color Cyan, Green
         Write-Color -Text "  [8] ", "Obtener archivos de AIOcore" -Color Cyan, Green
-        Write-Color -Text "  [9] ", "Salir" -Color Cyan, Green
+        Write-Color -Text "  [9] ", "Ver historial" -Color Cyan, Green
+        Write-Color -Text "  [10] ", "Salir" -Color Cyan, Green
 
         Write-Color ""
         Write-Color -Text "==========================================" -Color Cyan
@@ -167,14 +264,15 @@ function ShowMainMenu {
 
         switch ($choice) {
             "1" { FlashESP32Erase }
-            "2" { SelectDeviceModel; UpdateFirmwareAndMonitor }
+            "2" { SelectDeviceModel; UpdateFromAioServer }
             "3" { PrintQRCode }
             "4" { SelectDeviceModel }
             "5" { LoadLocalFirmware }
             "6" { SerialMonitor }
             "7" { ResetEmbeddedPython }
             "8" { $com = SelectCOMPort; Get-ESP32SpiffsFile -Port $com -Trigger -RemotePath "/snap.jpg" }
-            "9" { return }
+            "9" { Show-HistoryMenu }
+            "10" { return }
             default {
                 Write-Color -Text "Opcion invalida" -Color Red
                 Pause
@@ -182,6 +280,211 @@ function ShowMainMenu {
         }
     } while ($true)
 }
+function Show-HistoryMenu {
+<#
+    .SYNOPSIS
+        Lista historiales con patron serial_{model}_{mac}_{port}_{timestamp}.txt bajo .\historial.
+
+    .DESCRIPTION
+        Pide el modelo y actualiza $script:selectedDevice. Busca en la subcarpeta "historial" de la ubicacion actual (Get-Location).
+        Muestra archivos que inician con el modelo indicado. Permite ordenar por fecha (timestamp) o por nombre.
+        Despues del primer listado, permite filtrar por MAC (parcial o completa).
+        Guarda la ultima lista de archivos en $Global:FilteredArchivos.
+
+    .PARAMETER (sin parametros)
+        La funcion no recibe parametros; todo se solicita por consola.
+        Use -Verbose para ver depuracion: rutas, conteos, coincidencias, etc.
+
+    .EXAMPLE
+        Show-HistoryMenu
+        # Flujo: ingresa el modelo (ej. EB01M), elige orden F o A, visualiza lista, luego puedes filtrar por MAC.
+
+    .EXAMPLE
+        Show-HistoryMenu -Verbose
+        # Muestra detalles de depuracion: ruta base, cantidad de archivos encontrados, patrones, etc.
+
+    .NOTES
+        ADVERTENCIA: la funcion asume nombres de archivo con la forma serial_{model}_{mac}_{port}_{timestamp}.txt.
+        Si el timestamp tiene un formato no reconocido, se usa LastWriteTime como respaldo.
+    .FECHA
+        2025-10-22
+#>
+
+    [CmdletBinding(SupportsShouldProcess=$false)]
+    param()
+
+    # ejemplo de uso rapido:
+    # Example: Show-HistoryMenu
+    # Example: Show-HistoryMenu -Verbose
+
+    # parser de timestamp tolerante a varios formatos comunes
+    $parseTimestamp = {
+        param([string]$stamp)
+
+        # Formatos aceptados, del mas comun al menos comun
+        $formats = @(
+            'yyyyMMddHHmmss',     # 20251022112233
+            'yyyyMMddTHHmmss',    # 20251022T112233
+            'yyyy-MM-dd_HHmmss',  # 2025-10-22_112233
+            'yyyyMMdd-HHmmss'     # 20251022-112233
+        )
+
+        foreach ($f in $formats) {
+            try {
+                return [datetime]::ParseExact($stamp, $f, [Globalization.CultureInfo]::InvariantCulture)
+            } catch {
+                # ignorar e intentar siguiente
+            }
+        }
+        return $null
+    }
+
+    try {
+        # mostrar donde estamos y donde buscaremos
+        Set-BaseDir
+        $histPath = Join-Path -Path $script:baseDir -ChildPath 'historial'
+        Write-Verbose ("BasePath: {0}" -f $script:baseDir)
+        Write-Verbose ("HistPath: {0}" -f $histPath)
+
+        if (-not (Test-Path -LiteralPath $histPath)) {
+            Write-Host ("No existe la carpeta: {0}" -f $histPath)
+            return
+        }
+
+        # pedir modelo y actualizar $script:selectedDevice
+        $model = Read-Host "Modelo (ej. EA01J, EB01M, etc.)"
+        if ([string]::IsNullOrWhiteSpace($model)) {
+            Write-Host "Modelo vacio. Cancelado."
+            Start-Sleep -Seconds 4
+            return
+        }
+        Start-Sleep -Seconds 2
+        $script:selectedDevice = $model
+        Write-Verbose ("Modelo recibido: {0}" -f $model)
+        Start-Sleep -Seconds 2
+        # cargar candidatos serial_*.txt
+        $all = Get-ChildItem -LiteralPath $histPath -File -Filter 'serial_*.txt' -ErrorAction SilentlyContinue
+        if (-not $all) {
+            Write-Host ("No hay archivos serial_*.txt en {0}" -f $histPath)
+            Start-Sleep -Seconds 4
+            return
+        }
+        Write-Verbose ("Total serial_*.txt: {0}" -f $all.Count)
+
+        # regex para serial_{model}_{mac}_{port}_{timestamp}.txt
+        $rx = '^[sS]erial_(?<model>[^_]+)_(?<mac>[^_]+)_(?<port>[^_]+)_(?<ts>[^\.]+)\.txt$'
+        Write-Verbose ("Regex: {0}" -f $rx)
+
+        # filtrar por modelo
+        $parsed = foreach ($f in $all) {
+            if ($f.Name -match $rx) {
+                $m = $Matches
+                if ($m.model -ieq $model) {
+                    $dt = & $parseTimestamp $m.ts
+                    [pscustomobject]@{
+                        File       = $f
+                        Name       = $f.Name
+                        Model      = $m.model
+                        MAC        = $m.mac
+                        Port       = $m.port
+                        TSRaw      = $m.ts
+                        TS         = $dt
+                        FallbackTS = $f.LastWriteTime
+                    }
+                }
+            } else {
+                Write-Verbose ("No coincide regex: {0}" -f $f.Name)
+            }
+        }
+
+        if (-not $parsed) {
+            Write-Host ("No se encontraron archivos del modelo '{0}' en {1}" -f $model, $histPath)
+            Start-Sleep -Seconds 4
+            return
+        }
+
+        Write-Verbose ("Coincidencias iniciales (modelo): {0}" -f $parsed.Count)
+
+        # elegir orden
+        $orderChoice = Read-Host "Ordenar por Fecha (F) o Alfabetico (A)? [F/A]"
+        if ([string]::IsNullOrWhiteSpace($orderChoice)) { $orderChoice = 'F' }
+        $orderChoice = $orderChoice.Trim().ToUpperInvariant()
+        Write-Verbose ("Orden elegido: {0}" -f $orderChoice)
+
+        switch ($orderChoice) {
+            'A' {
+                $list = $parsed | Sort-Object -Property Name
+            }
+            default {
+                # ordenar por TS si existe, si no por LastWriteTime
+                $list = $parsed | Sort-Object -Property @{
+                    Expression = { if ($_.TS) { $_.TS } else { $_.FallbackTS } }
+                    Ascending  = $false
+                }
+            }
+        }
+
+        # guardar lista en variable global para pasos posteriores
+        $Global:FilteredArchivos = $list.File
+
+        # mostrar listado inicial
+        Write-Host ("`nResultados para modelo '{0}' en {1}:`n" -f $model, $histPath)
+        $i = 1
+        foreach ($it in $list) {
+            $when = if ($it.TS) { $it.TS.ToString('yyyy-MM-dd HH:mm:ss') } else { ($it.FallbackTS.ToString('yyyy-MM-dd HH:mm:ss') + ' *') }
+            "{0,3}. {1,-22}  MAC={2,-14}  Port={3,-8}  Fecha={4}" -f $i, $it.Model, $it.MAC, $it.Port, $when
+            "     {0}" -f $it.Name
+            $i++
+        }
+
+        # preguntar por filtro de MAC despues del primer listado
+        $wantMac = Read-Host "`nDeseas filtrar por MAC? (s/n)"
+        if ($wantMac -match '^(s|si)$') {
+            $macFilter = Read-Host "Ingresa MAC (parcial o completa, sin espacios)"
+            if (-not [string]::IsNullOrWhiteSpace($macFilter)) {
+                $preCount = ($list | Measure-Object).Count
+                $list = $list | Where-Object { $_.MAC -like ("*{0}*" -f $macFilter) }
+                $postCount = ($list | Measure-Object).Count
+                Write-Verbose ("Filtrado MAC '{0}': {1} -> {2}" -f $macFilter, $preCount, $postCount)
+
+                if (-not $list) {
+                    Write-Host ("No hay resultados con MAC que contenga '{0}'." -f $macFilter)
+                    Start-Sleep -Seconds 4
+                    return
+                }
+
+                # reordenar respetando preferencia
+                switch ($orderChoice) {
+                    'A' { $list = $list | Sort-Object -Property Name }
+                    default {
+                        $list = $list | Sort-Object -Property @{
+                            Expression = { if ($_.TS) { $_.TS } else { $_.FallbackTS } }
+                            Ascending  = $false
+                        }
+                    }
+                }
+
+                $Global:FilteredArchivos = $list.File
+
+                Write-Host ("`nResultados filtrados por MAC (~'{0}'):`n" -f $macFilter)
+                $i = 1
+                foreach ($it in $list) {
+                    $when = if ($it.TS) { $it.TS.ToString('yyyy-MM-dd HH:mm:ss') } else { ($it.FallbackTS.ToString('yyyy-MM-dd HH:mm:ss') + ' *') }
+                    "{0,3}. {1,-22}  MAC={2,-14}  Port={3,-8}  Fecha={4}" -f $i, $it.Model, $it.MAC, $it.Port, $when
+                    "     {0}" -f $it.Name
+                    $i++
+                }
+            }
+        }
+
+        Write-Host "`nListo. Puedes usar `$Global:FilteredArchivos para acciones posteriores."
+        Write-Verbose "Fin normal"
+    }
+    catch {
+        Write-Host ("Error: {0}" -f $_.Exception.Message)
+        Write-Verbose ("Stack: {0}" -f $_.Exception.ToString())
+    }
+} # fin de la funcion Show-HistoryMenu
 
 
 function ResetEmbeddedPython {
@@ -202,6 +505,7 @@ function ResetEmbeddedPython {
         } catch {
             Write-Host "Error eliminando la carpeta embebida: $($_.Exception.Message)"
             Pause
+            Start-Sleep -Seconds 4
             return
         }
     } else {
@@ -297,11 +601,14 @@ function Monitor-Serial {
 
     $macPattern = '^[0-9A-Fa-f]{2}(:[0-9A-Fa-f]{2}){5}$'
 
+    SelectDeviceModel
+
     Write-Host "Seleccione una opcion:"
     Write-Host "1. Desconectar dispositivo manualmente e iniciar monitoreo serial"
     Write-Host "2. Iniciar monitoreo serial directamente (usualmente no permitido)"
     Write-Host "3. Reiniciar dispositivo (sin desconectarlo) e iniciar monitoreo serial"
-    $choice = Read-Host "Ingrese 1, 2 o 3"
+    Write-Host "4. Salir"
+    $choice = Read-Host "Ingrese 1,2 ,3 o 4"
 
     if ($choice -eq '1') {
         Write-Host "Esperando que el dispositivo se desconecte..."
@@ -345,7 +652,10 @@ function Monitor-Serial {
         } finally {
             if ($sp -and $sp.IsOpen) { $sp.Close() }
         }
-    } elseif ($choice -ne '2') {
+    } elseif ($choice -eq '4') {
+        Write-Host "Saliendo..."
+        return
+    }elseif ($choice -ne '2') {
         Write-Host "Opcion no valida. Cancelando operacion."
         return
     }
@@ -363,31 +673,9 @@ function Monitor-Serial {
         # REEMPLAZA tu bloque de deteccion de carpeta por este (poner ANTES de $sp.Open())
 
         # resuelve carpeta base del script o exe, evitando System32
-        $baseDir = $null
+        Set-BaseDir
 
-        if ($PSScriptRoot -and $PSScriptRoot.Trim()) {
-            $baseDir = $PSScriptRoot.TrimEnd('\','/')
-        }
-        elseif ($PSCommandPath -and $PSCommandPath.Trim()) {
-            $baseDir = (Split-Path -Parent $PSCommandPath).TrimEnd('\','/')
-        }
-        elseif ($MyInvocation -and $MyInvocation.MyCommand -and $MyInvocation.MyCommand.Path) {
-            $baseDir = (Split-Path -Parent $MyInvocation.MyCommand.Path).TrimEnd('\','/')
-        }
-        elseif ([System.AppDomain]::CurrentDomain -and [System.AppDomain]::CurrentDomain.FriendlyName -like "*.exe") {
-            # ps2exe: base del exe
-            $baseDir = [System.AppDomain]::CurrentDomain.BaseDirectory.TrimEnd('\','/')
-        }
-        else {
-            # ultimo recurso: si se esta dentro de un .exe cualquiera
-            try {
-                $procExe = [System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName
-                if ($procExe -and $procExe.Trim()) { $baseDir = (Split-Path -Parent $procExe).TrimEnd('\','/') }
-            } catch {}
-            if (-not $baseDir) { $baseDir = (Get-Location).Path.TrimEnd('\','/') }
-        }
-
-        Write-Host "BaseDir: $baseDir"
+        Write-Host "BaseDir: $script:baseDir"
 
         $historyDir = Join-Path $baseDir "historial"
         if (-not (Test-Path -LiteralPath $historyDir)) {
@@ -395,10 +683,10 @@ function Monitor-Serial {
         }
 
         $fileSafePort = ($port -replace '[\\/:*?"<>|]', '_')
-        $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+        $timestamp = Get-Date -Format "dd-MM-yy_HH-mm-ss"
         $macClean = if ([string]::IsNullOrWhiteSpace($mac)) { "Unknown" } else { ($mac -replace ':', '') }
 
-        $logPath = Join-Path $historyDir ("serial_{0}_{1}_{2}.txt" -f $macClean, $fileSafePort, $timestamp)
+        $logPath = Join-Path $historyDir ("serial_{0}_{1}_{2}_{3}.txt" -f $script:selectedDevice, $macClean, $fileSafePort, $timestamp)
         New-Item -ItemType File -Path $logPath -Force | Out-Null
         $sw = New-Object System.IO.StreamWriter($logPath, $true, [System.Text.Encoding]::UTF8)
         $sw.AutoFlush = $true
@@ -742,7 +1030,14 @@ function SelectCOMPort {
     Write-Host "1. Elegir por indice (con probing rapido de MAC)"
     Write-Host "2. Ingresar COM manualmente (ej: COM4)"
     Write-Host "3. Usar listado existente (WMI/Device Manager) e intentar MAC solo del elegido"
+    Write-Host "4. Salir"
     $modo = Read-Host "Opcion"
+
+    if( $modo -eq "4" ) {
+    Write-Host "Saliendo..."
+    return $null
+    }
+
 
     # regex y extraccion de COMN
     $comRegex        = '\(COM\d+\)'
@@ -817,6 +1112,10 @@ function SelectCOMPort {
 
     # manejo de opcion 1 y 3: seleccionar por indice
     $sel = Read-Host "`nSeleccione un puerto por indice"
+    if ([string]::IsNullOrWhiteSpace($sel)) {
+    return
+    }
+
     $idx = 0
     if (-not [int]::TryParse($sel, [ref]$idx) -or $idx -lt 1 -or $idx -gt $ports.Count) {
         Write-Host "Indice invalido."; Pause; return $null
@@ -840,6 +1139,7 @@ function SelectCOMPort {
             $macElegida = $r3.macs[$puertoElegido]
         }
     }
+
 
     # retornar objeto con puerto y mac
     return [pscustomobject]@{
@@ -872,10 +1172,30 @@ function LoadLocalFirmware {
     Add-Type -AssemblyName System.Windows.Forms
 
     Write-Host ""
+    Write-Host "Seleccione el M00 usado en esta version de proyecto:"
+    # importante no revelar informacion de mcu a cliente
+    Write-Host " 1) M00A2" #eps32s3
+    Write-Host " 2) M00A1" #esp32c3
+    Write-Host " 3) Salir"
+    $global:mcu = Read-Host "Ingrese 1 o 2"
+    if($global:mcu -eq "1") {
+    $global:mcu = "esp32s3"
+    } elseif($global:mcu -eq "2") {
+    $global:mcu = "esp32c3"
+    } elseif($global:mcu -eq "3") {
+    return
+    } else {
+    Write-Host "Opcion invalida"; Pause; return
+    }
+
+
+    Write-Host ""
     Write-Host "Seleccione el metodo de carga:"
     Write-Host "  1) Selector de archivos (OpenFileDialog)"
     Write-Host "  2) Ruta base (local o URL) que contenga bootloader.bin, partitions.bin y firmware.bin"
-    $mode = Read-Host "Ingrese 1 o 2"
+    Write-Host "  3) Salir"
+
+    $mode = Read-Host "Ingrese 1, 2 o 3"
 
     $boot = $null
     $part = $null
@@ -966,7 +1286,12 @@ function LoadLocalFirmware {
         }
     }
     else {
+        if( $mode -eq "3") {
+        Write-Host "Saliendo..."
+        return
+        }else{
         Write-Host "Opcion invalida."; Pause; return
+        }
     }
 
     # Seleccion de puerto (puede devolver string o un objeto con .Port y .Mac)
@@ -995,7 +1320,7 @@ function LoadLocalFirmware {
     # CRUCIAL: preparar argumentos como array para evitar comillas incrustadas
     $eraseArgs = @(
         '-m','esptool',
-        '--chip','esp32s3',
+        '--chip', $global:mcu,
         '--port', $portString,
         'erase-region','0xE000','0x2000'
     )
@@ -1011,7 +1336,7 @@ function LoadLocalFirmware {
     # CRUCIAL: write-flash con flags nuevos y sin comillas en rutas
     $flashArgs = @(
         '-m','esptool',
-        '--chip','esp32s3',
+        '--chip',$global:mcu,
         '--port', $portString,
         '--baud','115200',
         '--before','default-reset',
@@ -1103,10 +1428,9 @@ function SelectDeviceModel {
         $choice = Read-Host "Seleccione una opción"
 
         switch ($choice) {
-            "1" { $script:SelectedDevice = "EA01J"; DownloadFirmware $script:SelectedDevice; return }
-			"2" { $script:SelectedDevice = "CA01N"; DownloadFirmware $script:SelectedDevice; return }
-			"3" { $script:SelectedDevice = "EB01M"; DownloadFirmware $script:SelectedDevice; return }
-
+            "1" { $script:SelectedDevice = "EA01J"; return }
+			"2" { $script:SelectedDevice = "CA01N"; return }
+			"3" { $script:SelectedDevice = "EB01M"; return }
             "4" { return }                     # salir sin menú principal
             default { Write-Host "Opcion invalida"; Pause }
         }
@@ -1131,12 +1455,27 @@ function DownloadFirmware($device)
 
 function FlashESP32Erase 
 {
+    Write-Host "Seleccione el M00 usado en esta version de proyecto:"
+    # importante no revelar informacion de mcu a cliente
+    Write-Host " 1) M00A2" #eps32s3
+    Write-Host " 2) M00A1" #esp32c3
+    Write-Host " 3) Salir"
+    $global:mcu = Read-Host "Ingrese 1 o 2"
+    if($global:mcu -eq "1") {
+        $global:mcu = "esp32s3"
+    } elseif($global:mcu -eq "2") {
+        $global:mcu = "esp32c3"
+    } elseif($global:mcu -eq "3") {
+        Write-Host "Salir"
+        return
+    }
+
     $port = SelectCOMPort
-    & "$venvPython" -m esptool --chip esp32s3 --port $port.Port erase_flash
+    & "$venvPython" -m esptool --chip $global:mcu --port $port.Port erase_flash
     Pause
 }
 
-function UpdateFirmwareAndMonitor 
+function UpdateFromAioServer 
 {
 	
 	if (-not $script:SelectedDevice) {
@@ -1170,7 +1509,7 @@ function UpdateFirmwareAndMonitor
     }
     Pause
 	SerialMonitor($port)
-} # end of UpdateFirmwareAndMonitor()
+} # end of UpdateFromAioServer()
 
 # =========================
 #  Utilidad: cargar QRCoder

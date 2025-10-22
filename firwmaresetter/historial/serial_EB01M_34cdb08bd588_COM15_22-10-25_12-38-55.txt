@@ -1,0 +1,30 @@
+﻿------------------------------------------
+GAN ELECTRIFIER ??????????? - ESP32-C3-WROOM-02
+------------------------------------------
+Project version v0.1.794, built 2025-10-22 09:38:07.340432
+[  3092][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+[  3099][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+[  3105][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+[  3111][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+---------------------------------
+DEVICE STATUS:
+Fence: [  3117][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+???? OFF.
+Speed: [  3123][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+???? LOW.
+AutoSense Status: [  3129][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+???? OFF.
+Buzzer sync with: [  3135][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+TRIGGER. | | |
+---------------------------------
+[  3143][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+===== Boot Monitor =====
+Total boots (persistentes): 5
+POWERON : 0
+SW      : 0
+WDT     : 0
+BROWNOUT: 0
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
