@@ -1317,12 +1317,23 @@ function LoadLocalFirmware {
         Set-Variable -Name $p -Value (Resolve-Path -LiteralPath $val).Path
     }
 
+     $noborrarData = $false
+    switch ($global:mcu) 
+    {
+    'esp32s3' { $otaAddr = '0xE000' ; $otaLenght = '0x2000'}
+    'esp32c3' { $otaAddr = '0x9000' ; $otaLenght = '0x2000' ; $noborrarData = $true}
+    default   { $otaAddr = '0xE000' ; $otaLenght = '0x2000'}
+    }
+
+    if($noborrarData -eq $false){
+    # 0xE000 Es la direccion de inicio en la memoria flash.
+    # 0x2000 Es el tamano del bloque a borrar.
     # CRUCIAL: preparar argumentos como array para evitar comillas incrustadas
     $eraseArgs = @(
         '-m','esptool',
         '--chip', $global:mcu,
         '--port', $portString,
-        'erase-region','0xE000','0x2000'
+        'erase-region',$otaAddr,$otaLenght
     )
 
     # Ejecutar erase-region sin comillas extra
@@ -1332,7 +1343,12 @@ function LoadLocalFirmware {
     } else {
         Write-Host "❌ Error al borrar otadata"
     }
+    
+    }else{
+        Write-Host " ========= Borrado de ota data anulado debido a que esta EN DESARROLLO para esta version de MCU "
+    }
 
+    # CARGA DE NUEVO CODIGO
     # CRUCIAL: write-flash con flags nuevos y sin comillas en rutas
     $flashArgs = @(
         '-m','esptool',

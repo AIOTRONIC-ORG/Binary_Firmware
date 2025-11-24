@@ -1,0 +1,901 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.325, built 2025-10-14 08:28:17.679692
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : CA01N, ModelHybrid : 02S3_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUb2eALyVf0ft5kZemlewUaWLRSFMwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MTAwMzE5NDgy
+OFoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALLvqMpGQJtKXGy5LRJy
+LJjYJPPmh2ZGnPw/Djql3jtH+hOut5B4YM5JjSGeFZ+WmVLOrZPVI4GxOGMUn8+f
+eaWKnnWtEbqGU5rd3ATxfH7N41kib7/zI8Hev9vScjj6woElmW6XxkbbDSWPWpD9
+IUXcDP4jqdL6hYTcJZqzTfbucUxxKF9nGqhCC1ffGlSUZj/RpkviRdt2X6k/ig4R
+0SdPGKTtEYdOScHRll7DE556HRIc14dvkL07b+t8Cbh99yJ5CAVtOWHi6W1+e4Hb
+mfcEGl6pDKrgIomAWG6yKHqPb9MKJ3YEoOeiyqeyyIGMKyV3BF6XixpqnPevoX8m
+8DcCAwEAAaNgMF4wHwYDVR0jBBgwFoAU5qsxURMqOLRlSQi3/LyDbNV3xLswHQYD
+VR0OBBYEFDjqo/TgVirA1UJRmGJoWqQTvXYwMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQALnZWs1RerVy9P9nuunoS4ScgI
+EU97rsz4TJcB3obzqRjc67dB/qgEfvFjwDxEAK0E2hjyUW9GAk9wGQPAb1rWEykP
+nBsBiAo6FMKQvLnjn8MllgQR1/W230+KGzUsVv+D5+rjKHH00wN8Mg3n0lWJQD4L
+r+VSQnLXbEHqS6UF4P/F7dVDuPIZ5A0KVxI+ZC6J9h4OHKyooU0IP+afzcXjFRQk
+yT//BdFynXHpWGagMbiQpRTchLkfFnIQYn+6xSGV1jJcxgSYM8m7hLLeK42QQndc
+IkG401sIVeQ1X7DTyGzS5CeVSCMOmW3HSK5xJ7+fIxjxGXGxeA4UK3y6cGCL
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAsu+oykZAm0pcbLktEnIsmNgk8+aHZkac/D8OOqXeO0f6E663
+kHhgzkmNIZ4Vn5aZUs6tk9UjgbE4YxSfz595pYqeda0RuoZTmt3cBPF8fs3jWSJv
+v/Mjwd6/29JyOPrCgSWZbpfGRtsNJY9akP0hRdwM/iOp0vqFhNwlmrNN9u5xTHEo
+X2caqEILV98aVJRmP9GmS+JF23ZfqT+KDhHRJ08YpO0Rh05JwdGWXsMTnnodEhzX
+h2+QvTtv63wJuH33InkIBW05YeLpbX57gduZ9wQaXqkMquAiiYBYbrIoeo9v0won
+dgSg56LKp7LIgYwrJXcEXpeLGmqc96+hfybwNwIDAQABAoIBAQCqINGEGI1+2JHN
+0bZ37lRWslNYDpw38vV5o948hs4n4QR1SE5BryKjoCzuhKaciIyYvectQp4yxjQN
+iGN1/XOkoIqO6hGMHgFJop15mby7t7fsXKCRiXQ69TXHpGxznn/mWMBr9SRQ5B64
+0nbSmcnT6Sf1TiU+cnEWZFXgo5CCMJYY8/zKQn067m82v1s3IXYjYT4RkfkxClum
+zExGIEguHV3iSouyd1mZqma50T2tmdF4rBE4LOjrWAsAV7cb2ZOaOAgstqJpmUiU
+zwAO57gFQRQQ0CSHJjuDxWLjjtutNxlSy30AoRHdJxHzKm2hTaxi5DgLiNK/46Sw
+xjsPrCjhAoGBANzoCx5JfwVdPPMbb3m4mLxqXIy/jNiQ8tVemEYRqeWfVF8kRnX/
+s1G/kg6iRRCX4cLmjoxTpJmxq/KKw5gsAzc/oE0qiYVOj1+Vm+y1od8YYs2Sz9gs
+0JNOLfa7HUGu9E+AhbeGtpXgQhRely7prBnJLUhkan6U6K+oybJc5MZnAoGBAM9c
+vocWY+WQUnnqzrq1R6sL5HkkzR5dNHRNfQfac56ck6gWnV8xfyeMGzfmh56QKNhe
+5YdDKoB9zsZFoXWMS8BeHgRQkFBw7xQajMySiTMS81Cs0h7n0y3radJUfkNewiAU
+k01nKvac9zxu0Dk7NWFpK2f6OMG6lSf4fXlYgEWxAoGAVcZH4ue4yXVtoBvMCiBS
+Nf66lvAdmU2W7KCBUduz83QNR7AHJ/Q0RY60ALijRpEi2RG60eP8aq0hTdjxn5mf
+Wgl7jdrxcPCTHRMzaxMPmleWranOyGqGRlw53q7C6mkrdd86jItjRAjCv7QG0fFr
+oMuLqKtM6n+ZZfOM9ZO6RQsCgYAMP38lfYYTBi5I8zyYvKJqEP7CxRC0jW7Ou9D5
+yMZxhPAXypYrDEJldJoa+CvkisFO3nQSRD5bbpLrFSvPRKUozKZbPOL5TWJhvpu4
+baNa9/CVQE/88VaA7NnISaNXmV5ABNcaiFB6VpUn5ae46a1ifpLIxnfZwYqT3NKU
+e0zAUQKBgQDQ3nkA+CKwcrD6NR247UFnUDpX5WtuIOQqoPvsqksaYl3nh3hDCAPk
+85N1WNvJv1tkESI/qip9xtqFcwto2dT3bZd2IAbIyF8lzcW8fCW+9G7E+nd0Ej36
+hXWnX3P1THMnli+ZsYBQmCfxaDI0bPh+RbK/sdPufOB04/UDJCPitw==
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+JOB_CA01N_30eda01e4ae8_1761242438923
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 30:ED:A0:1E:4A:E8-CA01N
+actulizando get pgm 1 desde permanent
+actulizando get pgm 2 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 1
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 281
+Free Entries: 349
+Namespace Count: 16
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core  ******************** Task ledsrgb_sc initialized correctly@@@@@@@@@ electroconf_anyvar_changed by t_alarm
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+302388
+@@@@@@@@@ electro_anyvar_changed by pgm1
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Credentials already exists in Flash
+AIOTRONIC4
+Ch0c0ai0@
+@@@@@@@@@ electroconf_anyvar_changed by tp_zone
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+302312
+@@@@@@@@@ electroconf_anyvar_changed by tp_buzzer
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+264576
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by CSmart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN: 1Tiempo WiFi LAN: 2[WiFi] GOT_IP: 192.168.18.11
+[WiFi] GOT_IP: 192.168.18.11
+??? InSSID:AIOTRONIC4
+PzS:Ch0c0ai0@
+Internet and Network Avaivable
+WiFi Connected to : AIOTRONIC4
+IP Address: 192168.18.11
+MAC Address: 30:ED:A0:1E:4A:E8
+La intensidad de la se??al es :
+-54
+La velocidad de la se??al internet es :
+********************   Deletion of tasks has started ( making space for create wifi tasks )
+**** el task Radiofre no existia, innecesario eliminarlo
+**** el task siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Before is certified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+########################amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/30:ED:A0:1E:4A:E8/jobs/notify
+Trying to suscribe to : 30:ED:A0:1E:4A:E8/CA01N == Suscripci??n Exitosa !!
+Trying to suscribe to : 30:ED:A0:1E:4A:E8/CA01N_confTrying to suscribe to : $aws/things/30:ED:A0:1E:4A:E8/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying to main loop fortt finished : 1
+alexafirsttime :
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.324","firmwareBuildTimeStamp":"2025-10-13 18:18:04.452953","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+----
+******************** Task alexa_sc initialized correctly
+Task alexa running on core
+0
+Welcome to Alexa Device Program :0
+1
+2
+3
+formacion a alexa
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : JOB_CA01N_30eda01e4ae8_1761242438923
+JOB_CA01N_30eda01e4ae8_1761242438923
+JSON docconf : 179
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 107
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"positio":0},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1}}
+-A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.325","firmwareBuildTimeStamp":"2025-10-14 08:28:17.679692","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"10:42:04AM_301025","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"zone":0,"pgm1":1,"pgm2":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core
+1
+Vr:69.00 % 1417.00 Battery Caution- Multiplo de 5 published :
+69%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4A:E8
+Message Payload :  {"pb":0,"user":{"id:0,"src":{"type":0,"nro":0}},"battLvl":69}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### STATE_QUERY BY TUYA MODULE
+Unknown, returning .....
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:72.00 % 1421.00 ,
+####### Heartbeat package
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1},"mode":0}
+--------
+############################El valo##########4
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+0
+2
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168432
+Sending offline (physical controls added) to the app
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+controls :{
+};
+JSON docconf : 46
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+164880
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"pb":0,"rf_conf":{"action":8,"ctrls_off":[]}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"user":{"id":2,"src":{"type":2}},"rf_conf":{"action":-2}}
+-------------
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168380
+Delete ONLINE controls, activated
+USR1RF1 : 0
+USR1RF2 : 0
+USR1RF3 : 0
+USR2RF1 : 0
+USR2RF2 : 0
+USR2RF3 : 0
+USR3RF1 : 0
+USR3RF2 : 0
+USR3RF3 : 0
+USR4RF1 : 0
+USR4RF2 : 0
+USR4RF3 : 0
+USR5RF1 : 0
+USR5RF2 : 0
+USR5RF3 : 0
+USR6RF1 : 0
+USR6RF2 : 0
+USR6RF3 : 0
+USR7RF1 : 0
+USR7RF2 : 0
+USR7RF3 : 0
+USR8RF1 : 0
+USR8RF2 : 0
+USR8RF3 : 0
+USR9RF1 : 0
+USR9RF2 : 0
+USR9RF3 : 0
+USR10RF1 : 0
+USR10RF2 : 0
+USR10RF3 : 0
+USR11RF1 : 0
+USR11RF2 : 0
+USR11RF3 : 0
+USR12RF1 : 0
+USR12RF2 : 0
+USR12RF3 : 0
+USR13RF1 : 0
+USR13RF2 : 0
+USR13RF3 : 0
+USR14RF1 : 0
+USR14RF2 : 0
+USR14RF3 : 0
+USR15RF1 : 0
+USR15RF2 : 0
+USR15RF3 : 0
+USR16RF1 : 0
+USR16RF2 : 0
+USR16RF3 : 0
+USR17RF1 : 0
+USR17RF2 : 0
+USR17RF3 : 0
+USR18RF1 : 0
+USR18RF2 : 0
+USR18RF3 : 0
+USR19RF1 : 0
+USR19RF2 : 0
+USR19RF3 : 0
+USR20RF1 : 0
+USR20RF2 : 0
+USR20RF3 : 0
+RF ONLINE Controllers deleted  !!
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168228
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"user":{"id":2,"src":{"type":2,"nro":0}},"rf_conf":{"action":1,"code":0,"position":0},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+##########2
+############################El valor de var4
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+0
+2
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168380
+Vr:69.00 % 1418.00 , Add control enabled
+aqui estoy en add online control
+3 code_RF DEC: 303616
+3 code_RF HEX: 4A200
+Espacio disponible encontrado en la posicion 0 Del usuario 2
+0
+0
+RF Controller stored
+USER: 2 Control Nro: 1 Code: 303616
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168232
+JSON docconf : 220
+Publish from electroconf_publishMessage
+####### Heartbeat package
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Pa"pb":0,"user":{"id":2,"src":{"type":0,"nro":0}},"rf_conf":{"action":3,"code":303616,"position":1},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:69.00 % 1418.00 ,
+code_RF ABS :241054485
+code_RF ABS BIN :1110010111100011001100010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :303637
+code_RF ABS BIN :1001010001000010101
+code_RF ABS BIN # :19
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 303616
+code_RF BIN : 1001010001000000000
+code_RF BIN # :19
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Online Control
+---------------high stack water mark at rf() task is :  3244
+3
+303616
+21
+Se desactivo pgm1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa---------------hi3820
+7
+---------------high stack water mark at ledsrgb() task is :  592
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N
+Message Payload :  {"pb":0,"user":{"id":2,"src":{"type":1,"nro":1}},"pgm1":0}
+-----------------------
+Turn off SirenAio sound
+A Callback has been discarted bc message is from device itself
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+####### Heartbeat package
+code_RF ABS :303637
+code_RF ABS BIN :1001010001000010101
+code_RF ABS BIN # :19
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 303616
+code_RF BIN : 1001010001000000000
+code_RF BIN # :19
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Online Control
+---------------high stack water mark at rf() task is :  3244
+3
+303616
+21
+Se activo pgm1 en task rf
+h stack water mark at wireless() task is :  3820
+7
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+---------------high stack water mark at ledsrgb() task is :  592
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N
+Message Payload :  {"pb":0,"user":{"id":2,"src":{"type":1,"nro":1}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+Turn off SirenAio sound
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Message arrived in topic: Message Payload :  {"user":{"id":2,"src":{"type":2,"nro":0}},"rf_conf":{"action":2,"code":303616,"position":1},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+2
+############################El valor de variable pgms size es : 4
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+0
+2
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168376
+Delete control enabled
+RF Controller deleted
+USER: 2 Control Nro: 1
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168220
+Vr:69.00 % 1417.00 , Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1},"mode":0}
+---------------------
+############################El valor de variable pgms size es : 2
+############################El valopgms size es : 4
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+0
+2
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168392
+Sending offline (physical controls added) to the app
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+controls :{
+};
+JSON docconf : 46
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+164712
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"pb":0,"rf_conf":{"action":8,"ctrls_off":[]}}
+----------------------
+A Callback has been discarted bc message is from device itself
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+code_RF ABS :241054485
+code_RF ABS BIN :1110010111100011001100010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+button rf pressed 1 time
+Screen 1 hold_for_rf initialized
+RF Add Offline control activated (by physical Button)
+aqui estoy en add offline control
+2 code_RF DEC: 241054464
+2 code_RF HEX: E5E3300
+0
+0
+Espacio disponible encontrado en la posicion 0 Del usuario 1
+RF offline Controller succesfully stored
+Control Nro: 1 Code: 241054464
+Answer to the app sended messagesef.rf_action.actionCurrent = 3
+RF OFFLINE CONTROLS :
+RF1 : 241054464
+Vr:70.00 % 1419.00 Battery Caution- Multiplo de 5 published :
+70%
+, @@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+167824
+@@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+####### Heartbeat package
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":70}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"user":{"id":1,"src":{"type":0,"nro":0}},"rf_conf":{"action":7,"code":0,"position":0},"all_conf":{"t_alarm":5,"tp_zone":1,"pgms":[{"id":1,"t":133,"tp":0},{"id":2,"t":0,"tp":2}]},"other_conf":{"tp_buzzer":1},"mode":0}
+-----------------------
+############################El valor de variable pgms size es : 2
+############################El valor de variablpgms size es : 4
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+0
+2
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+168204
+Sending offline (physical controls added) to the app
+@@@@@@@@@ electroconf_anyvar_changed by rf_action
+In tuya electroconf updatings
+controls :{
+{position: 0 , code : 241054464 }
+};
+JSON docconf : 77
+Publish from electroconf_publishMessage
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+actulizando put pgm 2 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 0
+Number of arcs: 0
+Type of zone1: 1
+Type of pgm1: 0
+Time of pgm1: 133
+Type of pgm2: 2
+Time of pgm2: 0
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+164904
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N_conf
+Message Payload :  {"pb":0,"rf_conf":{"action":8,"ctrls_off":[{"position":0,"code":241054464}]}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Vr:71.00 % 1420.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:67.00 % 1415.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:71.00 % 1420.00 ,
+####### Heartbeat package
+Vr:70.00 % 1419.00 ,
+####### Heartbeat package
+Vr:70.00 % 1419.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:72.00 % 1421.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:100.00 % 1469.00 Battery Caution- Multiplo de 5 published :
+100%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:69.00 % 1418.00 ,
+####### Heartbeat package
+Vr:70.00 % 1419.00 Battery Caution- Multiplo de 5 published :
+70%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 30:ED:A0:1E:4A:E8/CA01N
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battvl":70}
+--------A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+pgm 2 en electro_effects_pgm_2_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE
+Vr:69.00 % 1417.00 ,
+####### Heartbeat package
+####### WIFI_WORKING STATUS
+####### STATE_QUERY BY TUYA MODULE

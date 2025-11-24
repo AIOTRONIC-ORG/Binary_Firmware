@@ -19,7 +19,7 @@ TRIGGER. | | |
 ---------------------------------
 [  3143][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
 ===== Boot Monitor =====
-Total boots (persistentes): 3
+Total boots (persistentes): 6
 POWERON : 0
 SW      : 0
 WDT     : 0
@@ -28,3 +28,25 @@ PANIC   : 0
 Session boots (RTC): 1
 ??ltimo reset: UNKNOWN (0)
 ========================
+==========
+Function: RF Control
+Option: Unlink RF control
+==========
+==========
+Function: Solar Charging
+Option: Auto Sense OFF
+==========
+===== Boot Monitor =====
+Total boots (persistentes): 6
+POWERON : 0
+SW      : 0
+WDT     : 0
+BROWNOUT: 0
+PANIC   : 0
+Session boots (RTC): 1
+??ltimo reset: UNKNOWN (0)
+========================
+==========
+Function: Solar Charging
+Option: Auto Sense ON
+==========
