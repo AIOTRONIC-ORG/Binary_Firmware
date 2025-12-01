@@ -1,0 +1,1144 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.811, built 2025-11-12 09:52:25.748700
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+[ 10375][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[ 10382][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10390][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10398][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+MAC STA deviceThing: 30:ED:A0:1E:57:CC
+Certifications Registered :
+V????%
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10409][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+[ 13418][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: alarm_st NOT_FOUND
+[ 13425][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: alarm_cs NOT_FOUND
+[ 13432][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: key NOT_FOUND
+[ 13439][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: islocked NOT_FOUND
+[ 13446][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: zone NOT_FOUND
+[ 13453][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: pgm1 NOT_FOUND
+[ 13460][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: battlvl NOT_FOUND
+actulizando get pgm 1 desde permanent
+[ 13518][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: tp_rf NOT_FOUND
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+rf action : 0
+rf position : 0
+rf code : 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+[ 14532][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR1RF1 NOT_FOUND
+[ 14539][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR1RF2 NOT_FOUND
+[ 14547][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR1RF3 NOT_FOUND
+[ 14554][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR2RF1 NOT_FOUND
+[ 14561][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR2RF2 NOT_FOUND
+[ 14568][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR2RF3 NOT_FOUND
+[ 14575][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR3RF1 NOT_FOUND
+[ 14582][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR3RF2 NOT_FOUND
+[ 14589][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR3RF3 NOT_FOUND
+[ 14596][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR4RF1 NOT_FOUND
+[ 14603][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR4RF2 NOT_FOUND
+[ 14611][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR4RF3 NOT_FOUND
+[ 14618][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR5RF1 NOT_FOUND
+[ 14625][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR5RF2 NOT_FOUND
+[ 14632][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR5RF3 NOT_FOUND
+[ 14639][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR6RF1 NOT_FOUND
+[ 14646][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR6RF2 NOT_FOUND
+[ 14653][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR6RF3 NOT_FOUND
+[ 14660][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR7RF1 NOT_FOUND
+[ 14667][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR7RF2 NOT_FOUND
+[ 14675][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR7RF3 NOT_FOUND
+[ 14682][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR8RF1 NOT_FOUND
+[ 14689][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR8RF2 NOT_FOUND
+[ 14696][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR8RF3 NOT_FOUND
+[ 14703][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR9RF1 NOT_FOUND
+[ 14710][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR9RF2 NOT_FOUND
+[ 14717][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR9RF3 NOT_FOUND
+[ 14724][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR10RF1 NOT_FOUND
+[ 14732][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR10RF2 NOT_FOUND
+[ 14739][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR10RF3 NOT_FOUND
+[ 14746][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR11RF1 NOT_FOUND
+[ 14753][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR11RF2 NOT_FOUND
+[ 14760][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR11RF3 NOT_FOUND
+[ 14768][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR12RF1 NOT_FOUND
+[ 14775][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR12RF2 NOT_FOUND
+[ 14782][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR12RF3 NOT_FOUND
+[ 14789][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR13RF1 NOT_FOUND
+[ 14796][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR13RF2 NOT_FOUND
+[ 14804][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR13RF3 NOT_FOUND
+[ 14811][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR14RF1 NOT_FOUND
+[ 14818][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR14RF2 NOT_FOUND
+[ 14825][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR14RF3 NOT_FOUND
+[ 14832][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR15RF1 NOT_FOUND
+[ 14840][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR15RF2 NOT_FOUND
+[ 14847][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR15RF3 NOT_FOUND
+[ 14854][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR16RF1 NOT_FOUND
+[ 14861][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR16RF2 NOT_FOUND
+[ 14868][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR16RF3 NOT_FOUND
+[ 14876][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR17RF1 NOT_FOUND
+[ 14883][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR17RF2 NOT_FOUND
+[ 14890][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR17RF3 NOT_FOUND
+[ 14897][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR18RF1 NOT_FOUND
+[ 14904][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR18RF2 NOT_FOUND
+[ 14912][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR18RF3 NOT_FOUND
+[ 14919][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR19RF1 NOT_FOUND
+[ 14926][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR19RF2 NOT_FOUND
+[ 14933][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR19RF3 NOT_FOUND
+[ 14940][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR20RF1 NOT_FOUND
+[ 14948][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR20RF2 NOT_FOUND
+[ 14955][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: USR20RF3 NOT_FOUND
+RF OFFLINE CONTROLS :
+[ 14962][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF1 NOT_FOUND
+[ 14969][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF2 NOT_FOUND
+[ 14976][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF3 NOT_FOUND
+[ 14982][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF4 NOT_FOUND
+[ 14989][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF5 NOT_FOUND
+[ 14996][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF6 NOT_FOUND
+[ 15003][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF7 NOT_FOUND
+[ 15009][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF8 NOT_FOUND
+[ 15016][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF9 NOT_FOUND
+[ 15023][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF10 NOT_FOUND
+RF SENSORS :
+[ 15030][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF1 NOT_FOUND
+[ 15037][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF2 NOT_FOUND
+[ 15043][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF3 NOT_FOUND
+[ 15050][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF4 NOT_FOUND
+[ 15057][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF5 NOT_FOUND
+[ 15064][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF6 NOT_FOUND
+[ 15070][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF7 NOT_FOUND
+[ 15077][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF8 NOT_FOUND
+[ 15084][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF9 NOT_FOUND
+[ 15091][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: RF10 NOT_FOUND
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 23
+Free Entries: 607
+Namespace Count***************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+@@@@@@@@@ electroconf_anyvar_changed by t_alarm  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+@@@@@@@@@ electroconf_anyvar_changed by delay_fence
+@@@@@@@@@ electroconf_anyvar_changed by n_arcs
+@@@@@@@@@ electroconf_anyvar_changed by tp_buzzer
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+[ 15107][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: tp_rf NOT_FOUND
+in electroconf_update_past_data
+HEAP MEMORY ABSOLUTE :
+304352
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+[ 15185][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: alarm_st NOT_FOUND
+[ 15192][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: alarm_cs NOT_FOUND
+[ 15199][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: key NOT_FOUND
+Getting Wifi Credentials from FlashManager ...
+[ 15201][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 152[1 31]5[2V1]3[]P[rEe]f[ePrreenfceerse.nccpeps:.3c8p8p]: 4g8e3tI]n tg(e)t:S tnrvisn_gg(e)t:_ in3v2s _fgaeitl_:s tzro nlee nNOfTa_iFlO: UpNDas
+word NOT_FOUND
+[ 15227][V][Preferences.cpp:388] getInt(): nvs_get_i32 fail: pgm1 NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[ 15327][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1180
+[RF_SC] Stack high water mark: 1196
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[ 33244][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 33251][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, re
+[ 33359][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1180
+[RF_SC] Stack high water mark: 1196
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1180
+[RF_SC] Stack high water mark: 1196
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[ 51276][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 51283][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[ 51391][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+*edentials from FlashManager ...
+[ 69308][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 69315][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[ 69423][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certiral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[ 87340][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 87347][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[ 87455][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[RF_SC] Stack high water mark: 1196
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ******** Getting Wifi Credentials from FlashManager ...
+[105372][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[105379][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi C[105487][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[123404][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[123411][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[123519][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+edentials from FlashManager ...
+[141436][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[141443][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[141551][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[EFENCE_SC] Stack high water mark: 1180
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[159468][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[159475][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[159583][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1180
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+edentials from FlashManager ...
+[177500][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[177507][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[177615][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[195532][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[195539][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[195647][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[213564][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[213571][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[213679][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless? Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1196
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+***edentials from FlashManager ...
+[231596][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[231603][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[231711][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certifieCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to
+Getting Wifi Credentials from FlashManager ...
+[249628][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[249635][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[249743][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[267660][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[267667][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials d
+[267775][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[SIREN_SC] Stack high water mark: 2116
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+******** Retrying to Online Mode :::Getting Wifi Credentials from FlashManager ...
+[285692][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[285699][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[285807][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+Before is certifor temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+edentials from FlashManager ...
+[303724][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[303731][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[303839][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+mode ...
+Bral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[321756][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[321763][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[321871][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[RF_SC] Stack high water mark: 1148
+BeforCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[339788][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[339795][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, req
+[339903][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+**edentials from FlashManager ...
+[357820][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[357827][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[357935][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditionaral offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[375852][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[375859][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[375967][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Bnot allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+******** Retrying to O
+Getting Wifi Credentials from FlashManager ...
+[393884][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[393891][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials
+[393999][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[SIREN_SC] Stack high water mark: 2116
+Before is certified conditional in wral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to OnGetting Wifi Credentials from FlashManager ...
+[411916][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[411923][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[412031][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditionalCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+**edentials from FlashManager ...
+[429948][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[429955][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[430063][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in ral offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[447980][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[447987][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi C[448095][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+Th mode ...
+fied conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[466012][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[466019][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[466127][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+******** Retrying to ********
+Getting Wifi Credentials from FlashManager ...
+[484044][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[484051][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[484159][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[RF_SC] Stack high water mark: 1148
+Beal in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+******** Getting Wifi Credentials from FlashManager ...
+[502076][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[502083][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[502191][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[520108][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[520115][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, req
+[520223][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[SIREN_SC] Stack high water mark: 2116
+Before is certiral offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online MGetting Wifi Credentials from FlashManager ...
+[538140][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[538147][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[538255][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified condral offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+**edentials from FlashManager ...
+[556172][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[RF_SC] Stack high water mark: 1148
+[556179][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[556287][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+***Getting Wifi Credentials from FlashManager ...
+[574204][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[574211][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[574319][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified condit
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode :::Getting Wifi Credentials from FlashManager ...
+[592236][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[592243][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[592351][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[EFENCE_SC] Stack high water mark: 1148
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[610268][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[610275][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[610383][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certor temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2116
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Getting Wifi Credentials from FlashManager ...
+[628300][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[628307][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[628415][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified condi
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[646332][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[646339][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, requi
+[646447][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[SIREN_SC] Stack high water mark: 2068
+ional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+*edentials from FlashManager ...
+[664364][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[664371][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[664479][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certifiedCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to
+Getting Wifi Credentials from FlashManager ...
+[682396][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[682403][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[682511][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[700428][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[700435][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[700543][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wirelessral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[718460][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[718467][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[718575][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+Before is certifiedral offline mode has started ....
+Web server not allowed in this firmware version
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::Getting Wifi Credentials from FlashManager ...
+[736492][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[736499][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[736607][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Cr mode ...
+Before is certified conditional in wireless? Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+edentials from FlashManager ...
+[754524][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[754531][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[754639][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[772556][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[772563][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[SIREN_SC] Stack high water mark: 2068
+Wifi Credentials dont exist, required SmartConfigMode
+[772671][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: Getting Wifi Credentials from FlashManager ...
+[790588][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[790595][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[790703][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[808620][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[808627][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[808735][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+edentials from FlashManager ...
+[826652][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[826659][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[826767][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[844684][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[844691][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont
+[844799][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[EFENCE_SC] Stack high water mark: 1148
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+****edentials from FlashManager ...
+[862716][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[862723][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[862831][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wirCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to OnlinGetting Wifi Credentials from FlashManager ...
+[880748][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[880755][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[880863][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified cCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+Getting Wifi Credentials from FlashManager ...
+[898780][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[898787][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[898895][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[916812][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[916819][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+[916927][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+******** Retrying to O Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[934844][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[934851][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[934959][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Br temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[952876][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[952883][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[952991][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[RF_SC] Stack high water mark: 1148
+Before is certified conditional in wireral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[970908][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[970915][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[971023][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[EFENCE_SC] Stack high water mark: 1148
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+***edentials from FlashManager ...
+[988940][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[988947][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[989055][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+[LEDSRGB_SC] Stack high water mark: 604
+ral offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+Getting Wifi Credentials from FlashManager ...
+[1006972][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1006979][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[1007087][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified condi
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[RF_SC] Stack high water mark: 1148
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[1025004][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1025011][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[1025119][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified condral offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[1043036][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1043043][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[1043151][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[EFENCE_SC] Stack high water mark: 1148
+[RF_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[1061068][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1061075][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[1061183][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Cred mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+******** Retrying to Online Mode ::: ********
+Getting Wifi Credentials from FlashManager ...
+[1079100][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[1079107][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+[1079215][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: smartconfig NOT_FOUND
+There is no Credentials Local Wifi Network, activating offline mode ...
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+[LEDSRGB_SC] Stack high water mark: 604
+[RF_SC] Stack high water mark: 1148
+[EFENCE_SC] Stack high water mark: 1148
+[SIREN_SC] Stack high water mark: 2068
+[LEDSRGB_SC] Stack high water mark: 604

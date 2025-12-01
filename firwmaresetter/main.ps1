@@ -1191,7 +1191,7 @@ function LoadLocalFirmware {
 
     Write-Host ""
     Write-Host "Seleccione el metodo de carga:"
-    Write-Host "  1) Selector de archivos (OpenFileDialog)"
+    Write-Host "  1) Selector de archivos LOCALES (OpenFileDialog)"
     Write-Host "  2) Ruta base (local o URL) que contenga bootloader.bin, partitions.bin y firmware.bin"
     Write-Host "  3) Salir"
 
