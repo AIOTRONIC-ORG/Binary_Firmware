@@ -1,7 +1,7 @@
 ﻿[AIO] Tiempo de espera de (5 segundos) :
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
-Project version v0.1.708, built 2025-10-13 17:16:43.237894
+Project version v0.1.709, built 2025-12-01 11:01:58.970529
 Api aioserver mode : PRODUCTION
 father device mode : PRODUCTION
 Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
@@ -9,7 +9,6 @@ Entre a FlashManager_data_from_EEPROM_PowerON
 0
 okok
 El dispositivo SI esta en modo fabrica
-[ 10385][E][Preferences.cpp:483] getString(): nvs_get_str len fail: deviceThing NOT_FOUND
 Certifications Registered :
 -----BEGIN CERTIFICATE-----
 MIIDWTCCAkGgAwIBAgIUerP6cSgkuVQV7g801eIXkUpY638wDQYJKoZIhvcNAQEL
@@ -59,13 +58,13 @@ sF0xDLmrlQ3+MJdB5TRgr1n1jHL0CE/VzGp5cTtYqCvFLbCIw3byNv51n6GOxtO0
 Or7lTL6jNhRR8glPrfBW7lt4cMi1bHeUM42MCaBkEvVguvXr8w4=
 -----END RSA PRIVATE KEY-----
 Certifications OTA Registered
-[ 10406][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+[ 10397][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
 nohay
 icrt : 1
 icrtv1 : 1
 icrtv2 : 1
 icrtv3 : 1
-mac stored : recalculate the mac
+mac stored : 48:CA:43:33:E6:98-EA01J
 actulizando get pgm 1 desde permanent
 end of FlashManager_data_from_EEPROM_PowerON()
 ----MAIN VARIABLES------
@@ -108,8 +107,8 @@ RF OFFLINE CONTROLS :
 RF SENSORS :
 ==== NVS Memory Stats ====
 Total Entries: 630
-Used Entries: 338
-Free Entries: 292
+Used Entries: 340
+Free Entries: 290
 Namespace Count: 17
 ******************** Task wirelessfi_sc initialized correctly
 Task wirelessfi running on core Setup concluido
@@ -137,57 +136,105 @@ zone 1 en electro_effects_zone_1_tuyareport
 pgm 1 en electro_effects_pgm_1_tuyareport
 alarm 1 en electro_effects_alarm_1_rgb_tuyareport
 electro main past data UPDATED _ in loop()
-Wifi Credentials already exists in Flash
-Ch0c0ai0@
-button wifi pressed 1 time
+Wifi Crede
 WiFi.begin first try 4 seconds
-Se logr?? conectar a Network a la primera !
+60No Se logr?? conectar a Network a la primera !
 credentials before smart config
-SSID storage permanent :PSS storage permanent :Ch0c0ai0@
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
 SSID Current detected :
 PSS Current detected :Actual Password is not allowed to be shown by Class
 Smart config was NOT activated
 Waiting for Wifi
 [WiFi] STA_CONNECTED
 [WiFi] STA_CONNECTED
-[WiFi] GOT_IP: 192.168.18.154
-[WiFi] GOT_IP: 192.168.18.154
-??SSID:AIOTRCh0c0ai0@
-Local Wifii Connected to : AIOTRONIC4
-IP Address: 192.168.18.154
-MAC 48:CA:43:33:E6:98
-La intensidad de l
--64
-La velocidad de la se??al internet es :
-********************   Deletionpace for create wifi tasks )
+Tiempo WiFi LAN: 1[WiFi] GOT_IP: 192.168.18.53
+[WiFi] GOT_IP: 192.168.18.53
+AIOTRONIC4
+PzS:Ch0c0ai0@
+Locted to : AIOTRONIC4
+IP Address: 192.16848:CA:43:-71
+pace for create wifi tasks )
 **** el task ElectricFence no existia, innecesario eliminarlo
-**** el task Radiofrequency no exist siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
-*** wifi Connected SUCCESFULLY FOR EVER ***
+**** el task Radiofrequency no existia, innecesario eliminarlo
+**** el task siren no existia, innecesario eliminarlo Tasks ef, rf and siren have been deleted
+FOR EVER ***
 Before is certified conditional in wireless?
 Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
 Prueba MACC adding :
-Screen 1 hold_for_wifi initialized
 ############################El valor de variable connected to amazon es : 1
 The client connects to the AWS MQTT broker with Thingname :
-$aws/things/48:CA:43:33:E6:98/jobs/notify
-Trying to suscribe to : 48:CA:43:33:E6:98/EA01J == Suscripci??n Exitosa !!
+$aws/thing
+Trying to suscribe to 48:CA:43:33:E6:98/EA01J == Suscripci??n Exitosa !!
 Trying to suscribe to : 48:CA:43:33:E6:98/EA01J_conf == Suscripci??n Exitosa !!
 Trying to suscribe to : $aws/things/48:CA:43:33:E6:98/jobs/notify == Suscripci??n Exitosa !!
 Suscribed to MQTT topics correctly
 end of mqtt() function
 mqtt() 414-line completed
-g to main loop for creating Alexa
-mqtt finishtime : 0
+mqtt has finished, notifying to main ltt finished : 1
+alexafirsttime : 0
 alexafinished : 0
 alexafinished2 : 0
+Task Alexa Created in main loop()
 Message arrived in topic: 48:CA:43:33:E6:98/EA01J_conf
-Message Payload :  {"apb":"AwsBroker","firmwareVersion":"0.1.851","firmwareBuildTimeStamp":"2025-12-01 08:53:42.651915","MCU":"ESP32-S3-N16R8","apiMode":1,"otaType":"aws","mode":99}
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"2025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
 -----------------------
+******************** Task alexa_sc init
+Task alexa running on coreWelcome to Alexa Device Program :0
+1
+2
+3
+Alexa creation confirmation from task alexa
+Fauxmo enviando informacion a alexa
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 179
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
 Publish from electroconf_publishMessage
 JSON doctro : 119
-Pessage in electro_main_first_publish_the_aio_server
-publishs from EMEREGENCY inform to app done
 Message arrived in topic: 48:CA:43:33:E6:98/EA01J_conf
-Message Payload :  {"pb":0,"user":{"i":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
 A Callback has been discarted bc message is from device itself
+ived in topic: 48:CA:43:33:E6:98/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.709","firmwareBuildTimeStamp":"2025-12-01 11:01:58.970529","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"11:07:01AM_011225","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
 Message arrived in topic: 48:CA:43:33:E6:98/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8526231
+sadasdasdasd_config
+Vr:110.00 % 0.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: :CA:43:33:E6:98/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
