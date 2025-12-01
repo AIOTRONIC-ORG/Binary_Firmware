@@ -1,0 +1,17 @@
+EA01J 03 TU
+1f9b6edc255b52d890f6cdb711ec3308e65ef0c0
+v0.1.708
+enviado a produccion , cliente teclam
+13 Octubre 2025
+``	compatible con version de api X  version de app Y.
+subido en OTA S3 until today 12/01/25
+LIBRARIES FIRMWARE COMPATIBLE :
+98992b35f56ead78e58ce1128a6fbc717a391293
+v0.301.190
+
+API MODE : PRODUCTION
+DEVICE MODE : PRODUCTION
+
+
+
+	
