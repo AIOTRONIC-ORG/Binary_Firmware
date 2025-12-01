@@ -1,0 +1,9 @@
+esta version dice 0.1.709
+al revisar el monitor serial
+pero en realidad es la 
+0.1.708, no dudar de que
+es la misma version !!!
+obviamente adaptada para
+el hardware de 02s3
+desde el origen que es 03tu
+
