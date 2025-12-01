@@ -1,0 +1,16 @@
+fgor not depending
+on main repository,
+checkout required.
+
+because that structure is made for separating
+frmwr and pcb by submodels
+instead of only separating bins
+( binaries control ) hard to manage them
+
+IN THIS REPO we can register
+just  important releases 
+and stable versions ...
+to avoid look for that 
+versions ins git log
+of main dev repositories
+( waste of time )
