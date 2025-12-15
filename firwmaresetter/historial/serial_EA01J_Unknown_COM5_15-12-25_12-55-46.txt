@@ -1,0 +1,818 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.708, built 2025-10-13 17:16:43.237894
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10330][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10338][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+[ 10346][E][Preferences.cpp:483] getString(): nvs_get_str len fail: deviceThing NOT_FOUND
+Certifications Registered :
+este dispositivo no tiene certificado
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10357][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+mac stored : recalculate the mac
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 15
+Free Entries: 615
+Namespace Count: 10
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+304936
+[ 14532][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 14540][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+Physical key enabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+skip arcs : 2
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+---------------high stack water mark at e_fence() task is :  1164
+skip arcs : 1
+---------------high stack water mark at e_fence() task is :  1164
+Vr:0.86 , value read: 944.00
+arc detected Nro:
+1
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 933.00
+arc detected Nro:
+2
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 925.00
+arc detected Nro:
+3
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 933.00
+arc detected Nro:
+4
+Physical key disabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+---------------high stack water mark at e_fence() task is :  920
+Physical key enabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+skip arcs : 1
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 931.00
+arc detected Nro:
+1
+Physical key disabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+Physical key enabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+******** Retrying to Online Mode ::: ********
+[ 32558][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 32565][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+skip arcs : 1
+Physical key disabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+---------------high stack water mark at e_fence() task is :  920
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Physical key enabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+skip arcs : 1
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 931.00
+arc detected Nro:
+1
+Physical key disabled
+@@@@@@@@@ electro_anyvar_changed by key-fence
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by isLocked_efence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+******** Retrying to Online Mode ::: ********
+[ 50483][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 50490][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local  mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+******** Retrying to Online Mode ::: ********
+[ 68408][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 68415][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+button wifi pressed 1 time
+button wifi pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+******** Retrying to Online Mode ::: ********
+[ 86333][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 86340][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Beral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[104258][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[104265][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+Before is cral offline mode has started ....
+Web server not allowed in this firmware version
+button wifi pressed 1 time
+button efence pressed 1 time
+button wifi pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+******** Retrying to Online Mode ::: ********
+[122183][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[122190][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+button wifi pressed 1 time
+button wifi pressed 1 time
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+button wifi pressed 1 time
+button efence pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button rf pressed 1 time
+button efence pressed 1 time
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+button rf pressed 1 time
+Screen 1 hold_for_rf initialized
+ejecutando color restore a led
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+RF Add Offline control activated (by physical Button)
+aqui estoy en add offline control
+******** Retrying to Online Mode ::: ********
+[140108][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[140115][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+Th mode ...
+Unknown, returning .....
+ral offline mode has started ....
+Web server not allowed in this firmware version
+2 code_RF DEC: 241054464
+2 code_RF HEX: E5E3300
+0
+0
+rfcodes_check_already_stored_ctrls_online : invalid user value
+Espacio disponible encontrado en la posicion 0 Del usuario 0
+RF offline Controller succesfully stored
+Control Nro: 1 Code: 241054464
+Answer to the app sended messagesef.rf_config[0] = 3
+RF OFFLINE CONTROLS :
+RF1 : 241054464
+ejecutando color restore a led
+code_RF ABS :241054501
+code_RF ABS BIN :1110010111100011001100100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se activo PGM 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :241054501
+code_RF ABS BIN :1110010111100011001100100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se desactivo PGM 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :241054485
+code_RF ABS BIN :1110010111100011001100010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se activo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+******** Retrying to Online Mode ::: ********
+[158033][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[158040][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no C mode ...
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Before is certified conditional in wireleCounter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+skip arcs : 1
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 930.00
+arc detected Nro:
+1
+code_RF ABS :241054485
+code_RF ABS BIN :1110010111100011001100010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se desactivo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+******** Retrying to Online Mode ::: ********
+[175958][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[175965][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no mode ...
+Becertified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+code_RF ABS :241054485
+code_RF ABS BIN :1110010111100011001100010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se activo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+skip arcs : 2
+Enciende Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+skip arcs : 1
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.85 , value read: 932.00
+arc detected Nro:
+1
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.86 , value read: 937.00
+arc detected Nro:
+2
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.86 , value read: 936.00
+arc detected Nro:
+3
+---------------high stack water mark at e_fence() task is :  920
+Vr:0.86 , value read: 939.00
+arc detected Nro:
+4
+code_RF ABS :241054485
+code_RF ABS BIN :1110010111100011001100010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se desactivo CERCO en task rf
+@@@@@@@@@ electro_anyvar_changed by key-fence
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+Apaga Cerco El??ctrico en electro_effects_fence_1
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+---------------high stack water mark at e_fence() task is :  920
+code_RF ABS :241054501
+code_RF ABS BIN :1110010111100011001100100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se activo PGM 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se activo ZONA 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+******** Retrying to Online Mode ::: ********
+[193883][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[193890][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+exist, required SmartConfigMode
+There is no  mode ...
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Before is certified conditioral offline mode has started ....
+Web server not allowed in this firmware version
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se desactivo ZONA 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se activo ZONA 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :241054597
+code_RF ABS BIN :1110010111100011001110000101
+code_RF ABS BIN # :28
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Enciende Siren en task RF
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+TTTTTTTTTTTTTT Siren time has started
+beep sound SirenAio or panic sound SirenAio
+siren on
+siren on
+siren on
+siren on
+siren on
+siren on
+code_RF ABS :241054597
+code_RF ABS BIN :1110010111100011001110000101
+code_RF ABS BIN # :28
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Apaga Siren en task RF
+@@@@@@@@@ electro_anyvar_changed by buzzer[0]
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+ejecutando color restore a led
+electro main past data UPDATED _ in loop()
+siren on
+TTTTTTTTTTTTTT : Siren time has ended , turning off siren
+Turn off SirenAio sound
+******** Retrying to Online Mode ::: ********
+[211808][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[211815][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+code_RF ABS :241054533
+code_RF ABS BIN :1110010111100011001101000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 241054464
+code_RF BIN : 1110010111100011001100000000
+code_RF BIN # :28
+In finish_RF
+it is an RF Offline Control
+---------------high stack water mark at rf() task is :  1036
+3
+Se desactivo ZONA 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Before is certified conditional ral offline mode has started ....
+Web server not allowed in this firmware version
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+******** Retrying to Online Mode ::: ********
+[229733][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[229740][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+ral offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode ::: ********
+[247658][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[247665][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+There is no Credentials Local Wifi Network, activating offline mode ...
+onal in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
