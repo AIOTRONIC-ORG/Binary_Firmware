@@ -1,0 +1,5309 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.708, built 2025-10-13 17:16:43.237894
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_data_from_EEPROM_PowerON
+1
+okok
+El dispositivo NO esta en modo fabrica
+Certifications Registered :
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUSvL1/AxBFjpwEYuswrg8fTQmkUUwDQYJKoZIhvcNAQEL
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MTIxNTE5MDEz
+M1oXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKWHeZvlmU7SUcjADJNx
+qScVAdPzzST7pWmppZVE1cbEsu49ZaP06TP2IUOsJ9SVeLpYZ4R6ntLuRqxrkk4v
+uMyzwqY5d8n24NyHzWnv7KfghrKNnzY++vsmSbFsY4xcgx68GWWGJi1+i0qyJVDr
+AD4zgiC+rU3y4c7R3ykc19sNa2ZzFhoxX3P3/qzL7S5ILZojcoFy70ti4lCGR9Bd
+rKavi5i2VAdGVGF2v/xktxtDHlKjjZF4MPnc65rw4zPFKTrTYt3Pm0JvNH9x4dMY
+7fF0+sJC9GGH90aU3ZmfPwigDAgAQuyuzLs2Q7vDQjA04VoWr2AluglcTII4uyPZ
+nyMCAwEAAaNgMF4wHwYDVR0jBBgwFoAUUUhEgS0qI59+Ryh2T+9EpC6FgcYwHQYD
+VR0OBBYEFEQH8QdOE/iEDnaeThTuRZlqPd9AMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQCMyW7BKimNfeDZkT6vYSXj2wmp
+BCOZ3vyzuc6wX3nnVyva8lYsdG3Qqg8z4JsfZYW/sepbUjHBimewzmp7+UsMeXTy
+VbqkZVyiWEbQdaQ8JxKnz0hK31XACqZudcuGxbWOkPePf/wlGcpSJuA1TyT0Cwwc
+3cljwOCsk2X5OfJbcx9g5FNGFeG0kl9V8PKmXP1b4C076XjxSsCuniIfV+hzWaFo
+khDkpErnNL4jYALypv0ONap9bkLCEVSlh7gmwbKPcV7hwPpDyOPbHlOe5VyfB6Md
+oq7mHJA5045GApNDTyocDsy3Ib3om4SQ4TJuGhXiKRySBpghfSVF8jOajTTz
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEApYd5m+WZTtJRyMAMk3GpJxUB0/PNJPulaamllUTVxsSy7j1l
+o/TpM/YhQ6wn1JV4ulhnhHqe0u5GrGuSTi+4zLPCpjl3yfbg3IfNae/sp+CGso2f
+Nj76+yZJsWxjjFyDHrwZZYYmLX6LSrIlUOsAPjOCIL6tTfLhztHfKRzX2w1rZnMW
+GjFfc/f+rMvtLkgtmiNygXLvS2LiUIZH0F2spq+LmLZUB0ZUYXa//GS3G0MeUqON
+kXgw+dzrmvDjM8UpOtNi3c+bQm80f3Hh0xjt8XT6wkL0YYf3RpTdmZ8/CKAMCABC
+7K7MuzZDu8NCMDThWhavYCW6CVxMgji7I9mfIwIDAQABAoIBAC7/uFe7aTwoG3CU
+lv2GWDDwlgRIRQcrLFxD/u/TC5/UWbmrVSCoeU53pBpC10xU5GKEl1/WMSJS5V4v
+bOsmQaJdp/bqekiuAEqdhIV/ygIgjh5Ed+A/IaQNyv7Fd75yxggEAHIDFPP16jbb
+Ph0rnHYMyfXiLfLj85l1nZdeySs4v0RtM/LUbPnv0YUM0UKdnmeyI/pOAG4DEQPq
+Wcsi/j/ctS/pUAyOifQ8NkpDoQ9WZmEfn50kT8+59649tUnJbL3hvoeIxFIB5lNx
+dPPc57zqJBBqTPxl78AoqLL6CsJHTxlYPvqUE6hf3aT0ou6yIUVHK4mr0u5iEOkB
+QbcUV4ECgYEA06m2gU0P7H4PiWKd2Mvh4I7h52OPn+Dd02AnJhdkDjAF8hi8MN2G
+LtEYv5gkUCTDa7sLuIY+Ur/TXwwnXeT9dZ8VFu/Ri3ynq1yPfGFvzVPJV4jQ3WK2
+1CzyqxkKgzuDFdrwsgxZj9BqyyNU1A/5l9e6BXdkNnfLPtAYs2DxSg8CgYEAyDPe
+zgg6U0koWwdJSalLNkxndrHIFnWyovvhsdNvCL4NBkkwEUCpmtmVG2CX2rSUh8kJ
+n9G4eq0+77gYftI1rAYVEspz4g82zUzR/eoKeyufTCGx9eKZ8JvUQ0qdIRtykcrJ
+O6aej/ONGB3K/gnuBn2fka80BfWnE0RBV1SLPa0CgYA0GQrN6qznteOXGknl6dEQ
+F7ss3Amm/Y88Duez7X/4KgPcog/4Kx5y+Y6Q4h7WByZ+psxsv8YpUgPx2ij6aHmm
+cOCdA6xdG/KdMCw1HjqJnHzracaXJ0v/D40vZft7b7OFNp2WBYop5s/SbkDb7Y6u
+vC+SVt+4tGW3cTsTM+JQKwKBgFb8SpNkecsUH0el2874kqhN/CpTRmeTzgEIxeBY
+yIaY5NnVVOA6IzcX0LRrfK9XBK4WyGq7WZdbzNulNmdr+Ev8/I0Ej+MpzxrWhOr5
+FIK9ymHuxf7a7R3g5xIxyiHHZjk4TcTwOTa8kJJo53kHYXdKf9lxsX3hZS1225kR
+L8qlAoGAc7OqJi3KTCZb8ySE51zdSHAjDjVCBJ3IwKe1drwnTkT1BROIIYY9VR0q
+Opp54/7adb5bMJcdJSZSsUASwfxWkrXOM2r+BuTUw8b/F4G7QHZbIaOsmUDjnIQC
+ubT2c2OiEe4ImhSCmfPJ+yv6qy5Xr1hQI39jnjvV7WJ5fi3+MM8=
+-----END RSA PRIVATE KEY-----
+Certifications OTA Registered
+[ 10377][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 1
+icrtv1 : 1
+icrtv2 : 1
+icrtv3 : 1
+mac stored : 98:A3:16:C0:0E:D8-EA01J
+actulizando get pgm 1 desde permanent
+end of FlashManager_data_from_EEPROM_PowerON()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 1
+Pgm1 status: 1
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of pgm: 0
+PAST Type of buzzer ON/OFF 0
+PAST Type of rf 0
+----------------------------------
+RF ONLINE CONTROLS :
+USR1RF1 : 72647168
+USR1RF2 : 303616
+USR1RF3 : 202383360
+RF OFFLINE CONTROLS :
+RF1 : 241054464
+RF SENSORS :
+RF1 : 69349376
+RF2 : 203501568
+RF3 : 205602816
+RF4 : 207626240
+RF5 : 69287936
+RF6 : 61911040
+RF7 : 186679296
+RF8 : 138485760
+RF9 : 166817792
+RF10 : 35721216
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 270
+Free Entries: 360
+Namespace Count: 16
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+----print_ECONF_current_data------
+Tiempo de alarma(seg): 5
+Delay of fence: 3
+Number of arcs: 5
+Type of zone1: 0
+Type of pgm1: 0
+Time of pgm1: 10
+Type of buzzer ON/OFF 1
+Type of rf 0
+----------------------------------
+HEAP MEMORY ABSOLUTE :
+303948
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+@@@@@@@@@ electro_anyvar_changed by pgm1
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Enciende Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Wifi Credentials already exists in Flash
+AIOTRONIC4
+Ch0c0ai0@
+WiFi.begin first try 4 seconds
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN: 2Tiempo WiFi LAN: 3Tiempo WiFi LAN: 4Tiempo WiFi LAN: 6Tiempo WiFi LAN: 7
+Timeout Network reached, activating offline mode ...
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+[WiFi] GOT_IP: 192.168.18.59
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******** Retrying to Online Mode ::: ********
+dentials already exists in Flash
+AIOTRONIC4
+Ch0c0ai0@
+[WiFi] DISCONNECTED reason=8
+[WiFi] esp_wifi_connect() retried
+WiFi.begin first try 4 seconds
+60No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart config was NOT activated
+Waiting for Wifi
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN: 1Tiempo WiFi LAN: 2Tiempo WiFi LAN: 3Tiempo WiFi LAN: 4Tiempo WiFi LAN: 6Tiempo WiFi LAN: 7
+Timeout Network reached, activating offline mode ...
+[WiFi] GOT_IP: 192.168.18.158
+[WiFi] GOT_IP: 192.168.18.158
+Before is certified conditional in wireless?
+Counter for temporal offline mode has started ....
+Web server not allowed in this firmware version
+******** Retrying to Online Mode :
+Wifi Credentials alreadCh0c0ai0@
+[WiFi] DISCONNECTED reason=8
+[WiFi] esp_wifi_connect() retried
+[WiFi] DISCONNECTED reason=8
+WiFi.begin first try 4 seconds
+credentials before smart config
+SSID storage permanent :AIOTRONIC4
+PSS storage permanent :Ch0c0ai0@
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be show[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+[WiFi] STA_CONNECTED
+Tiempo WiFi LAN: 1[WiFi] GOT_IP: 192.168.18.158
+[WiFi] GOT_IP: 192.168.18.158
+[WiFi] GOT_IP: 192.168.18.158
+[WiFi] GOT_IP: 192.168.18.158
+??? Internet disponible.
+SSID:AIOTRONIC4
+PCh0c0ai0@
+Local Wifi Internet connected succesfully 1
+WiFi Connected to : AIOTRONIC4
+I
+MAC Address: 98:A3:16:C0:0E:D8
+La intensidad de la se??al es :
+-62
+La velocidad de la se??al internet es :
+**********pace for create wifi tasks )
+*********************** DELETED task ElectricFence
+*********************** DELETED task Radiofrequency
+*********************** DELETED task siren
+*** wifi Connected SUCCESFULLY FOR EVER ***
+Bertified conditional in wireless?
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+Prueba MACC adding :
+############################El valor de variabamazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J == Suscripci??n Exitosa !!
+Trying t == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/98:A3:16:C0:0E:D8/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+end of mqtt() function
+mqtt() 414-line completed
+mqtt has finished, notifying tt finished : 1
+alexafirsttime : 0
+alexafinished : 0
+alexafinished2 : 0
+Task Alexa Created in main loop()
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"2025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+Task alexa running on core0
+Welcome to Alexa Device Program :0
+1
+2
+3
+Alexa creation confirmation frmo enviando informacion a alexa
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 178
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"2025-10-13 17:16:43.237894""mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"9:51:59AM_161225","mode":100}
+--------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+******************** Task ElectricFence_sc initialized correctly
+Task e_fence running on core1
+WDT created for task electric fence
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":1,"pgm1":1,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+******************** Task siren_sc initialized correctly
+Task siren running on core1
+WDT created for task siren
+******************** Task Radiofrequency_sc initialized correctly
+Task Radiofrequency running on core1
+WDT created for task RF
+******************** Task tuyaiot initialized correctly
+Task tuyaiot running on core1
+8525831
+sadasdasdasd_config
+Vr:3.00 % 1315.00 Battery Caution- Multiplo de 5 published :
+3%
+,
+####### Heartbeat package
+@@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":3}
+-----------------------
+A Callback has been discarted bc me
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Product information
+set_wifi_uart_buffer PRODUCT_KEY:
+set_wifi_uart_buffer MCU_VER:
+CONFIG_MODE_CHOOSE :
+####### Query working mode
+####### WIFI_WORKING STATUS
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:1.00 % 1307.00 Battery Caution- Multiplo de 5 published :
+1%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:2.00 % 1310.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:110.00 % 1260.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 , Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:110.00 % 1288.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:110.00 % 1298.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:110.00 % 1294.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 , Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:2.00 % 1312.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:1.00 % 1307.00 Battery Caution- Multiplo de 5 published :
+1%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:1.00 % 1307.00 Battery Caution- Multiplo de 5 published :
+1%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:1.00 % 1308.00 Battery Caution- Multiplo de 5 published :
+1%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:3.00 % 1315.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:39.00 % 1371.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+####### Heartbeat package
+Unknown, returning .....
+Vr:4.00 % 1319.00 ,
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+code_RF ABS :242303013
+code_RF ABS BIN :1110011100010100000000100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242303013
+code_RF ABS BIN :1110011100010100000000100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242302997
+code_RF ABS BIN :1110011100010100000000010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242302997
+code_RF ABS BIN :1110011100010100000000010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:5.00 % 1321.00 , Unknown, returning .....
+####### Heartbeat package
+code_RF ABS :242303045
+code_RF ABS BIN :1110011100010100000001000101
+code_RF ABS BIN # :28
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :242302997
+code_RF ABS BIN :1110011100010100000000010101
+code_RF ABS BIN # :28
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+code_RF ABS :242303013
+code_RF ABS BIN :1110011100010100000000100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 242302976
+code_RF BIN : 1110011100010100000000000000
+code_RF BIN # :28
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:110.00 % 1276.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:110.00 % 1267.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:110.00 % 1299.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:4.00 % 1316.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1318.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:12.00 % 1330.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 , Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:110.00 % 1269.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Messa"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:110.00 % 1293.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:35.00 % 1364.00 Battery Caution- Multiplo de 5 published :
+35%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":35}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrd in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:5.00 % 1321.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Calce itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro"0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:4.00 % 1319.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 , Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been dis
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+---A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:110.00 % 1284.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+--------------
+A Ca A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:5.00 % 1320.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:4.00 % 1317.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:6.00 % 1322.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:2.00 % 1311.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 , Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:12.00 % 1330.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:110.00 % 1274.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:CMessage Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:110.00 % 1273.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:12.00 % 1330.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:44.00 % 1379.00 , Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:7.00 % 1324.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:110.00 % 1295.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:35.00 % 1365.00 Battery Caution- Multiplo de 5 published :
+35%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":35}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1332.00 , Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+---
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+Vr:29.00 % 1355.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:2.00 % 1309.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+code_RF ABS :79420741
+code_RF ABS BIN :100101110111101110101000101
+code_RF ABS BIN # :27
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 79420672
+code_RF BIN : 100101110111101110100000000
+code_RF BIN # :27
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1328.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 ,
+####### Heartbeat package
+code_RF ABS :55648277
+code_RF ABS BIN :11010100010010000000010101
+code_RF ABS BIN # :26
+code REST : 21
+code REST BIN : 10101
+code REST BIN # :5
+code_RF : 55648256
+code_RF BIN : 11010100010010000000000000
+code_RF BIN # :26
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:13.00 % 1331.00 ,
+code_RF ABS :79420741
+code_RF ABS BIN :100101110111101110101000101
+code_RF ABS BIN # :27
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 79420672
+code_RF BIN : 100101110111101110100000000
+code_RF BIN # :27
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+code_RF ABS :54599813
+code_RF ABS BIN :11010000010010000010000101
+code_RF ABS BIN # :26
+code REST : 133
+code REST BIN : 10000101
+code REST BIN # :8
+code_RF : 54599680
+code_RF BIN : 11010000010010000000000000
+code_RF BIN # :26
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :54599869
+code_RF ABS BIN :11010000010010000010111101
+code_RF ABS BIN # :26
+code REST : 189
+code REST BIN : 10111101
+code REST BIN # :8
+code_RF : 54599680
+code_RF BIN : 11010000010010000000000000
+code_RF BIN # :26
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:9.00 % 1326.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 , Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:5.00 % 1321.00 Battery Caution- Multiplo de 5 published :
+5%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 61
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:1Messa"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":5}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:30.00 % 1356.00 Battery Caution- Multiplo de 5 published :
+30%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":30}
+------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:10.00 % 1328.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+code_RF ABS :10839346
+code_RF ABS BIN :101001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 10839296
+code_RF BIN : 101001010110010100000000
+code_RF BIN # :24
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :9266482
+code_RF ABS BIN :100011010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 9266432
+code_RF BIN : 100011010110010100000000
+code_RF BIN # :24
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA0
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:8.00 % 1325.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 , Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-------------------e itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+----A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:35.00 % 1365.00 Battery Caution- Multiplo de 5 published :
+35%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":35}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:40.00 % 1372.00 Battery Caution- Multiplo de 5 published :
+40%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA0
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":40}
+--------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 , Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+,
+####### Heartbeat package
+@@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+code_RF ABS :79420741
+code_RF ABS BIN :100101110111101110101000101
+code_RF ABS BIN # :27
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 79420672
+code_RF BIN : 100101110111101110100000000
+code_RF BIN # :27
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro"0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+code_RF ABS :2673905
+code_RF ABS BIN :1010001100110011110001
+code_RF ABS BIN # :22
+code REST : 241
+code REST BIN : 11110001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+code_RF ABS :2673905
+code_RF ABS BIN :1010001100110011110001
+code_RF ABS BIN # :22
+code REST : 241
+code REST BIN : 11110001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+code_RF ABS :2673905
+code_RF ABS BIN :1010001100110011110001
+code_RF ABS BIN # :22
+code REST : 241
+code REST BIN : 11110001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:14.00 % 1333.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+####### Heartbeat package
+Unknown, returning .....
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:110.00 % 1291.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+code_RF ABS :2673897
+code_RF ABS BIN :1010001100110011101001
+code_RF ABS BIN # :22
+code REST : 233
+code REST BIN : 11101001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Unknown, returning .....
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+code_RF ABS :2673905
+code_RF ABS BIN :1010001100110011110001
+code_RF ABS BIN # :22
+code REST : 241
+code REST BIN : 11110001
+code REST BIN # :8
+code_RF : 2673664
+code_RF BIN : 1010001100110000000000
+code_RF BIN # :22
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 , Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+,
+####### Heartbeat package
+@@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+---
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:28.00 % 1354.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:38.00 % 1369.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 , Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:32.00 % 1359.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Pa"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:13.00 % 1332.00 ,
+####### Heartbeat package
+code_RF ABS :8742194
+code_RF ABS BIN :100001010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 8742144
+code_RF BIN : 100001010110010100000000
+code_RF BIN # :24
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:12.00 % 1330.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+code_RF ABS :1231
+code_RF ABS BIN :10011001111
+code_RF ABS BIN # :11
+code REST : 207
+code REST BIN : 11001111
+code REST BIN # :8
+code_RF : 1024
+code_RF BIN : 10000000000
+code_RF BIN # :11
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:29.00 % 1355.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 , Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:110.00 % 1299.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Me"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:13.00 % 1331.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:12.00 % 1330.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 , Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:24.00 % 1347.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 1J
+"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1335.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:110.00 % 1292.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:24.00 % 1348.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message "pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA0
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 , Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:15.00 % 1334.00 Battery Caution- Multiplo de 5 published :
+15%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":15}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+code_RF ABS :303685
+code_RF ABS BIN :1001010001001000101
+code_RF ABS BIN # :19
+code REST : 69
+code REST BIN : 1000101
+code REST BIN # :7
+code_RF : 303616
+code_RF BIN : 1001010001000000000
+code_RF BIN # :19
+In finish_RF
+it is an RF Online Control
+---------------high stack water mark at rf() task is :  1032
+3
+303616
+69
+Se desactivo ZONA 1 en task rf
+---------------high7
+---------------high stack water mark at ledsrgb() task is :  616
+@@@@@@@@@ electro_anyvar_changed by zone-sensors
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":2}},"zone":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga Zona en electro_effects_zone_1
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Vr:19.00 % 1339.00 ,
+code_RF ABS :303653
+code_RF ABS BIN :1001010001000100101
+code_RF ABS BIN # :19
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 303616
+code_RF BIN : 1001010001000000000
+code_RF BIN # :19
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Online Control
+---------------high stack water mark at rf() task is :  968
+3
+303616
+37
+Se desactivo PGM 1 en task rf
+task is :  1824
+7
+---------------high stack water mark at ledsrgb() task is :  584
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+"pb":0,"user":{"id":1,"src":{"type":1,"nro":2}},"pgm1":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+####### Heartbeat package
+code_RF ABS :72647205
+code_RF ABS BIN :100010101001000001000100101
+code_RF ABS BIN # :27
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 72647168
+code_RF BIN : 100010101001000001000000000
+code_RF BIN # :27
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Online Control
+---------------high stack water mark at rf() task is :  968
+3
+72647168
+37
+Se activo PGM 1 en task rf
+---------------high stack water mark at wireless() task is :  1824
+7
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo envi alexa
+---------------high stack water mark at ledsrgb() task is :  584
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":1}},"pgm1":1}
+-----------------------
+A Callback has been discarted bc message is from device itself
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Enciende PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Turn off SirenAio sound
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+code_RF ABS :202383397
+code_RF ABS BIN :1100000100000010000000100101
+code_RF ABS BIN # :28
+code REST : 37
+code REST BIN : 100101
+code REST BIN # :6
+code_RF : 202383360
+code_RF BIN : 1100000100000010000000000000
+code_RF BIN # :28
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+In finish_RF
+it is an RF Online Control
+---------------high stack water mark at rf() task is :  968
+3
+202383360
+37
+Se desactivo PGM 1 en task rf
+@@@@@@@@@ electro_anyvar_changed by pgm1
+an any var changed was true !!
+JSON doctro : 58
+Fauxmo enviando informacion a alexa
+-------------high stack water mark at wireless() task is :  1824
+7
+---------------high stack water mark at ledsrgb() task is :  584
+Publish from electro_publishMessage
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":1,"src":{"type":1,"nro":3}},"pgm1":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Apaga PGM 1 en hardware en base a messa.elec.pgm1
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+beep sound SirenAio or panic sound SirenAio
+Turn off SirenAio sound
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarteage is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+[13287895][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-80) UNKNOWN ERROR CODE (0050)
+A disconnection from MQTT was detected !
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnec
+Activating mqueuingttconnect() in aws_check_connection()
+Debugging the client.state: -3
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####azon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/98:A3:16:C0:0E:D8/jobs/notify
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J_conf == Suscripci??n Exitosa !!
+Trying to suscribe to : $aws/things/98:A3:16:C0:0E:D8/jobs/notify == SusSuscribed mqueuingtt_connect ha tenido exito
+############################El valor de variaheartbeat es : 0
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+"pb":3,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"2025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 178
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,"t":10,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"202510-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"1:35:46PM_161225","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Pa"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alam":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:32.00 % 1359.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:10.00 % 1327.00 Battery Caution- Multiplo de 5 published :
+10%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":10}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-------------------
+A Callback
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Call A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro"0}},"battLvl":20}A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,  ??? Internet missing was detected faster than .connected
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+code_RF ABS :9266482
+code_RF ABS BIN :100011010110010100110010
+code_RF ABS BIN # :24
+code REST : 50
+code REST BIN : 110010
+code REST BIN # :6
+code_RF : 9266432
+code_RF BIN : 100011010110010100000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:110.00 % 1291.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 , Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:29.00 % 1355.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:16.00 % 1336.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+[14868070][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-80) UNKNOWN ERROR CODE (0050)
+Certificates AWS have been validated from storage, procconnect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before attempting reconnection - isamazonConnected:
+gging the client.state: -3
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+############################El valor de variable connected to amazon es : 1
+The client connects to the AWS MQTT broker with Thingname :
+$aws/things/98:A3:16:C0:0E:D8/jobs/notify
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J_confTrying to suscribe to : $aws/things/98:A3:16:C0:0E:D8/jobs/notify == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+#####able heartbeat es : 0
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 178
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"use":{"id":0,"src":{"type:0,"nro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fence":3,"n_arcs":5,tp_zone":0,"pgms":[{"id":1,"t":10,"tp":0}]},"other_conf":{"tp_buzzer":1}}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"firmwareVersion":"0.1.78","firmwareBuildTmeStamp":"2025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"2:02:06PM_161225","mode":100}
+-----------------------
+A Callback has been discarted bc message is from device itself
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been discarted bc message is from device itself
+####### Heartbeat package
+Vr:24.00 % 1347.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:30.00 % 1357.00 Battery Caution- Multiplo de 5 published :
+30%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":30}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:28.00 % 1354.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 , Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:29.00 % 1355.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:CMessage Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:7.00 % 1323.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:30.00 % 1357.00 Battery Caution- Multiplo de 5 published :
+30%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":30}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:18.00 % 1338.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":20}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:20.00 % 1341.00 Battery Caution- Multiplo de 5 published :
+20%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+[15816354][E][ssl_client.cpp:37] _handle_error(): [data_to_read():361]: (-76) UNKNOWN ERROR CODE (004C)
+A disconnection from MQTT was detected !
+Certificates AWS have been validated from storage, proceding to connect to Aws MQTT
+El tiempo de try mqtt reconnect que ha transcurrido es : 0
+Before att
+Activating mqueuigging the client.state: -3
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+#####El valor dThe client connects to the AWS MQTT broker with Thingname :
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J == Suscripci??n Exitosa !!
+Trying to suscribe to : 98:A3:16:C0:0E:D8/EA01J_conf == Suscripci??n Exitosa !!
+Tryiy == Suscripci??n Exitosa !!
+Suscribed to MQTT topics correctly
+mqueuingtt_connect ha tenido exito
+######################heartbeat es : 0
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":3,"firmwareVersion":"0.1.708","firmwareBuildTimeStamp":"2025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","mode":99}
+-----------------------
+############################El valor de variable var state de jobs de ota aws es : 0
+############################El valor de variable jobid es : nohay
+nohay
+JSON docconf : 178
+Publish electroconf_publishMessage_retained_heartbeat
+JSON docconf : 215
+Publish from electroconf_publishMessage
+JSON doctro : 119
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"ro":0}},"rf_conf":{"action":0,"code":0,"position":0},"all_conf":{"t_alarm":5,"d_fene":3,"n_arcs":5,"tp_zone":0,"pgms":[{"id":1,""10,"tp":0}]},"other_onf":{"tp_buzzer":1}}
+---------------------
+A Callback has been discarted bc message is from device itself
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J_conf
+Message Payload :  {"pb":0,"firmwareersion:"0.1.708","firmwareBuidTimeStamp":"2025-10-13 17:16:43.237894","mcu":"ESP32-S3-N16R8","apiMode":0,"otaType":"aws","time":"2:17:4PM_161225","mode":100}
+-----------------------
+A Callback has been discarted bc mes
+Publish from electro_publishMessage
+electro_publishMessage in electro_main_first_publish_the_aio_server
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"alarm":{"status":0,"cause":0},"key":0,"zone":0,"pgm1":0,"islocked":0}
+-----------------------
+A Callback has been d
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been d
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 , Vr:30.00 % 1356.00 Battery Caution- Multiplo de 5 published :
+30%
+,
+####### Heartbeat package
+@@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":30}
+A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-------A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:36.00 % 1366.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:17.00 % 1337.00 ,
+####### Heartbeat package
+Vr:19.00 % 1340.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:35.00 % 1365.00 Battery Caution- Multiplo de 5 published :
+35%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":35}
+-A Callback A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A carted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:30.00 % 1357.00 Battery Caution- Multiplo de 5 published :
+30%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA0
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":30}
+-----------------------
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:19.00 % 1339.00 ,
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 , Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:21.00 % 1342.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:30.00 % 1356.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 Battery Caution- Multiplo de 5 published :
+25%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 62
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":25}
+-----------------------
+A Callback has been d
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+code_RF ABS :14075432
+code_RF ABS BIN :110101101100011000101000
+code_RF ABS BIN # :24
+code REST : 40
+code REST BIN : 101000
+code REST BIN # :6
+code_RF : 14075392
+code_RF BIN : 110101101100011000000000
+code_RF BIN # :24
+Zone is disabled : sensors will not be detected !!
+Activate zona in order to enable sensor detection !!
+hola, el dragon multiversal me dice que :  UNKNOWN CONTROL DETECTION
+In finish_RF
+Unknown, returning .....
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1350.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:27.00 % 1352.00 ,
+####### Heartbeat package
+Vr:33.00 % 1362.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:25.00 % 1349.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:28.00 % 1353.00 ,
+####### Heartbeat package
+Vr:22.00 % 1344.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:110.00 % 1293.00 Battery Caution- Multiplo de 5 published :
+110%
+, @@@@@@@@@ electro_anyvar_changed by battery_flag_send_periodic
+an any var changed was true !!
+Publish due to flag_send_periodic time cycle from electro cpp
+JSON doctro : 63
+Publish from electro_publishMessage
+Message arrived in topic: 98:A3:16:C0:0E:D8/EA01J
+Message Payload :  {"pb":0,"user":{"id":0,"src":{"type":0,"nro":0}},"battLvl":110}
+----A Callback has been discarted bc message is from device itself
+A publish has been made !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+####### Heartbeat package
+Vr:26.00 % 1351.00 ,
+####### Heartbeat package
+Vr:21.00 % 1343.00 ,
+####### Heartbeat package

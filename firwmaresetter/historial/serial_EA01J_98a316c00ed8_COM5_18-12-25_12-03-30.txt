@@ -1,0 +1,26 @@
+﻿[AIO] Tiempo de espera de (5 segundos) :
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.863, built 2025-12-18 11:08:48.516236
+Api aioserver mode : STAGING
+father device mode : STAGING
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+Entre a FlashManager_get_Init_Life
+[ 10367][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[ 10374][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+0
+okok
+El dispositivo SI esta en modo fabrica
+[ 10383][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[ 10391][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+MAC STA deviceThing: 98:A3:16:C0:0E:D8
+Certifications Registered :
+V???'
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[ 10404][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
