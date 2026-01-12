@@ -1,0 +1,378 @@
+﻿---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.913, built 2025-12-24 13:11:37.338509
+Api aioserver mode : DEVELOPMENT
+father device mode : DEVELOPMENT
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+[AIO] Tiempo de espera de (5 segundos) :
+Entre a FlashManager_get_Init_Life
+[  9367][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[  9374][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+0
+okok
+El dispositivo SI esta en modo fabrica
+[  9383][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  9391][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+MAC STA deviceThing: 98:A3:16:C0:08:AC
+Certifications Registered :
+V???'
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[  9404][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+[ 12469][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: t_alarm NOT_FOUND
+actualizando get pgm 1 desde permanent
+end of FlashManager_get_Init_Life()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg):5
+Delay of fence:5
+Number of arcs:0
+Type of zone1:0
+rf action:0
+rf position:0
+rf code:0
+Type of pgm1:0
+Time of pgm1:10
+Type of buzzer ON/OFF1
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of buzzer ON/OFF 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 109
+Free Entries: 521
+Namespace Count: 10
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+@@@@@@@@@ electroconf_anyvar_changed by t_alarm  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+@@@@@@@@@ electroconf_anyvar_changed by delay_fence
+@@@@@@@@@ electroconf_anyvar_changed by tp_buzzer
+[ 13575][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: t_alarm NOT_FOUND
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+HEAP MEMORY ABSOLUTE :
+304252
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Getting Wifi Credentials from FlashManager ...
+[ 13671][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 13678][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+verificacion smart config : true
+[ 13892][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[ 13930][V][WiFiGeneric.cpp:341] _arduino_event_cb(): STA Started
+[ 13936][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 2 - STA_START
+WiFi.beg
+60
+No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :[ 14437][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+PSS storage permanent :[ 14445][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart Config was manually activated
+[ 14456][V][WiFiGeneric.cpp:393] _arduino_event_cb(): AP Started
+[ 14462][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 10 - AP_START
+[ 14464][V][WiFiGeneric.cpp:396] _arduino_event_cb(): AP Stopped
+[ 14475][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 11 - AP_STOP
+1
+6
+Waiting for SmartConfig.
+Tiempo SC: 1Tiempo SC: 2Tiempo SC: 3Tiempo SC: 4[ 19343][V][WiFiGeneric.cpp:497] _arduino_event_cb(): SC Scan Done
+[ 19350][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 29 - SC_SCAN_DONE
+Tiempo SC: 6Tiempo SC: 7Tiempo SC: 8Tiempo SC: 9Tiempo SC: 10Tiempo SC: 12Tiempo SC: 13Tiempo SC: 14Tiempo SC: 15Tiempo SC: 16Tiempo SC: 18Tiempo SC: 19Tiempo SC: 20Tiempo SC: 21Tiempo SC: 22Tiempo SC: 24Tiempo SC: 25Tiempo SC: 26Tiempo SC: 27Tiempo SC: 28Tiempo SC: 30Tiempo SC: 31Tiempo SC: 32Tiempo SC: 33Tiempo SC: 34Tiempo SC: 36Tiempo SC: 37Tiempo SC: 38Tiempo SC: 39Tiempo SC: 40Tiempo SC: 42Tiempo SC: 43Tiempo SC: 44Tiempo SC: 45Tiempo SC: 46Tiempo SC: 48Tiempo SC: 49Tiempo SC: 50Tiempo SC: 51Tiempo SC: 54TiempoTiempo SC: 56Tiempo SC: 57Tiempo SC: 58Tiempo SC: 60Tiempo SC: 61Tiempo SC: 62Tiempo SC: 63Tiempo SC: 64Tiempo SC: 66Tiempo SC: 67Tiempo SC: 68Tiempo SC: 69Tiempo SC: 70Tiempo SC: 72Tiempo SC: 73Tiempo SC: 74Tiempo SC: 75Tiempo SC: 76Tiempo SC: 78Tiempo SC: 79Tiempo SC: 80Tiempo SC: 81Tiempo SC: 82Tiempo SC: 84Tiempo SC: 85Tiempo SC: 86Tiempo SC: 87Tiempo SC: 88Tiempo SC: 90Tiempo SC: 91Tiempo SC: 92Tiempo SC: 93Tiempo SC: 94Tiempo SC: 96Tiempo SC: 97TiempoTiempo SC: 99Tiempo SC: 100Tiempo SC: 102Tiempo SC: 103Tiempo SC: 105Tiempo SC: 106Tiempo SC: 108Tiempo SC: 109Tiempo SC: 110Tiempo SC: 111Tiempo SC: 112Tiempo SC: 114Tiempo SC: 115Tiempo SC: 117TiempoTiempo SC: 120Tiempo SC: 121Tiempo SC: 122Tiempo SC: 123TiempoTiempo SC: 126Tiempo SC: 127Tiempo SC: 128Tiempo SC: 129Tiempo SC: 130Tiempo SC: 132Tiempo SC: 133Tiempo SC: 134Tiempo SC: 135Tiempo SC: 136Tiempo SC: 138Tiempo SC: 139Tiempo SC: 140Tiempo SC: 141Tiempo SC: 142Tiempo SC: 144Tiempo SC: 145Tiempo SC: 146Tiempo SC: 147Tiempo SC: 148Tiempo SC: 150Tiempo SC: 152Tiempo SC: 153Tiempo SC: 154Tiempo SC: 156Tiempo SC: 157Tiempo SC: 158Tiempo SC: 159Tiempo SC: 160Tiempo SC: 162Tiempo SC: 163Tiempo SC: 164Tiempo SC: 165Tiempo SC: 166Tiempo SC: 168Tiempo SC: 170Tiempo SC: 171Tiempo SC: 172Tiempo SC: 174Tiempo SC: 175Tiempo SC: 176Tiempo SC: 177Tiempo SC: 178TiTiempo SC: 181Tiempo SC: 182Tiempo SC: 184TieTiempo SC: 187Tiempo SC: 188Timeout of SMART CONFIG reached , restarting ...
+[204927][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[204935][V][WiFiGeneric.cpp:344] _arduino_event_cb(): STA Stopped
+[204941][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 3 - STA_STOP
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377978
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[   344][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+[   393][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: otainit NOT_FOUND
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.913, built 2025-12-24 13:11:37.338509
+Api aioserver mode : DEVELOPMENT
+father device mode : DEVELOPMENT
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+[AIO] Tiempo de espera de (5 segundos) :
+Entre a FlashManager_get_Init_Life
+[  9406][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[  9412][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+0
+okok
+El dispositivo SI esta en modo fabrica
+[  9420][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  9428][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+MAC STA deviceThing: 98:A3:16:C0:08:AC
+Certifications Registered :
+V???#
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[  9439][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+[ 12502][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: t_alarm NOT_FOUND
+actualizando get pgm 1 desde permanent
+end of FlashManager_get_Init_Life()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg):5
+Delay of fence:0
+Number of arcs:0
+Type of zone1:0
+rf action:0
+rf position:0
+rf code:0
+Type of pgm1:0
+Time of pgm1:10
+Type of buzzer ON/OFF1
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of buzzer ON/OFF 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 182
+Free Entries: 448
+Namespace Count: 14
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+@@@@@@@@@ electroconf_anyvar_changed by t_alarm  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+@@@@@@@@@ electroconf_anyvar_changed by tp_buzzer
+[ 13595][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: t_alarm NOT_FOUND
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+HEAP MEMORY ABSOLUTE :
+303932
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Getting Wifi Crede ...
+[ 13690][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 13698][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+verificacion smart config : true
+[ 13910][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[ 13944][V][WiFiGeneric.cpp:341] _arduino_event_cb(): STA Started
+[ 13950][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 2 - STA_START
+WiFi.begin first try 4 seconds
+60
+No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :[ 14452][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+PSS storage permanent :[ 14460][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+SSID Current detected :wn by Class
+Smart Config was manually activated
+[ 14470][V][WiFiGeneric.cpp:393] _arduino_event_cb(): AP Started
+[ 14476][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 10 - AP_START
+[ 14479][V][WiFiGeneric.cpp:396] _arduino_event_cb(): AP Stopped
+[ 14489][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 11 - AP_STOP
+Waiting for SmartConfig.
+Tiempo SC: 1Tiempo SC: 2Tiempo SC: 3Tiempo SC: 4[ 19358][V][WiFiGeneric.cpp:497] _arduino_event_cb(): SC Scan Done
+[ 19364][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 29 - SC_SCAN_DONE
+Tiempo SC: 6Tiempo SC: 7Tiempo SC: 8Tiempo SC: 9Tiempo SC: 10Tiempo SC: 12Tiempo SC: 13Tiempo SC: 14Tiempo SC: 15Tiempo SC: 16Tiempo SC: 18Tiempo SC: 19Tiempo SC: 20Tiempo SC: 21Tiempo SC: 22Tiempo SC: 24Tiempo SC: 25Tiempo SC: 26Tiempo SC: 27Tiempo SC: 28Tiempo SC: 30Tiempo SC: 31Tiempo SC: 32Tiempo SC: 33Tiempo SC: 34Tiempo SC: 36Tiempo SC: 37Tiempo SC: 38Tiempo SC: 40Tiempo SC: 43Tiempo SC: 44Tiempo SC: 46Tiempo SC: 48Tiempo SC: 49Tiempo SC: 50Tiempo SC: 51Tiempo SC: 52Tiempo SC: 54Tiempo SC: 55Tiempo SC: 56Tiempo SC: 58TiempTiempo SC: 61Tiempo SC: 62Tiempo SC: 63Tiempo SC: 64Tiempo SC: 66Tiempo SC: 67Tiempo SC: 68Tiempo SC: 69Tiempo SC: 70Tiempo SC: 72Tiempo SC: 73Tiempo SC: 74Tiempo SC: 75Tiempo SC: 76TiempoTiempo SC: 79Tiempo SC: 80Tiempo SC: 81Tiempo SC: 82TiempoTiempo SC: 85Tiempo SC: 86Tiempo SC: 87Tiempo SC: 88Tiempo SC: 90Tiempo SC: 91Tiempo SC: 92Tiempo SC: 93Tiempo SC: 94po SC: 96Tiempo SC: 97Tiempo SC: 98Tiempo SC: 99Tiempo SC: 100Tiempo SC: 102Tiempo SC: 103Tiempo SC: 104Tiempo SC: 105Tiempo SC: 106Tiempo SC: 108Tiempo SC: 109Tiempo SC: 110Tiempo SC: 111Tiempo SC: 112Tiempo SC: 114Tiempo SC: 115Tiempo SC: 116Tiempo SC: 117Tiempo SC: 118Tiempo SC: 120Tiempo SC: 121Tiempo SC: 122Tiempo SC: 123TiempoTiempo SC: 126Tiempo SC: 127Tiempo SC: 128Tiempo SC: 129Tiempo SC: 130Tiempo SC: 132Tiempo SC: 134Tiempo SC: 135Tiempo SC: 136Tiempo SC: 138Tiempo SC: 139Tiempo SC: 140Tiempo SC: 141Tiempo SC: 142Tiempo SC: 144Tiempo SC: 145Tiempo SC: 146Tiempo SC: 147Tiempo SC: 148Tiempo SC: 150Tiempo SC: 151Tiempo SC: 152Tiempo SC: 153Tiempo SC: 154Tiempo SC: 156Tiempo SC: 157Tiempo SC: 158Tiempo SC: 159Tiempo SC: 160Tiempo SC: 162Tiempo SC: 163Tiempo SC: 164Tiempo SC: 165Tiempo SC: 166Tiempo SC: 168Tiempo SC: 170Tiempo SC: 171Tiempo SC: 172Tiempo SC: 174Tiempo SC: 175Tiempo SC: 176Tiempo SC: 177Tiempo SC: 178Tiempo SC: 180Tiempo SC: 181Tiempo SC: 182Tiempo SC: 183Tiempo SC: 184Tiempo SC: 186Tiempo SC: 187Tiempo SC: 188Tiempo SC: 189
+[204941][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[204948][V][WiFiGeneric.cpp:344] _arduino_event_cb(): STA Stopped
+[204954][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 3 - STA_STOP
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377978
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[   344][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+[   393][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: otainit NOT_FOUND
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.913, built 2025-12-24 13:11:37.338509
+Api aioserver mode : DEVELOPMENT
+father device mode : DEVELOPMENT
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+[AIO] Tiempo de espera de (5 segundos) :
+Entre a FlashManager_get_Init_Life
+[  9406][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[  9412][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+0
+okok
+El dispositivo SI esta en modo fabrica
+[  9421][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  9429][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+MAC STA deviceThing: 98:A3:16:C0:08:AC
+Certifications Registered :
+V???#
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[  9440][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+actualizando get pgm 1 desde permanent
+end of FlashManager_get_Init_Life()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg):5
+Delay of fence:0
+Number of arcs:0
+Type of zone1:0
+rf action:0
+rf position:0
+rf code:0
+Type of pgm1:0
+Time of pgm1:10
+Type of buzzer ON/OFF1
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of buzzer ON/OFF 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 183
+Free Entries: 447
+Namespace Count: 14
+**********Task wire core Setup concluido
+0
+@@@@@@@@@ electroconf_anyvar_changed by t_alarm  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+@@@@@@@@@ electroconf_anyvar_changed by tp_buzzer
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+HEAP MEMORY ABSOLUTE :
+303932
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Getting Wifi Credentials from FlashManager ...
+[ 13685][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 13693][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+verificacion smart config : true
+[ 13905][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[ 13941][V][WiFiGeneric.cpp:341] _arduino_event_cb(): STA Started
+[ 13947][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 2 - STA_START
+WiFi.begin first try 4 seconds
+60
+No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :[ 14448][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+PSS storage permanent :[ 14456][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+SSID Current detected :
+PSS Current detected :Actual Password is not allowed to be shown by Class
+Smart Config was manually activated
+[ 14466][V][WiFiGeneric.cpp:393] _arduino_event_cb(): AP Started
+[ 14472][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 10 - AP_START
+[ 14475][V][WiFiGeneric.cpp:396] _arduino_event_cb(): AP Stopped
+[ 14485][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 11 - AP_STOP
+1
+6
+Waiting for SmartConfig.
+Tiempo SC: 1Tiempo SC: 2TiemTiempo SC: 4[ 19354][V][WiFiGeneric.cpp:497] _arduino_event_cb(): SC Scan Done
+[ 19360][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 29 - SC_SCAN_DONE

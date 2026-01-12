@@ -1,0 +1,114 @@
+﻿---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.913, built 2025-12-24 13:11:37.338509
+Api aioserver mode : DEVELOPMENT
+father device mode : DEVELOPMENT
+Model : EA01J, ModelHybrid : 03TU_ORIGINAL, MCU :  ESP32-S3-N16R8
+[AIO] Tiempo de espera de (5 segundos) :
+Entre a FlashManager_get_Init_Life
+[  9367][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+[  9374][V][Preferences.cpp:352] getUChar(): nvs_get_u8 fail: old NOT_FOUND
+0
+okok
+El dispositivo SI esta en modo fabrica
+[  9383][E][Preferences.cpp:483] getString(): nvs_get_str len fail: Certificate NOT_FOUND
+[  9391][E][Preferences.cpp:483] getString(): nvs_get_str len fail: PrivateKey NOT_FOUND
+MAC STA deviceThing: 98:A3:16:C0:08:AC
+Certifications Registered :
+V???'
+este dispositivo no tiene llave privada
+Certifications OTA Registered
+[  9404][E][Preferences.cpp:483] getString(): nvs_get_str len fail: JobId NOT_FOUND
+nohay
+icrt : 0
+icrtv1 : 0
+icrtv2 : 0
+icrtv3 : 0
+[ 12469][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: t_alarm NOT_FOUND
+actualizando get pgm 1 desde permanent
+end of FlashManager_get_Init_Life()
+----MAIN VARIABLES------
+Alarm status: 0
+Alarm last cause: 0
+Key status: 0
+Zone status: 0
+Pgm1 status: 0
+Pgm2 status: 0
+Is locked status: 0
+---- PAST % MAIN VARIABLES------
+Alarm PAST status: 0
+Alarm PAST  cause: 0
+Key PAST status: 0
+Zone PAST status: 0
+Pgm1 PAST status: 0
+Pgm2 PAST status: 0
+Is locked PAST status: 0
+----print_ECONF_current_data------
+Tiempo de alarma(seg):5
+Delay of fence:5
+Number of arcs:0
+Type of zone1:0
+rf action:0
+rf position:0
+rf code:0
+Type of pgm1:0
+Time of pgm1:10
+Type of buzzer ON/OFF1
+----------------------------------
+----print_ECONF_PAST_data------
+PAST Tiempo de alarma(seg): 0
+PAST Delay of fence: 0
+PAST Number of arcs: 0
+PAST Type of zone: 0
+PAST Type of buzzer ON/OFF 0
+----------------------------------
+RF ONLINE CONTROLS :
+RF OFFLINE CONTROLS :
+RF SENSORS :
+==== NVS Memory Stats ====
+Total Entries: 630
+Used Entries: 109
+Free Entries: 521
+Namespace Count: 10
+******************** Task wirelessfi_sc initialized correctly
+Task wirelessfi running on core Setup concluido
+0
+@@@@@@@@@ electroconf_anyvar_changed by t_alarm  ******************** Task ledsrgb_sc initialized correctly
+Task ledsrgb running on core1
+WDT created for task ledsrgb
+@@@@@@@@@ electroconf_anyvar_changed by delay_fence
+@@@@@@@@@ electroconf_anyvar_changed by tp_buzzer
+[ 13574][V][Preferences.cpp:400] getUInt(): nvs_get_u32 fail: t_alarm NOT_FOUND
+actulizando put pgm 1 desde FlashManager_save_new_data_e_conf
+in electroconf_update_past_data
+HEAP MEMORY ABSOLUTE :
+304252
+@@@@@@@@@ electro_anyvar_changed by initDone
+an any var changed was true !!
+Proceding to Update Effects and then save permanent new data, update past data
+zone 1 en electro_effects_zone_1_tuyareport
+pgm 1 en electro_effects_pgm_1_tuyareport
+alarm 1 en electro_effects_alarm_1_rgb_tuyareport
+electro main past data UPDATED _ in loop()
+Getting Wifi Credenti
+[ 13670][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+[ 13677][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+Wifi Credentials dont exist, required SmartConfigMode
+verificacion smart config : true
+[ 13890][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[ 13928][V][WiFiGeneric.cpp:341] _arduino_event_cb(): STA Started
+[ 13934][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 2 - STA_START
+WiFi.begin first try 4 seconds
+No Se logr?? conectar a Network a la primera !
+credentials before smart config
+SSID storage permanent :[ 14436][E][Preferences.cpp:483] getString(): nvs_get_str len fail: ssid NOT_FOUND
+PSS storage permanent :[ 14444][E][Preferences.cpp:483] getString(): nvs_get_str len fail: password NOT_FOUND
+SSID Current detected :wn by Class
+Smart Config was manually activated
+[ 14455][V][WiFiGeneric.cpp:393] _arduino_event_cb(): AP Started
+[ 14461][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 10 - AP_START
+[ 14463][V][WiFiGeneric.cpp:396] _arduino_event_cb(): AP Stopped
+[ 14474][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 11 - AP_STOP
+Waiting for SmartConfig.
+Tiempo SC: 1Tiempo SC: 2Tiempo SC: 3Tiempo SC: 4[ 19342][V][WiFiGeneric.cpp:497] _arduino_event_cb(): SC Scan Done
+[ 19348][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 29 - SC_SCAN_DONE
