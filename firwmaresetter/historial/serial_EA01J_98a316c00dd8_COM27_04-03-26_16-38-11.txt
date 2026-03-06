@@ -1,0 +1,5 @@
+﻿---------------------------------------------------------------------
+---------------------------------------------------------------------
+Project version v0.1.931, built 2026-01-23 15:03:50.463861
+Api aioserver mode : PRODUCTION
+father device mode : PRODUCTION_CLIENTE_REAL (sin monitor serial permanente)
