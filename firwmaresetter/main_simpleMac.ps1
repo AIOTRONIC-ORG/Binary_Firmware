@@ -534,58 +534,59 @@ function VerMac {
         [string]$Port
     )
 
-function _PickPortAuto {
-    $coms = @()
+    function _PickPortAuto {
+        $coms = @()
 
-    try {
-        $ports = @(Get-CimInstance Win32_SerialPort -ErrorAction Stop)
+        try {
+            $ports = @(Get-CimInstance Win32_SerialPort -ErrorAction Stop)
 
-        $preferred = @(
-            $ports | Where-Object {
-                $_.DeviceID -match '^COM\d+$' -and
-                $_.DeviceID -notin @('COM1','COM2') -and (
-                    $_.PNPDeviceID -match '^USB' -or
-                    $_.Name -match 'CP210|CH340|CH910|USB Serial|USB-Serial|CDC|Espressif|JTAG|ESP32'
-                )
-            } | ForEach-Object {
-                $_.DeviceID.ToString().Trim().ToUpper()
+            $preferred = @(
+                $ports | Where-Object {
+                    $_.DeviceID -match '^COM\d+$' -and
+                    $_.DeviceID -notin @('COM1','COM2') -and (
+                        $_.PNPDeviceID -match '^USB' -or
+                        $_.Name -match 'CP210|CH340|CH910|USB Serial|USB-Serial|CDC|Espressif|JTAG|ESP32'
+                    )
+                } | ForEach-Object {
+                    $_.DeviceID.ToString().Trim().ToUpper()
+                }
+            )
+
+            if ($preferred.Count -ge 1) {
+                return $preferred[0]
             }
-        )
 
-        if ($preferred.Count -ge 1) {
-            return $preferred[0]
-        }
+            $fallback = @(
+                $ports | Where-Object {
+                    $_.DeviceID -match '^COM\d+$' -and
+                    $_.DeviceID -notin @('COM1','COM2')
+                } | ForEach-Object {
+                    $_.DeviceID.ToString().Trim().ToUpper()
+                }
+            )
 
-        $fallback = @(
-            $ports | Where-Object {
-                $_.DeviceID -match '^COM\d+$' -and
-                $_.DeviceID -notin @('COM1','COM2')
-            } | ForEach-Object {
-                $_.DeviceID.ToString().Trim().ToUpper()
+            if ($fallback.Count -ge 1) {
+                return $fallback[0]
             }
-        )
-
-        if ($fallback.Count -ge 1) {
-            return $fallback[0]
         }
-    }
-    catch {}
+        catch {}
 
-    try {
-        $serials = @([System.IO.Ports.SerialPort]::GetPortNames() | ForEach-Object {
-            $_.ToString().Trim().ToUpper()
-        } | Where-Object {
-            $_ -match '^COM\d+$' -and $_ -notin @('COM1','COM2')
-        })
+        try {
+            $serials = @([System.IO.Ports.SerialPort]::GetPortNames() | ForEach-Object {
+                $_.ToString().Trim().ToUpper()
+            } | Where-Object {
+                $_ -match '^COM\d+$' -and $_ -notin @('COM1','COM2')
+            })
 
-        if ($serials.Count -ge 1) {
-            return $serials[0]
+            if ($serials.Count -ge 1) {
+                return $serials[0]
+            }
         }
-    }
-    catch {}
+        catch {}
 
-    return $null
-}
+        return $null
+    }
+
     function _ParseMac([string]$text) {
         foreach($line in ($text -split "`r?`n")) {
             if($line -match 'MAC:\s*([0-9A-Fa-f:]{17})') {
@@ -602,59 +603,66 @@ function _PickPortAuto {
         $cmd = Get-Command python -ErrorAction SilentlyContinue
         if ($cmd) { return @("python") }
 
-        throw "No se encontró Python en el sistema."
+        throw "No se encontro Python en el sistema."
     }
 
-    if ([string]::IsNullOrWhiteSpace($Port)) {
-        $Port = _PickPortAuto
-        Write-Host "DEBUG autodetect raw: [$Port]"
-        Write-Host "DEBUG type: $($Port.GetType().FullName)"
+    try {
+        if ([string]::IsNullOrWhiteSpace($Port)) {
+            $Port = _PickPortAuto
 
-        if (-not $Port) {
-            throw "No pude autodetectar el puerto COM. Prueba manualmente con VerMac COM5"
+            if (-not $Port) {
+                Write-Host "No pude autodetectar el puerto COM." -ForegroundColor Red
+                Read-Host "Presiona ENTER para volver al menu"
+                return
+            }
+        } else {
+            $Port = ([string]$Port).Trim().ToUpper()
         }
-    } else {
-        $Port = ([string]$Port).Trim().ToUpper()
+
+        if ($Port -match '(COM\d+)') {
+            $Port = $Matches[1].ToUpper()
+        }
+
+        if ($Port -notmatch '^COM\d+$') {
+            Write-Host "Puerto invalido detectado: '$Port'" -ForegroundColor Red
+            Read-Host "Presiona ENTER para volver al menu"
+            return
+        }
+
+        Write-Host "Usando puerto: $Port"
+
+        $pyCmd = _FindPython
+
+        $checkEsptool = & $pyCmd[0] $pyCmd[1..($pyCmd.Count-1)] -m esptool version 2>&1 | Out-String
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "No se pudo ejecutar esptool. Instalalo con: py -3 -m pip install esptool" -ForegroundColor Red
+            Read-Host "Presiona ENTER para volver al menu"
+            return
+        }
+
+        $args = @()
+        if ($pyCmd.Count -gt 1) {
+            $args += $pyCmd[1..($pyCmd.Count-1)]
+        }
+        $args += @("-m", "esptool", "--chip", "esp32s3", "--port", $Port, "read-mac")
+
+        $macOut = & $pyCmd[0] @args 2>&1 | Out-String
+        $mac = _ParseMac $macOut
+
+        if ($mac) {
+            Write-Host "MAC: $mac" -ForegroundColor Green
+        } else {
+            Write-Host "No se pudo leer la MAC. Verifica que el puerto sea correcto y que el ESP32-S3 responda." -ForegroundColor Red
+        }
+
+        Read-Host "Presiona ENTER para volver al menu"
+        return
     }
-
-    # Extraer COM válido incluso si vino con texto raro
-    if ($Port -match '(COM\d+)') {
-        $Port = $Matches[1].ToUpper()
+    catch {
+        Write-Host "Error en VerMac: $($_.Exception.Message)" -ForegroundColor Red
+        Read-Host "Presiona ENTER para volver al menu"
+        return
     }
-
-    if ($Port -notmatch '^COM\d+$') {
-        throw "Puerto inválido detectado: '$Port'"
-    }
-
-Write-Host "Usando puerto: $Port"
-    # 2) Localizar Python
-    $pyCmd = _FindPython
-
-    # 3) Verificar esptool
-    $checkEsptool = & $pyCmd[0] $pyCmd[1..($pyCmd.Count-1)] -m esptool version 2>&1 | Out-String
-    if ($LASTEXITCODE -ne 0) {
-        throw "No se pudo ejecutar esptool. Instálalo con: py -3 -m pip install esptool"
-    }
-
-    # 4) Leer MAC
-    $args = @()
-    if ($pyCmd.Count -gt 1) {
-        $args += $pyCmd[1..($pyCmd.Count-1)]
-    }
-    $args += @("-m", "esptool", "--chip", "esp32s3", "--port", $Port, "read-mac")
-
-    $macOut = & $pyCmd[0] @args 2>&1 | Out-String
-
-    # Write-Host $macOut
-
-    $mac = _ParseMac $macOut
-    if ($mac) {
-        Write-Host "MAC: $mac"
-        # return $mac
-    } else {
-        throw "No se pudo leer la MAC. Verifica que el puerto sea correcto y que el ESP32-S3 responda."
-    }
-    Read-Host "ok"
 }
 function Start-ESP32Tool {
     $script:venvPython = Install-EmbeddedPython "3.11.4"
@@ -714,11 +722,13 @@ catch {
     Write-LogHard ("ERROR: " + ($_ | Out-String))
 }
 finally {
+    #Esto siempre se ejecuta despues de elegir aLGUNA OPCION
+    # al terminar esa funcionalidad elegida ( cuidado , no es solo cuando le pones "Salir")
     Write-LogHard "== FINALLY: pausing =="
     Write-Host "`nLog: $global:LogPath"
-    exit
+    # exit
     Write-Host "Presiona ENTER para salir..."
-    try { [void][System.Console]::ReadLine() } catch { Read-Host | Out-Null }
+    # try { [void][System.Console]::ReadLine() } catch { Read-Host | Out-Null }
 }
 # ========================================================================
 
