@@ -23,6 +23,170 @@ try {
     try { "MessageBox failed: $($_.Exception.Message)" | Out-File -FilePath $global:LogPath -Append } catch {}
 }
 # ============================================================
+function Invoke-PythonCleanProgress {
+    param(
+        [Parameter(Mandatory = $true)][string]$PythonExe,
+        [Parameter(Mandatory = $true)][string[]]$Args,
+        [string]$Title = "Procesando"
+    )
+
+    $tempOut = Join-Path $env:TEMP ("py_out_{0}.log" -f ([guid]::NewGuid().ToString("N")))
+    $tempErr = Join-Path $env:TEMP ("py_err_{0}.log" -f ([guid]::NewGuid().ToString("N")))
+
+    try {
+        Write-Host $Title -ForegroundColor Yellow
+
+        $proc = Start-Process `
+            -FilePath $PythonExe `
+            -ArgumentList $Args `
+            -RedirectStandardOutput $tempOut `
+            -RedirectStandardError $tempErr `
+            -PassThru `
+            -WindowStyle Hidden
+
+        $lastShown = $null
+        $printedAnything = $false
+
+        while (-not $proc.HasExited) {
+            $merged = @()
+            if (Test-Path $tempOut) { $merged += Get-Content $tempOut -ErrorAction SilentlyContinue }
+            if (Test-Path $tempErr) { $merged += Get-Content $tempErr -ErrorAction SilentlyContinue }
+
+            $filtered = $merged | Where-Object {
+                $_ -match '\b\d+%' -or
+                $_ -match 'Downloading' -or
+                $_ -match 'Installing collected packages' -or
+                $_ -match 'Collecting' -or
+                $_ -match 'Using cached'
+            } | Select-Object -Last 1
+
+            if ($filtered) {
+                $current = $filtered.Trim()
+                if ($current -ne $lastShown) {
+                    Write-Host $current
+                    $lastShown = $current
+                    $printedAnything = $true
+                }
+            }
+            elseif (-not $printedAnything) {
+                Write-Host "Procesando..."
+                $printedAnything = $true
+                $lastShown = "Procesando..."
+            }
+
+            Start-Sleep -Milliseconds 300
+        }
+
+        $allLines = @()
+        if (Test-Path $tempOut) { $allLines += Get-Content $tempOut -ErrorAction SilentlyContinue }
+        if (Test-Path $tempErr) { $allLines += Get-Content $tempErr -ErrorAction SilentlyContinue }
+
+        $cleanLines = $allLines | Where-Object {
+            $_.Trim() -and
+            $_ -notmatch 'WARNING: The scripts' -and
+            $_ -notmatch 'Consider adding this directory to PATH' -and
+            $_ -notmatch 'not on PATH'
+        }
+
+        $fullText = ($cleanLines -join "`n")
+
+        if (
+            $proc.ExitCode -eq 0 -or
+            $fullText -match 'Successfully installed' -or
+            $fullText -match 'Requirement already satisfied'
+        ) {
+            Write-Host "Completado correctamente." -ForegroundColor Green
+            return
+        }
+
+        $realError = $cleanLines | Where-Object {
+            $_ -notmatch '^Collecting ' -and
+            $_ -notmatch '^Using cached ' -and
+            $_ -notmatch '^Installing collected packages:' -and
+            $_ -notmatch '^Successfully installed ' -and
+            $_ -notmatch '^Requirement already satisfied:'
+        } | Select-Object -Last 10
+
+        if ($realError) {
+            throw ($realError -join "`n")
+        } else {
+            throw "El comando fallo sin detalle visible."
+        }
+    }
+    finally {
+        Remove-Item $tempOut -Force -ErrorAction SilentlyContinue
+        Remove-Item $tempErr -Force -ErrorAction SilentlyContinue
+    }
+}
+function Download-FileWithProgress {
+    param(
+        [Parameter(Mandatory = $true)][string]$Url,
+        [Parameter(Mandatory = $true)][string]$OutFile,
+        [string]$Activity = "Descargando archivo"
+    )
+
+    try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
+
+    $request = [System.Net.HttpWebRequest]::Create($Url)
+    $request.Method = "GET"
+    $request.Timeout = 15000
+    $request.ReadWriteTimeout = 15000
+    $request.UserAgent = "Mozilla/5.0"
+
+    Write-Host "$Activity"
+    Write-Host "Conectando al servidor..." -ForegroundColor Yellow
+
+    $response = $null
+    $inStream = $null
+    $outStream = $null
+
+    try {
+        $response   = $request.GetResponse()
+        $totalBytes = $response.ContentLength
+        $inStream   = $response.GetResponseStream()
+        $outStream  = [System.IO.File]::Create($OutFile)
+
+        $buffer = New-Object byte[] 65536
+        $read = 0
+        $totalRead = 0
+        $lastPercent = -1
+        $lastUpdate = Get-Date
+
+        while (($read = $inStream.Read($buffer, 0, $buffer.Length)) -gt 0) {
+            $outStream.Write($buffer, 0, $read)
+            $totalRead += $read
+
+            if ($totalBytes -gt 0) {
+                $percent = [int](($totalRead * 100) / $totalBytes)
+
+                if ($percent -ne $lastPercent -or ((Get-Date) - $lastUpdate).TotalMilliseconds -gt 400) {
+                    $mbRead  = [math]::Round($totalRead / 1MB, 2)
+                    $mbTotal = [math]::Round($totalBytes / 1MB, 2)
+
+                    $bars = [int]($percent / 5)
+                    $bar  = ("#" * $bars).PadRight(20, ".")
+
+                    Write-Host ("`r[{0}] {1,3}%  {2} MB / {3} MB" -f $bar, $percent, $mbRead, $mbTotal) -NoNewline
+
+                    $lastPercent = $percent
+                    $lastUpdate = Get-Date
+                }
+            }
+            else {
+                $mbRead = [math]::Round($totalRead / 1MB, 2)
+                Write-Host ("`rDescargado: {0} MB" -f $mbRead) -NoNewline
+            }
+        }
+
+        Write-Host ""
+        Write-Host "Descarga completada." -ForegroundColor Green
+    }
+    finally {
+        if ($outStream) { $outStream.Dispose() }
+        if ($inStream)  { $inStream.Dispose() }
+        if ($response)  { $response.Dispose() }
+    }
+}
 
 function Set-BaseDir {
 <#
@@ -294,14 +458,12 @@ function ResetEmbeddedPython {
     Stop-Process -Id $PID
 }
 
-
 function Install-EmbeddedPython {
     param(
         [string]$Version = "3.11.4",
-		[string]$BaseDir
+        [string]$BaseDir
     )
 
-    # === Resolver BaseDir aquí, ya con PSScriptRoot reparado ===
     if ([string]::IsNullOrWhiteSpace($BaseDir)) {
         $root = if ($PSScriptRoot -and $PSScriptRoot.Trim() -ne '') {
             $PSScriptRoot
@@ -313,49 +475,58 @@ function Install-EmbeddedPython {
         $BaseDir = Join-Path $root 'embedded_py'
     }
 
-    $zipName   = "python-$Version-embed-amd64.zip"
-    $zipUrl    = "https://www.python.org/ftp/python/$Version/$zipName"
-    $pythonDir = Join-Path $BaseDir "py$Version"
-    $pythonExe = Join-Path $pythonDir "python.exe"
-
+    $zipFileName = "python-$Version-embed-amd64.zip"
+    $zipName     = Join-Path $BaseDir $zipFileName
+    $zipUrl      = "https://www.python.org/ftp/python/$Version/$zipFileName"
+    $pythonDir   = Join-Path $BaseDir "py$Version"
+    $pythonExe   = Join-Path $pythonDir "python.exe"
 
     if (-not (Test-Path $pythonExe)) {
-        Write-Host " Descargando Python $Version (embeddable)..."
+        Write-Host "Descargando Python $Version (embeddable)..."
         New-Item -ItemType Directory -Force -Path $BaseDir | Out-Null
-		
-		#Esta linea Get-Item obtiene la carpeta creada y luego le agrega el atributo 'Hidden', haciendo que no se muestre por defecto en el 
-		#explorador de archivos de Windows.
-	
-		(Get-Item $BaseDir).Attributes += 'Hidden' ## hacerlo carpeta oculta
-	
-	
-        try{Invoke-WebRequest $zipUrl -OutFile $zipName}
-		catch{Write-Error "Embedded py no pudo ser instalado por falta de conexion a internet ! "}
-        Expand-Archive $zipName -DestinationPath $pythonDir
-        Remove-Item $zipName
+        (Get-Item $BaseDir).Attributes += 'Hidden'
 
-        # 1) Activa ‘import site’
+        try {
+            Download-FileWithProgress `
+                -Url $zipUrl `
+                -OutFile $zipName `
+                -Activity "Descargando Python $Version (embeddable)"
+        }
+        catch {
+            Write-Error "Embedded py no pudo ser instalado por falta de conexion a internet o timeout."
+            return $null
+        }
+
+        Write-Host "Extrayendo Python..." -ForegroundColor Yellow
+        Expand-Archive $zipName -DestinationPath $pythonDir -Force
+        Remove-Item $zipName -Force -ErrorAction SilentlyContinue
+
+        Write-Host "Configurando python311._pth..." -ForegroundColor Yellow
         (Get-Content "$pythonDir\python311._pth") |
-			ForEach-Object { $_ -replace '^#\s*import\s+site', 'import site' } |
-			Set-Content "$pythonDir\python311._pth"
+            ForEach-Object { $_ -replace '^#\s*import\s+site', 'import site' } |
+            Set-Content "$pythonDir\python311._pth"
 
-        # 2) Añade pip
-        #& $pythonExe -m ensurepip -U
-        #& $pythonExe -m pip install --upgrade pip
-		# 2) Añade pip (el embeddable no incluye ensurepip)
         $pyScripts = Join-Path $pythonDir 'Scripts'
         if (-not (Test-Path $pyScripts)) {
-        New-Item -ItemType Directory -Force -Path $pyScripts | Out-Null
+            New-Item -ItemType Directory -Force -Path $pyScripts | Out-Null
         }
         Add-ToPath $pyScripts
 
         $gp = Join-Path $pythonDir 'get-pip.py'
-        Invoke-WebRequest 'https://bootstrap.pypa.io/get-pip.py' -OutFile $gp
-        & $pythonExe $gp --no-warn-script-location --disable-pip-version-check -q 2>$null
-        Remove-Item $gp -Force -ErrorAction SilentlyContinue
+        Download-FileWithProgress `
+            -Url 'https://bootstrap.pypa.io/get-pip.py' `
+            -OutFile $gp `
+            -Activity "Descargando instalador de pip"
 
+        Invoke-PythonCleanProgress `
+            -PythonExe $pythonExe `
+            -Args @($gp, "--no-warn-script-location", "--disable-pip-version-check") `
+            -Title "Instalando pip..."
+
+        Remove-Item $gp -Force -ErrorAction SilentlyContinue
     }
-    return $pythonExe         # ruta absoluta al intérprete portable
+
+    return $pythonExe
 }
 
 function VerMac {
@@ -485,52 +656,31 @@ Write-Host "Usando puerto: $Port"
     }
     Read-Host "ok"
 }
-
 function Start-ESP32Tool {
-    # $ErrorActionPreference = "Stop"
+    $script:venvPython = Install-EmbeddedPython "3.11.4"
 
-    # Siempre usa TU copia embebida ↴
-    # $embeddedPy = Install-EmbeddedPython "3.11.4"
-	
-	
-    #$venvPath   = Join-Path $PSScriptRoot "aiotronic_env"
+    if ([string]::IsNullOrWhiteSpace($script:venvPython) -or -not (Test-Path $script:venvPython)) {
+        throw "No se pudo inicializar Python embebido."
+    }
 
-    #if (-not (Test-Path $venvPath)) {
-     #   Write-Host "🛠️  Creando entorno virtual aislado..."
-      #  & $embeddedPy -m venv $venvPath
-       # attrib +h $venvPath     # ocúltalo para no ensuciar la carpeta
-    #}
+    $pyDir     = Split-Path -Parent $script:venvPython
+    $pyScripts = Join-Path $pyDir 'Scripts'
+    if (-not (Test-Path $pyScripts)) {
+        New-Item -ItemType Directory -Force -Path $pyScripts | Out-Null
+    }
+    Add-ToPath $pyScripts
 
-    #$venvPython  = Join-Path $venvPath "Scripts\python.exe"
-    #$venvPip     = Join-Path $venvPath "Scripts\pip.exe"
-	
-	$script:venvPython = Install-EmbeddedPython "3.11.4"   # usamos el Python embebido tal cual
-	
-    # derivar carpeta base del python embebido y su Scripts
-    $pyDir      = Split-Path -Parent $script:venvPython
-    $pyScripts  = Join-Path $pyDir 'Scripts'
-    if (-not (Test-Path $pyScripts)) { New-Item -ItemType Directory -Force -Path $pyScripts | Out-Null }
-    Add-ToPath $pyScripts   # usa tu funcion Add-ToPath
+    # Opcional: puedes comentar este bloque si no quieres actualizar pip cada vez
+    Invoke-PythonCleanProgress `
+        -PythonExe $script:venvPython `
+        -Args @("-m","pip","install","--upgrade","pip","--no-warn-script-location","--disable-pip-version-check") `
+        -Title "Actualizando pip..."
 
-    #$script:venvPython = $venvPython   # ← resto del script lo usará
+    Invoke-PythonCleanProgress `
+        -PythonExe $script:venvPython `
+        -Args @("-m","pip","install","--no-warn-script-location","--disable-pip-version-check","esptool","pyserial","qrcode[pil]","Pillow","pywin32") `
+        -Title "Instalando dependencias..."
 
-    #& $venvPython -m pip install --upgrade pip
-    #& $venvPip install "esptool" "pyserial" "qrcode[pil]" "Pillow" "pywin32"
-	
-	# 2) actualizar pip y paquetes reduciendo ruido y quitando el warning de PATH
-    #    --no-warn-script-location evita justamente esos avisos
-    #    -q baja el nivel de salida
-    # & $script:venvPython -m pip install --upgrade pip --no-warn-script-location -q
-    # & $script:venvPython -m pip install --no-warn-script-location -q esptool pyserial "qrcode[pil]" Pillow pywin32
-    & $script:venvPython -m pip install --upgrade pip --no-warn-script-location --disable-pip-version-check -q 2>$null
-    & $script:venvPython -m pip install --no-warn-script-location --disable-pip-version-check -q esptool pyserial "qrcode[pil]" Pillow pywin32 2>$null
-
-
-    # Descarga/actualiza utilidades auxiliares
-    #Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/monitor_serial.py" -OutFile "monitor_serial.py"
-    #Invoke-WebRequest "https://raw.githubusercontent.com/AIOTRONIC-ORG/Binary_Firmware/main/print_qr.py"      -OutFile "print_qr.py"
-
-    
     ShowMainMenu
 }
 
