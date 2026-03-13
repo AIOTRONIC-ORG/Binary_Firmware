@@ -1,0 +1,10 @@
+siempre igualar las condiciones con las que 
+el cliente recibira el firmware, 
+
+puede que su laptop no tenga ni un python instalado
+puede que su laptop tenga la version mas minima de powershell
+
+siempre revisar el codigo completo de la ultima parte agregada
+al .ps1, completo, para ver si hay algo incogruente con desarrollos
+pasados. es la unica forma de darse cuenta de errores .... sin
+	igualar condiciones sin azon alguna innecesariamente cuando "eso ya estaba resuelto"
