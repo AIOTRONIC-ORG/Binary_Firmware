@@ -343,10 +343,16 @@ function Install-EmbeddedPython {
         #& $pythonExe -m ensurepip -U
         #& $pythonExe -m pip install --upgrade pip
 		# 2) Añade pip (el embeddable no incluye ensurepip)
-		$gp = Join-Path $pythonDir 'get-pip.py'
-		Invoke-WebRequest 'https://bootstrap.pypa.io/get-pip.py' -OutFile $gp
-		& $pythonExe $gp -q        # instala pip en el propio Python embebido
-		Remove-Item $gp
+        $pyScripts = Join-Path $pythonDir 'Scripts'
+        if (-not (Test-Path $pyScripts)) {
+        New-Item -ItemType Directory -Force -Path $pyScripts | Out-Null
+        }
+        Add-ToPath $pyScripts
+
+        $gp = Join-Path $pythonDir 'get-pip.py'
+        Invoke-WebRequest 'https://bootstrap.pypa.io/get-pip.py' -OutFile $gp
+        & $pythonExe $gp --no-warn-script-location --disable-pip-version-check -q 2>$null
+        Remove-Item $gp -Force -ErrorAction SilentlyContinue
 
     }
     return $pythonExe         # ruta absoluta al intérprete portable
@@ -514,8 +520,10 @@ function Start-ESP32Tool {
 	# 2) actualizar pip y paquetes reduciendo ruido y quitando el warning de PATH
     #    --no-warn-script-location evita justamente esos avisos
     #    -q baja el nivel de salida
-    & $script:venvPython -m pip install --upgrade pip --no-warn-script-location -q
-    & $script:venvPython -m pip install --no-warn-script-location -q esptool pyserial "qrcode[pil]" Pillow pywin32
+    # & $script:venvPython -m pip install --upgrade pip --no-warn-script-location -q
+    # & $script:venvPython -m pip install --no-warn-script-location -q esptool pyserial "qrcode[pil]" Pillow pywin32
+    & $script:venvPython -m pip install --upgrade pip --no-warn-script-location --disable-pip-version-check -q 2>$null
+    & $script:venvPython -m pip install --no-warn-script-location --disable-pip-version-check -q esptool pyserial "qrcode[pil]" Pillow pywin32 2>$null
 
 
     # Descarga/actualiza utilidades auxiliares
