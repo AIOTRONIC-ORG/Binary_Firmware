@@ -468,7 +468,7 @@ Write-Host "Usando puerto: $Port"
 
     $macOut = & $pyCmd[0] @args 2>&1 | Out-String
 
-    Write-Host $macOut
+    # Write-Host $macOut
 
     $mac = _ParseMac $macOut
     if ($mac) {
