@@ -596,15 +596,25 @@ function VerMac {
         return $null
     }
 
-    function _FindPython {
-        $cmd = Get-Command py -ErrorAction SilentlyContinue
-        if ($cmd) { return @("py", "-3") }
-
-        $cmd = Get-Command python -ErrorAction SilentlyContinue
-        if ($cmd) { return @("python") }
-
-        throw "No se encontro Python en el sistema."
+function _FindPython {
+    $cmd = Get-Command py -ErrorAction SilentlyContinue
+    if ($cmd) {
+        return @{
+            Exe  = "py"
+            Args = @("-3")
+        }
     }
+
+    $cmd = Get-Command python -ErrorAction SilentlyContinue
+    if ($cmd) {
+        return @{
+            Exe  = "python"
+            Args = @()
+        }
+    }
+
+    throw "No se encontro Python en el sistema."
+}
 
     try {
         if ([string]::IsNullOrWhiteSpace($Port)) {
@@ -631,22 +641,25 @@ function VerMac {
 
         Write-Host "Usando puerto: $Port"
 
-        $pyCmd = _FindPython
+     $pyCmd = _FindPython
 
-        $checkEsptool = & $pyCmd[0] $pyCmd[1..($pyCmd.Count-1)] -m esptool version 2>&1 | Out-String
-        if ($LASTEXITCODE -ne 0) {
-            Write-Host "No se pudo ejecutar esptool. Instalalo con: py -3 -m pip install esptool" -ForegroundColor Red
-            Read-Host "Presiona ENTER para volver al menu"
-            return
-        }
+    $checkArgs = @()
+    $checkArgs += $pyCmd.Args
+    $checkArgs += @("-m", "esptool", "version")
 
-        $args = @()
-        if ($pyCmd.Count -gt 1) {
-            $args += $pyCmd[1..($pyCmd.Count-1)]
-        }
-        $args += @("-m", "esptool", "--chip", "esp32s3", "--port", $Port, "read-mac")
+    $checkEsptool = & $pyCmd.Exe @checkArgs 2>&1 | Out-String
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "No se pudo ejecutar esptool. Instalalo con Python/pip en esta PC." -ForegroundColor Red
+        Read-Host "Presiona ENTER para volver al menu"
+        return
+    }
 
-        $macOut = & $pyCmd[0] @args 2>&1 | Out-String
+    $args = @()
+    $args += $pyCmd.Args
+    $args += @("-m", "esptool", "--chip", "esp32s3", "--port", $Port, "read-mac")
+
+    $macOut = & $pyCmd.Exe @args 2>&1 | Out-String
+
         $mac = _ParseMac $macOut
 
         if ($mac) {
