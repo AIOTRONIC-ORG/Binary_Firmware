@@ -596,26 +596,6 @@ function VerMac {
         return $null
     }
 
-function _FindPython {
-    $cmd = Get-Command py -ErrorAction SilentlyContinue
-    if ($cmd) {
-        return @{
-            Exe  = "py"
-            Args = @("-3")
-        }
-    }
-
-    $cmd = Get-Command python -ErrorAction SilentlyContinue
-    if ($cmd) {
-        return @{
-            Exe  = "python"
-            Args = @()
-        }
-    }
-
-    throw "No se encontro Python en el sistema."
-}
-
     try {
         if ([string]::IsNullOrWhiteSpace($Port)) {
             $Port = _PickPortAuto
@@ -641,31 +621,31 @@ function _FindPython {
 
         Write-Host "Usando puerto: $Port"
 
-     $pyCmd = _FindPython
+        $pythonExe = $script:venvPython
 
-    $checkArgs = @()
-    $checkArgs += $pyCmd.Args
-    $checkArgs += @("-m", "esptool", "version")
+        if ([string]::IsNullOrWhiteSpace($pythonExe) -or -not (Test-Path $pythonExe)) {
+            Write-Host "Python embebido no inicializado correctamente." -ForegroundColor Red
+            Read-Host "Presiona ENTER para volver al menu"
+            return
+        }
 
-    $checkEsptool = & $pyCmd.Exe @checkArgs 2>&1 | Out-String
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "No se pudo ejecutar esptool. Instalalo con Python/pip en esta PC." -ForegroundColor Red
-        Read-Host "Presiona ENTER para volver al menu"
-        return
-    }
+        $checkEsptool = & $pythonExe -m esptool version 2>&1 | Out-String
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "No se pudo ejecutar esptool con el Python embebido." -ForegroundColor Red
+            Write-Host $checkEsptool
+            Read-Host "Presiona ENTER para volver al menu"
+            return
+        }
 
-    $args = @()
-    $args += $pyCmd.Args
-    $args += @("-m", "esptool", "--chip", "esp32s3", "--port", $Port, "read-mac")
-
-    $macOut = & $pyCmd.Exe @args 2>&1 | Out-String
-
+        $args = @("-m", "esptool", "--chip", "esp32s3", "--port", $Port, "read-mac")
+        $macOut = & $pythonExe @args 2>&1 | Out-String
         $mac = _ParseMac $macOut
 
         if ($mac) {
             Write-Host "MAC: $mac" -ForegroundColor Green
         } else {
             Write-Host "No se pudo leer la MAC. Verifica que el puerto sea correcto y que el ESP32-S3 responda." -ForegroundColor Red
+            Write-Host $macOut
         }
 
         Read-Host "Presiona ENTER para volver al menu"
@@ -677,6 +657,7 @@ function _FindPython {
         return
     }
 }
+
 function Start-ESP32Tool {
     $script:venvPython = Install-EmbeddedPython "3.11.4"
 
