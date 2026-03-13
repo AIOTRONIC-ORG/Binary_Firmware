@@ -245,16 +245,8 @@ function ShowMainMenu {
         Write-Color -Text "==========================================", " " -Color Cyan, White
         Write-Color ""
 
-        Write-Color -Text "  [1] ", "Flash Erase " -Color Cyan, Green
-        Write-Color -Text "  [2] ", "Actualizar Firmware desde SERVIDOR" -Color Cyan, Green
-        Write-Color -Text "  [3] ", "Imprimir Codigo QR" -Color Cyan, Green
-        Write-Color -Text "  [4] ", "Seleccionar Modelo de Dispositivo" -Color Cyan, Green
-        Write-Color -Text "  [5] ", "Cargar Firmware LOCAL (.bin)" -Color Cyan, Green
-        Write-Color -Text "  [6] ", "Serial monitor" -Color Cyan, Green
-        Write-Color -Text "  [7] ", "Resetear la consola (eliminar Python embebido Offline)" -Color Cyan, Green
-        Write-Color -Text "  [8] ", "Obtener archivos de AIOcore" -Color Cyan, Green
-        Write-Color -Text "  [9] ", "Ver historial" -Color Cyan, Green
-        Write-Color -Text "  [10] ", "Salir" -Color Cyan, Green
+        Write-Color -Text "  [1] ", "Serial monitor" -Color Cyan, Green
+        Write-Color -Text "  [2] ", "Salir" -Color Cyan, Green
 
         Write-Color ""
         Write-Color -Text "==========================================" -Color Cyan
@@ -263,16 +255,8 @@ function ShowMainMenu {
         $choice = Read-Host "Seleccione una opcion"
 
         switch ($choice) {
-            "1" { FlashESP32Erase }
-            "2" { SelectDeviceModel; UpdateFromAioServer }
-            "3" { PrintQRCode }
-            "4" { SelectDeviceModel }
-            "5" { LoadLocalFirmware }
-            "6" { SerialMonitor }
-            "7" { ResetEmbeddedPython }
-            "8" { $com = SelectCOMPort; Get-ESP32SpiffsFile -Port $com -Trigger -RemotePath "/snap.jpg" }
-            "9" { Show-HistoryMenu }
-            "10" { return }
+            "1" {  SerialMonitor }
+            "2" { return }
             default {
                 Write-Color -Text "Opcion invalida" -Color Red
                 Pause
